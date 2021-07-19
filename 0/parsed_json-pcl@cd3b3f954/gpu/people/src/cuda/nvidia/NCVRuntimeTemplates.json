@@ -1,0 +1,358 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/cuda/nvidia/NCVRuntimeTemplates.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'stdarg.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_DEFINITION:'_ncvruntimetemplates_hpp_'",
+      {
+        "NAMESPACE:'Loki'": {
+          "children": [
+            "CLASS_DECL:'NullType'",
+            {
+              "CLASS_TEMPLATE:'Int2Type'": {
+                "children": [
+                  {
+                    "ENUM_DECL:''": {
+                      "children": [
+                        {
+                          "ENUM_CONSTANT_DECL:'value'": {
+                            "children": [
+                              "DECL_REF_EXPR:'v'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "TEMPLATE_NON_TYPE_PARAMETER:'v'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'Typelist'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'",
+                  "TEMPLATE_TYPE_PARAMETER:'U'",
+                  {
+                    "TYPE_ALIAS_DECL:'Head'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'Tail'": {
+                      "children": [
+                        "TYPE_REF:'U'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'TL'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'TypeAt'": {
+                      "children": [
+                        "TEMPLATE_NON_TYPE_PARAMETER:'index'",
+                        "TEMPLATE_TYPE_PARAMETER:'TList'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'TypeAt'": {
+                      "children": [
+                        "TEMPLATE_REF:'Typelist'",
+                        "TEMPLATE_TYPE_PARAMETER:'Head'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tail'",
+                        {
+                          "TYPE_ALIAS_DECL:'Result'": {
+                            "children": [
+                              "TYPE_REF:'Head'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'Head'",
+                        "TYPE_REF:'Tail'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'TypeAt'": {
+                      "children": [
+                        "DECL_REF_EXPR:'i'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'i'",
+                        "TEMPLATE_REF:'Typelist'",
+                        "TEMPLATE_TYPE_PARAMETER:'Head'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tail'",
+                        {
+                          "TYPE_ALIAS_DECL:'Result'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'i'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'TypeAt'",
+                              "TYPE_REF:'Tail'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'Head'",
+                        "TYPE_REF:'Tail'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'NCVRuntimeTemplateBool'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'KernelCaller'": {
+                "children": [
+                  {
+                    "CXX_METHOD:'call'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'templateParamList'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'listPointer'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'NumArguments'",
+                                          {
+                                            "UNEXPOSED_EXPR:'i'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'val'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'functor'": {
+                            "children": [
+                              "TYPE_REF:'Func'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'call'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'val'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'functor'": {
+                            "children": [
+                              "TYPE_REF:'Func'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'templateParamList'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_NON_TYPE_PARAMETER:'NumArguments'",
+                  "TEMPLATE_TYPE_PARAMETER:'Func'",
+                  "TEMPLATE_TYPE_PARAMETER:'TList'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'KernelCaller'": {
+                "children": [
+                  {
+                    "CXX_METHOD:'call'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "TYPE_REF:'TList'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'functor'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'functor'": {
+                            "children": [
+                              "TYPE_REF:'Func'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'call'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "TYPE_REF:'TList'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'functor'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'functor'": {
+                            "children": [
+                              "TYPE_REF:'Func'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'templateParams'"
+                      ]
+                    }
+                  },
+                  "INTEGER_LITERAL:''",
+                  "TEMPLATE_TYPE_PARAMETER:'Func'",
+                  "TEMPLATE_TYPE_PARAMETER:'TList'",
+                  "TYPE_REF:'Func'",
+                  "TYPE_REF:'TList'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

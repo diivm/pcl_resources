@@ -1,0 +1,810 @@
+{
+  "TRANSLATION_UNIT:'/pcl/test/io/test_buffers.cpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'BuffersTest'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'BuffersTest<T>'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "MEMBER_REF_EXPR:'invalid_'"
+                                  ]
+                                }
+                              },
+                              "NULL_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "FIELD_DECL:'invalid_'": {
+                "children": [
+                  "TYPE_REF:'T'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'checkBuffer'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'dptr'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'data'",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'eptr'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'expected'",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FOR_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'i'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'buffer'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'dptr'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'buffer'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'eptr'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'buffer'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'j'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'j'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'eptr'",
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'buffer'",
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_REF_EXPR:''": {
+                                                          "children": [
+                                                            "OVERLOADED_DECL_REF:'EXPECT_EQ'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "CALL_EXPR:'isnan'": {
+                                                    "children": [
+                                                      {
+                                                        "CXX_STATIC_CAST_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'eptr'",
+                                                                  "DECL_REF_EXPR:'j'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'isnan'": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_REF_EXPR:'isnan'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "NULL_STMT:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'j'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'i'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "TYPE_REF:'std::size_t'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'i'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'buffer'": {
+                      "children": [
+                        "TYPE_REF:'Buffer'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'data'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'expected'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'size'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::size_t'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'Buffer'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'T'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'data'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'data'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'invalid'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'data'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'median'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'median'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'data'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'average'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'average'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'average'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'average'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'TYPED_TEST'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'invalid'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'data'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'median'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "FUNCTION_DECL:'TYPED_TEST_SUITE'",
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'cmath'",
+      "INCLUSION_DIRECTIVE:'cstdint'",
+      "INCLUSION_DIRECTIVE:'pcl/io/buffers.h'",
+      "INCLUSION_DIRECTIVE:'pcl/test/gtest.h'"
+    ]
+  }
+}

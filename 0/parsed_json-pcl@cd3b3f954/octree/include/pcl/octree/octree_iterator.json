@@ -1,0 +1,2435 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_iterator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "INCLUSION_DIRECTIVE:'deque'",
+      "INCLUSION_DIRECTIVE:'iterator'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/impl/octree_iterator.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_key.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_nodes.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreeBreadthFirstIterator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'fifo'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'other'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'_Tmp'": {
+                                              "children": [
+                                                "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'_Tmp'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'src'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "TEMPLATE_REF:'OctreeIteratorBase'",
+                                                "TYPE_REF:'OctreeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'src'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeBreadthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'reset'",
+                        "FIELD_DECL:'FIFO_'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreeDepthFirstIterator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stack'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'other'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'_Tmp'": {
+                                              "children": [
+                                                "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'_Tmp'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'src'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "TEMPLATE_REF:'OctreeIteratorBase'",
+                                                "TYPE_REF:'OctreeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'src'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeDepthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'reset'",
+                        "CXX_METHOD:'skipChildVoxels'",
+                        "FIELD_DECL:'stack_'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeIteratorBase'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreeFixedDepthIterator'": {
+                      "children": [
+                        "CONSTRUCTOR:'OctreeFixedDepthIterator<OctreeT>'",
+                        {
+                          "CONSTRUCTOR:'OctreeFixedDepthIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'fixed_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeFixedDepthIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'fifo'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'fixed_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeFixedDepthIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'other'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeFixedDepthIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'other'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'src'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'src'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                                                "TYPE_REF:'OctreeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'src'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeFixedDepthIterator<OctreeT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeFixedDepthIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              "PARM_DECL:'fixed_depth_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'fixed_depth_'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "USING_DECLARATION:'BranchNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'FIFO_'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'LeafNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreeIteratorBase'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "TYPE_REF:'OctreeIteratorBase<OctreeT>'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "MEMBER_REF:'current_state_'",
+                              "MEMBER_REF:'octree_'",
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeIteratorBase<OctreeT>'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'octree_arg'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "MEMBER_REF:'current_state_'",
+                              "MEMBER_REF:'octree_'",
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'octree_arg'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'current_state_'",
+                              "MEMBER_REF:'octree_'",
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'octree_arg'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'current_state'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'current_state'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getBranchContainer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'branch_node'": {
+                                              "children": [
+                                                "TYPE_REF:'pcl::octree::OctreeIteratorBase::BranchNode'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'branch_node'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::octree::OctreeIteratorBase::BranchContainer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBranchContainer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'branch_node'": {
+                                              "children": [
+                                                "TYPE_REF:'pcl::octree::OctreeIteratorBase::BranchNode'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'branch_node'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::octree::OctreeIteratorBase::BranchContainer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getCurrentOctreeDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getCurrentOctreeKey'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getCurrentOctreeNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getLeafContainer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'leaf_node'": {
+                                              "children": [
+                                                "TYPE_REF:'pcl::octree::OctreeIteratorBase::LeafNode'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'leaf_node'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::octree::OctreeIteratorBase::LeafContainer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getLeafContainer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'leaf_node'": {
+                                              "children": [
+                                                "TYPE_REF:'pcl::octree::OctreeIteratorBase::LeafNode'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'leaf_node'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::octree::OctreeIteratorBase::LeafContainer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNodeConfiguration'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'ret'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'isBranchNode'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'isBranchNode'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'octree_'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'current_branch'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'ret'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'current_branch'": {
+                                                          "children": [
+                                                            "TYPE_REF:'pcl::octree::OctreeIteratorBase::BranchNode'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'ret'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNodeID'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'id'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'key'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'depth'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'current_state_'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'current_state_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'current_state_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'id'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'id'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isBranchNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isLeafNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator!='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'operator=='": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'other'",
+                                                      "MEMBER_REF_EXPR:'operator=='"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeIteratorBase<OctreeT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator*'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'current_state_'",
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'other'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'other'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'octree_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'current_state_'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'current_state_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'current_state_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeIteratorBase<OctreeT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'current_state_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreeIteratorBase<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'current_state_'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::octree::IteratorState'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'max_octree_depth_'",
+                        {
+                          "FIELD_DECL:'octree_'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchContainer'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafContainer'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreeLeafNodeBreadthFirstIterator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'fifo'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeBreadthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              "TYPE_REF:'OctreeLeafNodeBreadthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "TYPE_REF:'OctreeLeafNodeBreadthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'reset'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBreadthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreeLeafNodeDepthFirstIterator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'reset'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'reset'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'reset'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'reset'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'max_depth_arg'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OctreeLeafNodeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'current_state'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::octree::IteratorState'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_depth_arg'",
+                              {
+                                "PARM_DECL:'octree_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stack'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeDepthFirstIterator<OctreeT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeDepthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator*'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'ret'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeLeafNodeDepthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'_Tmp'": {
+                                              "children": [
+                                                "TYPE_REF:'OctreeLeafNodeDepthFirstIterator<OctreeT>'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'_Tmp'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "TYPE_REF:'OctreeLeafNodeDepthFirstIterator<OctreeT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "TEMPLATE_REF:'OctreeDepthFirstIterator'",
+                                                "TYPE_REF:'OctreeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeDepthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeDepthFirstIterator'",
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'IteratorState'": {
+                      "children": [
+                        "FIELD_DECL:'depth_'",
+                        "FIELD_DECL:'key_'",
+                        "FIELD_DECL:'node_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

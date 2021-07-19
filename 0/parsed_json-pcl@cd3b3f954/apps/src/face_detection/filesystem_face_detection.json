@@ -1,0 +1,604 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/src/face_detection/filesystem_face_detection.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'STRIDE_SW'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'forest_fn'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'use_normals'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'trans_max_variance'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'min_votes_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'face_threshold'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'heat_map'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'show_votes'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'test_directory'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'filename'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'rgb_exists'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pose_refinement_'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'icp_iterations'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'model_path_'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'fdrf'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'fb'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::filebuf'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'os'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::istream'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "UNEXPOSED_EXPR:'pose_refinement_'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'pose_refinement_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'pose_refinement_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'start'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "TYPE_REF:'std::string'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'ext'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "TYPE_REF:'std::string'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'dir'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'bf'",
+                                          "TYPE_REF:'class boost::filesystem::path'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'path'": {
+                                                                "children": [
+                                                                  {
+                                                                    "CALL_EXPR:'path'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'test_directory'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'files'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'rgb_exists'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'rgb_exists'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'rgb_exists'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'run'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'rgb_m'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'exists_m'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'heads'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "COMPOUND_STMT:''",
+                        {
+                          "UNEXPOSED_EXPR:'exists_m'": {
+                            "children": [
+                              "DECL_REF_EXPR:'exists_m'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "FUNCTION_DECL:'pose_file'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "PARM_DECL:''",
+                                          "TYPE_REF:'std::string'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'pose_mat'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'result'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'ea'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'trans_vector'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'center_point'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'cylinder_coeff'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'vec'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'matrixxx'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'result'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'result'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'SHOW_GT'": {
+                            "children": [
+                              "DECL_REF_EXPR:'SHOW_GT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "COMPOUND_STMT:''",
+                        {
+                          "UNEXPOSED_EXPR:'VIDEO'": {
+                            "children": [
+                              "DECL_REF_EXPR:'VIDEO'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:''",
+            "PARM_DECL:'fdrf'",
+            "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'boost/filesystem.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/face_detection/face_detection_apps_utils.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/recognition/face_detection/rf_face_detector_trainer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      {
+        "NAMESPACE_ALIAS:'bf'": {
+          "children": [
+            "NAMESPACE_REF:'boost'",
+            "NAMESPACE_REF:'filesystem'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'SHOW_GT'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'VIDEO'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      }
+    ]
+  }
+}

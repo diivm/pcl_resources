@@ -1,0 +1,252 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/buffers.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/io/impl/buffers.hpp'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'AverageBuffer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'AverageBuffer<T>'": {
+                            "children": [
+                              "PARM_DECL:'size'",
+                              "PARM_DECL:'window_size'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'Buffer<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'idx'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'push'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'data'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~AverageBuffer<T>'",
+                        "FIELD_DECL:'data_current_idx_'",
+                        "FIELD_DECL:'data_invalid_count_'",
+                        "FIELD_DECL:'data_mutex_'",
+                        "FIELD_DECL:'data_sum_'",
+                        "FIELD_DECL:'window_size_'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "USING_DECLARATION:'size_'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'Buffer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Buffer<T>'": {
+                            "children": [
+                              "PARM_DECL:'size'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              "PARM_DECL:'idx'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'push'": {
+                            "children": [
+                              "PARM_DECL:'data'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'size'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~Buffer<T>'",
+                        "FIELD_DECL:'size_'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "TYPE_ALIAS_DECL:'value_type'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'MedianBuffer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'MedianBuffer<T>'": {
+                            "children": [
+                              "PARM_DECL:'size'",
+                              "PARM_DECL:'window_size'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'Buffer<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compare'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'a'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'b'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'idx'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'push'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'data'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~MedianBuffer<T>'",
+                        "FIELD_DECL:'data_current_idx_'",
+                        "FIELD_DECL:'data_invalid_count_'",
+                        "FIELD_DECL:'data_mutex_'",
+                        "FIELD_DECL:'midpoint_'",
+                        "FIELD_DECL:'window_size_'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "USING_DECLARATION:'size_'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'SingleBuffer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'SingleBuffer<T>'": {
+                            "children": [
+                              "PARM_DECL:'size'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'Buffer<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'idx'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'push'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'data'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~SingleBuffer<T>'",
+                        "FIELD_DECL:'data_'",
+                        "FIELD_DECL:'data_mutex_'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "USING_DECLARATION:'size_'": {
+                            "children": [
+                              "TEMPLATE_REF:'Buffer'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

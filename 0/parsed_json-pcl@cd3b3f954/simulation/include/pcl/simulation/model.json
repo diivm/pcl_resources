@@ -1,0 +1,127 @@
+{
+  "TRANSLATION_UNIT:'/pcl/simulation/include/pcl/simulation/model.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'GL/gl.h'",
+      "INCLUSION_DIRECTIVE:'GL/glew.h'",
+      "INCLUSION_DIRECTIVE:'GL/glu.h'",
+      "INCLUSION_DIRECTIVE:'pcl/PolygonMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_config.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/simulation/glsl_shader.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'simulation'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'Model'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'draw'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'PCL_EXPORTS'",
+                  {
+                    "STRUCT_DECL:'Face'": {
+                      "children": [
+                        "FIELD_DECL:'count'",
+                        "FIELD_DECL:'index_offset'",
+                        "FIELD_DECL:'norm'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'SinglePoly'": {
+                      "children": [
+                        "FIELD_DECL:'colors_'",
+                        {
+                          "FIELD_DECL:'mode_'": {
+                            "children": [
+                              "TYPE_REF:'GLenum'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'nvertices_'": {
+                            "children": [
+                              "TYPE_REF:'GLuint'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'vertices_'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Vertex'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Vertex'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'Vertex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'pos'",
+                              "PARM_DECL:'rgb'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'pos'",
+                        "FIELD_DECL:'rgb'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'PointCloudModel'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::simulation::PCL_EXPORTS'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'PolygonMeshModel'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::simulation::PCL_EXPORTS'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'Quad'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::simulation::PCL_EXPORTS'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'TexturedQuad'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::simulation::PCL_EXPORTS'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'TriangleMeshModel'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::simulation::PCL_EXPORTS'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

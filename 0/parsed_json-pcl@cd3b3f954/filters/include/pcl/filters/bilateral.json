@@ -1,0 +1,191 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/bilateral.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'BilateralFilter'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'BilateralFilter<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'sigma_s_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computePointWeight'": {
+                      "children": [
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'pid'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getHalfSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sigma_s_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getStdDev'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sigma_r_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'kernel'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'sigma'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setHalfSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sigma_s_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sigma_s'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sigma_s'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sigma_s'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setStdDev'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sigma_r_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sigma_r'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sigma_r'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sigma_r'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'sigma_r_'",
+                  "FIELD_DECL:'sigma_s_'",
+                  "FIELD_DECL:'tree_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

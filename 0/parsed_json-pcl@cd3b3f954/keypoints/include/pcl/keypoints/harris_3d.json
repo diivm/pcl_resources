@@ -1,0 +1,288 @@
+{
+  "TRANSLATION_UNIT:'/pcl/keypoints/include/pcl/keypoints/harris_3d.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/impl/harris_3d.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/keypoint.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'HarrisKeypoint3D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'HarrisKeypoint3D<PointInT, PointOutT, NormalT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "MEMBER_REF:'method_'",
+                        "MEMBER_REF:'nonmax_'",
+                        "MEMBER_REF:'refine_'",
+                        "MEMBER_REF:'threads_'",
+                        "MEMBER_REF:'threshold_'",
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "DECL_REF_EXPR:'HARRIS'",
+                              "TYPE_REF:'enum pcl::HarrisKeypoint3D::ResponseMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'radius'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'threshold'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'method'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'threshold'": {
+                            "children": [
+                              "DECL_REF_EXPR:'threshold'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'calculateNormalCovar'": {
+                      "children": [
+                        "PARM_DECL:'coefficients'",
+                        "PARM_DECL:'neighbors'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'detectKeypoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'refineCorners'": {
+                      "children": [
+                        "PARM_DECL:'corners'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseCurvature'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseHarris'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseLowe'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseNoble'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseTomasi'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMethod'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'type'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::HarrisKeypoint3D::ResponseMethod'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNonMaxSupression'": {
+                      "children": [
+                        {
+                          "PARM_DECL:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNormals'": {
+                      "children": [
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'threads_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'nr_threads'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'nr_threads'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'nr_threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRadius'": {
+                      "children": [
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRefine'": {
+                      "children": [
+                        "PARM_DECL:'do_refine'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchSurface'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setThreshold'": {
+                      "children": [
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~HarrisKeypoint3D<PointInT, PointOutT, NormalT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'ResponseMethod'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'CURVATURE'",
+                        {
+                          "ENUM_CONSTANT_DECL:'HARRIS'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "ENUM_CONSTANT_DECL:'LOWE'",
+                        "ENUM_CONSTANT_DECL:'NOBLE'",
+                        "ENUM_CONSTANT_DECL:'TOMASI'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'method_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::HarrisKeypoint3D::ResponseMethod'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'nonmax_'",
+                  "FIELD_DECL:'normals_'",
+                  "FIELD_DECL:'refine_'",
+                  "FIELD_DECL:'threads_'",
+                  "FIELD_DECL:'threshold_'",
+                  "TEMPLATE_TYPE_PARAMETER:'NormalT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

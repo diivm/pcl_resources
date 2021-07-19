@@ -1,0 +1,307 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/pcd_grabber.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time_trigger.h'",
+      "INCLUSION_DIRECTIVE:'pcl/conversions.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/file_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_config.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "CLASS_TEMPLATE:'PCDGrabber'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'PCDGrabber<PointT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'frames_per_second'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'pcd_path'",
+                        {
+                          "PARM_DECL:'repeat'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'PCDGrabber<PointT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'frames_per_second'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'pcd_files'",
+                        {
+                          "PARM_DECL:'repeat'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'operator[]'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "NAMESPACE_REF:'pcl'",
+                        "PARM_DECL:'idx'",
+                        "TEMPLATE_REF:'PointCloud'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'publish'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'blob'",
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'orientation'",
+                        "PARM_DECL:'origin'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'size'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~PCDGrabber<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'file_name_signal_'",
+                  "FIELD_DECL:'signal_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'PointCloud'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CONSTRUCTOR:'PCDGrabber<PointT>'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'frames_per_second'",
+                  "PARM_DECL:'pcd_path'",
+                  "PARM_DECL:'repeat'",
+                  "TEMPLATE_REF:'PCDGrabber'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "CONSTRUCTOR:'PCDGrabber<PointT>'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'frames_per_second'",
+                  "PARM_DECL:'pcd_files'",
+                  "PARM_DECL:'repeat'",
+                  "TEMPLATE_REF:'PCDGrabber'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'operator[]'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'blob'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'origin'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'orientation'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'cloud'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'PointCloud'",
+                                    "TYPE_REF:'PointT'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                "NAMESPACE_REF:'pcl'",
+                                                "TEMPLATE_REF:'PointCloud'",
+                                                "TYPE_REF:'PointT'",
+                                                "UNEXPOSED_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'cloud'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "NAMESPACE_REF:'pcl'",
+                  "PARM_DECL:'idx'",
+                  "TEMPLATE_REF:'PCDGrabber'",
+                  "TEMPLATE_REF:'PointCloud'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_REF:'PointT'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'publish'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'cloud'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'PointCloud'",
+                                    "TYPE_REF:'PointT'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                "NAMESPACE_REF:'pcl'",
+                                                "TEMPLATE_REF:'PointCloud'",
+                                                "TYPE_REF:'PointT'",
+                                                "UNEXPOSED_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'blob'",
+                  "PARM_DECL:'file_name'",
+                  "PARM_DECL:'orientation'",
+                  "PARM_DECL:'origin'",
+                  "TEMPLATE_REF:'PCDGrabber'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'size'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "TEMPLATE_REF:'PCDGrabber'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'PCDGrabberBase'": {
+                "children": [
+                  "TYPE_REF:'class pcl::PCL_EXPORTS'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/fast_bilateral_omp.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/fast_bilateral.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_FastBilateralFilterOMP'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'FastBilateralFilterOMP'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'FastBilateralFilterOMP<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'setNumberOfThreads'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'nr_threads'",
+                                    "MEMBER_REF_EXPR:'setNumberOfThreads'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'nr_threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'nr_threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'threads_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

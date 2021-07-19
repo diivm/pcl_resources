@@ -1,0 +1,304 @@
+{
+  "TRANSLATION_UNIT:'/pcl/geometry/include/pcl/geometry/get_boundary.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "FUNCTION_TEMPLATE:'getBoundBoundaryHalfEdges'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'Mesh'": {
+                                        "children": [
+                                          "TYPE_REF:'MeshT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                                        "children": [
+                                          "TYPE_REF:'Mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'HalfEdgeIndices'": {
+                                        "children": [
+                                          "TYPE_REF:'Mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'IHEAFC'": {
+                                        "children": [
+                                          "TYPE_REF:'Mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'boundary_he'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeIndices'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'circ'": {
+                                        "children": [
+                                          "TYPE_REF:'IHEAFC'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'circ_end'": {
+                                        "children": [
+                                          "TYPE_REF:'IHEAFC'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'mesh'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "TYPE_REF:'HalfEdgeIndex'"
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'i'",
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'mesh'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            "DECL_REF_EXPR:'circ'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'circ'",
+                                                            "DECL_REF_EXPR:'circ_end'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'boundary_he'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DO_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'circ_end'",
+                                                                  {
+                                                                    "UNARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'circ'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CALL_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'circ'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'boundary_he'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "TYPE_REF:'HalfEdgeIndex'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'boundary_he_collection'",
+                        {
+                          "PARM_DECL:'expected_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

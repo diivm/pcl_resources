@@ -1,0 +1,157 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/boundary.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'BoundaryEstimation'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'BoundaryEstimation<PointInT, PointNT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getAngleThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'angle_threshold_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCoordinateSystemOnPlane'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'p_coeff_v'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_coeff'": {
+                            "children": [
+                              "TYPE_REF:'PointNT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isBoundaryPoint'": {
+                      "children": [
+                        "PARM_DECL:'angle_threshold'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'q_idx'",
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isBoundaryPoint'": {
+                      "children": [
+                        "PARM_DECL:'angle_threshold'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'q_point'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setAngleThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'angle_threshold_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'angle'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'angle'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'angle'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'angle_threshold_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

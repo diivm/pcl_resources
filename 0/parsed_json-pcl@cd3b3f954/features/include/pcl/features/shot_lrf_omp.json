@@ -1,0 +1,80 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/shot_lrf_omp.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/shot_lrf.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SHOTLocalReferenceFrameEstimationOMP'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SHOTLocalReferenceFrameEstimationOMP<PointInT, PointOutT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'setNumberOfThreads'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "MEMBER_REF_EXPR:'setNumberOfThreads'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'nr_threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SHOTLocalReferenceFrameEstimationOMP<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'threads_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

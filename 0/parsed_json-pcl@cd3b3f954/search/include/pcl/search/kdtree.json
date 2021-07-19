@@ -1,0 +1,251 @@
+{
+  "TRANSLATION_UNIT:'/pcl/search/include/pcl/search/kdtree.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree_flann.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_KdTree'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PointRepresentation'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'search'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'KdTree'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'KdTree<PointT, Tree>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'sorted'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'tree_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPointRepresentation'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'tree_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::search::KdTree::PointRepresentationConstPtr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEpsilon'": {
+                            "children": [
+                              "PARM_DECL:'eps'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'indices'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointRepresentation'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point_representation'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::search::KdTree::PointRepresentationConstPtr'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSortedResults'": {
+                            "children": [
+                              "PARM_DECL:'sorted_results'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~KdTree<PointT, Tree>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'tree_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::search::KdTree::KdTreePtr'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tree'",
+                        {
+                          "TYPE_ALIAS_DECL:'KdTreeConstPtr'": {
+                            "children": [
+                              "TYPE_REF:'Tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'KdTreePtr'": {
+                            "children": [
+                              "TYPE_REF:'Tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'PointRepresentationConstPtr'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointRepresentation'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

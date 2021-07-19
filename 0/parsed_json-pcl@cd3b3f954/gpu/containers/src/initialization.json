@@ -1,0 +1,170 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/containers/src/initialization.cpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'array'",
+      "INCLUSION_DIRECTIVE:'cstdio'",
+      "INCLUSION_DIRECTIVE:'cuda.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/initialization.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      "MACRO_DEFINITION:'HAVE_CUDA'",
+      "MACRO_INSTANTIATION:'HAVE_CUDA'",
+      "MACRO_INSTANTIATION:'__FILE__'",
+      "MACRO_INSTANTIATION:'__LINE__'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      {
+        "NAMESPACE:''": {
+          "children": [
+            {
+              "FUNCTION_DECL:'convertSMVer2Cores'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'printf'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "STRING_LITERAL:'\"\\nCan't determine number of cores. Unknown SM version %d.%d!\\n\"'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'major'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'major'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'minor'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'minor'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'printf'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'printf'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'SMtoCores'": {
+                                  "children": [
+                                    "FIELD_DECL:'Cores'",
+                                    "FIELD_DECL:'SM'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'gpuArchCoresPerSM'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TEMPLATE_REF:'array'",
+                                    "TYPE_REF:'struct SMtoCores'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'major'",
+                  "PARM_DECL:'minor'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'getCudaAttribute'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'attribute'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'error'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "RETURN_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'attribute'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'device'",
+                  "PARM_DECL:'device_attribute'",
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

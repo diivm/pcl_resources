@@ -1,0 +1,262 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/segmentation/include/pcl/gpu/segmentation/gpu_extract_labeled_clusters.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PointIndices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/octree/octree.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'EuclideanLabeledClusterExtraction'": {
+                      "children": [
+                        "CONSTRUCTOR:'EuclideanLabeledClusterExtraction<PointT>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'extract'": {
+                            "children": [
+                              "PARM_DECL:'clusters'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getClassName'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getClusterTolerance'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cluster_tolerance_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMaxClusterSize'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMinClusterSize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'min_pts_per_cluster_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSearchMethod'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setClusterTolerance'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'cluster_tolerance_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'tolerance'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'tolerance'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'tolerance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setHostCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'host_cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInput'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'input'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMaxClusterSize'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'max_cluster_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMinClusterSize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_pts_per_cluster_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'min_cluster_size'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min_cluster_size'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'min_cluster_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSearchMethod'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'cluster_tolerance_'": {
+                            "children": [
+                              {
+                                "INIT_LIST_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'host_cloud_'",
+                        "FIELD_DECL:'input_'",
+                        "FIELD_DECL:'max_pts_per_cluster_'",
+                        {
+                          "FIELD_DECL:'min_pts_per_cluster_'": {
+                            "children": [
+                              {
+                                "INIT_LIST_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tree_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'compareLabeledPointClusters'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'extractLabeledEuclideanClusters'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

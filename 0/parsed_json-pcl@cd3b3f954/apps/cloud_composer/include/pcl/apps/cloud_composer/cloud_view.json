@@ -1,0 +1,255 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/cloud_view.h'": {
+    "children": [
+      "CLASS_DECL:'QItemSelection'",
+      "CLASS_DECL:'QStandardItem'",
+      "INCLUSION_DIRECTIVE:'QWidget'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/point_selectors/interactor_style_switch.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/qvtk_compatibility.h'",
+      "INCLUSION_DIRECTIVE:'vtkAxesActor.h'",
+      "INCLUSION_DIRECTIVE:'vtkEventQtSlotConnect.h'",
+      "INCLUSION_DIRECTIVE:'vtkOrientationMarkerWidget.h'",
+      "INCLUSION_DIRECTIVE:'vtkSmartPointer.h'",
+      "INCLUSION_DIRECTIVE:'vtkVersion.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'CloudView'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CloudView'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'to_copy'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudView'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'CloudView'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'addOrientationMarkerWidgetAxes'",
+                        "CXX_METHOD:'connectSignalsAndSlots'",
+                        {
+                          "CXX_METHOD:'dataChanged'": {
+                            "children": [
+                              "PARM_DECL:'bottomRight'",
+                              "PARM_DECL:'topLeft'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getModel'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'model_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'model_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPCLVisualizer'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getQVTK'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initializeInteractorSwitch'",
+                        {
+                          "CXX_METHOD:'manipulationCompleted'": {
+                            "children": [
+                              "PARM_DECL:'call_data'",
+                              "PARM_DECL:'caller'",
+                              "PARM_DECL:'client_data'",
+                              "PARM_DECL:'event_id'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'paintEvent'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'event'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'removeOrientationMarkerWidgetAxes'",
+                        {
+                          "CXX_METHOD:'resizeEvent'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'event'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'rowsAboutToBeRemoved'": {
+                            "children": [
+                              "PARM_DECL:'end'",
+                              "PARM_DECL:'parent'",
+                              "PARM_DECL:'start'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'rowsInserted'": {
+                            "children": [
+                              "PARM_DECL:'end'",
+                              "PARM_DECL:'parent'",
+                              "PARM_DECL:'start'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectedItemChanged'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'deselected'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'selected'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectionCompleted'": {
+                            "children": [
+                              "PARM_DECL:'call_data'",
+                              "PARM_DECL:'caller'",
+                              "PARM_DECL:'client_data'",
+                              "PARM_DECL:'event_id'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setAxisVisibility'": {
+                            "children": [
+                              "PARM_DECL:'visible'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInteractorStyle'": {
+                            "children": [
+                              "PARM_DECL:'style'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'new_model'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:'axes_'",
+                        "FIELD_DECL:'axes_widget_'",
+                        "FIELD_DECL:'connections_'",
+                        {
+                          "FIELD_DECL:'model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'qvtk_'",
+                        "FIELD_DECL:'style_switch_'",
+                        "FIELD_DECL:'vis_'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'ProjectModel'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'CloudView'": {
+          "children": [
+            "NAMESPACE_REF:'cloud_composer'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      }
+    ]
+  }
+}

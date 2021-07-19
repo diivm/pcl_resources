@@ -1,0 +1,257 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/on_nurbs/fitting_surface_im.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_data.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_solve.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_tools.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'on_nurbs'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'FittingSurfaceIM'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addCageBoundaryRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'side'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addCageCornerRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addCageInteriorRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointConstraint'": {
+                            "children": [
+                              "PARM_DECL:'params'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'",
+                              "PARM_DECL:'z'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assemble'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'inverse_mapping'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'computeIndexBoundingBox'",
+                        "CXX_METHOD:'computeMean'",
+                        "CXX_METHOD:'findClosestElementMidPoint'",
+                        "CXX_METHOD:'getElementVector'",
+                        {
+                          "CXX_METHOD:'gl2gc'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'A'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'gl2gr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'A'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'grc2gl'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'I'",
+                              "PARM_DECL:'J'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'initSurface'": {
+                            "children": [
+                              "PARM_DECL:'bb'",
+                              "PARM_DECL:'order'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'inverseMapping'",
+                        {
+                          "CXX_METHOD:'lrc2gl'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'grc2gl'": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'E'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'E'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'i'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'i'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'F'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'F'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'j'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'grc2gl'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'E'",
+                              "PARM_DECL:'F'",
+                              "PARM_DECL:'i'",
+                              "PARM_DECL:'j'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'refine'",
+                        {
+                          "CXX_METHOD:'setCamera'": {
+                            "children": [
+                              "PARM_DECL:'i'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCamera'": {
+                            "children": [
+                              "PARM_DECL:'i'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setIndices'": {
+                            "children": [
+                              "PARM_DECL:'_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'solve'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'damp'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'updateSurf'": {
+                            "children": [
+                              "PARM_DECL:'damp'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'ON_NurbsSurface'",
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'m_bb'",
+                        "FIELD_DECL:'m_cps_px'",
+                        "FIELD_DECL:'m_indices'",
+                        "FIELD_DECL:'m_intrinsic'",
+                        "FIELD_DECL:'m_nurbs'",
+                        "FIELD_DECL:'m_quiet'",
+                        "FIELD_DECL:'m_solver'",
+                        {
+                          "STRUCT_DECL:'Parameter'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Parameter'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "FLOATING_LITERAL:''",
+                                    "MEMBER_REF:'smoothness'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'smoothness'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

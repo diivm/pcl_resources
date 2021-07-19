@@ -1,0 +1,161 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/cuda_async_copy.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "USING_DECLARATION:'AsyncCopy'": {
+                      "children": [
+                        "NAMESPACE_REF:'gpu'",
+                        "NAMESPACE_REF:'pcl'",
+                        "OVERLOADED_DECL_REF:'AsyncCopy'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'AsyncCopy'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'AsyncCopy<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'ptr_'",
+                              {
+                                "PARM_DECL:'ptr'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'size'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ptr'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'AsyncCopy<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'data'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'download'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'arr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'download'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'arr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'upload'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'arr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'upload'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'arr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'waitForCompeltion'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~AsyncCopy<T>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'cudaHostUnregister'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'ptr_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'cudaSafeCall'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'ptr_'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'stream_'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

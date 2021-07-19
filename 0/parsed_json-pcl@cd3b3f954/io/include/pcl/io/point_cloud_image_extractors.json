@@ -1,0 +1,835 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/point_cloud_image_extractors.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PCLImage.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/impl/point_cloud_image_extractors.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractor'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_NULL_PTR_LITERAL_EXPR:''",
+                              "MEMBER_REF:'paint_nans_with_black_'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'extract'": {
+                            "children": [
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'image'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractImpl'": {
+                            "children": [
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'image'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPaintNaNsWithBlack'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'paint_nans_with_black_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'flag'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'flag'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'flag'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'paint_nans_with_black_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromCurvatureField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromCurvatureField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'scaling_method'": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromCurvatureField::ScalingMethod'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_method'",
+                                    "STRING_LITERAL:'\"curvature\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromCurvatureField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'scaling_factor'",
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_factor'",
+                                    "STRING_LITERAL:'\"curvature\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromCurvatureField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'ScalingMethod'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'field_name_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_factor_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_method_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromIntensityField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromIntensityField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'scaling_method'": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromIntensityField::ScalingMethod'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_method'",
+                                    "STRING_LITERAL:'\"intensity\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromIntensityField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'scaling_factor'",
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_factor'",
+                                    "STRING_LITERAL:'\"intensity\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromIntensityField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'ScalingMethod'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'field_name_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_factor_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_method_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromLabelField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromLabelField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'color_mode_'",
+                              {
+                                "PARM_DECL:'color_mode'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'COLORS_MONO'",
+                                    "TYPE_REF:'enum pcl::io::PointCloudImageExtractorFromLabelField::ColorMode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'color_mode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractImpl'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'cloud'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromLabelField::PointCloud'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'img'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setColorMode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'color_mode'",
+                                          "MEMBER_REF_EXPR:'color_mode_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'color_mode'": {
+                                  "children": [
+                                    "TYPE_REF:'enum pcl::io::PointCloudImageExtractorFromLabelField::ColorMode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromLabelField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:'ColorMode'": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'COLORS_MONO'",
+                              "ENUM_CONSTANT_DECL:'COLORS_RGB_GLASBEY'",
+                              "ENUM_CONSTANT_DECL:'COLORS_RGB_RANDOM'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'color_mode_'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::io::PointCloudImageExtractorFromLabelField::ColorMode'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'paint_nans_with_black_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromNormalField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromNormalField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractImpl'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'cloud'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromNormalField::PointCloud'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'img'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromNormalField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromRGBField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromRGBField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractImpl'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'cloud'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromRGBField::PointCloud'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'img'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromRGBField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorFromZField'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromZField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'scaling_factor'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_factor'",
+                                    "STRING_LITERAL:'\"z\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorFromZField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'scaling_method'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorFromZField::ScalingMethod'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_method'",
+                                    "STRING_LITERAL:'\"z\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorFromZField<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'ScalingMethod'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'field_name_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_factor_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'scaling_method_'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractorWithScaling'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PointCloudImageExtractorWithScaling'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "FLOATING_LITERAL:''",
+                              "MEMBER_REF:'scaling_factor_'",
+                              "MEMBER_REF:'scaling_method_'",
+                              "PARM_DECL:'field_name'",
+                              {
+                                "PARM_DECL:'scaling_method'": {
+                                  "children": [
+                                    "TYPE_REF:'enum pcl::io::PointCloudImageExtractorWithScaling::ScalingMethod'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_method'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'scaling_factor_'",
+                              "MEMBER_REF:'scaling_method_'",
+                              "PARM_DECL:'field_name'",
+                              "PARM_DECL:'scaling_factor'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'SCALING_FIXED_FACTOR'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'scaling_factor'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'scaling_factor'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'PointCloudImageExtractor<PointT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractImpl'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'cloud'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::io::PointCloudImageExtractorWithScaling::PointCloud'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'image'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setScalingFactor'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'scaling_factor_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'scaling_factor'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'scaling_factor'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'scaling_factor'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setScalingMethod'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'scaling_method'",
+                                          "MEMBER_REF_EXPR:'scaling_method_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'scaling_method'": {
+                                  "children": [
+                                    "TYPE_REF:'enum pcl::io::PointCloudImageExtractorWithScaling::ScalingMethod'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCloudImageExtractorWithScaling<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:'ScalingMethod'": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'SCALING_FIXED_FACTOR'",
+                              "ENUM_CONSTANT_DECL:'SCALING_FULL_RANGE'",
+                              "ENUM_CONSTANT_DECL:'SCALING_NO'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'field_name_'",
+                        "FIELD_DECL:'scaling_factor_'",
+                        {
+                          "FIELD_DECL:'scaling_method_'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::io::PointCloudImageExtractorWithScaling::ScalingMethod'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'PointCloud'": {
+                            "children": [
+                              "TEMPLATE_REF:'PointCloudImageExtractor'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

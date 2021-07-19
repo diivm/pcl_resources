@@ -1,0 +1,268 @@
+{
+  "TRANSLATION_UNIT:'/pcl/segmentation/include/pcl/segmentation/region_3d.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Region3D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'Region3D<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'count_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'Region3D<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'centroid_'",
+                        "MEMBER_REF:'count_'",
+                        "MEMBER_REF:'covariance_'",
+                        {
+                          "PARM_DECL:'centroid'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'count'",
+                        {
+                          "PARM_DECL:'covariance'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'centroid'": {
+                            "children": [
+                              "DECL_REF_EXPR:'centroid'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'count'": {
+                            "children": [
+                              "DECL_REF_EXPR:'count'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'covariance'": {
+                            "children": [
+                              "DECL_REF_EXPR:'covariance'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'getCentroid'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'centroid_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCount'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'count_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCovariance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'covariance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Matrix3f'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCurvature'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'curvature_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setCurvature'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'curvature_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'curvature'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'curvature'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'curvature'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~Region3D<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'centroid_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'count_'",
+                  {
+                    "FIELD_DECL:'covariance_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Matrix3f'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'curvature_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

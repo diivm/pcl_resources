@@ -1,0 +1,224 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/utils/include/pcl/gpu/utils/timers_cuda.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cstdio'",
+      "INCLUSION_DIRECTIVE:'cuda_runtime_api.h'",
+      "MACRO_DEFINITION:'_PCL_CUDA_TIMERS_HPP_'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "STRUCT_DECL:'ScopeTimer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ScopeTimer'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'name'",
+                              "PARM_DECL:'name_'",
+                              {
+                                "UNEXPOSED_EXPR:'name_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'name_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~ScopeTimer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'printf'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "STRING_LITERAL:'\"Time(%s) = %fms\\n\"'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'elapsed_time'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'elapsed_time'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'elapsed_time'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'name'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'name'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'printf'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'printf'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'elapsed_time'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'name'",
+                        "FIELD_DECL:'start'",
+                        "FIELD_DECL:'stop'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Timer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Timer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'start'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'start'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'runTimer'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'runTimer'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'runTimer'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'start'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'stop'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'struct pcl::gpu::Timer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'time'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'elapsed_time'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'elapsed_time'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'elapsed_time'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~Timer'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'start_'",
+                        "FIELD_DECL:'stop_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

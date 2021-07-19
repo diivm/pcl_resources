@@ -1,0 +1,596 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/correspondence_estimation.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/correspondence_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/correspondence_estimation.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/search/kdtree.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'registration'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'CorrespondenceEstimation'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CorrespondenceEstimation<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'corr_name_'"
+                                              ]
+                                            }
+                                          },
+                                          "STRING_LITERAL:'\"CorrespondenceEstimation\"'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'CorrespondenceEstimationBase<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'clone'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'copy'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''",
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'determineCorrespondences'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'correspondences'",
+                              {
+                                "PARM_DECL:'max_distance'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'determineReciprocalCorrespondences'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'correspondences'",
+                              {
+                                "PARM_DECL:'max_distance'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~CorrespondenceEstimation<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTarget'",
+                        "TEMPLATE_TYPE_PARAMETER:'Scalar'",
+                        {
+                          "USING_DECLARATION:'corr_name_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'getClassName'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'indices_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'initCompute'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'initComputeReciprocal'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'input_fields_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'input_transformed_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'point_representation_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'target_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'target_indices_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'tree_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'tree_reciprocal_'": {
+                            "children": [
+                              "TEMPLATE_REF:'CorrespondenceEstimationBase'",
+                              "TYPE_REF:'PointSource'",
+                              "TYPE_REF:'PointTarget'",
+                              "TYPE_REF:'Scalar'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'CorrespondenceEstimationBase'": {
+                      "children": [
+                        "CONSTRUCTOR:'CorrespondenceEstimationBase<PointSource, PointTarget, Scalar>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'clone'",
+                        {
+                          "CXX_METHOD:'determineCorrespondences'": {
+                            "children": [
+                              "PARM_DECL:'correspondences'",
+                              {
+                                "PARM_DECL:'max_distance'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'determineReciprocalCorrespondences'": {
+                            "children": [
+                              "PARM_DECL:'correspondences'",
+                              {
+                                "PARM_DECL:'max_distance'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getClassName'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndicesSource'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndicesTarget'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInputSource'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInputTarget'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSearchMethodSource'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSearchMethodTarget'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initCompute'",
+                        "CXX_METHOD:'initComputeReciprocal'",
+                        {
+                          "CXX_METHOD:'requiresSourceNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'requiresTargetNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setIndicesSource'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setIndicesTarget'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'target_cloud_updated_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputSource'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'source_cloud_updated_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputTarget'": {
+                            "children": [
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointRepresentation'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'point_representation'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSearchMethodSource'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'force_no_recompute_reciprocal_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'force_no_recompute'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'force_no_recompute'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'source_cloud_updated_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'force_no_recompute'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSearchMethodTarget'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'force_no_recompute_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'force_no_recompute'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'force_no_recompute'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'target_cloud_updated_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'force_no_recompute'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSourceNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTargetNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~CorrespondenceEstimationBase<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'corr_name_'",
+                        "FIELD_DECL:'force_no_recompute_'",
+                        "FIELD_DECL:'force_no_recompute_reciprocal_'",
+                        "FIELD_DECL:'input_fields_'",
+                        "FIELD_DECL:'input_transformed_'",
+                        "FIELD_DECL:'point_representation_'",
+                        "FIELD_DECL:'source_cloud_updated_'",
+                        "FIELD_DECL:'target_'",
+                        "FIELD_DECL:'target_cloud_updated_'",
+                        "FIELD_DECL:'target_indices_'",
+                        "FIELD_DECL:'tree_'",
+                        "FIELD_DECL:'tree_reciprocal_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTarget'",
+                        "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

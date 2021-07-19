@@ -1,0 +1,284 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/common/include/pcl/cuda/time_cpu.h'": {
+    "children": [
+      {
+        "CONSTRUCTOR:'ScopeTimeCPU'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'getTime'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'getTime'": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:'getTime'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'cuda'",
+                                          "NAMESPACE_REF:'pcl'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "MEMBER_REF_EXPR:'start_time_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'cuda'",
+            "NAMESPACE_REF:'pcl'",
+            "PARM_DECL:'title'",
+            "TYPE_REF:'class pcl::cuda::ScopeTimeCPU'"
+          ]
+        }
+      },
+      {
+        "DESTRUCTOR:'~ScopeTimeCPU'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'end_time'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'getTime'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'getTime'": {
+                                        "children": [
+                                          {
+                                            "DECL_REF_EXPR:'getTime'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'cuda'",
+                                                "NAMESPACE_REF:'pcl'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'duration'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'end_time'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'end_time'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'start_time_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'start_time_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'cuda'",
+            "NAMESPACE_REF:'pcl'",
+            "TYPE_REF:'class pcl::cuda::ScopeTimeCPU'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'getTime'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'gettimeofday'": {
+                      "children": [
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'current_time'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "CXX_THIS_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'gettimeofday'": {
+                            "children": [
+                              "DECL_REF_EXPR:'gettimeofday'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'current_time'": {
+                            "children": [
+                              "CALL_EXPR:'timeval'",
+                              "TYPE_REF:'struct timeval'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'tv_usec'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'tv_usec'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'tv_usec'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'current_time'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'tv_sec'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'tv_sec'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:'tv_sec'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'current_time'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'cuda'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'cmath'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'sys/time.h'",
+      "MACRO_DEFINITION:'DO_EVERY'",
+      "MACRO_DEFINITION:'DO_EVERY_TS'",
+      "MACRO_DEFINITION:'MEASURE_FUNCTION_TIME'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'ScopeTimeCPU'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ScopeTimeCPU'": {
+                            "children": [
+                              "PARM_DECL:'title'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "DESTRUCTOR:'~ScopeTimeCPU'",
+                        "FIELD_DECL:'start_time_'",
+                        "FIELD_DECL:'title_'"
+                      ]
+                    }
+                  },
+                  "FUNCTION_DECL:'getTime'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

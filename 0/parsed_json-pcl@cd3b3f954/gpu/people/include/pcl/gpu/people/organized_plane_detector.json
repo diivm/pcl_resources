@@ -1,0 +1,386 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/include/pcl/gpu/people/organized_plane_detector.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/integral_image_normal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/label_common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/organized_multi_plane_segmentation.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "NAMESPACE:'people'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'OrganizedPlaneDetector'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'OrganizedPlaneDetector'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'cols'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'rows'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'allocate_buffers'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'cols'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'rows'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'copyAndClearHostLabelProbability'": {
+                                  "children": [
+                                    "PARM_DECL:'dst'",
+                                    "PARM_DECL:'src'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'copyHostLabelProbability'": {
+                                  "children": [
+                                    "PARM_DECL:'dst'",
+                                    "PARM_DECL:'src'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'emptyHostLabelProbability'": {
+                                  "children": [
+                                    "PARM_DECL:'histogram'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getMpsAngularThreshold'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'mps_AngularThreshold_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mps_AngularThreshold_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getMpsDistanceThreshold'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'mps_DistanceThreshold_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mps_DistanceThreshold_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getMpsMinInliers'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'mps_MinInliers_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mps_MinInliers_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNeMaxDepthChangeFactor'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'ne_MaxDepthChangeFactor_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'ne_MaxDepthChangeFactor_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNeNormalSmoothingSize'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'ne_NormalSmoothingSize_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'ne_NormalSmoothingSize_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'process'": {
+                                  "children": [
+                                    "PARM_DECL:'cloud'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setMpsAngularThreshold'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'mps_AngularThreshold_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'mpsAngularThreshold'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'mpsAngularThreshold'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'mpsAngularThreshold'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setMpsDistanceThreshold'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'mps_DistanceThreshold_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'mpsDistanceThreshold'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'mpsDistanceThreshold'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'mpsDistanceThreshold'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setMpsMinInliers'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'mps_MinInliers_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'mpsMinInliers'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'mpsMinInliers'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'mpsMinInliers'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeMaxDepthChangeFactor'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'ne_MaxDepthChangeFactor_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'neMaxDepthChangeFactor'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'neMaxDepthChangeFactor'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'neMaxDepthChangeFactor'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeNormalSmoothingSize'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'ne_NormalSmoothingSize_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'neNormalSmoothingSize'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'neNormalSmoothingSize'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'neNormalSmoothingSize'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'P_l_dev_'",
+                              "FIELD_DECL:'P_l_dev_prev_'",
+                              "FIELD_DECL:'P_l_host_'",
+                              "FIELD_DECL:'P_l_host_prev_'",
+                              "FIELD_DECL:'mps_'",
+                              "FIELD_DECL:'mps_AngularThreshold_'",
+                              "FIELD_DECL:'mps_DistanceThreshold_'",
+                              "FIELD_DECL:'mps_MinInliers_'",
+                              "FIELD_DECL:'mps_use_planar_refinement_'",
+                              "FIELD_DECL:'ne_'",
+                              "FIELD_DECL:'ne_MaxDepthChangeFactor_'",
+                              "FIELD_DECL:'ne_NormalSmoothingSize_'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

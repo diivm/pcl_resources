@@ -1,0 +1,221 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/box_clipper3D.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'clipper3D.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/impl/box_clipper3D.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'BoxClipper3D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'BoxClipper3D<PointT>'": {
+                      "children": [
+                        "PARM_DECL:'transformation'"
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'BoxClipper3D<PointT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'box_size'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'rodrigues'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'translation'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_BASE_SPECIFIER:'Clipper3D<PointT>'": {
+                      "children": [
+                        "TEMPLATE_REF:'Clipper3D'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipLineSegment3D'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        {
+                          "PARM_DECL:'from'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'to'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'clipped_polygon'",
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPoint3D'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPointCloud3D'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'clipped'",
+                        "PARM_DECL:'cloud_in'",
+                        {
+                          "PARM_DECL:'indices'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clone'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "TEMPLATE_REF:'Clipper3D'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistance'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTransformation'": {
+                      "children": [
+                        "PARM_DECL:'transformation'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTransformation'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'box_size'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'rodrigues'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'translation'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'transformPoint'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'pointIn'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'pointOut'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~BoxClipper3D<PointT>'",
+                  "FIELD_DECL:'transformation_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

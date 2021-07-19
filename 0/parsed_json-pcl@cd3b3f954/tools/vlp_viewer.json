@@ -1,0 +1,282 @@
+{
+  "TRANSLATION_UNIT:'/pcl/tools/vlp_viewer.cpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'SimpleVLPViewer'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'SimpleVLPViewer<PointType>'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'grabber'",
+                  "PARM_DECL:'handler'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'cloud_callback'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'lock'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "NAMESPACE_REF:'std'",
+                                    "TEMPLATE_REF:'lock_guard'",
+                                    "TYPE_REF:'class std::mutex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DO_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'keyboard_callback'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:''",
+                  "PARM_DECL:'event'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'run'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'cloud_cb'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "PARM_DECL:''",
+                                    "TEMPLATE_REF:'function'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'cloud_connection'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'cloud_'",
+            {
+              "FIELD_DECL:'cloud_mutex_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'class std::mutex'"
+                ]
+              }
+            },
+            "FIELD_DECL:'cloud_viewer_'",
+            "FIELD_DECL:'grabber_'",
+            "FIELD_DECL:'handler_'",
+            {
+              "FIELD_DECL:'image_mutex_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'class std::mutex'"
+                ]
+              }
+            },
+            "FIELD_DECL:'image_viewer_'",
+            "TEMPLATE_TYPE_PARAMETER:'PointType'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pcapFile'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'grabber'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'color_handler'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'usage'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'argv'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'argv'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'usage'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'usage'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'usage'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  "RETURN_STMT:''"
+                ]
+              }
+            },
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'boost/algorithm/string.hpp'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/hdl_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/vlp_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/cloud_viewer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/image_viewer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/point_cloud_color_handlers.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "MACRO_DEFINITION:'FPS_CALC'",
+      "MACRO_DEFINITION:'SHOW_FPS'",
+      "MACRO_INSTANTIATION:'FPS_CALC'",
+      "MACRO_INSTANTIATION:'FPS_CALC'",
+      "MACRO_INSTANTIATION:'SHOW_FPS'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      }
+    ]
+  }
+}

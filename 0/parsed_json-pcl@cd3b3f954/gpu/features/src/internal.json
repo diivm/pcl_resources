@@ -1,0 +1,403 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/features/src/internal.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cuda_runtime.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/octree/device_format.hpp'",
+      "MACRO_DEFINITION:'PCL_GPU_FEATURES_INTERNAL_HPP_'",
+      "MACRO_DEFINITION:'PI'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Histogram'": {
+                      "children": [
+                        {
+                          "FIELD_DECL:'histogram'": {
+                            "children": [
+                              "DECL_REF_EXPR:'N'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'N'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeFPFH'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'features'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'spfh'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeFPFH'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'features'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'lookup'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'spfh'",
+                        "PARM_DECL:'surface'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeMask'": {
+                      "children": [
+                        "PARM_DECL:'mask'",
+                        "PARM_DECL:'min_neighb'",
+                        "PARM_DECL:'neighbours'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeNormals'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'nn_indices'",
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePPF'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePPFRGB'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePPFRGBRegion'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'nn_indices'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePfh125'": {
+                      "children": [
+                        "PARM_DECL:'data_rpk'",
+                        "PARM_DECL:'features'",
+                        "PARM_DECL:'max_elems_rpk'",
+                        "PARM_DECL:'neighbours'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePfhRgb250'": {
+                      "children": [
+                        "PARM_DECL:'data_rpk'",
+                        "PARM_DECL:'features'",
+                        "PARM_DECL:'max_elems_rpk'",
+                        "PARM_DECL:'neighbours'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computePointPrincipalCurvatures'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'proj_normals_buf'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeSPFH'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'spfh33'",
+                        "PARM_DECL:'surface'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeSpinImagesCustomAxes'": {
+                      "children": [
+                        "PARM_DECL:'angular'",
+                        "PARM_DECL:'bin_size'",
+                        "PARM_DECL:'image_width'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'input_cloud'",
+                        "PARM_DECL:'input_normals'",
+                        "PARM_DECL:'min_neighb'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'radial'",
+                        "PARM_DECL:'rotation_axis'",
+                        "PARM_DECL:'support_angle_cos'",
+                        "PARM_DECL:'surface'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeSpinImagesCustomAxesCloud'": {
+                      "children": [
+                        "PARM_DECL:'angular'",
+                        "PARM_DECL:'bin_size'",
+                        "PARM_DECL:'image_width'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'input_cloud'",
+                        "PARM_DECL:'input_normals'",
+                        "PARM_DECL:'min_neighb'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'radial'",
+                        "PARM_DECL:'rotation_axes_cloud'",
+                        "PARM_DECL:'support_angle_cos'",
+                        "PARM_DECL:'surface'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeSpinImagesOrigigNormal'": {
+                      "children": [
+                        "PARM_DECL:'angular'",
+                        "PARM_DECL:'bin_size'",
+                        "PARM_DECL:'image_width'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'input_cloud'",
+                        "PARM_DECL:'input_normals'",
+                        "PARM_DECL:'min_neighb'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'radial'",
+                        "PARM_DECL:'support_angle_cos'",
+                        "PARM_DECL:'surface'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeUniqueIndices'": {
+                      "children": [
+                        "PARM_DECL:'lookup'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'surface_size'",
+                        "PARM_DECL:'unique_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'flipNormalTowardsViewpoint'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'vp'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'flipNormalTowardsViewpoint'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'normals'",
+                        "PARM_DECL:'vp'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'repackToAosForPfh'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'data_rpk'",
+                        "PARM_DECL:'max_elems_rpk'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'repackToAosForPfhRgb'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'data_rpk'",
+                        "PARM_DECL:'max_elems_rpk'",
+                        "PARM_DECL:'neighbours'",
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'compute3DCentroid'": {
+                      "children": [
+                        "PARM_DECL:'centroid'",
+                        "PARM_DECL:'cloud'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'compute3DCentroid'": {
+                      "children": [
+                        "PARM_DECL:'centroid'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'getMaxDistance'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'getMaxDistance'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'PPFRGBSignature'": {
+                      "children": [
+                        "FIELD_DECL:'alpha_m'",
+                        "FIELD_DECL:'b_ratio'",
+                        "FIELD_DECL:'f1'",
+                        "FIELD_DECL:'f2'",
+                        "FIELD_DECL:'f3'",
+                        "FIELD_DECL:'f4'",
+                        "FIELD_DECL:'g_ratio'",
+                        "FIELD_DECL:'r_ratio'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'PPFSignature'": {
+                      "children": [
+                        "FIELD_DECL:'alpha_m'",
+                        "FIELD_DECL:'f1'",
+                        "FIELD_DECL:'f2'",
+                        "FIELD_DECL:'f3'",
+                        "FIELD_DECL:'f4'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'PrincipalCurvatures'": {
+                      "children": [
+                        "FIELD_DECL:'pc1'",
+                        "FIELD_DECL:'pc2'",
+                        {
+                          "UNION_DECL:''": {
+                            "children": [
+                              {
+                                "FIELD_DECL:'principal_curvature'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:''": {
+                                  "children": [
+                                    "FIELD_DECL:'principal_curvature_x'",
+                                    "FIELD_DECL:'principal_curvature_y'",
+                                    "FIELD_DECL:'principal_curvature_z'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'VFHEstimationImpl'": {
+                      "children": [
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "PARM_DECL:'feature'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'indices'",
+                        "FIELD_DECL:'normal_centroid'",
+                        "FIELD_DECL:'normalize_bins'",
+                        "FIELD_DECL:'normalize_distances'",
+                        "FIELD_DECL:'normals'",
+                        "FIELD_DECL:'points'",
+                        "FIELD_DECL:'size_component'",
+                        "FIELD_DECL:'viewpoint'",
+                        "FIELD_DECL:'xyz_centroid'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'FPFHSignature33'": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "TEMPLATE_REF:'Histogram'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'PFHRGBSignature250'": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "TEMPLATE_REF:'Histogram'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'PFHSignature125'": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "TEMPLATE_REF:'Histogram'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'VFHSignature308'": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "TEMPLATE_REF:'Histogram'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

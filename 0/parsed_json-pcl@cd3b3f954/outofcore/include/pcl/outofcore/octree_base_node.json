@@ -1,0 +1,879 @@
+{
+  "TRANSLATION_UNIT:'/pcl/outofcore/include/pcl/outofcore/octree_base_node.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_nodes.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/boost.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/octree_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/octree_disk_container.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/outofcore_node_data.h'",
+      "INCLUSION_DIRECTIVE:'random'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'outofcore'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OutofcoreOctreeBase'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OutofcoreOctreeBaseNode'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OutofcoreOctreeBaseNode'": {
+                      "children": [
+                        "CONSTRUCTOR:'OutofcoreOctreeBaseNode<ContainerT, PointT>'",
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBaseNode<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'bb_max'",
+                              "PARM_DECL:'bb_min'",
+                              "PARM_DECL:'root_name'",
+                              {
+                                "PARM_DECL:'tree'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'OutofcoreOctreeBase'",
+                                    "TYPE_REF:'ContainerT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBaseNode<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'directory_path'",
+                              "PARM_DECL:'load_all'",
+                              {
+                                "PARM_DECL:'super'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                                    "TYPE_REF:'ContainerT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBaseNode<ContainerT, PointT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBaseNode<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'bb_max'",
+                              "PARM_DECL:'bb_min'",
+                              "PARM_DECL:'dir'",
+                              {
+                                "PARM_DECL:'super'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                                    "TYPE_REF:'ContainerT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'addDataAtMaxDepth'",
+                        "CXX_METHOD:'addDataAtMaxDepth'",
+                        "CXX_METHOD:'addDataToLeaf'",
+                        "CXX_METHOD:'addDataToLeaf'",
+                        "CXX_METHOD:'addDataToLeaf_and_genLOD'",
+                        "CXX_METHOD:'addPointCloud'",
+                        "CXX_METHOD:'addPointCloud_and_genLOD'",
+                        {
+                          "CXX_METHOD:'clearData'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'convertToXYZRecursive'",
+                        {
+                          "CXX_METHOD:'copyAllCurrentAndChildPointsRec'": {
+                            "children": [
+                              "PARM_DECL:'v'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'copyAllCurrentAndChildPointsRec_sub'": {
+                            "children": [
+                              "PARM_DECL:'percent'",
+                              "PARM_DECL:'v'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'countNumChildren'",
+                        "CXX_METHOD:'countNumLoadedChildren'",
+                        {
+                          "CXX_METHOD:'createChild'": {
+                            "children": [
+                              "PARM_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deepCopy'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'res'": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'res'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''",
+                              "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'enlargeToCube'": {
+                            "children": [
+                              "PARM_DECL:'bb_max'",
+                              "PARM_DECL:'bb_min'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'flushToDiskRecursive'",
+                        {
+                          "CXX_METHOD:'getBoundingBox'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getChildPtr'": {
+                            "children": [
+                              "PARM_DECL:'index_arg'",
+                              "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getDataSize'",
+                        {
+                          "CXX_METHOD:'getDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMetadataFilename'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNodeType'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumChildren'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'res'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumLoadedChildren'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'res'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCentersRecursive'": {
+                            "children": [
+                              "PARM_DECL:'query_depth'",
+                              "PARM_DECL:'voxel_centers'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCentersRecursive'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPCDFilename'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'hasUnloadedChildren'",
+                        {
+                          "CXX_METHOD:'inBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'init_root_node'": {
+                            "children": [
+                              "PARM_DECL:'bb_max'",
+                              "PARM_DECL:'bb_min'",
+                              "PARM_DECL:'rootname'",
+                              {
+                                "PARM_DECL:'tree'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'OutofcoreOctreeBase'",
+                                    "TYPE_REF:'ContainerT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'intersectsWithBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'loadChildren'": {
+                            "children": [
+                              "PARM_DECL:'recursive'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'loadFromFile'": {
+                            "children": [
+                              "PARM_DECL:'path'",
+                              {
+                                "PARM_DECL:'super'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'pointInBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'point'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'pointInBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'pointInBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'",
+                              "PARM_DECL:'z'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'pointInBoundingBox'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'printBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes'": {
+                            "children": [
+                              "PARM_DECL:'dst_blob'",
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes_subsample'": {
+                            "children": [
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'percent'",
+                              "PARM_DECL:'query_depth'",
+                              "PARM_DECL:'v'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes_subsample'": {
+                            "children": [
+                              "PARM_DECL:'dst_blob'",
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              {
+                                "PARM_DECL:'percent'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIntersects'": {
+                            "children": [
+                              "PARM_DECL:'file_names'",
+                              "PARM_DECL:'max_bb'",
+                              "PARM_DECL:'min_bb'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'file_names'",
+                              {
+                                "PARM_DECL:'planes'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'file_names'",
+                              {
+                                "PARM_DECL:'planes'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'query_depth'",
+                              {
+                                "PARM_DECL:'skip_vfc_check'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'eye'",
+                              "PARM_DECL:'file_names'",
+                              {
+                                "PARM_DECL:'planes'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'query_depth'",
+                              {
+                                "PARM_DECL:'skip_vfc_check'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'view_projection_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'randomSample'": {
+                            "children": [
+                              "PARM_DECL:'insertBuff'",
+                              "PARM_DECL:'p'",
+                              "PARM_DECL:'skip_bb_check'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'read'": {
+                            "children": [
+                              "PARM_DECL:'output_cloud'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'recFreeChildren'",
+                        {
+                          "CXX_METHOD:'saveIdx'": {
+                            "children": [
+                              "PARM_DECL:'recursive'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'saveMetadataToFile'": {
+                            "children": [
+                              "PARM_DECL:'path'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'size'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'sortOctantIndices'": {
+                            "children": [
+                              "PARM_DECL:'indices'",
+                              "PARM_DECL:'input_cloud'",
+                              "PARM_DECL:'mid_xyz'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'subdividePoint'": {
+                            "children": [
+                              "PARM_DECL:'c'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'subdividePoints'": {
+                            "children": [
+                              "PARM_DECL:'c'",
+                              "PARM_DECL:'p'",
+                              "PARM_DECL:'skip_bb_check'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'writeVPythonVisual'": {
+                            "children": [
+                              "PARM_DECL:'file'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~OutofcoreOctreeBaseNode<ContainerT, PointT>'",
+                        "FIELD_DECL:'children_'",
+                        "FIELD_DECL:'depth_'",
+                        {
+                          "FIELD_DECL:'m_tree_'": {
+                            "children": [
+                              "TEMPLATE_REF:'OutofcoreOctreeBase'",
+                              "TYPE_REF:'ContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'node_metadata_'",
+                        "FIELD_DECL:'num_children_'",
+                        "FIELD_DECL:'num_loaded_children_'",
+                        {
+                          "FIELD_DECL:'parent_'": {
+                            "children": [
+                              "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'payload_'",
+                        {
+                          "FIELD_DECL:'root_node_'": {
+                            "children": [
+                              "TYPE_REF:'OutofcoreOctreeBaseNode<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TEMPLATE_REF:'OutofcoreOctreeBase'",
+                              "TYPE_REF:'ContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              {
+                                "FUNCTION_DECL:'makenode_norec'": {
+                                  "children": [
+                                    "PARM_DECL:'path'",
+                                    {
+                                      "PARM_DECL:'super'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                                          "TYPE_REF:'ContainerT'",
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                                    "TYPE_REF:'ContainerT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              {
+                                "FUNCTION_DECL:'queryBBIntersects_noload'": {
+                                  "children": [
+                                    "PARM_DECL:'bin_name'",
+                                    "PARM_DECL:'max'",
+                                    "PARM_DECL:'min'",
+                                    "PARM_DECL:'query_depth'",
+                                    "PARM_DECL:'rootnode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              {
+                                "FUNCTION_DECL:'queryBBIntersects_noload'": {
+                                  "children": [
+                                    "PARM_DECL:'bin_name'",
+                                    {
+                                      "PARM_DECL:'current'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                                          "TYPE_REF:'ContainerT'",
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'max'",
+                                    "PARM_DECL:'min'",
+                                    "PARM_DECL:'query_depth'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "VAR_DECL:'node_container_basename'",
+                        "VAR_DECL:'node_container_extension'",
+                        "VAR_DECL:'node_index_basename'",
+                        "VAR_DECL:'node_index_extension'",
+                        "VAR_DECL:'pcd_extension'",
+                        "VAR_DECL:'rng_'",
+                        "VAR_DECL:'rng_mutex_'",
+                        "VAR_DECL:'sample_percent_'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'makenode_norec'": {
+                      "children": [
+                        "PARM_DECL:'path'",
+                        {
+                          "PARM_DECL:'super'": {
+                            "children": [
+                              "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                              "TYPE_REF:'ContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'ContainerT'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'queryBBIntersects_noload'": {
+                      "children": [
+                        "PARM_DECL:'bin_name'",
+                        "PARM_DECL:'max'",
+                        "PARM_DECL:'min'",
+                        "PARM_DECL:'query_depth'",
+                        "PARM_DECL:'root_node'",
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'queryBBIntersects_noload'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "PARM_DECL:'bin_name'",
+                        {
+                          "PARM_DECL:'current'": {
+                            "children": [
+                              "TEMPLATE_REF:'OutofcoreOctreeBaseNode'",
+                              "TYPE_REF:'ContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max'",
+                        "PARM_DECL:'query_depth'",
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

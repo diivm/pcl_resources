@@ -1,0 +1,991 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_pointcloud.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreePointCloud'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreePointCloud<PointT, LeafContainerT, BranchContainerT, OctreeT>'": {
+                            "children": [
+                              "PARM_DECL:'resolution_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'OctreeT'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointFromCloud'": {
+                            "children": [
+                              "PARM_DECL:'indices_arg'",
+                              "PARM_DECL:'point_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointIdx'": {
+                            "children": [
+                              "PARM_DECL:'point_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointToCloud'": {
+                            "children": [
+                              "PARM_DECL:'cloud_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointToCloud'": {
+                            "children": [
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'indices_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'addPointsFromInputCloud'",
+                        {
+                          "CXX_METHOD:'adoptBoundingBoxToPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point_idx_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'defineBoundingBox'",
+                        {
+                          "CXX_METHOD:'defineBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_x_arg'",
+                              "PARM_DECL:'max_y_arg'",
+                              "PARM_DECL:'max_z_arg'",
+                              "PARM_DECL:'min_x_arg'",
+                              "PARM_DECL:'min_y_arg'",
+                              "PARM_DECL:'min_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'defineBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_x_arg'",
+                              "PARM_DECL:'max_y_arg'",
+                              "PARM_DECL:'max_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'defineBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'cubeLen_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteTree'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_x_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'min_y_'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'max_y_'",
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'min_z_'",
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "BINARY_OPERATOR:''": {
+                                                                                        "children": [
+                                                                                          "MEMBER_REF_EXPR:'max_z_'",
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:''": {
+                                                                                              "children": [
+                                                                                                "INTEGER_LITERAL:''"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'OctreeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteVoxelAtPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteVoxelAtPoint'": {
+                            "children": [
+                              "PARM_DECL:'point_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'enableDynamicDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'maxObjsPerLeaf'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'expandLeafNode'": {
+                            "children": [
+                              "PARM_DECL:'child_idx'",
+                              "PARM_DECL:'depth_mask'",
+                              {
+                                "PARM_DECL:'leaf_node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::octree::OctreePointCloud::LeafNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'parent_branch'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::octree::OctreePointCloud::BranchNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'findLeafAtPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'key'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genLeafNodeCenterFromOctreeKey'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genOctreeKeyForDataT'": {
+                            "children": [
+                              "PARM_DECL:'data_arg'",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genOctreeKeyforPoint'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genOctreeKeyforPoint'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              "PARM_DECL:'point_x_arg'",
+                              "PARM_DECL:'point_y_arg'",
+                              "PARM_DECL:'point_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genVoxelBoundsFromOctreeKey'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              "PARM_DECL:'max_pt'",
+                              "PARM_DECL:'min_pt'",
+                              "PARM_DECL:'tree_depth_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genVoxelCenterFromOctreeKey'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'tree_depth_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getApproxIntersectedVoxelCentersBySegment'",
+                        {
+                          "CXX_METHOD:'getBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max_x_arg'",
+                              "PARM_DECL:'max_y_arg'",
+                              "PARM_DECL:'max_z_arg'",
+                              "PARM_DECL:'min_x_arg'",
+                              "PARM_DECL:'min_y_arg'",
+                              "PARM_DECL:'min_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'epsilon_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndices'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getKeyBitSize'",
+                        "CXX_METHOD:'getOccupiedVoxelCenters'",
+                        "CXX_METHOD:'getOccupiedVoxelCentersRecursive'",
+                        {
+                          "CXX_METHOD:'getPointByIndex'": {
+                            "children": [
+                              "PARM_DECL:'index_arg'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getResolution'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'resolution_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTreeDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelBounds'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'iterator'",
+                              "PARM_DECL:'max_pt'",
+                              "PARM_DECL:'min_pt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSquaredDiameter'": {
+                            "children": [
+                              "PARM_DECL:'tree_depth_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSquaredDiameter'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'getVoxelSquaredDiameter'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'getVoxelSquaredDiameter'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSquaredSideLen'": {
+                            "children": [
+                              "PARM_DECL:'tree_depth_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSquaredSideLen'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'getVoxelSquaredSideLen'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'getVoxelSquaredSideLen'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isPointWithinBoundingBox'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "BINARY_OPERATOR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "PAREN_EXPR:''": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "BINARY_OPERATOR:''": {
+                                                                                                    "children": [
+                                                                                                      {
+                                                                                                        "MEMBER_REF_EXPR:''": {
+                                                                                                          "children": [
+                                                                                                            "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "MEMBER_REF_EXPR:'min_x_'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "PAREN_EXPR:''": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "BINARY_OPERATOR:''": {
+                                                                                                    "children": [
+                                                                                                      {
+                                                                                                        "MEMBER_REF_EXPR:''": {
+                                                                                                          "children": [
+                                                                                                            "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "MEMBER_REF_EXPR:'min_y_'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "PAREN_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "BINARY_OPERATOR:''": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "MEMBER_REF_EXPR:''": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                },
+                                                                                                "MEMBER_REF_EXPR:'min_z_'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "PAREN_EXPR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "BINARY_OPERATOR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "MEMBER_REF_EXPR:''": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                              ]
+                                                                                            }
+                                                                                          },
+                                                                                          "MEMBER_REF_EXPR:'max_x_'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "PAREN_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    "MEMBER_REF_EXPR:'max_y_'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'point_idx_arg'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              "MEMBER_REF_EXPR:'max_z_'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point_idx_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isVoxelOccupiedAtPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isVoxelOccupiedAtPoint'": {
+                            "children": [
+                              "PARM_DECL:'point_x_arg'",
+                              "PARM_DECL:'point_y_arg'",
+                              "PARM_DECL:'point_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isVoxelOccupiedAtPoint'": {
+                            "children": [
+                              "PARM_DECL:'point_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'epsilon_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'eps'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'eps'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'eps'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud_arg'",
+                              {
+                                "PARM_DECL:'indices_arg'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setResolution'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'resolution_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'resolution_arg'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'resolution_arg'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'assert'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:'getKeyBitSize'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'getKeyBitSize'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'resolution_arg'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'bounding_box_defined_'",
+                        "FIELD_DECL:'epsilon_'",
+                        "FIELD_DECL:'indices_'",
+                        "FIELD_DECL:'input_'",
+                        "FIELD_DECL:'max_objs_per_leaf_'",
+                        "FIELD_DECL:'max_x_'",
+                        "FIELD_DECL:'max_y_'",
+                        "FIELD_DECL:'max_z_'",
+                        "FIELD_DECL:'min_x_'",
+                        "FIELD_DECL:'min_y_'",
+                        "FIELD_DECL:'min_z_'",
+                        "FIELD_DECL:'resolution_'",
+                        "TEMPLATE_TYPE_PARAMETER:'BranchContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'Base'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'BranchNode'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafNode'": {
+                            "children": [
+                              "TYPE_REF:'OctreeT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

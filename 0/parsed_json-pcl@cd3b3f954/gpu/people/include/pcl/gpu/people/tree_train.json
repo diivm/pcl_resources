@@ -1,0 +1,854 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/include/pcl/gpu/people/tree_train.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/array.hpp'",
+      "INCLUSION_DIRECTIVE:'tree.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "NAMESPACE:'people'": {
+                      "children": [
+                        {
+                          "NAMESPACE:'trees'": {
+                            "children": [
+                              "CLASS_DECL:''",
+                              {
+                                "FUNCTION_DECL:'entropy'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'Ntotal'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'entropy'": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'entropy'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'entropy'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'h'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'entropy_merged'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'htrue'": {
+                                                    "children": [
+                                                      "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CALL_EXPR:'h_true'": {
+                                                                      "children": [
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:'h_true'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'hp'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'hfalse'": {
+                                                    "children": [
+                                                      "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CALL_EXPR:'h_false'": {
+                                                                      "children": [
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:'h_false'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'hp'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'Ntotal'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'entropy'": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'entropy'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'entropy'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'hp'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::HistogramPair'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'informationGain'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'e0'": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'entropy_merged'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'hp'",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'entropy_merged'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'entropy_merged'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'etrue'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:'entropy'": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:'h_true'": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:'h_true'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'hp'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'entropy'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'entropy'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'efalse'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:'entropy'": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:'h_false'": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:'h_false'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'hp'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'entropy'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'entropy'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'Ntrue'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'Nfalse'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'Ntotal'": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'Nfalse'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'Nfalse'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'Ntrue'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'Ntrue'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'Ntotal'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'Ntotal'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'Ntotal'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'Ntotal'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'Ntrue'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'Ntrue'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'etrue'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'etrue'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'e0'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'e0'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'Nfalse'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'Nfalse'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'Ntotal'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'Ntotal'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'efalse'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'efalse'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'hp'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::HistogramPair'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'numElements'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'Ntotal'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator<<'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator<<'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator<<'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator>>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator>>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator>>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'readInfoFile'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "PARM_DECL:'HP'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::HistogramPair'"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'attribId'",
+                                    "PARM_DECL:'filename'",
+                                    "PARM_DECL:'gain'",
+                                    "PARM_DECL:'threshold'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'writeInfoFile'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "PARM_DECL:'HP'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::HistogramPair'"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'attribId'",
+                                    "PARM_DECL:'filename'",
+                                    "PARM_DECL:'gain'",
+                                    "PARM_DECL:'threshold'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'writeLabeledFeatureVec'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'lfs'",
+                                    "PARM_DECL:'os'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'HistogramPair'": {
+                                  "children": [
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    {
+                                      "CXX_METHOD:'accumFalse'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "PARM_DECL:'label'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'accumTrue'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "PARM_DECL:'label'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'h_false'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'m_h_false'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'h_false'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'Histogram'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'m_h_false'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'h_true'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'m_h_true'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'h_true'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'Histogram'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'m_h_true'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FIELD_DECL:'m_h_false'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FIELD_DECL:'m_h_true'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::Histogram'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'LabeledAttrib'": {
+                                  "children": [
+                                    {
+                                      "CONSTRUCTOR:'LabeledAttrib'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CONSTRUCTOR:'LabeledAttrib'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "PARM_DECL:'attrib'",
+                                          "PARM_DECL:'label'"
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'a'",
+                                    "FIELD_DECL:'l'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'LabeledFeature'": {
+                                  "children": [
+                                    {
+                                      "CONSTRUCTOR:'LabeledFeature'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CONSTRUCTOR:'LabeledFeature'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "PARM_DECL:'B'": {
+                                              "children": [
+                                                "TYPE_REF:'struct pcl::gpu::people::trees::LabeledFeature'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'attribs'",
+                                    "FIELD_DECL:'l'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'SplitPoint'": {
+                                  "children": [
+                                    {
+                                      "CONSTRUCTOR:'SplitPoint'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "MEMBER_REF:'attribId'",
+                                          "PARM_DECL:'ai'",
+                                          "PARM_DECL:'t'",
+                                          {
+                                            "UNEXPOSED_EXPR:'ai'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'ai'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'attribId'",
+                                    "FIELD_DECL:'threshold'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "TRANSLATION_UNIT:'/pcl/tools/timed_trigger_test.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'Dummy'": {
+          "children": [
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'myTimer'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'last_time'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'elapsed'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'callback'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'last_time'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'elapsed'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'trigger'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'dummy'": {
+                            "children": [
+                              "CALL_EXPR:'Dummy'",
+                              "TYPE_REF:'class Dummy'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time_trigger.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      },
+      "VAR_DECL:'global_time'"
+    ]
+  }
+}

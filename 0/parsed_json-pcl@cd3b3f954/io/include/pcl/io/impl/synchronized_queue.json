@@ -1,0 +1,321 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/impl/synchronized_queue.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'condition_variable'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'queue'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SynchronizedQueue'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SynchronizedQueue<T>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "MEMBER_REF:'enqueue_data_'",
+                        "MEMBER_REF:'request_to_end_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'dequeue'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lock'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "NAMESPACE_REF:'std'",
+                                          "TEMPLATE_REF:'unique_lock'",
+                                          "TYPE_REF:'class std::mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'doEndActions'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'doEndActions'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'request_to_end_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'request_to_end_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'result'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'doEndActions'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'enqueue_data_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'enqueue'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lock'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "NAMESPACE_REF:'std'",
+                                          "TEMPLATE_REF:'unique_lock'",
+                                          "TYPE_REF:'class std::mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'notify_one'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:'notify_one'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cond_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'enqueue_data_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'enqueue_data_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isEmpty'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lock'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "NAMESPACE_REF:'std'",
+                                          "TEMPLATE_REF:'unique_lock'",
+                                          "TYPE_REF:'class std::mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'size'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lock'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "NAMESPACE_REF:'std'",
+                                          "TEMPLATE_REF:'unique_lock'",
+                                          "TYPE_REF:'class std::mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'stopQueue'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'request_to_end_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'notify_one'": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:'notify_one'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'cond_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lock'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "NAMESPACE_REF:'std'",
+                                          "TEMPLATE_REF:'unique_lock'",
+                                          "TYPE_REF:'class std::mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'cond_'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'class std::condition_variable'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'enqueue_data_'",
+                  {
+                    "FIELD_DECL:'mutex_'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'class std::mutex'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'queue_'",
+                  "FIELD_DECL:'request_to_end_'",
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

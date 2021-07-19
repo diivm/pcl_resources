@@ -1,0 +1,282 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/octree/src/internal.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/octree/device_format.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      "MACRO_DEFINITION:'PCL_GPU_OCTREE_INTERNAL_HPP_'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'OctreeImpl'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeImpl'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'approxNearestSearch'": {
+                            "children": [
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'results'",
+                              "PARM_DECL:'sqr_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'approxNearestSearchHost'": {
+                            "children": [
+                              "PARM_DECL:'out_index'",
+                              "PARM_DECL:'query'",
+                              "PARM_DECL:'sqr_dist'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'build'",
+                        {
+                          "CXX_METHOD:'get_gpu_arch_compiled_for'": {
+                            "children": [
+                              "PARM_DECL:'bin'",
+                              "PARM_DECL:'ptr'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'internalDownload'",
+                        {
+                          "CXX_METHOD:'nearestKSearchBatch'": {
+                            "children": [
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'results'",
+                              "PARM_DECL:'sqr_distances'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'radius'",
+                              "PARM_DECL:'results'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'radiuses'",
+                              "PARM_DECL:'results'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "PARM_DECL:'indices'",
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'radius'",
+                              "PARM_DECL:'results'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearchHost'": {
+                            "children": [
+                              "PARM_DECL:'center'",
+                              "PARM_DECL:'max_nn'",
+                              "PARM_DECL:'out'",
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCloud'": {
+                            "children": [
+                              "PARM_DECL:'input_points'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreeImpl'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'codes'",
+                        {
+                          "FIELD_DECL:'host_octree'": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'OctreeDataHost'": {
+                                  "children": [
+                                    "FIELD_DECL:'begs'",
+                                    "FIELD_DECL:'codes'",
+                                    "FIELD_DECL:'downloaded'",
+                                    "FIELD_DECL:'ends'",
+                                    "FIELD_DECL:'indices'",
+                                    "FIELD_DECL:'nodes'",
+                                    "FIELD_DECL:'points_sorted'",
+                                    "FIELD_DECL:'points_sorted_step'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'indices'",
+                        {
+                          "FIELD_DECL:'octreeGlobal'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::device::OctreeGlobalWithBox'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'points'",
+                        "FIELD_DECL:'points_sorted'",
+                        "FIELD_DECL:'storage'",
+                        {
+                          "FUNCTION_TEMPLATE:'radiusSearchEx'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'batch'": {
+                                  "children": [
+                                    "TYPE_REF:'BatchType'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'queries'",
+                              "PARM_DECL:'results'",
+                              "TEMPLATE_TYPE_PARAMETER:'BatchType'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'OctreeDataHost'": {
+                            "children": [
+                              "FIELD_DECL:'begs'",
+                              "FIELD_DECL:'codes'",
+                              "FIELD_DECL:'downloaded'",
+                              "FIELD_DECL:'ends'",
+                              "FIELD_DECL:'indices'",
+                              "FIELD_DECL:'nodes'",
+                              "FIELD_DECL:'points_sorted'",
+                              "FIELD_DECL:'points_sorted_step'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'bruteForceRadiusSearch'": {
+                      "children": [
+                        "PARM_DECL:'buffer'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'query'",
+                        "PARM_DECL:'radius'",
+                        "PARM_DECL:'result'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OctreeGlobal'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeGlobal'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'begs'",
+                              "MEMBER_REF:'codes'",
+                              "MEMBER_REF:'ends'",
+                              "MEMBER_REF:'nodes'",
+                              "MEMBER_REF:'nodes_num'",
+                              "MEMBER_REF:'parent'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'begs'",
+                        "FIELD_DECL:'codes'",
+                        "FIELD_DECL:'ends'",
+                        "FIELD_DECL:'nodes'",
+                        "FIELD_DECL:'nodes_num'",
+                        "FIELD_DECL:'parent'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OctreeGlobalWithBox'": {
+                      "children": [
+                        {
+                          "CXX_BASE_SPECIFIER:'struct pcl::device::OctreeGlobal'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::device::OctreeGlobal'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'maxp'",
+                        "FIELD_DECL:'minp'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

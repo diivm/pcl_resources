@@ -1,0 +1,543 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/convolution_3d.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/impl/convolution_3d.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'filters'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Convolution3D'": {
+                      "children": [
+                        "CONSTRUCTOR:'Convolution3D<PointIn, PointOut, KernelT>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'convolve'": {
+                            "children": [
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRadiusSearch'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'search_radius_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSearchMethod'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSearchSurface'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initCompute'",
+                        {
+                          "CXX_METHOD:'setKernel'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'kernel'",
+                                          "MEMBER_REF_EXPR:'kernel_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'kernel'": {
+                                  "children": [
+                                    "TYPE_REF:'KernelT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfThreads'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'threads_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'nr_threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'nr_threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'nr_threads'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setRadiusSearch'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'search_radius_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'radius'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'radius'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSearchMethod'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'tree'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSearchSurface'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~Convolution3D<PointIn, PointOut, KernelT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'kernel_'": {
+                            "children": [
+                              "TYPE_REF:'KernelT'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'search_radius_'",
+                        "FIELD_DECL:'surface_'",
+                        "FIELD_DECL:'threads_'",
+                        "FIELD_DECL:'tree_'",
+                        "TEMPLATE_TYPE_PARAMETER:'KernelT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointIn'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOut'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'ConvolvingKernel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ConvolvingKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'initCompute'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'makeInfinite'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'PointOutT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              "PARM_DECL:'distances'",
+                              "PARM_DECL:'indices'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'input'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~ConvolvingKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'input_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'GaussianKernel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'GaussianKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'sigma_'",
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'",
+                              "UNEXPOSED_EXPR:''",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'ConvolvingKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initCompute'",
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              "PARM_DECL:'distances'",
+                              "PARM_DECL:'indices'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSigma'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'sigma_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'sigma'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'sigma'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sigma'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setThreshold'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'threshold'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'threshold'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setThresholdRelativeToSigma'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'sigma_coefficient'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~GaussianKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'sigma_'",
+                        "FIELD_DECL:'sigma_coefficient_'",
+                        "FIELD_DECL:'sigma_sqr_'",
+                        "FIELD_DECL:'threshold_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                        {
+                          "USING_DECLARATION:'initCompute'": {
+                            "children": [
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'makeInfinite'": {
+                            "children": [
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'operator()'": {
+                            "children": [
+                              "TEMPLATE_REF:'ConvolvingKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'GaussianKernelRGB'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'GaussianKernelRGB<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'",
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'GaussianKernel<PointInT, PointOutT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              "PARM_DECL:'distances'",
+                              "PARM_DECL:'indices'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~GaussianKernelRGB<PointInT, PointOutT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                        {
+                          "USING_DECLARATION:'initCompute'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'makeInfinite'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'operator()'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'sigma_sqr_'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'threshold_'": {
+                            "children": [
+                              "TEMPLATE_REF:'GaussianKernel'",
+                              "TYPE_REF:'PointInT'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

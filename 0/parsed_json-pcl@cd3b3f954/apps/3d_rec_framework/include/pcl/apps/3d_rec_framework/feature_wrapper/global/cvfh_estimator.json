@@ -1,0 +1,297 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/feature_wrapper/global/cvfh_estimator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/apps/3d_rec_framework/feature_wrapper/global/global_estimator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/cvfh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/mls.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'rec_3d_framework'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'CVFHEstimation'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CVFHEstimation<PointInT, FeatureT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'eps_angle_threshold_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'curvature_threshold_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'normalize_bins_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'cluster_tolerance_factor_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'computedNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimate'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                "RETURN_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'centroid_cluster'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'dist_to_sensor'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'sigma'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "FLOATING_LITERAL:''",
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'dist_to_sensor'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'dist_to_sensor'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'adaptative_MLS_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'adaptative_MLS_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:''",
+                              "PARM_DECL:'in'",
+                              "PARM_DECL:'processed'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setAdaptativeMLS'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'adaptative_MLS_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCVFHParams'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'eps_angle_threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'p1'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'curvature_threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'p2'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p2'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'cluster_tolerance_factor_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'p3'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p3'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'p1'",
+                              "PARM_DECL:'p2'",
+                              "PARM_DECL:'p3'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormalizeBins'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'normalize_bins_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'adaptative_MLS_'",
+                        "FIELD_DECL:'cluster_tolerance_factor_'",
+                        "FIELD_DECL:'curvature_threshold_'",
+                        "FIELD_DECL:'eps_angle_threshold_'",
+                        "FIELD_DECL:'normalize_bins_'",
+                        "TEMPLATE_TYPE_PARAMETER:'FeatureT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

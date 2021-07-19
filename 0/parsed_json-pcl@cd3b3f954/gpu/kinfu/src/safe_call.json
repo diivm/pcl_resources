@@ -1,0 +1,127 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/kinfu/src/safe_call.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cuda_runtime_api.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/initialization.h'",
+      "MACRO_DEFINITION:'__PCL_CUDA_SAFE_CALL_HPP__'",
+      "MACRO_DEFINITION:'cudaSafeCall'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "USING_DECLARATION:'divUp'": {
+                      "children": [
+                        "NAMESPACE_REF:'gpu'",
+                        "NAMESPACE_REF:'pcl'",
+                        "OVERLOADED_DECL_REF:'divUp'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'___cudaSafeCall'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'err'",
+                        "PARM_DECL:'file'",
+                        {
+                          "PARM_DECL:'func'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "STRING_LITERAL:'\"\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'line'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'divUp'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'grain'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'grain'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'total'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'total'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'grain'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'grain'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'grain'",
+                        "PARM_DECL:'total'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

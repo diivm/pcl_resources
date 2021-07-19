@@ -1,0 +1,259 @@
+{
+  "TRANSLATION_UNIT:'/pcl/doc/tutorials/content/sources/openni_range_image_visualization/openni_range_image_visualization.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'driver'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'interface'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'event_helper'": {
+                            "children": [
+                              "CALL_EXPR:'EventHelper'",
+                              "TYPE_REF:'struct EventHelper'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'c_depth_image'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'range_image_planar'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'printUsage'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'argv'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'argv'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'printUsage'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'printUsage'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'printUsage'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "PARM_DECL:'progName'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/common/angles.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/range_image/range_image_planar.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/range_image_visualizer.h'",
+      {
+        "STRUCT_DECL:'EventHelper'": {
+          "children": [
+            {
+              "CXX_METHOD:'depth_image_cb'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'try_lock'": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:'try_lock'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'depth_image_mutex'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "DECL_REF_EXPR:'received_new_depth_data'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CALL_EXPR:'unlock'": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:'unlock'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'depth_image_mutex'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'depth_image'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'angular_resolution'": {
+          "children": [
+            {
+              "UNARY_OPERATOR:''": {
+                "children": [
+                  "FLOATING_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'depth_image_mutex'": {
+          "children": [
+            "CALL_EXPR:'mutex'",
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'class std::mutex'"
+          ]
+        }
+      },
+      "VAR_DECL:'depth_image_ptr'",
+      {
+        "VAR_DECL:'device_id'": {
+          "children": [
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'std::string'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'received_new_depth_data'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      }
+    ]
+  }
+}

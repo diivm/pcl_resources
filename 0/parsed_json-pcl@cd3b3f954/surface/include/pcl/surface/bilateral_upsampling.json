@@ -1,0 +1,262 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/bilateral_upsampling.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/processing.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'BilateralUpsampling'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'BilateralUpsampling<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'sigma_color_'",
+                        "MEMBER_REF:'sigma_depth_'",
+                        "MEMBER_REF:'window_size_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeDistances'": {
+                      "children": [
+                        "PARM_DECL:'val_exp_depth'",
+                        "PARM_DECL:'val_exp_rgb'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getProjectionMatrix'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSigmaColor'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sigma_color_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSigmaDepth'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sigma_depth_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getWindowSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'window_size_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performProcessing'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'process'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setProjectionMatrix'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'projection_matrix'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSigmaColor'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sigma_color_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sigma_color'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sigma_color'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sigma_color'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSigmaDepth'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sigma_depth_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sigma_depth'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sigma_depth'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sigma_depth'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setWindowSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'window_size_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'window_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'window_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'window_size'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'KinectSXGAProjectionMatrix'",
+                  "FIELD_DECL:'KinectVGAProjectionMatrix'",
+                  "FIELD_DECL:'projection_matrix_'",
+                  "FIELD_DECL:'sigma_color_'",
+                  "FIELD_DECL:'sigma_depth_'",
+                  "FIELD_DECL:'unprojection_matrix_'",
+                  "FIELD_DECL:'window_size_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                  "TYPEDEF_DECL:'ConstPtr'",
+                  "TYPEDEF_DECL:'Ptr'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

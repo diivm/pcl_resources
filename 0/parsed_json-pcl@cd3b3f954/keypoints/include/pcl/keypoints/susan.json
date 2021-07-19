@@ -1,0 +1,176 @@
+{
+  "TRANSLATION_UNIT:'/pcl/keypoints/include/pcl/keypoints/susan.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/intensity.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/impl/susan.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/keypoint.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SUSANKeypoint'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SUSANKeypoint<PointInT, PointOutT, NormalT, IntensityT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'angular_threshold'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'distance_threshold'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'intensity_threshold'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'radius'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'detectKeypoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'isWithinNucleusCentroid'": {
+                      "children": [
+                        "PARM_DECL:'centroid'",
+                        "PARM_DECL:'nc'",
+                        "PARM_DECL:'nucleus'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setAngularThreshold'": {
+                      "children": [
+                        "PARM_DECL:'angular_threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDistanceThreshold'": {
+                      "children": [
+                        "PARM_DECL:'distance_threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setGeometricValidation'": {
+                      "children": [
+                        "PARM_DECL:'validate'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setIntensityThreshold'": {
+                      "children": [
+                        "PARM_DECL:'intensity_threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNonMaxSupression'": {
+                      "children": [
+                        "PARM_DECL:'nonmax'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNormals'": {
+                      "children": [
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        "PARM_DECL:'nr_threads'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRadius'": {
+                      "children": [
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchSurface'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SUSANKeypoint<PointInT, PointOutT, NormalT, IntensityT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'angular_threshold_'",
+                  "FIELD_DECL:'distance_threshold_'",
+                  "FIELD_DECL:'geometric_validation_'",
+                  {
+                    "FIELD_DECL:'intensity_'": {
+                      "children": [
+                        "TYPE_REF:'IntensityT'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'intensity_out_'",
+                  "FIELD_DECL:'intensity_threshold_'",
+                  "FIELD_DECL:'label_idx_'",
+                  "FIELD_DECL:'nonmax_'",
+                  "FIELD_DECL:'normals_'",
+                  "FIELD_DECL:'out_fields_'",
+                  "FIELD_DECL:'threads_'",
+                  "FIELD_DECL:'tolerance_'",
+                  "TEMPLATE_TYPE_PARAMETER:'IntensityT'",
+                  "TEMPLATE_TYPE_PARAMETER:'NormalT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

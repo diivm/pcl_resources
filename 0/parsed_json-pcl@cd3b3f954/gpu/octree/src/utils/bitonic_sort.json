@@ -1,0 +1,573 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/octree/src/utils/bitonic_sort.hpp'": {
+    "children": [
+      "MACRO_DEFINITION:'PCL_GPU_BITONIC_SORT_WARP_HPP'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'bitonicSortWarp'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'arrayLength'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'lane'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'arrayLength'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'arrayLength'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'size'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'size'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'size'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'ddd'": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "PAREN_EXPR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "BINARY_OPERATOR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "PAREN_EXPR:''": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "BINARY_OPERATOR:''": {
+                                                                                                    "children": [
+                                                                                                      {
+                                                                                                        "UNEXPOSED_EXPR:''": {
+                                                                                                          "children": [
+                                                                                                            "INTEGER_LITERAL:''"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "UNEXPOSED_EXPR:'size'": {
+                                                                                                          "children": [
+                                                                                                            "DECL_REF_EXPR:'size'"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'lane'": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'lane'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "INTEGER_LITERAL:''"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dir'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'dir'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'stride'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'stride'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'stride'",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'pos'": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "INTEGER_LITERAL:''"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'lane'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'lane'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "PAREN_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "PAREN_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "BINARY_OPERATOR:''": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:''": {
+                                                                                                    "children": [
+                                                                                                      "INTEGER_LITERAL:''"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'stride'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'stride'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'lane'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'lane'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            "COMPOUND_STMT:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'stride'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'size'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'size'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'size'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'stride'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'stride'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'stride'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'pos'": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'lane'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'lane'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "PAREN_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "INTEGER_LITERAL:''"
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'stride'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'stride'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'lane'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'lane'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                "COMPOUND_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'stride'": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'arrayLength'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'arrayLength'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'dir'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'keys'",
+                        "PARM_DECL:'vals'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'swap'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  },
+                  "UNEXPOSED_DECL:'__forceinline__'",
+                  "UNEXPOSED_DECL:'__forceinline__'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

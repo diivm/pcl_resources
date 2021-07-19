@@ -1,0 +1,209 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_pointcloud_density.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/octree/impl/octree_pointcloud.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_pointcloud.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_OctreePointCloudDensity'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'OctreePointCloudDensityContainer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreePointCloudDensityContainer'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addPointIndex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deepCopy'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CXX_DELETE_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'OctreePointCloudDensityContainer'": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "CXX_THROW_EXPR:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "TYPE_REF:'class pcl::octree::OctreePointCloudDensityContainer'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'class pcl::octree::OctreePointCloudDensityContainer'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPointCounter'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'otherContainer'": {
+                                              "children": [
+                                                "TYPE_REF:'class pcl::octree::OctreePointCloudDensityContainer'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'other'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreePointCloudDensityContainer'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'point_counter_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OctreePointCloudDensity'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreePointCloudDensity<PointT, LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'resolution_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getVoxelDensityAtPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'point_count'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'leaf'": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'point_arg'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "TYPE_REF:'class pcl::octree::OctreePointCloudDensityContainer'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreePointCloudDensity<PointT, LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'BranchContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

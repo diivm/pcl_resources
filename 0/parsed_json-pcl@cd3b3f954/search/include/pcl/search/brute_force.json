@@ -1,0 +1,336 @@
+{
+  "TRANSLATION_UNIT:'/pcl/search/include/pcl/search/brute_force.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'search'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'BruteForce'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'BruteForce<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'sorted_results'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'denseKSearch'": {
+                            "children": [
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_distances'",
+                              "PARM_DECL:'k_indices'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'denseRadiusSearch'": {
+                            "children": [
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getDistSqr'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point1'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point2'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_distances'",
+                              "PARM_DECL:'k_indices'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'sparseKSearch'": {
+                            "children": [
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_distances'",
+                              "PARM_DECL:'k_indices'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'sparseRadiusSearch'": {
+                            "children": [
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~BruteForce<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'Entry'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'distance'",
+                                    "PARM_DECL:'dist'",
+                                    "PARM_DECL:'idx'",
+                                    {
+                                      "UNEXPOSED_EXPR:'dist'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'dist'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'distance'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator<'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'other'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "MEMBER_REF_EXPR:'distance'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'other'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::search::BruteForce::Entry'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator>'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'other'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "MEMBER_REF_EXPR:'distance'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'other'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::search::BruteForce::Entry'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'distance'",
+                              "FIELD_DECL:'index'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

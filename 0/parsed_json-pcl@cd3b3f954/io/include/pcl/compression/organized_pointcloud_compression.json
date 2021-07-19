@@ -1,0 +1,202 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/compression/organized_pointcloud_compression.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_camera/openni_shift_to_depth_conversion.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OrganizedPointCloudCompression'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OrganizedPointCloudCompression<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'analyzeOrganizedCloud'": {
+                            "children": [
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'focalLength_arg'",
+                              "PARM_DECL:'maxDepth_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'decodePointCloud'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'bShowStatistics_arg'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'compressedDataIn_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'encodePointCloud'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'bShowStatistics_arg'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'compressedDataOut_arg'",
+                              {
+                                "PARM_DECL:'convertToMono'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'doColorEncoding'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'pngLevel_arg'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'encodeRawDisparityMapWithColorImage'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'bShowStatistics_arg'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'colorImage_arg'",
+                              "PARM_DECL:'compressedDataOut_arg'",
+                              {
+                                "PARM_DECL:'convertToMono'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'disparityMap_arg'",
+                              {
+                                "PARM_DECL:'disparityScale_arg'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'disparityShift_arg'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'doColorEncoding'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'focalLength_arg'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'height_arg'",
+                              {
+                                "PARM_DECL:'pngLevel_arg'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OrganizedPointCloudCompression<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'sd_converter_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "VAR_DECL:'frameHeaderIdentifier_'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'frameHeaderIdentifier_'": {
+                      "children": [
+                        "TEMPLATE_REF:'OrganizedPointCloudCompression'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'PointT'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"<PCL-ORG-COMPRESSED>\"'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

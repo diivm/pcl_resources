@@ -1,0 +1,226 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/time.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'chrono'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'queue'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "MACRO_DEFINITION:'DO_EVERY'",
+      "MACRO_DEFINITION:'DO_EVERY_TS'",
+      "MACRO_DEFINITION:'MEASURE_FUNCTION_TIME'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_DECL:'EventFrequency'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'EventFrequency'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'window_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'event'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFrequency'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'reset'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'event_time_queue_'",
+                  {
+                    "FIELD_DECL:'stop_watch_'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'class pcl::StopWatch'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'window_size_'"
+                ]
+              }
+            },
+            {
+              "CLASS_DECL:'ScopeTime'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'ScopeTime'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'title'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_BASE_SPECIFIER:'class pcl::StopWatch'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::StopWatch'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~ScopeTime'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'val'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'title_'"
+                ]
+              }
+            },
+            {
+              "CLASS_DECL:'StopWatch'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'StopWatch'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'getTime'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'end_time'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTimeSeconds'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'getTime'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'getTime'"
+                                                    ]
+                                                  }
+                                                },
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'reset'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'start_time_'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'getTime'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

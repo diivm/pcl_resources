@@ -1,0 +1,225 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/include/pcl/apps/nn_classification.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cfloat'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree_flann.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'NNClassification'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'NNClassification<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'classify'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'k_indices'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getKNearestExemplars'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'p_q'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSimilarExemplars'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_q'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'loadTrainingFeatures'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'label'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'labels_file_name'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'saveTrainingFeatures'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'labels_file_name'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrainingFeatures'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrainingLabelIndicesAndLUT'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'classes'",
+                        "PARM_DECL:'labels_idx'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrainingLabels'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'labels'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'classes_'",
+                  "FIELD_DECL:'labels_idx_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

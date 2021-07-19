@@ -1,0 +1,157 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/grid_minimum.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter_indices.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'GridMinimum'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'GridMinimum<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'setResolution'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'resolution'",
+                                    "MEMBER_REF_EXPR:'setResolution'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'resolution'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilterIndices'": {
+                      "children": [
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'resolution_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'resolution_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'resolution'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'resolution'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'resolution_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'resolution_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'inverse_resolution_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'resolution'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~GridMinimum<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'inverse_resolution_'",
+                  "FIELD_DECL:'resolution_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

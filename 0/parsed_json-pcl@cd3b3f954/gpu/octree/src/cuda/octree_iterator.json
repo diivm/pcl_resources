@@ -1,0 +1,55 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/octree/src/cuda/octree_iterator.hpp'": {
+    "children": [
+      "MACRO_DEFINITION:'PCL_GPU_OCTREE_ITERATOR'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreeIteratorDevice'": {
+                      "children": [
+                        "FIELD_DECL:'__forceinline__'",
+                        "FIELD_DECL:'level'",
+                        {
+                          "FIELD_DECL:'storage'": {
+                            "children": [
+                              "TYPE_REF:'pcl::device::OctreeIteratorDevice::Storage'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'CTA_SIZE'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'STACK_DEPTH'",
+                        {
+                          "TYPE_ALIAS_DECL:'Storage'": {
+                            "children": [
+                              "DECL_REF_EXPR:'CTA_SIZE'",
+                              "DECL_REF_EXPR:'STACK_DEPTH'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OctreeIteratorDeviceNS'": {
+                      "children": [
+                        "FIELD_DECL:'__forceinline__'",
+                        "FIELD_DECL:'length'",
+                        "FIELD_DECL:'level'",
+                        "FIELD_DECL:'node_idx'",
+                        "FIELD_DECL:'octree'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

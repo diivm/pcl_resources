@@ -1,0 +1,453 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/conversions.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/foreach.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLImage.h'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointField.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/for_each_type.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/type_traits.h'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_DECL:'toPCLPointCloud2'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'predicate'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "OBJ_BOOL_LITERAL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "RETURN_STMT:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'field'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              "STRING_LITERAL:'\"rgb\"'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "PARM_DECL:'field'": {
+                                                                "children": [
+                                                                  "TYPE_REF:'auto'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'result'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'rgb_index'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'rgb_offset'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'point_step'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "NULL_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'msg'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'createMapping'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'mapper'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "TEMPLATE_REF:'FieldMapper'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'field_map'",
+                  "PARM_DECL:'msg_fields'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'fromPCLPointCloud2'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'num_points'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'cloud_data'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_row_step'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'msg_data'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'field_map'",
+                  "PARM_DECL:'msg'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'fromPCLPointCloud2'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'field_map'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'msg'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'toPCLPointCloud2'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'data_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'msg'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'toPCLPointCloud2'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'cloud'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'cloud'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "COMPOUND_STMT:''",
+                              "NULL_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'cloud'": {
+                      "children": [
+                        "TYPE_REF:'CloudT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'msg'",
+                  "TEMPLATE_TYPE_PARAMETER:'CloudT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'FieldAdder'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FieldAdder<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'fields'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'fields_'",
+                        {
+                          "FUNCTION_TEMPLATE:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'f'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'U'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'FieldMapper'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FieldMapper<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'fields'",
+                              "PARM_DECL:'map'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'fields_'",
+                        "FIELD_DECL:'map_'",
+                        {
+                          "FUNCTION_TEMPLATE:'operator()'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "TEMPLATE_TYPE_PARAMETER:'Tag'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'fieldOrdering'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

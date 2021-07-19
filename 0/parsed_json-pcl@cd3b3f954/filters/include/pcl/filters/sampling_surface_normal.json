@@ -1,0 +1,342 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/sampling_surface_normal.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'ctime'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SamplingSurfaceNormal'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SamplingSurfaceNormal<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'ratio_'",
+                        "MEMBER_REF:'sample_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeMeanAndCovarianceMatrix'": {
+                      "children": [
+                        "PARM_DECL:'centroid'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'covariance_matrix'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeNormal'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'curvature'",
+                        "PARM_DECL:'normal'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'findCutVal'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'cut_dim'",
+                        "PARM_DECL:'cut_index'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'findXYZMaxMin'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'max_vec'",
+                        "PARM_DECL:'min_vec'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'ratio_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'ratio_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSample'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sample_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSeed'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'seed_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'partition'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'first'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'last'",
+                        "PARM_DECL:'max_values'",
+                        "PARM_DECL:'min_values'",
+                        "PARM_DECL:'outcloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'samplePartition'": {
+                      "children": [
+                        "PARM_DECL:'data'",
+                        "PARM_DECL:'first'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'last'",
+                        "PARM_DECL:'outcloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'ratio_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'ratio'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ratio'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'ratio'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSample'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sample_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sample'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sample'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sample'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSeed'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'seed_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'seed'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'seed'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'seed'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'solvePlaneParameters'": {
+                      "children": [
+                        "PARM_DECL:'covariance_matrix'",
+                        "PARM_DECL:'curvature'",
+                        "PARM_DECL:'nx'",
+                        "PARM_DECL:'ny'",
+                        "PARM_DECL:'nz'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'ratio_'",
+                  "FIELD_DECL:'sample_'",
+                  "FIELD_DECL:'seed_'",
+                  {
+                    "STRUCT_DECL:'CompareDim'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CompareDim'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'dim'",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'dim'",
+                              {
+                                "UNEXPOSED_EXPR:'dim'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'dim'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'p0'",
+                              "PARM_DECL:'p1'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'cloud'",
+                        "FIELD_DECL:'dim'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

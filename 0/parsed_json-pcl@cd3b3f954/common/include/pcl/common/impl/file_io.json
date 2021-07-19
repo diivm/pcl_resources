@@ -1,0 +1,212 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/impl/file_io.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'boost/filesystem.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/range/iterator_range.hpp'",
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_DEFINITION:'PCL_COMMON_FILE_IO_IMPL_HPP_'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_DECL:'getAllPcdFilesInDirectory'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'p'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'path'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'directory'"
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'filesystem'",
+                                    "TYPE_REF:'class boost::filesystem::path'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'is_directory'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'is_directory'": {
+                                        "children": [
+                                          {
+                                            "DECL_REF_EXPR:'is_directory'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'boost'",
+                                                "NAMESPACE_REF:'filesystem'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'p'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'p'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "COMPOUND_STMT:''",
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'directory'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'file_names'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'getFileExtension'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'dot_position'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "NAMESPACE_REF:'std'",
+                  {
+                    "PARM_DECL:'input'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'getFilenameWithoutExtension'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'dot_position'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "NAMESPACE_REF:'std'",
+                  {
+                    "PARM_DECL:'input'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'getFilenameWithoutPath'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'filename_start'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "NAMESPACE_REF:'std'",
+                  {
+                    "PARM_DECL:'input'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

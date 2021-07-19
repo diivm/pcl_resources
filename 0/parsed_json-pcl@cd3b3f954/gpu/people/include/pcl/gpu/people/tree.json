@@ -1,0 +1,232 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/include/pcl/gpu/people/tree.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cstdint'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'label_common.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "NAMESPACE:'people'": {
+                      "children": [
+                        {
+                          "NAMESPACE:'trees'": {
+                            "children": [
+                              {
+                                "ENUM_DECL:''": {
+                                  "children": [
+                                    {
+                                      "ENUM_CONSTANT_DECL:'NUM_ATTRIBS'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_DECL:''": {
+                                  "children": [
+                                    {
+                                      "ENUM_CONSTANT_DECL:'NUM_LABELS'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'loadTree'": {
+                                  "children": [
+                                    "PARM_DECL:'filename'",
+                                    "PARM_DECL:'leaves'",
+                                    "PARM_DECL:'tree'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator<<'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator>>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'operator>>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'readAttribLocs'": {
+                                  "children": [
+                                    "PARM_DECL:'alocs'",
+                                    "PARM_DECL:'filename'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'readThreshs'": {
+                                  "children": [
+                                    "PARM_DECL:'filename'",
+                                    "PARM_DECL:'threshs'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'runThroughTree'": {
+                                  "children": [
+                                    "PARM_DECL:'H'",
+                                    "PARM_DECL:'W'",
+                                    "PARM_DECL:'dmap'",
+                                    "PARM_DECL:'leaves'",
+                                    "PARM_DECL:'lmap'",
+                                    "PARM_DECL:'maxDepth'",
+                                    "PARM_DECL:'tree'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'writeAttribLocs'": {
+                                  "children": [
+                                    "PARM_DECL:'alocs'",
+                                    "PARM_DECL:'filename'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FUNCTION_DECL:'writeThreshs'": {
+                                  "children": [
+                                    "PARM_DECL:'filename'",
+                                    "PARM_DECL:'threshs'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'AttribLocation'": {
+                                  "children": [
+                                    {
+                                      "CONSTRUCTOR:'AttribLocation'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CONSTRUCTOR:'AttribLocation'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "PARM_DECL:'u1'",
+                                          "PARM_DECL:'u2'",
+                                          "PARM_DECL:'v1'",
+                                          "PARM_DECL:'v2'"
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'du1'",
+                                    "FIELD_DECL:'du2'",
+                                    "FIELD_DECL:'dv1'",
+                                    "FIELD_DECL:'dv2'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'Histogram'": {
+                                  "children": [
+                                    {
+                                      "FIELD_DECL:'label_prob'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'NUM_PARTS'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "STRUCT_DECL:'Node'": {
+                                  "children": [
+                                    {
+                                      "CONSTRUCTOR:'Node'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CONSTRUCTOR:'Node'": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "PARM_DECL:'l'": {
+                                              "children": [
+                                                "TYPE_REF:'struct pcl::gpu::people::trees::AttribLocation'"
+                                              ]
+                                            }
+                                          },
+                                          "PARM_DECL:'t'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FIELD_DECL:'loc'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::gpu::people::trees::AttribLocation'"
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'thresh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'focal'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "VAR_DECL:'loadTree'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

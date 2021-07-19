@@ -1,0 +1,1884 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/3rdparty/poisson4/octree_poisson.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'allocator.h'",
+      "INCLUSION_DIRECTIVE:'binary_node.h'",
+      "INCLUSION_DIRECTIVE:'marching_cubes_poisson.h'",
+      "INCLUSION_DIRECTIVE:'octree_poisson.hpp'",
+      "MACRO_DEFINITION:'DIMENSION'",
+      "MACRO_DEFINITION:'OCT_NODE_INCLUDED'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'DIMENSION'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'poisson'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctNode'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'AdjacencyCountFunction'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'Function'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node1'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'OctNode'",
+                                          "TYPE_REF:'NodeData'",
+                                          "TYPE_REF:'Real'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node2'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'OctNode'",
+                                          "TYPE_REF:'NodeData'",
+                                          "TYPE_REF:'Real'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'count'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'ConstNeighborKey3'": {
+                            "children": [
+                              "CONSTRUCTOR:'ConstNeighborKey3'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::ConstNeighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    "PARM_DECL:'minDepth'",
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::ConstNeighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'set'": {
+                                  "children": [
+                                    "PARM_DECL:'depth'"
+                                  ]
+                                }
+                              },
+                              "DESTRUCTOR:'~ConstNeighborKey3'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::OctNode::ConstNeighbors3'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'ConstNeighborKey5'": {
+                            "children": [
+                              "CONSTRUCTOR:'ConstNeighborKey5'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::ConstNeighbors5'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'set'": {
+                                  "children": [
+                                    "PARM_DECL:'depth'"
+                                  ]
+                                }
+                              },
+                              "DESTRUCTOR:'~ConstNeighborKey5'",
+                              "FIELD_DECL:'_depth'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::OctNode::ConstNeighbors5'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'ConstNeighbors3'": {
+                            "children": [
+                              "CONSTRUCTOR:'ConstNeighbors3'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'clear'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'ConstNeighbors5'": {
+                            "children": [
+                              "CONSTRUCTOR:'ConstNeighbors5'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'clear'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'NeighborKey3'": {
+                            "children": [
+                              "CONSTRUCTOR:'NeighborKey3'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    "PARM_DECL:'d'",
+                                    {
+                                      "PARM_DECL:'p'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'Point3D'",
+                                          "TYPE_REF:'Real'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'root'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'set'": {
+                                  "children": [
+                                    "PARM_DECL:'depth'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeighbors'": {
+                                  "children": [
+                                    "PARM_DECL:'d'",
+                                    {
+                                      "PARM_DECL:'p'": {
+                                        "children": [
+                                          "TEMPLATE_REF:'Point3D'",
+                                          "TYPE_REF:'Real'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'root'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'flags'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "INTEGER_LITERAL:''",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              },
+                              "DESTRUCTOR:'~NeighborKey3'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors3'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'NeighborKey5'": {
+                            "children": [
+                              "CONSTRUCTOR:'NeighborKey5'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors5'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'set'": {
+                                  "children": [
+                                    "PARM_DECL:'depth'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setNeighbors'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'OctNode<NodeData, Real>'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'xEnd'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'xStart'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'yEnd'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'yStart'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'zEnd'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'zStart'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors5'"
+                                  ]
+                                }
+                              },
+                              "DESTRUCTOR:'~NeighborKey5'",
+                              "FIELD_DECL:'_depth'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::OctNode::Neighbors5'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'Neighbors3'": {
+                            "children": [
+                              "CONSTRUCTOR:'Neighbors3'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'clear'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'Neighbors5'": {
+                            "children": [
+                              "CONSTRUCTOR:'Neighbors5'",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'clear'",
+                              {
+                                "FIELD_DECL:'neighbors'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CONSTRUCTOR:'OctNode<NodeData, Real>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'CenterAndWidth'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'center'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'index'",
+                              {
+                                "PARM_DECL:'width'": {
+                                  "children": [
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'ChildOverlap'": {
+                            "children": [
+                              "PARM_DECL:'cRadius2'",
+                              "PARM_DECL:'d'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CommonEdge'": {
+                            "children": [
+                              "PARM_DECL:'eIndex1'",
+                              "PARM_DECL:'eIndex2'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareBackwardDepths'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareBackwardPointerDepths'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareByDepthAndXYZ'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareByDepthAndZIndex'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareForwardDepths'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CompareForwardPointerDepths'": {
+                            "children": [
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CornerIndex'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'center'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'Depth'": {
+                            "children": [
+                              "PARM_DECL:'index'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'DepthAndOffset'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'index'",
+                              {
+                                "PARM_DECL:'offset'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'Index'": {
+                            "children": [
+                              "PARM_DECL:'d'",
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'off'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'offset'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'Overlap'": {
+                            "children": [
+                              "PARM_DECL:'c1'",
+                              "PARM_DECL:'c2'",
+                              "PARM_DECL:'c3'",
+                              "PARM_DECL:'dWidth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'Overlap2'": {
+                            "children": [
+                              "PARM_DECL:'depth1'",
+                              "PARM_DECL:'depth2'",
+                              {
+                                "PARM_DECL:'multiplier1'": {
+                                  "children": [
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'multiplier2'": {
+                                  "children": [
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'offSet1'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'offSet2'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetAllocator'": {
+                            "children": [
+                              "PARM_DECL:'blockSize'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'UseAllocator'",
+                        {
+                          "CXX_METHOD:'__edgeNeighbor'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'i'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'idx'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'o'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'__edgeNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'forceChildren'",
+                              {
+                                "PARM_DECL:'i'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'idx'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'o'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'__faceNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'dir'",
+                              "PARM_DECL:'off'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'__faceNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'dir'",
+                              "PARM_DECL:'forceChildren'",
+                              "PARM_DECL:'off'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'centerAndWidth'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'center'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'width'": {
+                                  "children": [
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'centerIndex'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'index'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'maxDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'cornerNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'cornerIndex'",
+                              {
+                                "PARM_DECL:'forceChildren'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'cornerNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'cornerIndex'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'depth'",
+                        {
+                          "CXX_METHOD:'depthAndOffset'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'offset'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'edgeNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              {
+                                "PARM_DECL:'forceChildren'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'edgeNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'faceNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'faceIndex'",
+                              {
+                                "PARM_DECL:'forceChildren'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'faceNeighbor'": {
+                            "children": [
+                              "PARM_DECL:'faceIndex'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNearestLeaf'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNearestLeaf'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initChildren'",
+                        {
+                          "CXX_METHOD:'isInside'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'Point3D'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'leaves'",
+                        "CXX_METHOD:'maxDepth'",
+                        {
+                          "CXX_METHOD:'maxDepthLeaves'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextBranch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextBranch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextLeaf'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'currentLeaf'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'",
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextLeaf'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'currentLeaf'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'",
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextNode'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'currentNode'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'",
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nextNode'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'currentNode'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'",
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'nodes'",
+                        {
+                          "CXX_METHOD:'prevBranch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'prevBranch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'printLeaves'",
+                        "CXX_METHOD:'printRange'",
+                        {
+                          "CXX_METHOD:'read'": {
+                            "children": [
+                              "PARM_DECL:'fileName'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'read'": {
+                            "children": [
+                              "PARM_DECL:'fp'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'root'": {
+                            "children": [
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setFullDepth'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'width'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'write'": {
+                            "children": [
+                              "PARM_DECL:'fileName'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'write'": {
+                            "children": [
+                              "PARM_DECL:'fp'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~OctNode<NodeData, Real>'",
+                        {
+                          "FIELD_DECL:'children'": {
+                            "children": [
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'d'",
+                        {
+                          "FIELD_DECL:'nodeData'": {
+                            "children": [
+                              "TYPE_REF:'NodeData'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'off'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'parent'": {
+                            "children": [
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessFixedDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width1'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessFixedDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessMaxDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width1'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessMaxDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width1'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessPointAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'PointAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'center1'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'PointAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessPointAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'PointAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius2'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'PointAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessTerminatingNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'TerminatingNodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width1'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'TerminatingNodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'ProcessTerminatingNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'TerminatingNodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "PARM_DECL:'width2'",
+                              "TEMPLATE_TYPE_PARAMETER:'TerminatingNodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__ProcessFixedDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cWidth2'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__ProcessMaxDepthNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cWidth2'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__ProcessNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cWidth2'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__ProcessPointAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'PointAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cWidth2'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius2'",
+                              "TEMPLATE_TYPE_PARAMETER:'PointAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__ProcessTerminatingNodeAdjacentNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'TerminatingNodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cWidth2'",
+                              "PARM_DECL:'dx'",
+                              "PARM_DECL:'dy'",
+                              "PARM_DECL:'dz'",
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius1'",
+                              "PARM_DECL:'radius2'",
+                              "TEMPLATE_TYPE_PARAMETER:'TerminatingNodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__processNodeEdges'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cIndex1'",
+                              "PARM_DECL:'cIndex2'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__processNodeFaces'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cIndex1'",
+                              "PARM_DECL:'cIndex2'",
+                              "PARM_DECL:'cIndex3'",
+                              "PARM_DECL:'cIndex4'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'__processNodeNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'operator='": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'OctNode'",
+                                    "TYPE_REF:'NodeData2'",
+                                    "TYPE_REF:'Real'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeData2'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'processNodeCorners'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cIndex'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'processNodeEdges'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'eIndex'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'processNodeFaces'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'fIndex'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'processNodeNodes'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'F'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeAdjacencyFunction'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'OctNode<NodeData, Real>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'processCurrent'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'NodeAdjacencyFunction'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'NodeData'",
+                        "TEMPLATE_TYPE_PARAMETER:'Real'",
+                        "VAR_DECL:'DepthMask'",
+                        "VAR_DECL:'DepthShift'",
+                        "VAR_DECL:'OffsetMask'",
+                        "VAR_DECL:'OffsetShift'",
+                        "VAR_DECL:'OffsetShift1'",
+                        "VAR_DECL:'OffsetShift2'",
+                        "VAR_DECL:'OffsetShift3'",
+                        "VAR_DECL:'UseAlloc'",
+                        {
+                          "VAR_DECL:'internalAllocator'": {
+                            "children": [
+                              "TEMPLATE_REF:'Allocator'",
+                              "TYPE_REF:'OctNode<NodeData, Real>'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

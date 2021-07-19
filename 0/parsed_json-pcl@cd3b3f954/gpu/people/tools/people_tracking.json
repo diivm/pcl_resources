@@ -1,0 +1,526 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/tools/people_tracking.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'PeopleTrackingApp'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'PeopleTrackingApp'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'cloud_cb_'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'dmat'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'cv'",
+                                    "TYPE_REF:'class cv::Mat'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'ConstPtr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'load_tree'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'fin0'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::ifstream'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'treeFilenames'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'treeFilenames'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'numTrees'",
+                  {
+                    "PARM_DECL:'treeFilenames'": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'run'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'interface'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'f'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "PARM_DECL:'ConstPtr'",
+                                    "TEMPLATE_REF:'function'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'cmap'": {
+                "children": [
+                  "NAMESPACE_REF:'cv'",
+                  "TYPE_REF:'class cv::Mat'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_bmap'": {
+                "children": [
+                  "NAMESPACE_REF:'cv'",
+                  "TYPE_REF:'class cv::Mat'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_cmap'": {
+                "children": [
+                  "NAMESPACE_REF:'cv'",
+                  "TYPE_REF:'class cv::Mat'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_lmap'": {
+                "children": [
+                  "NAMESPACE_REF:'cv'",
+                  "TYPE_REF:'class cv::Mat'"
+                ]
+              }
+            },
+            "FIELD_DECL:'m_proc'",
+            "FIELD_DECL:'viewer'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'load_tree'": {
+                      "children": [
+                        {
+                          "MEMBER_REF_EXPR:'load_tree'": {
+                            "children": [
+                              "DECL_REF_EXPR:'app'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'numTrees'": {
+                            "children": [
+                              "DECL_REF_EXPR:'numTrees'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'treeFilenames'": {
+                            "children": [
+                              "DECL_REF_EXPR:'treeFilenames'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CALL_EXPR:'run'": {
+                      "children": [
+                        {
+                          "MEMBER_REF_EXPR:'run'": {
+                            "children": [
+                              "DECL_REF_EXPR:'app'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'treeFilenames'": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'numTrees'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'app'": {
+                            "children": [
+                              "CALL_EXPR:'PeopleTrackingApp'",
+                              "TYPE_REF:'class PeopleTrackingApp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'print_help'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'print_help'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'print_help'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PAREN_EXPR:''": {
+                      "children": [
+                        {
+                          "CONDITIONAL_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'__assert_fail'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"numTrees > 0\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"/pcl/gpu/people/tools/people_tracking.cpp\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "STRING_LITERAL:'\"int main(int, char **)\"'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'__assert_fail'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'__assert_fail'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_STATIC_CAST_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'numTrees'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'numTrees'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PAREN_EXPR:''": {
+                      "children": [
+                        {
+                          "CONDITIONAL_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'__assert_fail'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"numTrees <= 4\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"/pcl/gpu/people/tools/people_tracking.cpp\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "STRING_LITERAL:'\"int main(int, char **)\"'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'__assert_fail'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'__assert_fail'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_STATIC_CAST_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'numTrees'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'numTrees'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'print_help'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'functional'",
+      "INCLUSION_DIRECTIVE:'opencv2/opencv.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/conversion/conversions.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/label_skeleton/conversion.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/trees/tree_live.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/extract_clusters.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/extract_labeled_clusters.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/seeded_hue_segmentation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/cloud_viewer.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      "MACRO_INSTANTIATION:'CV_16U'",
+      "MACRO_INSTANTIATION:'assert'",
+      "MACRO_INSTANTIATION:'assert'",
+      "MACRO_INSTANTIATION:'assert'",
+      "MACRO_INSTANTIATION:'assert'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      }
+    ]
+  }
+}

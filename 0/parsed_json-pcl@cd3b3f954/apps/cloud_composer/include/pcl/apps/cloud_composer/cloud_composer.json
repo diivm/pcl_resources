@@ -1,0 +1,112 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/cloud_composer.h'": {
+    "children": [
+      "CLASS_DECL:'QTreeView'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'ui_cloud_composer_main_window.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'CloudCommand'",
+                  "CLASS_DECL:'CloudViewer'",
+                  {
+                    "CLASS_DECL:'ComposerMainWindow'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'connectEditActions'",
+                        "CXX_METHOD:'connectFileActions'",
+                        "CXX_METHOD:'connectViewActions'",
+                        {
+                          "CXX_METHOD:'enqueueToolAction'": {
+                            "children": [
+                              "PARM_DECL:'tool'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initializeCloudBrowser'",
+                        "CXX_METHOD:'initializeCloudViewer'",
+                        "CXX_METHOD:'initializeItemInspector'",
+                        "CXX_METHOD:'initializePlugins'",
+                        "CXX_METHOD:'initializeToolBox'",
+                        "CXX_METHOD:'insertNewCloudFromFile'",
+                        "CXX_METHOD:'insertNewCloudFromRGBandDepth'",
+                        "CXX_METHOD:'on_action_exit__triggered'",
+                        "CXX_METHOD:'on_action_insert_from_file__triggered'",
+                        "CXX_METHOD:'on_action_insert_from_openNi_source__triggered'",
+                        "CXX_METHOD:'on_action_insert_from_rgb_depth__triggered'",
+                        "CXX_METHOD:'on_action_open_cloud_as_new_project__triggered'",
+                        "CXX_METHOD:'on_action_open_project__triggered'",
+                        "CXX_METHOD:'on_action_save_project__triggered'",
+                        "CXX_METHOD:'on_action_save_project_as__triggered'",
+                        "CXX_METHOD:'on_action_save_selected_cloud__triggered'",
+                        "CXX_METHOD:'saveSelectedCloudToFile'",
+                        {
+                          "CXX_METHOD:'setCurrentModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMouseStyleAction'": {
+                            "children": [
+                              "PARM_DECL:'selected_style'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~ComposerMainWindow'",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:''",
+                        {
+                          "FIELD_DECL:'current_model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'current_selection_model_'",
+                        "FIELD_DECL:'mouse_style_group_'",
+                        {
+                          "FIELD_DECL:'multiplexer_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::SignalMultiplexer'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'name_model_map_'",
+                        {
+                          "FIELD_DECL:'tool_box_model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ToolBoxModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tool_selection_model_'",
+                        "FIELD_DECL:'undo_group_'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'ProjectModel'",
+                  "CLASS_DECL:'SignalMultiplexer'",
+                  "CLASS_DECL:'ToolBoxModel'",
+                  "CLASS_DECL:'ToolFactory'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

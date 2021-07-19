@@ -1,0 +1,156 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_node_pool.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreeNodePool'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreeNodePool<NodeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'deletePool'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'popNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'newLeafNode'": {
+                                              "children": [
+                                                "TYPE_REF:'NodeT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CXX_DELETE_EXPR:''": {
+                                                          "children": [
+                                                            "TYPE_REF:'NodeT'",
+                                                            "UNEXPOSED_EXPR:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'newLeafNode'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'newLeafNode'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'newLeafNode'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'NodeT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'pushNode'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'node_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreeNodePool<NodeT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'deletePool'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'deletePool'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'nodePool_'",
+                        "TEMPLATE_TYPE_PARAMETER:'NodeT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

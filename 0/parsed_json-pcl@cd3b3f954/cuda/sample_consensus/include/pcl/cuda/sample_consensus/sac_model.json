@@ -1,0 +1,409 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/sample_consensus/include/pcl/cuda/sample_consensus/sac_model.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'float.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'thrust/count.h'",
+      "INCLUSION_DIRECTIVE:'thrust/random/linear_congruential_engine.h'",
+      "INCLUSION_DIRECTIVE:'thrust/remove.h'",
+      "INCLUSION_DIRECTIVE:'thrust/sequence.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'SampleConsensusModel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'SampleConsensusModel<Storage>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'SampleConsensusModel<Storage>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'computeModelCoefficients'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model_coefficients'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Coefficients'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'samples'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Indices'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'countWithinDistance'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model_coefficients'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Coefficients'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'countWithinDistance'": {
+                            "children": [
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'idx'",
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteIndices'": {
+                            "children": [
+                              "PARM_DECL:'indices_stencil'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteIndices'": {
+                            "children": [
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'idx'",
+                              "PARM_DECL:'inliers'",
+                              "PARM_DECL:'inliers_delete'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'generateModelHypotheses'": {
+                            "children": [
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'max_iterations'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'generateModelHypotheses'": {
+                            "children": [
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'max_iterations'",
+                              {
+                                "PARM_DECL:'s'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Samples'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndices'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'last'": {
+                                                          "children": [
+                                                            "TYPE_REF:'pcl::cuda::SampleConsensusModel::Indices'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRadiusLimits'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_radius'",
+                                          {
+                                            "UNEXPOSED_EXPR:'radius_min_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'radius_min_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_radius'",
+                                          {
+                                            "UNEXPOSED_EXPR:'radius_max_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'radius_max_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_radius'",
+                              "PARM_DECL:'min_radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSamples'": {
+                            "children": [
+                              "PARM_DECL:'iterations'",
+                              {
+                                "PARM_DECL:'samples'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Indices'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isSampleInlier'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'i'",
+                              "PARM_DECL:'inliers_stencil'",
+                              {
+                                "PARM_DECL:'samples'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Samples'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectWithinDistance'": {
+                            "children": [
+                              "PARM_DECL:'inliers'",
+                              "PARM_DECL:'inliers_stencil'",
+                              {
+                                "PARM_DECL:'model_coefficients'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::cuda::SampleConsensusModel::Coefficients'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectWithinDistance'": {
+                            "children": [
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'idx'",
+                              "PARM_DECL:'inliers'",
+                              "PARM_DECL:'inliers_stencil'",
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectWithinDistance'": {
+                            "children": [
+                              "PARM_DECL:'centroid'",
+                              "PARM_DECL:'h'",
+                              "PARM_DECL:'idx'",
+                              "PARM_DECL:'inliers_stencil'",
+                              "PARM_DECL:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'normals'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setRadiusLimits'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'radius_min_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'min_radius'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min_radius'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'radius_max_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'max_radius'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_radius'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_radius'",
+                              "PARM_DECL:'min_radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~SampleConsensusModel<Storage>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'indices_'",
+                        "FIELD_DECL:'indices_stencil_'",
+                        "FIELD_DECL:'input_'",
+                        "FIELD_DECL:'normals_'",
+                        "FIELD_DECL:'nr_indices_in_stencil_'",
+                        "FIELD_DECL:'radius_max_'",
+                        "FIELD_DECL:'radius_min_'",
+                        "FIELD_DECL:'rngl_'",
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Coefficients'": {
+                            "children": [
+                              "TEMPLATE_REF:'Storage'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Indices'": {
+                            "children": [
+                              "TEMPLATE_REF:'Storage'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Samples'": {
+                            "children": [
+                              "TEMPLATE_REF:'Storage'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "STRUCT_DECL:'DeleteIndices'",
+                  {
+                    "STRUCT_DECL:'isInlier'": {
+                      "children": [
+                        "FIELD_DECL:'__device__'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'isNaNPoint'": {
+                      "children": [
+                        "FIELD_DECL:'__device__'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

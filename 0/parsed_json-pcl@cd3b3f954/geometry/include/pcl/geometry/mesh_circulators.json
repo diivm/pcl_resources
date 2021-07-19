@@ -1,0 +1,3463 @@
+{
+  "TRANSLATION_UNIT:'/pcl/geometry/include/pcl/geometry/mesh_circulators.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/geometry/boost.h'",
+      "INCLUSION_DIRECTIVE:'pcl/geometry/mesh_indices.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'VertexAroundVertexCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'VertexAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'VertexAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_vertex'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::VertexIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_vertex'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'VertexAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_outgoing_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_outgoing_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::VertexIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_outgoing_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'VertexAroundVertexCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OutgoingHalfEdgeAroundVertexCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OutgoingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutgoingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_vertex'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::VertexIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_vertex'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutgoingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_outgoing_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_outgoing_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_outgoing_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'OutgoingHalfEdgeAroundVertexCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OutgoingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'IncomingHalfEdgeAroundVertexCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'IncomingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_incoming_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'IncomingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_incoming_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_vertex'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::VertexIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_vertex'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'IncomingHalfEdgeAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_incoming_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_incoming_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_incoming_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_incoming_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_incoming_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'IncomingHalfEdgeAroundVertexCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::IncomingHalfEdgeAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'FaceAroundVertexCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FaceAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FaceAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_vertex'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::VertexIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_vertex'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FaceAroundVertexCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_outgoing_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_outgoing_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_outgoing_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::FaceIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_outgoing_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_outgoing_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'FaceAroundVertexCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundVertexCirculator::Mesh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'VertexAroundFaceCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'VertexAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'VertexAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_face'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::FaceIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_face'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'VertexAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_inner_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_inner_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::VertexIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_inner_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'VertexAroundFaceCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::VertexAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'InnerHalfEdgeAroundFaceCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'InnerHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'InnerHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_face'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::FaceIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_face'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'InnerHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_inner_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_inner_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_inner_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::InnerHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'InnerHalfEdgeAroundFaceCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OuterHalfEdgeAroundFaceCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OuterHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OuterHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_face'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::FaceIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_face'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OuterHalfEdgeAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_inner_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_inner_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_inner_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::OuterHalfEdgeAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'OuterHalfEdgeAroundFaceCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'FaceAroundFaceCirculator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FaceAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FaceAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_face'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::FaceIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx_face'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'mesh'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FaceAroundFaceCirculator<MeshT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_inner_half_edge_'",
+                              "MEMBER_REF:'mesh_'",
+                              {
+                                "PARM_DECL:'idx_inner_half_edge'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::HalfEdgeIndex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'mesh'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'mesh'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_inner_half_edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getCurrentHalfEdgeIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndex'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mesh_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::FaceIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator++'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator--'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mesh_'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Self'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "MEMBER_REF_EXPR:'idx_inner_half_edge_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Self'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'idx_inner_half_edge_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::HalfEdgeIndex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mesh_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'pcl::geometry::FaceAroundFaceCirculator::Mesh'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Mesh'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Self'": {
+                            "children": [
+                              "NAMESPACE_REF:'geometry'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'FaceAroundFaceCirculator'",
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

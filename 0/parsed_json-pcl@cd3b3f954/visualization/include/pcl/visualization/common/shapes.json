@@ -1,0 +1,66 @@
+{
+  "TRANSLATION_UNIT:'/pcl/visualization/include/pcl/visualization/common/shapes.h'": {
+    "children": [
+      "CLASS_DECL:'vtkDataSet'",
+      "CLASS_DECL:'vtkUnstructuredGrid'",
+      {
+        "CLASS_TEMPLATE:'vtkSmartPointer'": {
+          "children": [
+            "TEMPLATE_TYPE_PARAMETER:'T'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/common/impl/shapes.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PlanarPolygon'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'visualization'": {
+                "children": [
+                  "FUNCTION_DECL:'allocVtkUnstructuredGrid'",
+                  {
+                    "FUNCTION_TEMPLATE:'createPolygon'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "TEMPLATE_REF:'vtkSmartPointer'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'class vtkDataSet'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'createPolygon'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'planar_polygon'": {
+                            "children": [
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'PlanarPolygon'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_REF:'vtkSmartPointer'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'class vtkDataSet'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "STRUCT_DECL:'ModelCoefficients'"
+          ]
+        }
+      }
+    ]
+  }
+}

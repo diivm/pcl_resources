@@ -1,0 +1,2535 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/3rdparty/poisson4/multi_grid_octree_data.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'bspline_data.h'",
+      "INCLUSION_DIRECTIVE:'multi_grid_octree_data.hpp'",
+      "INCLUSION_DIRECTIVE:'unordered_map'",
+      "MACRO_DEFINITION:'FORCE_NEUMANN_FIELD'",
+      "MACRO_DEFINITION:'GRADIENT_DOMAIN_SOLUTION'",
+      "MACRO_DEFINITION:'MISHA_DEBUG'",
+      "MACRO_DEFINITION:'MULTI_GRID_OCTREE_DATA_INCLUDED'",
+      "MACRO_INSTANTIATION:'MISHA_DEBUG'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'poisson'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'RootInfo'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "FIELD_DECL:'edgeIndex'",
+                        "FIELD_DECL:'key'",
+                        {
+                          "FIELD_DECL:'node'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'SortedTreeNodes'": {
+                      "children": [
+                        "CONSTRUCTOR:'SortedTreeNodes'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getMaxCornerCount'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMaxEdgeCount'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'set'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'root'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCornerTable'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'cData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerTableData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCornerTable'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'setCornerTable'": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'maxDepth'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'maxDepth'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'cData'",
+                                          "MEMBER_REF_EXPR:'setCornerTable'",
+                                          {
+                                            "UNEXPOSED_EXPR:'rootNode'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'rootNode'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'cData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerTableData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCornerTable'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'setCornerTable'": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'maxDepth'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'maxDepth'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'cData'",
+                                          "MEMBER_REF_EXPR:'setCornerTable'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'treeNodes'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'treeNodes'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'cData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerTableData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEdgeTable'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'eData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeTableData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEdgeTable'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'setEdgeTable'": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'maxDepth'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'maxDepth'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'eData'",
+                                          "MEMBER_REF_EXPR:'setEdgeTable'",
+                                          {
+                                            "UNEXPOSED_EXPR:'rootNode'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'rootNode'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'eData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeTableData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEdgeTable'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'setEdgeTable'": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'maxDepth'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'maxDepth'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'eData'",
+                                          "MEMBER_REF_EXPR:'setEdgeTable'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'treeNodes'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'treeNodes'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'eData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeTableData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'threads'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~SortedTreeNodes'",
+                        "FIELD_DECL:'maxDepth'",
+                        "FIELD_DECL:'nodeCount'",
+                        {
+                          "FIELD_DECL:'treeNodes'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'CornerIndices'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'CornerIndices'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'i'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'i'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'CornerTableData'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'CornerTableData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'cCount'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'clear'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'cCount'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'cornerIndices'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'cornerIndices'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~CornerTableData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'clear'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'clear'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'cCount'",
+                              "FIELD_DECL:'cTable'",
+                              "FIELD_DECL:'offsets'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'EdgeIndices'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'EdgeIndices'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'i'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'i'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'EdgeTableData'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'EdgeTableData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'eCount'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'clear'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'edgeIndices'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'edgeIndices'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~EdgeTableData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'clear'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'clear'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'eCount'",
+                              "FIELD_DECL:'eTable'",
+                              "FIELD_DECL:'offsets'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'TreeNodeData'",
+                  {
+                    "CLASS_DECL:'TreeNodeData'": {
+                      "children": [
+                        "CONSTRUCTOR:'TreeNodeData'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "DESTRUCTOR:'~TreeNodeData'",
+                        {
+                          "FIELD_DECL:'constraint'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'nodeIndex'",
+                        "FIELD_DECL:'pointIndex'",
+                        {
+                          "FIELD_DECL:'solution'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNION_DECL:''": {
+                            "children": [
+                              "FIELD_DECL:'mcIndex'",
+                              {
+                                "STRUCT_DECL:''": {
+                                  "children": [
+                                    {
+                                      "FIELD_DECL:'centerWeightContribution'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::Real'"
+                                        ]
+                                      }
+                                    },
+                                    "FIELD_DECL:'normalIndex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "VAR_DECL:'UseIndex'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'VertexData'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'CenterIndex'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              "PARM_DECL:'offSet'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CenterIndex'": {
+                            "children": [
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CenterIndex'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CornerIndex'": {
+                            "children": [
+                              "PARM_DECL:'cIndex'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              "PARM_DECL:'offSet'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CornerIndex'": {
+                            "children": [
+                              "PARM_DECL:'cIndex'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CornerIndex'": {
+                            "children": [
+                              "PARM_DECL:'cIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CornerIndexKey'": {
+                            "children": [
+                              "PARM_DECL:'index'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'EdgeIndex'": {
+                            "children": [
+                              "PARM_DECL:'eIndex'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'EdgeIndex'": {
+                            "children": [
+                              "PARM_DECL:'eIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'FaceIndex'": {
+                            "children": [
+                              "PARM_DECL:'fIndex'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'FaceIndex'": {
+                            "children": [
+                              "PARM_DECL:'fIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'Octree'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'AdjacencyCountFunction'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'Function'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node1'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node2'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'adjacencyCount'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'AdjacencySetFunction'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'Function'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node1'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node2'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'adjacencies'",
+                              "FIELD_DECL:'adjacencyCount'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'FaceEdgesFunction'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'Function'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node1'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node2'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'fIndex'",
+                              "FIELD_DECL:'maxDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'RefineFunction'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'Function'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'node1'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'node2'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_TEMPLATE:'Stencil'": {
+                            "children": [
+                              {
+                                "FIELD_DECL:'values'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'N'",
+                                    "DECL_REF_EXPR:'N'",
+                                    "DECL_REF_EXPR:'N'",
+                                    "TYPE_REF:'C'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_NON_TYPE_PARAMETER:'N'",
+                              "TEMPLATE_TYPE_PARAMETER:'C'"
+                            ]
+                          }
+                        },
+                        "CONSTRUCTOR:'Octree<Degree>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'AddTriangles'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'edges'",
+                              "PARM_DECL:'mesh'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'ClipTree'",
+                        {
+                          "CXX_METHOD:'DownSampleFinerConstraints'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'EdgeRootCount'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetDivergence'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'normal1'",
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetDivergenceMinusLaplacian'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'normal1'",
+                              {
+                                "PARM_DECL:'value1'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetEdgeLoops'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetFixedDepthLaplacian'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'matrix'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'subConstraints'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetIsoValue'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetLaplacian'": {
+                            "children": [
+                              "PARM_DECL:'index'",
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetLaplacian'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node1'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node2'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetMCIsoEdges'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetMCIsoTriangles'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'mesh'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::Octree::RootData'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetMCIsoTriangles'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'addBarycenter'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'fullDepthIso'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'mesh'",
+                              {
+                                "PARM_DECL:'nonLinearFit'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'polygonMesh'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'subdivideDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetMatrixRowSize'": {
+                            "children": [
+                              "PARM_DECL:'neighbors5'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetMatrixRowSize'": {
+                            "children": [
+                              "PARM_DECL:'neighbors5'",
+                              "PARM_DECL:'xEnd'",
+                              "PARM_DECL:'xStart'",
+                              "PARM_DECL:'yEnd'",
+                              "PARM_DECL:'yStart'",
+                              "PARM_DECL:'zEnd'",
+                              "PARM_DECL:'zStart'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRestrictedFixedDepthLaplacian'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'entries'",
+                              "PARM_DECL:'entryCount'",
+                              "PARM_DECL:'matrix'",
+                              {
+                                "PARM_DECL:'rNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'radius'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'subConstraints'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRoot'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey5'",
+                              "PARM_DECL:'nonLinearFit'",
+                              "PARM_DECL:'position'",
+                              {
+                                "PARM_DECL:'ri'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::Octree::RootData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRootIndex'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'ri'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRootIndex'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'ri'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRootIndex'": {
+                            "children": [
+                              "PARM_DECL:'index'",
+                              {
+                                "PARM_DECL:'ri'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::Octree::RootData'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRootPair'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'pair'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'root'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetRootSpan'": {
+                            "children": [
+                              "PARM_DECL:'end'",
+                              {
+                                "PARM_DECL:'ri'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::RootInfo'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'start'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetSolutionGrid'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'depth'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'res'",
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetValue'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'d'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'hasPoints'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'points'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'struct pcl::poisson::Octree::PointInfo'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'GetWeightGrid'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'depth'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'res'",
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'HasNormals'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'epsilon'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'InteriorFaceRootCount'": {
+                            "children": [
+                              "PARM_DECL:'faceIndex'",
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'IsBoundaryEdge'": {
+                            "children": [
+                              "PARM_DECL:'edgeIndex'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'subdivideDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'IsBoundaryEdge'": {
+                            "children": [
+                              "PARM_DECL:'dir'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'subidivideDepth'",
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'IsBoundaryFace'": {
+                            "children": [
+                              "PARM_DECL:'faceIndex'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'subdivideDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'LaplacianMatrixIteration'": {
+                            "children": [
+                              "PARM_DECL:'accuracy'",
+                              "PARM_DECL:'minIters'",
+                              "PARM_DECL:'showResidual'",
+                              "PARM_DECL:'subdivideDepth'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'MemoryUsage'",
+                        {
+                          "CXX_METHOD:'NonLinearGetSampleDepthAndWeight'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'depth'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'position'",
+                              {
+                                "PARM_DECL:'samplesPerNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'weight'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'NonLinearGetSampleWeight'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'position'",
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'NonLinearSplatOrientedPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'normal'",
+                              "PARM_DECL:'point'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'NonLinearSplatOrientedPoint'": {
+                            "children": [
+                              "PARM_DECL:'kernelDepth'",
+                              "PARM_DECL:'maxDepth'",
+                              "PARM_DECL:'minDepth'",
+                              "PARM_DECL:'normal'",
+                              "PARM_DECL:'point'",
+                              {
+                                "PARM_DECL:'samplesPerNode'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'NonLinearUpdateWeightContribution'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'position'",
+                              {
+                                "PARM_DECL:'weight'": {
+                                  "children": [
+                                    {
+                                      "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::Real'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'RefineBoundary'": {
+                            "children": [
+                              "PARM_DECL:'subdivisionDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetBoundaryMCRootPositions'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'mesh'",
+                              "PARM_DECL:'nonLinearFit'",
+                              {
+                                "PARM_DECL:'rootData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::Octree::RootData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetCoarserPointValues'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetDivergenceStencil'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'scatter'",
+                              "PARM_DECL:'stencil'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetDivergenceStencils'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetEvaluationStencils'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'stencil1'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stencil2'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetIsoCorners'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'cData'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'",
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerTableData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'leaf'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nKey'",
+                              {
+                                "PARM_DECL:'stencil1'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stencil2'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'values'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'valuesSet'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'SetLaplacianConstraints'",
+                        {
+                          "CXX_METHOD:'SetLaplacianStencil'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'stencil'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetLaplacianStencils'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'stencil'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetMCRootPositions'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              {
+                                "PARM_DECL:'isoValue'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey5'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rootData'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::poisson::Octree::RootData'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sDepth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetMatrixRow'": {
+                            "children": [
+                              "PARM_DECL:'neighbors5'",
+                              "PARM_DECL:'offset'",
+                              "PARM_DECL:'row'",
+                              {
+                                "PARM_DECL:'stencil'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetMatrixRow'": {
+                            "children": [
+                              "PARM_DECL:'neighbors5'",
+                              "PARM_DECL:'offset'",
+                              "PARM_DECL:'row'",
+                              {
+                                "PARM_DECL:'stencil'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'xEnd'",
+                              "PARM_DECL:'xStart'",
+                              "PARM_DECL:'yEnd'",
+                              "PARM_DECL:'yStart'",
+                              "PARM_DECL:'zEnd'",
+                              "PARM_DECL:'zStart'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetMatrixRowBounds'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'rDepth'",
+                              {
+                                "PARM_DECL:'rOff'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'xEnd'",
+                              "PARM_DECL:'xStart'",
+                              "PARM_DECL:'yEnd'",
+                              "PARM_DECL:'yStart'",
+                              "PARM_DECL:'zEnd'",
+                              "PARM_DECL:'zStart'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SolveFixedDepthMatrix'": {
+                            "children": [
+                              "PARM_DECL:'accuracy'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'minIters'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'showResidual'",
+                              {
+                                "PARM_DECL:'subConstraints'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SolveFixedDepthMatrix'": {
+                            "children": [
+                              "PARM_DECL:'accuracy'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'minIters'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'showResidual'",
+                              "PARM_DECL:'startingDepth'",
+                              {
+                                "PARM_DECL:'subConstraints'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'UpSampleCoarserSolution'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'solution'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'UpdateCoarserSupportBounds'": {
+                            "children": [
+                              "PARM_DECL:'endX'",
+                              "PARM_DECL:'endY'",
+                              "PARM_DECL:'endZ'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'startX'",
+                              "PARM_DECL:'startY'",
+                              "PARM_DECL:'startZ'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'UpdateConstraintsFromCoarser'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey5'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stencil'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "TEMPLATE_REF:'Stencil'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'WeightedCoarserFunctionValue'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey3'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'finalize'",
+                        {
+                          "CXX_METHOD:'getCenterValue'": {
+                            "children": [
+                              "PARM_DECL:'neighborKey3'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getCornerNormal'",
+                        {
+                          "CXX_METHOD:'getCornerValue'": {
+                            "children": [
+                              "PARM_DECL:'corner'",
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey3'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getCornerValue'": {
+                            "children": [
+                              "PARM_DECL:'corner'",
+                              {
+                                "PARM_DECL:'metSolution'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'neighborKey3'",
+                              {
+                                "PARM_DECL:'node'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stencil1'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'stencil2'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setBSplineData'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'normalSmooth'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'reflectBoundary'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'_constrainValues'",
+                        "FIELD_DECL:'_minDepth'",
+                        "FIELD_DECL:'_pointCount'",
+                        "FIELD_DECL:'_points'",
+                        {
+                          "FIELD_DECL:'_sNodes'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'fData'": {
+                            "children": [
+                              "DECL_REF_EXPR:'Degree'",
+                              "NAMESPACE_REF:'pcl'",
+                              "NAMESPACE_REF:'poisson'",
+                              "TEMPLATE_REF:'BSplineData'",
+                              "TYPE_REF:'pcl::poisson::BSplineDataReal'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'neighborKey'",
+                        "FIELD_DECL:'neighborKey2'",
+                        {
+                          "FIELD_DECL:'postNormalSmooth'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'radius'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::Real'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'threads'",
+                        {
+                          "FIELD_DECL:'tree'": {
+                            "children": [
+                              "TYPE_REF:'pcl::poisson::TreeOctNode'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'width'",
+                        {
+                          "FUNCTION_TEMPLATE:'DownSample'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'constraints'": {
+                                  "children": [
+                                    "TYPE_REF:'C'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'C'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'UpSample'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'coefficients'": {
+                                  "children": [
+                                    "TYPE_REF:'C'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'depth'",
+                              {
+                                "PARM_DECL:'sNodes'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'C'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'setTree'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "TEMPLATE_TYPE_PARAMETER:'PointNT'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'PointData'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'PointData'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'p'",
+                                    {
+                                      "PARM_DECL:'v'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::Real'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'w'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::poisson::Real'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'position'",
+                              {
+                                "FIELD_DECL:'value'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'weight'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'PointInfo'": {
+                            "children": [
+                              {
+                                "FIELD_DECL:'splineValues'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'weightedValue'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'RootData'": {
+                            "children": [
+                              {
+                                "CXX_BASE_SPECIFIER:'class SortedTreeNodes::CornerTableData'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'",
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::CornerTableData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_BASE_SPECIFIER:'class SortedTreeNodes::EdgeTableData'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::poisson::SortedTreeNodes'",
+                                    "TYPE_REF:'struct pcl::poisson::SortedTreeNodes::EdgeTableData'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'boundaryRoots'",
+                              "FIELD_DECL:'cornerNormals'",
+                              "FIELD_DECL:'cornerNormalsSet'",
+                              {
+                                "FIELD_DECL:'cornerValues'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::poisson::Real'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'cornerValuesSet'",
+                              "FIELD_DECL:'edgesSet'",
+                              "FIELD_DECL:'interiorRoots'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree'",
+                        "VAR_DECL:'maxMemoryUsage'"
+                      ]
+                    }
+                  },
+                  "TYPEDEF_DECL:'BSplineDataReal'",
+                  "TYPEDEF_DECL:'Real'",
+                  "TYPEDEF_DECL:'TreeOctNode'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

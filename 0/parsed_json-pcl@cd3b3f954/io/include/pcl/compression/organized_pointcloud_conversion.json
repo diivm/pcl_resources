@@ -1,0 +1,1932 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/compression/organized_pointcloud_conversion.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cassert'",
+      "INCLUSION_DIRECTIVE:'limits'",
+      "INCLUSION_DIRECTIVE:'pcl/common/point_tests.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'CompressionPointTraits'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "VAR_DECL:'bytesPerPoint'",
+                        {
+                          "VAR_DECL:'channels'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'hasColor'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'OrganizedConversion'": {
+                      "children": [
+                        {
+                          "TEMPLATE_NON_TYPE_PARAMETER:'enableColor'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "TEMPLATE_REF:'CompressionPointTraits'",
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'OrganizedConversion'": {
+                      "children": [
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "PARM_DECL:''",
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'disparityScale_arg'",
+                              "PARM_DECL:'disparityShift_arg'",
+                              "PARM_DECL:'focalLength_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerX'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerY'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'fl_const'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'bad_point'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'centerY'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'centerY'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'y'": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'centerY'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'centerY'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'centerX'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'centerX'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'x'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'newPoint'": {
+                                                                "children": [
+                                                                  "TYPE_REF:'PointT'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'pixel_disparity'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'x'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'x'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'x'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'y'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'y'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'y'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'depth'",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "DECL_STMT:''": {
+                                                                      "children": [
+                                                                        "VAR_DECL:'depth'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'bad_point'",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'newPoint'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'centerX'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'centerX'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'y'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerX'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerY'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'fl_const'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'bad_point'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'centerY'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'centerY'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'y'": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'centerY'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'centerY'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'centerX'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'centerX'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'x'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'newPoint'": {
+                                                                "children": [
+                                                                  "TYPE_REF:'PointT'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'pixel_depth'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'x'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'x'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'x'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'pixel_depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'y'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'y'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'y'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'pixel_depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'pixel_depth'",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'bad_point'",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'newPoint'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'pixel_depth'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'centerX'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'centerX'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'y'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'OrganizedConversion'": {
+                      "children": [
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'convertToMono'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'convertToMono'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "PARM_DECL:'cloud_arg'",
+                              "PARM_DECL:'convertToMono'",
+                              "PARM_DECL:'disparityScale_arg'",
+                              "PARM_DECL:'disparityShift_arg'",
+                              "PARM_DECL:'focalLength_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'hasColor'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerX'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerY'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'fl_const'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'bad_point'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'centerY'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'centerY'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'y'": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'centerY'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'centerY'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'centerX'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'centerX'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'x'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'newPoint'": {
+                                                                "children": [
+                                                                  "TYPE_REF:'PointT'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'pixel_disparity'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'depth'",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'x'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'x'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'x'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'y'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'y'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'y'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "DECL_STMT:''": {
+                                                                      "children": [
+                                                                        "VAR_DECL:'depth'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "IF_STMT:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "COMPOUND_STMT:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "IF_STMT:''": {
+                                                                                  "children": [
+                                                                                    "COMPOUND_STMT:''",
+                                                                                    "COMPOUND_STMT:''"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "COMPOUND_STMT:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "INTEGER_LITERAL:''",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'hasColor'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'hasColor'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'bad_point'",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'newPoint'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "FLOATING_LITERAL:''",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'centerX'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'centerX'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'y'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "COMPOUND_STMT:''",
+                                                      "COMPOUND_STMT:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'hasColor'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'hasColor'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convert'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_size'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'hasColor'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerX'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'centerY'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'fl_const'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'bad_point'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'centerY'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'centerY'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'y'": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'centerY'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'centerY'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'centerX'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'centerX'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'x'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'newPoint'": {
+                                                                "children": [
+                                                                  "TYPE_REF:'PointT'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'pixel_depth'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'pixel_depth'",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'x'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'x'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'x'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'pixel_depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CXX_STATIC_CAST_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'y'": {
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "UNEXPOSED_EXPR:'y'": {
+                                                                                                    "children": [
+                                                                                                      "DECL_REF_EXPR:'y'"
+                                                                                                    ]
+                                                                                                  }
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'pixel_depth'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'fl_const'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'fl_const'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "IF_STMT:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "COMPOUND_STMT:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "IF_STMT:''": {
+                                                                                  "children": [
+                                                                                    "COMPOUND_STMT:''",
+                                                                                    "COMPOUND_STMT:''"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "COMPOUND_STMT:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "INTEGER_LITERAL:''",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'hasColor'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'hasColor'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'bad_point'",
+                                                                                    {
+                                                                                      "MEMBER_REF_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'newPoint'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'newPoint'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "FLOATING_LITERAL:''",
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'newPoint'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'pixel_depth'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'pixel_depth'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'centerX'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'centerX'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'y'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "COMPOUND_STMT:''",
+                                                      "COMPOUND_STMT:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'hasColor'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'hasColor'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "TRANSLATION_UNIT:'/pcl/tools/add_gaussian_noise.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'compute'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'tt'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'rd'": {
+                            "children": [
+                              "CALL_EXPR:'random_device'",
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'class std::random_device'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'rng'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::mt19937'",
+                              {
+                                "UNEXPOSED_EXPR:'operator()'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'operator()'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'rd'",
+                                          {
+                                            "UNEXPOSED_EXPR:'operator()'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'operator()'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'nd'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'normal_distribution'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'input_xyz_filtered'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'input'",
+            "PARM_DECL:'output'",
+            "PARM_DECL:'standard_deviation'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'loadCloud'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'tt'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'cloud'",
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'p_file_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'standard_deviation'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'default_standard_deviation'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'default_standard_deviation'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'argc'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'argc'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'printHelp'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'argc'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'argc'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'argv'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'argv'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'printHelp'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'printHelp'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'printHelp'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "PARM_DECL:''",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'saveCloud'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'tt'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            "PARM_DECL:'output'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'random'",
+      {
+        "VAR_DECL:'default_standard_deviation'": {
+          "children": [
+            "FLOATING_LITERAL:''"
+          ]
+        }
+      }
+    ]
+  }
+}

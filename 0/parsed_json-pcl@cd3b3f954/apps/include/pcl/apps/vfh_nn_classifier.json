@@ -1,0 +1,339 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/include/pcl/apps/vfh_nn_classifier.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/nn_classification.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/normal_3d.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/vfh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_DECL:'VFHClassifierNN'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'VFHClassifierNN'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'reset'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'reset'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'addTrainingData'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'vfhs'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'label'",
+                        "PARM_DECL:'training_data'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'addTrainingFeatures'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'labels'",
+                        "PARM_DECL:'training_features'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'classify'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'vfhs'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'gaussian_param'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'finalizeLabels'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'finalizeTraining'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'finalizeLabels'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'finalizeLabels'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'finalizeTree'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'finalizeTree'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'finalizeTree'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'loadTrainingData'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'cloud_blob'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'label'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'loadTrainingFeatures'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'cloud'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'labels_file_name'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'reset'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'saveTrainingFeatures'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'labels_file_name'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'classifier_'",
+                  "FIELD_DECL:'labels_'",
+                  "FIELD_DECL:'training_features_'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'computeVFH'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "USING_DIRECTIVE:''": {
+                                  "children": [
+                                    "NAMESPACE_REF:'pcl'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'ne'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'vfh'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "UNEXPOSED_DECL:'Ptr'"
+          ]
+        }
+      }
+    ]
+  }
+}

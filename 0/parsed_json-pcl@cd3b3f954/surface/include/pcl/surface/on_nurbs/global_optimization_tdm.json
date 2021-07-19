@@ -1,0 +1,458 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/on_nurbs/global_optimization_tdm.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/global_optimization_pdm.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'on_nurbs'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'GlobalOptimizationTDM'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'GlobalOptimizationTDM'": {
+                            "children": [
+                              "PARM_DECL:'data'",
+                              "PARM_DECL:'nurbs'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addCageBoundaryRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'side'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addCageCornerRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addCageInteriorRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addParamConstraint'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'params1'",
+                              "PARM_DECL:'params2'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addParamConstraintTD'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'n'",
+                              "PARM_DECL:'params1'",
+                              "PARM_DECL:'params2'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'tangent_weight'",
+                              "PARM_DECL:'tu'",
+                              "PARM_DECL:'tv'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointConstraint'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'params'",
+                              "PARM_DECL:'point'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointConstraintTD'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'n'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'p'",
+                              "PARM_DECL:'params'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'tangent_weight'",
+                              "PARM_DECL:'tu'",
+                              "PARM_DECL:'tv'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assemble'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'params'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assemble'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'params'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::on_nurbs::GlobalOptimizationTDM::ParameterTDM'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'ParameterTDM'": {
+                                                          "children": [
+                                                            "TYPE_REF:'struct pcl::on_nurbs::GlobalOptimizationTDM::ParameterTDM'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleBoundaryPoints'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleClosingBoundaries'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'samples'",
+                              "PARM_DECL:'sigma'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleClosingBoundariesTD'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'samples'",
+                              "PARM_DECL:'sigma'",
+                              "PARM_DECL:'wTangent'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleCommonBoundaries'": {
+                            "children": [
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleCommonBoundariesTD'": {
+                            "children": [
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'wTangent'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleCommonParams'": {
+                            "children": [
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleInteriorPoints'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleInteriorPointsTD'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'wTangent'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'id'",
+                              "PARM_DECL:'ncps'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'wCageRegBnd'",
+                              "PARM_DECL:'wCageRegInt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'solve'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'damp'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'updateSurf'": {
+                            "children": [
+                              "PARM_DECL:'damp'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'ParameterTDM'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'ParameterTDM'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'boundary_tangent_weight'",
+                                    "MEMBER_REF:'closing_tangent_weight'",
+                                    "MEMBER_REF:'interior_tangent_weight'",
+                                    {
+                                      "PARM_DECL:'bndS'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'bndTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'bndW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'cloSa'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'cloSi'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'cloTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'cloW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'comW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'intS'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'intTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'intW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'bndTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'bndTW'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cloTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cloTW'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'intTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'intTW'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'ParameterTDM'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'boundary_tangent_weight'",
+                                    "MEMBER_REF:'closing_tangent_weight'",
+                                    "MEMBER_REF:'interior_tangent_weight'",
+                                    {
+                                      "PARM_DECL:'bndTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'cloTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'intTW'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'params'",
+                                    {
+                                      "UNEXPOSED_EXPR:'bndTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'bndTW'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cloTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cloTW'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'intTW'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'intTW'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'boundary_tangent_weight'",
+                              "FIELD_DECL:'closing_tangent_weight'",
+                              "FIELD_DECL:'interior_tangent_weight'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

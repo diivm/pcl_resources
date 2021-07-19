@@ -1,0 +1,70 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/colors.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'array'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'type_traits'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'ColorLUT'": {
+                "children": [
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_METHOD:'at'",
+                  "CXX_METHOD:'data'",
+                  "CXX_METHOD:'size'",
+                  {
+                    "TEMPLATE_NON_TYPE_PARAMETER:'T'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::ColorLUTName'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_DECL:'ColorLUTName'": {
+                "children": [
+                  "ENUM_CONSTANT_DECL:'LUT_GLASBEY'",
+                  "ENUM_CONSTANT_DECL:'LUT_VIRIDIS'"
+                ]
+              }
+            },
+            {
+              "TYPE_ALIAS_DECL:'GlasbeyLUT'": {
+                "children": [
+                  {
+                    "DECL_REF_EXPR:'LUT_GLASBEY'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_REF:'ColorLUT'"
+                ]
+              }
+            },
+            {
+              "TYPE_ALIAS_DECL:'ViridisLUT'": {
+                "children": [
+                  {
+                    "DECL_REF_EXPR:'LUT_VIRIDIS'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_REF:'ColorLUT'"
+                ]
+              }
+            },
+            "VAR_DECL:'RGB'"
+          ]
+        }
+      }
+    ]
+  }
+}

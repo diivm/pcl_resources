@@ -1,0 +1,1301 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/impl/ndt_2d.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Eigenvalues'",
+      "INCLUSION_DIRECTIVE:'cmath'",
+      "INCLUSION_DIRECTIVE:'memory'",
+      "MACRO_DEFINITION:'PCL_NDT_2D_IMPL_H_'",
+      "MACRO_INSTANTIATION:'assert'",
+      {
+        "NAMESPACE:'Eigen'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'NumTraits'": {
+                "children": [
+                  {
+                    "CXX_METHOD:'dummy_precision'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'Eigen::NumTraits<NormalDist<type-parameter-0-0> >::Real'"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:''": {
+                      "children": [
+                        {
+                          "ENUM_CONSTANT_DECL:'AddCost'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'IsComplex'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'IsInteger'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'IsSigned'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'MulCost'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'ReadCost'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'RequireInitialization'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "NAMESPACE_REF:'ndt2d'",
+                  "NAMESPACE_REF:'pcl'",
+                  "TEMPLATE_REF:'NormalDist'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPE_ALIAS_DECL:'Literal'",
+                  "TYPE_ALIAS_DECL:'Real'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'ndt2d'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'NDT2D'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'NDT2D<PointT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'dx'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'dy'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'about'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'extent'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'step'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'test'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'r'": {
+                                              "children": [
+                                                "TEMPLATE_REF:'ValueAndDerivatives'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cos_theta'",
+                              "PARM_DECL:'sin_theta'",
+                              {
+                                "PARM_DECL:'transformed_pt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'ValueAndDerivatives'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'single_grids_'": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'shared_ptr'",
+                              "TYPE_REF:'pcl::ndt2d::NDT2D::SingleGrid'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'SingleGrid'": {
+                            "children": [
+                              "TEMPLATE_REF:'NDTSingleGrid'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'NDTSingleGrid'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'NDTSingleGrid<PointT>'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'about'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'about'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'extent'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'extent'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'extent'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'extent'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'min_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'used_points'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'std::size_t'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "MEMBER_REF:'max_'",
+                              "MEMBER_REF:'min_'",
+                              "MEMBER_REF:'step_'",
+                              {
+                                "PARM_DECL:'about'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'extent'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'step'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector2f'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'step'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'step'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'normalDistForPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'idxf'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'idxi'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "CXX_THIS_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'pcl::ndt2d::NDTSingleGrid::NormalDist'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'test'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'n'": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'normalDistForPoint'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'transformed_pt'",
+                                                      "MEMBER_REF_EXPR:'normalDistForPoint'"
+                                                    ]
+                                                  }
+                                                },
+                                                "TYPE_REF:'pcl::ndt2d::NDTSingleGrid::NormalDist'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'n'",
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cos_theta'",
+                                                      "DECL_REF_EXPR:'sin_theta'",
+                                                      "DECL_REF_EXPR:'transformed_pt'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'n'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cos_theta'",
+                              "PARM_DECL:'sin_theta'",
+                              {
+                                "PARM_DECL:'transformed_pt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'ValueAndDerivatives'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'cells_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector2i'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'max_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector2f'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'min_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector2f'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'normal_distributions_'",
+                        {
+                          "FIELD_DECL:'step_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector2f'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'NormalDist'": {
+                            "children": [
+                              "NAMESPACE_REF:'ndt2d'",
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'NormalDist'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'NormalDist'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'NormalDist<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'min_n_'",
+                              "MEMBER_REF:'n_'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addIdx'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'i'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimateParams'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'sx'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2d'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'sxx'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Matrix2d'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'min_n_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'min_n_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'n_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'n_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'mean_'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CXX_STATIC_CAST_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'n_'": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'n_'": {
+                                                                                  "children": [
+                                                                                    "MEMBER_REF_EXPR:'n_'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'sx'": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'sx'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'sx'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'covar'": {
+                                                          "children": [
+                                                            "NAMESPACE_REF:'Eigen'",
+                                                            "TYPE_REF:'Eigen::Matrix2d'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'solver'": {
+                                                          "children": [
+                                                            "NAMESPACE_REF:'Eigen'",
+                                                            "NAMESPACE_REF:'Eigen'",
+                                                            "TEMPLATE_REF:'SelfAdjointEigenSolver'",
+                                                            "TYPE_REF:'Eigen::Matrix2d'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "VAR_DECL:'l'": {
+                                                                      "children": [
+                                                                        "NAMESPACE_REF:'Eigen'",
+                                                                        "TYPE_REF:'Eigen::Matrix2d'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "DECL_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "VAR_DECL:'q'": {
+                                                                      "children": [
+                                                                        "NAMESPACE_REF:'Eigen'",
+                                                                        "TYPE_REF:'Eigen::Matrix2d'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'min_covar_eigvalue_mult'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'test'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'r'": {
+                                              "children": [
+                                                "TEMPLATE_REF:'ValueAndDerivatives'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'x'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'transformed_pt'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'y'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'transformed_pt'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'p_xy'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2d'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'transformed_pt'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'transformed_pt'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'q'": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'mean_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'mean_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'p_xy'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'p_xy'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2d'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'qt_cvi'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::RowVector2d'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'exp_qt_cvi_q'": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'exp'": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'q'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'q'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'qt_cvi'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'qt_cvi'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "FLOATING_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'exp'": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_REF_EXPR:'exp'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'jacobian'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'d2q_didj'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector2d'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cos_theta'",
+                              "PARM_DECL:'sin_theta'",
+                              {
+                                "PARM_DECL:'transformed_pt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'ValueAndDerivatives'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'covar_inv_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix2d'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'mean_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector2d'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'min_n_'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::size_t'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'n_'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::size_t'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'pt_indices_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'ValueAndDerivatives'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ValueAndDerivatives<N, T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'value'",
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'Zero'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'r'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'r'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'N'",
+                                                "TEMPLATE_REF:'ValueAndDerivatives'",
+                                                "TYPE_REF:'T'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'r'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'N'",
+                              "TEMPLATE_REF:'ValueAndDerivatives'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator+='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'r'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'value'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'N'",
+                              {
+                                "PARM_DECL:'r'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'N'",
+                                    "TEMPLATE_REF:'ValueAndDerivatives'",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'ValueAndDerivatives'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'grad'",
+                        "FIELD_DECL:'hessian'",
+                        {
+                          "FIELD_DECL:'value'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_NON_TYPE_PARAMETER:'N'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "NAMESPACE:'pcl'"
+    ]
+  }
+}

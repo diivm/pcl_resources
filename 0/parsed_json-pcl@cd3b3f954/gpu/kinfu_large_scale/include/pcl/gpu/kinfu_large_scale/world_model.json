@@ -1,0 +1,142 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/kinfu_large_scale/include/pcl/gpu/kinfu_large_scale/world_model.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/impl/common.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/conditional_removal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/extract_indices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter_indices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'kinfuLS'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'WorldModel'": {
+                      "children": [
+                        "CONSTRUCTOR:'WorldModel<PointT>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addSlice'": {
+                            "children": [
+                              "PARM_DECL:'new_cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'cleanWorldFromNans'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'indices'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getExistingData'": {
+                            "children": [
+                              "PARM_DECL:'existing_slice'",
+                              "PARM_DECL:'offset_x'",
+                              "PARM_DECL:'offset_y'",
+                              "PARM_DECL:'offset_z'",
+                              "PARM_DECL:'previous_origin_x'",
+                              "PARM_DECL:'previous_origin_y'",
+                              "PARM_DECL:'previous_origin_z'",
+                              "PARM_DECL:'volume_x'",
+                              "PARM_DECL:'volume_y'",
+                              "PARM_DECL:'volume_z'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getWorld'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getWorldAsCubes'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'cubes'",
+                              "PARM_DECL:'size'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getWorldSize'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setIndicesAsNans'": {
+                            "children": [
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSliceAsNans'": {
+                            "children": [
+                              "PARM_DECL:'offset_x'",
+                              "PARM_DECL:'offset_y'",
+                              "PARM_DECL:'offset_z'",
+                              "PARM_DECL:'origin_x'",
+                              "PARM_DECL:'origin_y'",
+                              "PARM_DECL:'origin_z'",
+                              "PARM_DECL:'size_x'",
+                              "PARM_DECL:'size_y'",
+                              "PARM_DECL:'size_z'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'world_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

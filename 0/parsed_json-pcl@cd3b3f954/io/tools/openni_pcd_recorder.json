@@ -1,0 +1,1465 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/tools/openni_pcd_recorder.cpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'Consumer'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'Consumer<PointT>'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "MEMBER_REF:'buf_'",
+                  {
+                    "PARM_DECL:'buf'": {
+                      "children": [
+                        "TEMPLATE_REF:'PCDBuffer'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "DECL_REF_EXPR:'buf'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'receiveAndProcess'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'buf_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'print_info'"
+                                        ]
+                                      }
+                                    },
+                                    "STRING_LITERAL:'\"Writing remaining %ld clouds in the buffer to disk...\\n\"'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "WHILE_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "BREAK_STMT:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'is_done'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'is_done'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'stop'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'writeToDisk'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'ss'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::stringstream'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'time'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::string'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DO_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'count'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'last'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'now'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'last'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'last'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'now'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'now'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'count'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'last'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'now'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'now'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'count'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'buf_'": {
+                "children": [
+                  "TEMPLATE_REF:'PCDBuffer'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'thread_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "NAMESPACE_REF:'std'",
+                  "TEMPLATE_REF:'shared_ptr'",
+                  "TYPE_REF:'class std::thread'"
+                ]
+              }
+            },
+            "FIELD_DECL:'writer_'",
+            "TEMPLATE_TYPE_PARAMETER:'PointT'"
+          ]
+        }
+      },
+      {
+        "CLASS_TEMPLATE:'PCDBuffer'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'PCDBuffer<PointT>'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CONSTRUCTOR:'PCDBuffer<PointT>'": {
+                "children": [
+                  {
+                    "PARM_DECL:''": {
+                      "children": [
+                        "TYPE_REF:'PCDBuffer<PointT>'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'getCapacity'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            "CXX_METHOD:'getFront'",
+            {
+              "CXX_METHOD:'getSize'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'isEmpty'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'isFull'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'operator='": {
+                "children": [
+                  {
+                    "PARM_DECL:''": {
+                      "children": [
+                        "TYPE_REF:'PCDBuffer<PointT>'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'PCDBuffer<PointT>'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'pushBack'": {
+                "children": [
+                  "PARM_DECL:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'setCapacity'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'buff_size'"
+                ]
+              }
+            },
+            "FIELD_DECL:'bmutex_'",
+            "FIELD_DECL:'buff_empty_'",
+            "FIELD_DECL:'buffer_'",
+            "TEMPLATE_TYPE_PARAMETER:'PointT'"
+          ]
+        }
+      },
+      {
+        "CLASS_TEMPLATE:'Producer'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'Producer<PointT>'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "MEMBER_REF:'buf_'",
+                  {
+                    "PARM_DECL:'buf'": {
+                      "children": [
+                        "TEMPLATE_REF:'PCDBuffer'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'depth_mode'",
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "DECL_REF_EXPR:'buf'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'grabAndSend'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'grabber'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'interface'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'f'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "PARM_DECL:''",
+                                    "TEMPLATE_REF:'function'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "WHILE_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "BREAK_STMT:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'is_done'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'is_done'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'grabberCallBack'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DO_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'count'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'last'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'now'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'last'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'last'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'now'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'now'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'count'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'last'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'now'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'now'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'count'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'stop'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'buf_'": {
+                "children": [
+                  "TEMPLATE_REF:'PCDBuffer'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            "FIELD_DECL:'depth_mode_'",
+            {
+              "FIELD_DECL:'thread_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "NAMESPACE_REF:'std'",
+                  "TEMPLATE_REF:'shared_ptr'",
+                  "TYPE_REF:'class std::thread'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'PointT'"
+          ]
+        }
+      },
+      {
+        "CXX_METHOD:'getFront'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'cloud'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "TEMPLATE_REF:'PCDBuffer'",
+            "TEMPLATE_TYPE_PARAMETER:'PointT'",
+            "TYPE_REF:'PointT'"
+          ]
+        }
+      },
+      {
+        "CXX_METHOD:'pushBack'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "DECL_REF_EXPR:'retVal'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'retVal'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'retVal'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'cloud'",
+            "TEMPLATE_REF:'PCDBuffer'",
+            "TEMPLATE_TYPE_PARAMETER:'PointT'",
+            "TYPE_REF:'PointT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ctrlC'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "DECL_REF_EXPR:'is_done'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:''"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'getTotalSystemMemory'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'page_size'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'page_size'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'pages'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'pages'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "DECL_REF_EXPR:'memory'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'memory'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'max'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'max'": {
+                                        "children": [
+                                          {
+                                            "DECL_REF_EXPR:'max'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "NAMESPACE_REF:'std'",
+                                                "TEMPLATE_REF:'numeric_limits'",
+                                                "TYPE_REF:'std::size_t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'uint64_t'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pages'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'uint64_t'",
+                              {
+                                "UNEXPOSED_EXPR:'sysconf'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'sysconf'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'_SC_AVPHYS_PAGES'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'_SC_AVPHYS_PAGES'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'sysconf'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'sysconf'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'page_size'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'uint64_t'",
+                              {
+                                "UNEXPOSED_EXPR:'sysconf'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'sysconf'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'_SC_PAGESIZE'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'_SC_PAGESIZE'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'sysconf'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'sysconf'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'max'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'max'": {
+                                              "children": [
+                                                {
+                                                  "DECL_REF_EXPR:'max'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TEMPLATE_REF:'numeric_limits'",
+                                                      "TYPE_REF:'std::size_t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'uint64_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'memory'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'memory'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'max'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'max'": {
+                                              "children": [
+                                                {
+                                                  "DECL_REF_EXPR:'max'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TEMPLATE_REF:'numeric_limits'",
+                                                      "TYPE_REF:'std::size_t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'memory'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              {
+                                "CXX_FUNCTIONAL_CAST_EXPR:''": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'",
+                                    {
+                                      "UNEXPOSED_EXPR:'memory'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'memory'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'device_id'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'buff_size'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'BUFFER_SIZE'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'BUFFER_SIZE'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'BUFFER_SIZE'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'just_xyz'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'depth_mode'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'grabber'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'argc'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'argc'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'printHelp'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'argc'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'argc'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'argv'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'argv'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'buff_size'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'buff_size'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'printHelp'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'printHelp'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'argc'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'argc'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'device'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'modes'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            "COMPOUND_STMT:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'driver'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            "COMPOUND_STMT:''",
+                                                            "NULL_STMT:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'driver'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'signal'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'ctrlC'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ctrlC'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'signal'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'signal'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'buf'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'producer'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'consumer'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'signal'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'ctrlC'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ctrlC'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'signal'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'signal'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'buf'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'producer'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'consumer'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'printHelp'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "PARM_DECL:''",
+            "PARM_DECL:'argv'",
+            "PARM_DECL:'default_buff_size'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'boost/circular_buffer.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/date_time/posix_time/posix_time.hpp'",
+      "INCLUSION_DIRECTIVE:'csignal'",
+      "INCLUSION_DIRECTIVE:'limits'",
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      "INCLUSION_DIRECTIVE:'unistd.h'",
+      "MACRO_DEFINITION:'FPS_CALC'",
+      "MACRO_INSTANTIATION:'FPS_CALC'",
+      "MACRO_INSTANTIATION:'FPS_CALC'",
+      "MACRO_INSTANTIATION:'SIGINT'",
+      "MACRO_INSTANTIATION:'SIGINT'",
+      "MACRO_INSTANTIATION:'_SC_AVPHYS_PAGES'",
+      "MACRO_INSTANTIATION:'_SC_AVPHYS_PAGES'",
+      "MACRO_INSTANTIATION:'_SC_PAGE_SIZE'",
+      "MACRO_INSTANTIATION:'__linux__'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'BUFFER_SIZE'": {
+          "children": [
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'std::size_t'"
+          ]
+        }
+      },
+      "VAR_DECL:'io_mutex'",
+      {
+        "VAR_DECL:'is_done'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      }
+    ]
+  }
+}

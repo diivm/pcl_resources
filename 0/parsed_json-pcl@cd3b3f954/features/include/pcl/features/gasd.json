@@ -1,0 +1,401 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/gasd.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'GASDColorEstimation'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'GASDColorEstimation<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'color_interp_'",
+                        {
+                          "PARM_DECL:'color_half_grid_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'color_hists_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'color_interp'": {
+                            "children": [
+                              "DECL_REF_EXPR:'INTERP_NONE'",
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'shape_half_grid_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'shape_hists_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'shape_interp'": {
+                            "children": [
+                              "DECL_REF_EXPR:'INTERP_NONE'",
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'view_direction'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'color_interp'": {
+                            "children": [
+                              "DECL_REF_EXPR:'color_interp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_BASE_SPECIFIER:'GASDEstimation<PointInT, PointOutT>'": {
+                      "children": [
+                        "TEMPLATE_REF:'GASDEstimation'",
+                        "TYPE_REF:'PointInT'",
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'copyColorHistogramsToOutput'": {
+                      "children": [
+                        "PARM_DECL:'grid_size'",
+                        "PARM_DECL:'hists'",
+                        "PARM_DECL:'hists_size'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'pos'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setColorHalfGridSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'chgs'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setColorHistsInterpMethod'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'color_interp_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'interp'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'interp'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'interp'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setColorHistsSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'chs'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'color_half_grid_size_'",
+                  "FIELD_DECL:'color_hists_size_'",
+                  {
+                    "FIELD_DECL:'color_interp_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                  {
+                    "USING_DECLARATION:'hist_incr_'": {
+                      "children": [
+                        "TEMPLATE_REF:'GASDEstimation'",
+                        "TYPE_REF:'PointInT'",
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  },
+                  {
+                    "USING_DECLARATION:'max_coord_'": {
+                      "children": [
+                        "TEMPLATE_REF:'GASDEstimation'",
+                        "TYPE_REF:'PointInT'",
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  },
+                  {
+                    "USING_DECLARATION:'pos_'": {
+                      "children": [
+                        "TEMPLATE_REF:'GASDEstimation'",
+                        "TYPE_REF:'PointInT'",
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  },
+                  {
+                    "USING_DECLARATION:'shape_samples_'": {
+                      "children": [
+                        "TEMPLATE_REF:'GASDEstimation'",
+                        "TYPE_REF:'PointInT'",
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'GASDEstimation'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'GASDEstimation<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'shape_interp_'",
+                        {
+                          "PARM_DECL:'shape_half_grid_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'shape_hists_size'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'shape_interp'": {
+                            "children": [
+                              "DECL_REF_EXPR:'INTERP_TRILINEAR'",
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'view_direction'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'shape_interp'": {
+                            "children": [
+                              "DECL_REF_EXPR:'shape_interp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'addSampleToHistograms'": {
+                      "children": [
+                        "PARM_DECL:'half_grid_size'",
+                        "PARM_DECL:'hbin'",
+                        "PARM_DECL:'hist_incr'",
+                        "PARM_DECL:'hists'",
+                        {
+                          "PARM_DECL:'interp'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_coord'",
+                        "PARM_DECL:'p'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'compute'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'computeAlignmentTransform'",
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'copyShapeHistogramsToOutput'": {
+                      "children": [
+                        "PARM_DECL:'grid_size'",
+                        "PARM_DECL:'hists'",
+                        "PARM_DECL:'hists_size'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'pos'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTransform'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setShapeHalfGridSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'shgs'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setShapeHistsInterpMethod'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'shape_interp_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'interp'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'interp'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'interp'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setShapeHistsSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'shs'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setViewDirection'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'dir'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'hist_incr_'",
+                  "FIELD_DECL:'max_coord_'",
+                  "FIELD_DECL:'pos_'",
+                  "FIELD_DECL:'shape_half_grid_size_'",
+                  "FIELD_DECL:'shape_hists_size_'",
+                  {
+                    "FIELD_DECL:'shape_interp_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::HistogramInterpolationMethod'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'shape_samples_'",
+                  "FIELD_DECL:'transform_'",
+                  "FIELD_DECL:'view_direction_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            },
+            {
+              "ENUM_DECL:'HistogramInterpolationMethod'": {
+                "children": [
+                  "ENUM_CONSTANT_DECL:'INTERP_NONE'",
+                  "ENUM_CONSTANT_DECL:'INTERP_QUADRILINEAR'",
+                  "ENUM_CONSTANT_DECL:'INTERP_TRILINEAR'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,2750 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/cuda/nvidia/NPP_staging.hpp'": {
+    "children": [
+      {
+        "ENUM_DECL:'NppStBorderType'": {
+          "children": [
+            {
+              "ENUM_CONSTANT_DECL:'nppStBorderClamp'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'nppStBorderMirror'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'nppStBorderNone'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'nppStBorderWrap'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "ENUM_DECL:'NppStInterpMode'": {
+          "children": [
+            "ENUM_CONSTANT_DECL:'nppStBicubic'",
+            "ENUM_CONSTANT_DECL:'nppStSupersample'"
+          ]
+        }
+      },
+      "FUNCTION_DECL:'nppStGetActiveCUDAstream'",
+      "FUNCTION_DECL:'nppStSetActiveCUDAstream'",
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32s_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32s_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_32u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64s_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64s_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStDecimate_64u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStFilterColumnBorder_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'borderType'": {
+                "children": [
+                  "TYPE_REF:'enum NppStBorderType'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'multiplier'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nAnchor'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nDstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nKernelSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'oROI'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pDst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pKernel'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pSrc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStFilterRowBorder_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'borderType'": {
+                "children": [
+                  "TYPE_REF:'enum NppStBorderType'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'multiplier'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nAnchor'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nDstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nKernelSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'oROI'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pDst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pKernel'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pSrc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStGetInterpolationBufferSize'": {
+          "children": [
+            {
+              "PARM_DECL:'hpSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegralGetSize_32f32f'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegralGetSize_8u32u'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegral_32f32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegral_32f32f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegral_8u32u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStIntegral_8u32u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStInterpolateFrames'": {
+          "children": [
+            {
+              "PARM_DECL:'pState'": {
+                "children": [
+                  "TYPE_REF:'struct NppStInterpolationState'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStRectStdDev_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_norm'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_sqsum'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_sum'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'normStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'readThruTexture'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rect'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scaleArea'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'sqsumStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'sumStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStRectStdDev_32f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'h_norm'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_sqsum'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_sum'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'normStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rect'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scaleArea'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'sqsumStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'sumStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStResize_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'dstROI'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'interpolation'": {
+                "children": [
+                  "TYPE_REF:'enum NppStInterpMode'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nDstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pDst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pSrc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcROI'": {
+                "children": [
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'xFactor'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'yFactor'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStSqrIntegralGetSize_8u64u'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStSqrIntegral_8u64u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStSqrIntegral_8u64u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'roiSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_128_C1R'": {
+          "children": [
+            "PARM_DECL:'d_dst'",
+            "PARM_DECL:'d_src'",
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_128_C1R_host'": {
+          "children": [
+            "PARM_DECL:'d_dst'",
+            "PARM_DECL:'d_src'",
+            {
+              "PARM_DECL:'dstStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32s_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32s_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_32u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64f_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64f_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64s_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64s_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64u_C1R'": {
+          "children": [
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStTranspose_64u_C1R_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv64u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcStride'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStVectorWarpGetBufferSize'": {
+          "children": [
+            {
+              "PARM_DECL:'hpSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStVectorWarp_PSF1x1_32f_C1'": {
+          "children": [
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nVFStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pDst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pSrc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pU'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pV'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'timeScale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppiStVectorWarp_PSF2x2_32f_C1'": {
+          "children": [
+            {
+              "PARM_DECL:'nSrcStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'nVFStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pDst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pSrc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pU'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pV'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'timeScale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompactGetSize_32f'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompactGetSize_32s'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompactGetSize_32u'": {
+          "children": [
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'pBufsize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32f'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'p_dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32f_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32s'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'p_dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32s_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32s'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32u'": {
+          "children": [
+            {
+              "PARM_DECL:'bufSize'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pBuffer'": {
+                "children": [
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'p_dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'nppsStCompact_32u_host'": {
+          "children": [
+            {
+              "PARM_DECL:'dstLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'elemRemove'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_dst'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_src'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcLen'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'NCV.hpp'",
+      "MACRO_DEFINITION:'_npp_staging_hpp_'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      {
+        "STRUCT_DECL:'NppStInterpolationState'": {
+          "children": [
+            {
+              "FIELD_DECL:'nStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pBU'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pBV'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pFU'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pFV'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pNewFrame'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pSrcFrame0'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pSrcFrame1'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'pos'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'ppBuffers'": {
+                "children": [
+                  "INTEGER_LITERAL:''",
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'size'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

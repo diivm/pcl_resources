@@ -1,0 +1,77 @@
+{
+  "TRANSLATION_UNIT:'/pcl/geometry/include/pcl/geometry/polygon_operations.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'impl/polygon_operations.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'planar_polygon.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_TEMPLATE:'approximatePolygon'": {
+                "children": [
+                  {
+                    "PARM_DECL:'approx_polygon'": {
+                      "children": [
+                        "TEMPLATE_REF:'PlanarPolygon'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'closed'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'polygon'": {
+                      "children": [
+                        "TEMPLATE_REF:'PlanarPolygon'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'refine'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'threshold'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'approximatePolygon2D'": {
+                "children": [
+                  "PARM_DECL:'approx_polygon'",
+                  {
+                    "PARM_DECL:'closed'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'polygon'",
+                  {
+                    "PARM_DECL:'refine'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'threshold'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

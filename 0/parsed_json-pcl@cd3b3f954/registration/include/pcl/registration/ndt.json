@@ -1,0 +1,635 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/ndt.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/utils.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/voxel_grid_covariance.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/ndt.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/registration.h'",
+      "INCLUSION_DIRECTIVE:'unsupported/Eigen/NonLinearOptimization'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'NormalDistributionsTransform'": {
+                "children": [
+                  "CONSTRUCTOR:'NormalDistributionsTransform<PointSource, PointTarget>'",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_METHOD:'PCL_DEPRECATED'",
+                  {
+                    "CXX_METHOD:'auxilaryFunction_PsiMT'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'f_0'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'f_0'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'f_a'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'f_a'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'g_0'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'g_0'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'mu'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'mu'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'a'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'a'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'f_0'",
+                        "PARM_DECL:'f_a'",
+                        "PARM_DECL:'g_0'",
+                        {
+                          "PARM_DECL:'mu'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'auxilaryFunction_dPsiMT'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'g_0'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'g_0'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'mu'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'mu'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'g_a'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'g_a'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'g_0'",
+                        "PARM_DECL:'g_a'",
+                        {
+                          "PARM_DECL:'mu'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeAngleDerivatives'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'compute_hessian'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'transform'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeDerivatives'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'compute_hessian'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'hessian'",
+                        "PARM_DECL:'score_gradient'",
+                        "PARM_DECL:'trans_cloud'",
+                        "PARM_DECL:'transform'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeHessian'": {
+                      "children": [
+                        "PARM_DECL:'hessian'",
+                        "PARM_DECL:'trans_cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computePointDerivatives'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'compute_hessian'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeStepLengthMT'": {
+                      "children": [
+                        "PARM_DECL:'hessian'",
+                        "PARM_DECL:'score'",
+                        "PARM_DECL:'score_gradient'",
+                        "PARM_DECL:'step_dir'",
+                        "PARM_DECL:'step_init'",
+                        "PARM_DECL:'step_max'",
+                        "PARM_DECL:'step_min'",
+                        "PARM_DECL:'trans_cloud'",
+                        "PARM_DECL:'transform'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeTransformation'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeTransformation'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'guess'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'convertTransform'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'trans'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'convertTransform'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'_affine'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'trans'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFinalNumIteration'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getOulierRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'outlier_ratio_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'outlier_ratio_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'resolution_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'resolution_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getStepSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'step_size_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'step_size_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTransformationProbability'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'trans_probability_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'trans_probability_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'init'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputTarget'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'init'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'init'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'cloud'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setOulierRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'outlier_ratio_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'outlier_ratio'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'outlier_ratio'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'outlier_ratio'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'resolution'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'resolution'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'resolution_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'resolution_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'resolution_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'resolution'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'resolution'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'init'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'init'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'resolution'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setStepSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'step_size_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'step_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'step_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'step_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'trialValueSelectionMT'": {
+                      "children": [
+                        "PARM_DECL:'a_l'",
+                        "PARM_DECL:'a_t'",
+                        "PARM_DECL:'a_u'",
+                        "PARM_DECL:'f_l'",
+                        "PARM_DECL:'f_t'",
+                        "PARM_DECL:'f_u'",
+                        "PARM_DECL:'g_l'",
+                        "PARM_DECL:'g_t'",
+                        "PARM_DECL:'g_u'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'updateDerivatives'": {
+                      "children": [
+                        "PARM_DECL:'c_inv'",
+                        {
+                          "PARM_DECL:'compute_hessian'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'hessian'",
+                        "PARM_DECL:'score_gradient'",
+                        "PARM_DECL:'x_trans'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'updateIntervalMT'": {
+                      "children": [
+                        "PARM_DECL:'a_l'",
+                        "PARM_DECL:'a_t'",
+                        "PARM_DECL:'a_u'",
+                        "PARM_DECL:'f_l'",
+                        "PARM_DECL:'f_t'",
+                        "PARM_DECL:'f_u'",
+                        "PARM_DECL:'g_l'",
+                        "PARM_DECL:'g_t'",
+                        "PARM_DECL:'g_u'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~NormalDistributionsTransform<PointSource, PointTarget>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'angular_hessian_'",
+                  "FIELD_DECL:'angular_jacobian_'",
+                  "FIELD_DECL:'gauss_d1_'",
+                  "FIELD_DECL:'gauss_d2_'",
+                  "FIELD_DECL:'outlier_ratio_'",
+                  "FIELD_DECL:'point_hessian_'",
+                  "FIELD_DECL:'point_jacobian_'",
+                  "FIELD_DECL:'resolution_'",
+                  "FIELD_DECL:'step_size_'",
+                  "FIELD_DECL:'target_cells_'",
+                  "FIELD_DECL:'trans_probability_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointTarget'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

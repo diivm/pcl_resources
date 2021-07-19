@@ -1,0 +1,113 @@
+{
+  "TRANSLATION_UNIT:'/pcl/people/include/pcl/people/person_classifier.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/people/hog.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/impl/person_classifier.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/people/person_cluster.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'people'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'PersonClassifier'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PersonClassifier'": {
+                      "children": [
+                        "CONSTRUCTOR:'PersonClassifier<PointT>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'copyMakeBorder'": {
+                            "children": [
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'input_image'",
+                              "PARM_DECL:'output_image'",
+                              "PARM_DECL:'width'",
+                              "PARM_DECL:'xmin'",
+                              "PARM_DECL:'ymin'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'evaluate'": {
+                            "children": [
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'image'",
+                              "PARM_DECL:'xc'",
+                              "PARM_DECL:'yc'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'evaluate'": {
+                            "children": [
+                              "PARM_DECL:'bottom'",
+                              "PARM_DECL:'centroid'",
+                              "PARM_DECL:'image'",
+                              "PARM_DECL:'top'",
+                              "PARM_DECL:'vertical'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSVM'": {
+                            "children": [
+                              "PARM_DECL:'SVM_offset'",
+                              "PARM_DECL:'SVM_weights'",
+                              "PARM_DECL:'window_height'",
+                              "PARM_DECL:'window_width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'loadSVMFromFile'": {
+                            "children": [
+                              "PARM_DECL:'svm_filename'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'resize'": {
+                            "children": [
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'input_image'",
+                              "PARM_DECL:'output_image'",
+                              "PARM_DECL:'width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSVM'": {
+                            "children": [
+                              "PARM_DECL:'SVM_offset'",
+                              "PARM_DECL:'SVM_weights'",
+                              "PARM_DECL:'window_height'",
+                              "PARM_DECL:'window_width'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~PersonClassifier<PointT>'",
+                        "FIELD_DECL:'SVM_offset_'",
+                        "FIELD_DECL:'SVM_weights_'",
+                        "FIELD_DECL:'window_height_'",
+                        "FIELD_DECL:'window_width_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

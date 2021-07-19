@@ -1,0 +1,1096 @@
+{
+  "TRANSLATION_UNIT:'/pcl/sample_consensus/include/pcl/sample_consensus/sac_model.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/random/mersenne_twister.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/random/uniform_int.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/random/variate_generator.hpp'",
+      "INCLUSION_DIRECTIVE:'climits'",
+      "INCLUSION_DIRECTIVE:'ctime'",
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/model_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "INCLUSION_DIRECTIVE:'pcl/types.h'",
+      "INCLUSION_DIRECTIVE:'set'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Functor'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'Functor<_Scalar, NX, NY>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'m_data_points_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'ValuesAtCompileTime'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'Functor<_Scalar, NX, NY>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'m_data_points_'",
+                        "PARM_DECL:'m_data_points'",
+                        {
+                          "UNEXPOSED_EXPR:'m_data_points'": {
+                            "children": [
+                              "DECL_REF_EXPR:'m_data_points'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'values'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'m_data_points_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~Functor<_Scalar, NX, NY>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:''": {
+                      "children": [
+                        {
+                          "ENUM_CONSTANT_DECL:'InputsAtCompileTime'": {
+                            "children": [
+                              "DECL_REF_EXPR:'NX'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_CONSTANT_DECL:'ValuesAtCompileTime'": {
+                            "children": [
+                              "DECL_REF_EXPR:'NY'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'m_data_points_'",
+                  "TEMPLATE_NON_TYPE_PARAMETER:'NX'",
+                  "TEMPLATE_NON_TYPE_PARAMETER:'NY'",
+                  "TEMPLATE_TYPE_PARAMETER:'_Scalar'",
+                  {
+                    "TYPE_ALIAS_DECL:'Scalar'": {
+                      "children": [
+                        "TYPE_REF:'_Scalar'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'ProgressiveSampleConsensus'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModel'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModel<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "MEMBER_REF:'samples_radius_'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModel<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "MEMBER_REF:'samples_radius_'",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModel<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FLOATING_LITERAL:''",
+                        "MEMBER_REF:'samples_radius_'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeModelCoefficients'": {
+                      "children": [
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeVariance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'medIdx'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'median_error_sqr'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'median_error_sqr'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'median_error_sqr'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'error_sqr_dists'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeVariance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'countWithinDistance'",
+                  {
+                    "CXX_METHOD:'doSamplesVerifyModel'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'drawIndexSample'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'sample_size'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'index_size'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sample'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'drawIndexSampleRadius'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'sample_size'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'index_size'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'indices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sample'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClassName'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistancesToModel'": {
+                      "children": [
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getInputCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getModelSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'model_size_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'model_size_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'getModelType'",
+                  {
+                    "CXX_METHOD:'getRadiusLimits'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'min_radius'",
+                                    {
+                                      "UNEXPOSED_EXPR:'radius_min_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'radius_min_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'max_radius'",
+                                    {
+                                      "UNEXPOSED_EXPR:'radius_max_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'radius_max_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_radius'",
+                        "PARM_DECL:'min_radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSampleSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'sample_size_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'sample_size_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSamples'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'getSampleSize'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'getSampleSize'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'PCL_DEBUG'"
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'max_sample_checks_'",
+                                    "STRING_LITERAL:'\"[pcl::SampleConsensusModel::getSamples] WARNING: Could not select %d sample points in %d iterations!\\n\"'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'iter'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'iter'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'max_sample_checks_'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_sample_checks_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      "RETURN_STMT:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'iter'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'iter'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'iterations'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSamplesMaxDist'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'radius'",
+                                    {
+                                      "UNEXPOSED_EXPR:'samples_radius_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'samples_radius_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isModelValid'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isSampleGood'": {
+                      "children": [
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'optimizeModelCoefficients'": {
+                      "children": [
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'optimized_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoints'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'copy_data_fields'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'projected_points'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'rnd'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'selectWithinDistance'": {
+                      "children": [
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setModelConstraints'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'function'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRadiusLimits'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'radius_min_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'radius_max_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max_radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_radius'",
+                        "PARM_DECL:'min_radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSamplesMaxDist'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'samples_radius_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'",
+                        "PARM_DECL:'search'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModel<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'custom_model_constraints_'",
+                  "FIELD_DECL:'error_sqr_dists_'",
+                  "FIELD_DECL:'indices_'",
+                  "FIELD_DECL:'input_'",
+                  "FIELD_DECL:'model_name_'",
+                  "FIELD_DECL:'model_size_'",
+                  "FIELD_DECL:'radius_max_'",
+                  "FIELD_DECL:'radius_min_'",
+                  {
+                    "FIELD_DECL:'rng_alg_'": {
+                      "children": [
+                        "NAMESPACE_REF:'boost'",
+                        "TYPE_REF:'boost::random::mt19937'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'rng_dist_'",
+                  "FIELD_DECL:'rng_gen_'",
+                  "FIELD_DECL:'sample_size_'",
+                  "FIELD_DECL:'samples_radius_'",
+                  "FIELD_DECL:'samples_radius_search_'",
+                  "FIELD_DECL:'shuffled_indices_'",
+                  {
+                    "FRIEND_DECL:''": {
+                      "children": [
+                        "TEMPLATE_REF:'ProgressiveSampleConsensus'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  {
+                    "VAR_DECL:'max_sample_checks_'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModelFromNormals'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelFromNormals<PointT, PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "MEMBER_REF:'normal_distance_weight_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'getInputNormals'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNormalDistanceWeight'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'normal_distance_weight_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputNormals'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNormalDistanceWeight'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'normal_distance_weight_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'w'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'w'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'w'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'w'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'w'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'w'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'w'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModelFromNormals<PointT, PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'normal_distance_weight_'",
+                  "FIELD_DECL:'normals_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

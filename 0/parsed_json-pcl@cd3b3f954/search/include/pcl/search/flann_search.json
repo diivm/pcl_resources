@@ -1,0 +1,512 @@
+{
+  "TRANSLATION_UNIT:'/pcl/search/include/pcl/search/flann_search.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_representation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_FlannSearch'",
+      {
+        "NAMESPACE:'flann'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'L2'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'L2_Simple'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'Matrix'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'NNIndex'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'search'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'FlannSearch'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'FlannIndexCreator'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'createIndex'",
+                              {
+                                "DESTRUCTOR:'~FlannIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'KMeansIndexCreator'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'KMeansIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_BASE_SPECIFIER:'class pcl::search::FlannSearch::FlannIndexCreator'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::search::FlannSearch::FlannIndexCreator'"
+                                  ]
+                                }
+                              },
+                              "CXX_METHOD:'createIndex'",
+                              {
+                                "DESTRUCTOR:'~KMeansIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'KdTreeIndexCreator'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'KdTreeIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'max_leaf_size_'",
+                                    {
+                                      "PARM_DECL:'max_leaf_size'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'max_leaf_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_leaf_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_BASE_SPECIFIER:'class pcl::search::FlannSearch::FlannIndexCreator'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::search::FlannSearch::FlannIndexCreator'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'createIndex'": {
+                                  "children": [
+                                    "CXX_OVERRIDE_ATTR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~KdTreeIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'max_leaf_size_'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'KdTreeMultiIndexCreator'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'KdTreeMultiIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'trees_'",
+                                    {
+                                      "PARM_DECL:'trees'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'trees'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'trees'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_BASE_SPECIFIER:'class pcl::search::FlannSearch::FlannIndexCreator'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::search::FlannSearch::FlannIndexCreator'"
+                                  ]
+                                }
+                              },
+                              "CXX_METHOD:'createIndex'",
+                              {
+                                "DESTRUCTOR:'~KdTreeMultiIndexCreator'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'trees_'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FlannSearch<PointT, FlannDistance>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'creator'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'class pcl::search::FlannSearch::KdTreeIndexCreator'",
+                                                "UNEXPOSED_EXPR:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'FlannIndexCreatorPtr'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sorted'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'convertInputToFlannMatrix'",
+                        {
+                          "CXX_METHOD:'getChecks'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'checks_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'eps_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPointRepresentation'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'indices'",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'indices'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setChecks'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'checks_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'checks'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'checks'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'checks'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'eps_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'eps'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'eps'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'eps'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'eps'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'indices'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointRepresentation'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'point_representation'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~FlannSearch<PointT, FlannDistance>'",
+                        "FIELD_DECL:'checks_'",
+                        "FIELD_DECL:'creator_'",
+                        "FIELD_DECL:'dim_'",
+                        "FIELD_DECL:'eps_'",
+                        "FIELD_DECL:'identity_mapping_'",
+                        "FIELD_DECL:'index_'",
+                        "FIELD_DECL:'index_mapping_'",
+                        "FIELD_DECL:'input_copied_for_flann_'",
+                        "FIELD_DECL:'input_flann_'",
+                        "FIELD_DECL:'point_representation_'",
+                        {
+                          "TEMPLATE_TYPE_PARAMETER:'FlannDistance'": {
+                            "children": [
+                              "NAMESPACE_REF:'flann'",
+                              "TEMPLATE_REF:'L2_Simple'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'Index'": {
+                            "children": [
+                              "NAMESPACE_REF:'flann'",
+                              "TEMPLATE_REF:'NNIndex'",
+                              "TYPE_REF:'FlannDistance'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

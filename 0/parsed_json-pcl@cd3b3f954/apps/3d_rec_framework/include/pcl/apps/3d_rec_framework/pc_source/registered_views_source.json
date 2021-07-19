@@ -1,0 +1,228 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/pc_source/registered_views_source.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/apps/3d_rec_framework/pc_source/source.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'rec_3d_framework'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'RegisteredViewsSource'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'RegisteredViewsSource<PointInT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'pose_files_order_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'assembleModelFromViewsAndPoses'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''",
+                              "PARM_DECL:'model'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'generate'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'start'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'dir'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'training_dir'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getModelsInDirectory'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'dir'",
+                              "PARM_DECL:'rel_path_so_far'",
+                              "PARM_DECL:'relative_paths'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getViewsFilenames'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'number_of_views'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'path_with_views'",
+                              "PARM_DECL:'view_filenames'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isleafDirectory'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'no_dirs_inside'": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'no_dirs_inside'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'no_dirs_inside'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'path'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'loadOrGenerate'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'pathmodel'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'trained_dir'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'dir'",
+                              "PARM_DECL:'model'",
+                              "PARM_DECL:'model_path'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPoseRowOrder'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'pose_files_order_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'o'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'o'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'o'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPrefix'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'pre'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'pose_files_order_'",
+                        "FIELD_DECL:'view_prefix_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

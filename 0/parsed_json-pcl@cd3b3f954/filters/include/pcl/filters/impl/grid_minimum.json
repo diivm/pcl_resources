@@ -1,0 +1,102 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/impl/grid_minimum.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/point_tests.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/grid_minimum.h'",
+      "MACRO_DEFINITION:'PCL_FILTERS_IMPL_VOXEL_GRID_MINIMUM_H_'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_GridMinimum'",
+      {
+        "STRUCT_DECL:'point_index_idx'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'point_index_idx'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "MEMBER_REF:'cloud_point_index'",
+                  "MEMBER_REF:'idx'",
+                  "PARM_DECL:'cloud_point_index_'",
+                  "PARM_DECL:'idx_'",
+                  {
+                    "UNEXPOSED_EXPR:'cloud_point_index_'": {
+                      "children": [
+                        "DECL_REF_EXPR:'cloud_point_index_'"
+                      ]
+                    }
+                  },
+                  {
+                    "UNEXPOSED_EXPR:'idx_'": {
+                      "children": [
+                        "DECL_REF_EXPR:'idx_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'operator<'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'idx'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'idx'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'idx'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:'idx'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'p'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'struct point_index_idx'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'cloud_point_index'",
+            "FIELD_DECL:'idx'"
+          ]
+        }
+      }
+    ]
+  }
+}

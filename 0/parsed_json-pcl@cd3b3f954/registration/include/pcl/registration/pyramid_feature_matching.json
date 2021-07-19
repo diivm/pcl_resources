@@ -1,0 +1,147 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/pyramid_feature_matching.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_representation.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PyramidFeatureHistogram'": {
+                "children": [
+                  "CONSTRUCTOR:'PyramidFeatureHistogram<PointFeature>'",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'addFeature'": {
+                      "children": [
+                        "PARM_DECL:'feature'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'at'": {
+                      "children": [
+                        "PARM_DECL:'access'",
+                        "PARM_DECL:'level'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'at'": {
+                      "children": [
+                        "PARM_DECL:'feature'",
+                        "PARM_DECL:'level'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'comparePyramidFeatureHistograms'": {
+                      "children": [
+                        "PARM_DECL:'pyramid_a'",
+                        "PARM_DECL:'pyramid_b'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'convertFeatureToVector'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'feature'": {
+                            "children": [
+                              "TYPE_REF:'PointFeature'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'feature_vector'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initializeHistogram'",
+                  {
+                    "CXX_METHOD:'isComputed'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'is_computed_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'is_computed_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputDimensionRange'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'feature_representation_'",
+                  "FIELD_DECL:'hist_levels'",
+                  "FIELD_DECL:'is_computed_'",
+                  "FIELD_DECL:'nr_dimensions'",
+                  "FIELD_DECL:'nr_features'",
+                  "FIELD_DECL:'nr_levels'",
+                  {
+                    "STRUCT_DECL:'PyramidFeatureHistogramLevel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PyramidFeatureHistogramLevel'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PyramidFeatureHistogramLevel'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'initializeHistogramLevel'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'initializeHistogramLevel'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'a_bin_step'",
+                              "PARM_DECL:'a_bins_per_dimension'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initializeHistogramLevel'",
+                        "FIELD_DECL:'bin_step'",
+                        "FIELD_DECL:'bins_per_dimension'",
+                        "FIELD_DECL:'hist'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointFeature'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "TRANSLATION_UNIT:'/pcl/sample_consensus/include/pcl/sample_consensus/sac_model_cone.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/distances.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/model_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModelCone'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelCone<PointT, PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'eps_angle_'",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelCone<PointT, PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'eps_angle_'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelCone<PointT, PointNT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'source'",
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_THROW_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "MEMBER_REF:'eps_angle_'",
+                        "MEMBER_REF:'max_angle_'",
+                        "MEMBER_REF:'min_angle_'",
+                        {
+                          "PARM_DECL:'source'": {
+                            "children": [
+                              "TYPE_REF:'SampleConsensusModelCone<PointT, PointNT>'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'countWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'doSamplesVerifyModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getAxis'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistancesToModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getEpsAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'eps_angle_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMinMaxOpeningAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'min_angle'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_angle_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_angle_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'max_angle'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max_angle_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_angle_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_angle'",
+                        "PARM_DECL:'min_angle'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getModelType'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isModelValid'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isSampleGood'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'operator='": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'source'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'eps_angle_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'source'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'min_angle_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'source'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'max_angle_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'source'": {
+                            "children": [
+                              "TYPE_REF:'SampleConsensusModelCone<PointT, PointNT>'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'SampleConsensusModelCone<PointT, PointNT>'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'optimizeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'optimized_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'pointToAxisDistance'": {
+                      "children": [
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'pt'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        {
+                          "PARM_DECL:'copy_data_fields'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'projected_points'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'selectWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setAxis'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'ax'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setEpsAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'eps_angle_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'ea'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ea'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'ea'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinMaxOpeningAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'min_angle_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_angle'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_angle'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_angle_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max_angle'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_angle'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_angle'",
+                        "PARM_DECL:'min_angle'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModelCone<PointT, PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'axis_'",
+                  "FIELD_DECL:'eps_angle_'",
+                  "FIELD_DECL:'max_angle_'",
+                  "FIELD_DECL:'min_angle_'",
+                  {
+                    "STRUCT_DECL:'OptimizationFunctor'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OptimizationFunctor'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'indices'",
+                              {
+                                "PARM_DECL:'model'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'SampleConsensusModelCone'",
+                                    "TYPE_REF:'PointNT'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'opening_angle'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'apexdotdir'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'dirdotdir'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'fvec'",
+                              "PARM_DECL:'x'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'indices_'",
+                        {
+                          "FIELD_DECL:'model_'": {
+                            "children": [
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'SampleConsensusModelCone'",
+                              "TYPE_REF:'PointNT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

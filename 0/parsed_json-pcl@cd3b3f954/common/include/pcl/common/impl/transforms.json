@@ -1,0 +1,1220 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/impl/transforms.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'cmath'",
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "INCLUSION_DIRECTIVE:'xmmintrin.h'",
+      "MACRO_INSTANTIATION:'__SSE2__'",
+      "MACRO_INSTANTIATION:'__SSE2__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_TEMPLATE:'getPrincipalTransformation'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'rel1'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'rel2'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPoint'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:''": {
+                            "children": [
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'tf'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ret'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'ret'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ret'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'point'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloud'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloud'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'npts'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'npts'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'npts'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'npts'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'npts'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "CONTINUE_STMT:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'indices'",
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'offset'",
+                  "PARM_DECL:'rotation'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloudWithNormals'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloudWithNormals'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'npts'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'indices'",
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointCloudWithNormals'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'cloud_in'",
+                  "PARM_DECL:'cloud_out'",
+                  "PARM_DECL:'copy_all_fields'",
+                  "PARM_DECL:'offset'",
+                  "PARM_DECL:'rotation'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'transformPointWithNormal'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:''": {
+                            "children": [
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'tf'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ret'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CALL_EXPR:''": {
+                            "children": [
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'tf'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ret'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'ret'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'",
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'tf'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'detail'",
+                                    "NAMESPACE_REF:'pcl'",
+                                    "TEMPLATE_REF:'Transformer'",
+                                    "TYPE_REF:'Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ret'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'point'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'transform'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TEMPLATE_TYPE_PARAMETER:'Scalar'",
+                  "TYPE_REF:'PointT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Transformer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Transformer<Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'transform'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'se3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'tgt'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tgt'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'p'": {
+                                              "children": [
+                                                {
+                                                  "INIT_LIST_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''",
+                                                "TYPE_REF:'Scalar'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'so3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'tgt'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tgt'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'p'": {
+                                              "children": [
+                                                {
+                                                  "INIT_LIST_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'src'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'src'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''",
+                                                "TYPE_REF:'Scalar'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tf'",
+                        "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Transformer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Transformer'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'tf'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'se3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p0'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p2'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'so3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p0'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p2'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'c'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Transformer'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Transformer'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'tf'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'se3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p0'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'vv'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'so3'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'xx'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p0'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'p1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'i'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'vv'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'std::size_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'src'",
+                              "PARM_DECL:'tgt'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'c'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

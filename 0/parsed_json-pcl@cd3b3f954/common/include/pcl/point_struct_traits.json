@@ -1,0 +1,586 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/point_struct_traits.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/mpl/assert.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/mpl/identity.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/mpl/vector.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/preprocessor/seq/enum.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/preprocessor/stringize.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/preprocessor/tuple/elem.hpp'",
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "INCLUSION_DIRECTIVE:'cstdint'",
+      "INCLUSION_DIRECTIVE:'type_traits'",
+      "MACRO_DEFINITION:'POINT_CLOUD_REGISTER_FIELD_DATATYPE'",
+      "MACRO_DEFINITION:'POINT_CLOUD_REGISTER_FIELD_NAME'",
+      "MACRO_DEFINITION:'POINT_CLOUD_REGISTER_FIELD_OFFSET'",
+      "MACRO_DEFINITION:'POINT_CLOUD_REGISTER_POINT_FIELD_LIST'",
+      "MACRO_INSTANTIATION:'BOOST_MPL_ASSERT_MSG'",
+      "MACRO_INSTANTIATION:'BOOST_MPL_ASSERT_MSG'",
+      "MACRO_INSTANTIATION:'BOOST_MPL_ASSERT_MSG'",
+      "MACRO_INSTANTIATION:'BOOST_MPL_ASSERT_MSG'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'traits'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'POD'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'type'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'asEnum'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'decomposeArray'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        "VAR_DECL:'value'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'name'": {
+                      "children": [
+                        {
+                          "CXX_BASE_SPECIFIER:'name<typename POD<PointT>::type, Tag, dummy>'": {
+                            "children": [
+                              "DECL_REF_EXPR:'dummy'",
+                              "TEMPLATE_REF:'POD'",
+                              "TEMPLATE_REF:'name'",
+                              "TYPE_REF:'PointT'",
+                              "TYPE_REF:'Tag'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'mpl_assertion_in_line_115'"
+                            ]
+                          }
+                        },
+                        "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED'",
+                        {
+                          "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED115'": {
+                            "children": [
+                              {
+                                "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    "TYPE_REF:'struct mpl_::assert_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'assert_arg'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct mpl_::failed'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_NON_TYPE_PARAMETER:'dummy'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tag'",
+                        {
+                          "TYPEDEF_DECL:'mpl_assert_arg115'": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED115'": {
+                                  "children": [
+                                    {
+                                      "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          "TYPE_REF:'struct mpl_::assert_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'assert_arg'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          {
+                                            "PARM_DECL:''": {
+                                              "children": [
+                                                "TYPE_REF:'PointT'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct mpl_::failed'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'traits'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'offset'": {
+                      "children": [
+                        {
+                          "CXX_BASE_SPECIFIER:'offset<typename POD<PointT>::type, Tag>'": {
+                            "children": [
+                              "TEMPLATE_REF:'POD'",
+                              "TEMPLATE_REF:'offset'",
+                              "TYPE_REF:'PointT'",
+                              "TYPE_REF:'Tag'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'mpl_assertion_in_line_147'"
+                            ]
+                          }
+                        },
+                        "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED'",
+                        {
+                          "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED147'": {
+                            "children": [
+                              {
+                                "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    "TYPE_REF:'struct mpl_::assert_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'assert_arg'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct mpl_::failed'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tag'",
+                        {
+                          "TYPEDEF_DECL:'mpl_assert_arg147'": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED147'": {
+                                  "children": [
+                                    {
+                                      "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          "TYPE_REF:'struct mpl_::assert_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'assert_arg'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          {
+                                            "PARM_DECL:''": {
+                                              "children": [
+                                                "TYPE_REF:'PointT'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct mpl_::failed'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'traits'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'datatype'": {
+                      "children": [
+                        {
+                          "CXX_BASE_SPECIFIER:'datatype<typename POD<PointT>::type, Tag>'": {
+                            "children": [
+                              "TEMPLATE_REF:'POD'",
+                              "TEMPLATE_REF:'datatype'",
+                              "TYPE_REF:'PointT'",
+                              "TYPE_REF:'Tag'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'mpl_assertion_in_line_174'"
+                            ]
+                          }
+                        },
+                        "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED'",
+                        {
+                          "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED174'": {
+                            "children": [
+                              {
+                                "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    "TYPE_REF:'struct mpl_::assert_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'assert_arg'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct mpl_::failed'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "TEMPLATE_TYPE_PARAMETER:'Tag'",
+                        {
+                          "TYPEDEF_DECL:'mpl_assert_arg174'": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED174'": {
+                                  "children": [
+                                    {
+                                      "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          "TYPE_REF:'struct mpl_::assert_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'assert_arg'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          {
+                                            "PARM_DECL:''": {
+                                              "children": [
+                                                "TYPE_REF:'PointT'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct mpl_::failed'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'traits'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'fieldList'": {
+                      "children": [
+                        {
+                          "CXX_BASE_SPECIFIER:'fieldList<typename POD<PointT>::type>'": {
+                            "children": [
+                              "TEMPLATE_REF:'POD'",
+                              "TEMPLATE_REF:'fieldList'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'mpl_assertion_in_line_202'"
+                            ]
+                          }
+                        },
+                        "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED'",
+                        {
+                          "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED202'": {
+                            "children": [
+                              {
+                                "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    "TYPE_REF:'struct mpl_::assert_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'assert_arg'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NAMESPACE_REF:'boost'",
+                                    "NAMESPACE_REF:'mpl'",
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct mpl_::failed'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPEDEF_DECL:'mpl_assert_arg202'": {
+                            "children": [
+                              {
+                                "STRUCT_DECL:'POINT_TYPE_NOT_PROPERLY_REGISTERED202'": {
+                                  "children": [
+                                    {
+                                      "CXX_BASE_SPECIFIER:'boost::mpl::assert_'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          "TYPE_REF:'struct mpl_::assert_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "CXX_METHOD:'assert_arg'": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "NAMESPACE_REF:'boost'",
+                                          "NAMESPACE_REF:'mpl'",
+                                          {
+                                            "PARM_DECL:''": {
+                                              "children": [
+                                                "TYPE_REF:'PointT'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'struct mpl_::failed'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

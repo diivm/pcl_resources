@@ -1,0 +1,243 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/point_selectors/interactor_style_switch.h'": {
+    "children": [
+      "CLASS_DECL:'QVTKWidget'",
+      "INCLUSION_DIRECTIVE:'QMap'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/common/actor_map.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/common/ren_win_interact_map.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/interactor_style.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'vtkAreaPicker.h'",
+      "INCLUSION_DIRECTIVE:'vtkCommand.h'",
+      "INCLUSION_DIRECTIVE:'vtkInteractorStyle.h'",
+      "INCLUSION_DIRECTIVE:'vtkPointPicker.h'",
+      "INCLUSION_DIRECTIVE:'vtkRenderWindowInteractor.h'",
+      "INCLUSION_DIRECTIVE:'vtkRendererCollection.h'",
+      "INCLUSION_DIRECTIVE:'vtkSmartPointer.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'ClickTrackballStyleInteractor'",
+                  {
+                    "CLASS_DECL:'InteractorStyleSwitch'": {
+                      "children": [
+                        "CONSTRUCTOR:'InteractorStyleSwitch'",
+                        {
+                          "CONSTRUCTOR:'InteractorStyleSwitch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::InteractorStyleSwitch'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'New'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::InteractorStyleSwitch'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'OnLeave'",
+                        {
+                          "CXX_METHOD:'SetCurrentRenderer'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetDefaultRenderer'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SetInteractor'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'iren'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInteractorStyle'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'initializeInteractorStyles'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'vis'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::InteractorStyleSwitch'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCurrentInteractorStyle'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'interactor_style'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'interactor_styles'",
+                                    "TYPE_REF:'enum pcl::cloud_composer::interactor_styles::INTERACTOR_STYLES'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'setCurrentStyle'",
+                        {
+                          "CXX_METHOD:'setQVTKWidget'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'qvtk_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'qvtk'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'qvtk'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'qvtk'": {
+                                  "children": [
+                                    "TYPE_REF:'class QVTKWidget'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'vtkGetObjectMacro'",
+                        "CXX_METHOD:'vtkTypeMacro'",
+                        "DESTRUCTOR:'~InteractorStyleSwitch'",
+                        "FIELD_DECL:'area_picker_'",
+                        "FIELD_DECL:'click_trackball_interactor_style_'",
+                        "FIELD_DECL:'current_style_'",
+                        "FIELD_DECL:'name_to_style_map_'",
+                        "FIELD_DECL:'pcl_vis_style_'",
+                        "FIELD_DECL:'point_picker_'",
+                        {
+                          "FIELD_DECL:'project_model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'qvtk_'": {
+                            "children": [
+                              "TYPE_REF:'class QVTKWidget'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'rectangular_frustum_selector_'",
+                        "FIELD_DECL:'render_window_interactor_'",
+                        "FIELD_DECL:'rens_'",
+                        "FIELD_DECL:'selected_trackball_interactor_style_'",
+                        "FIELD_DECL:'vis_'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'ProjectModel'",
+                  "CLASS_DECL:'RectangularFrustumSelector'",
+                  "CLASS_DECL:'SelectedTrackballStyleInteractor'",
+                  {
+                    "NAMESPACE:'interactor_events'": {
+                      "children": [
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'MANIPULATION_COMPLETE_EVENT'",
+                              "ENUM_CONSTANT_DECL:'SELECTION_COMPLETE_EVENT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "NAMESPACE:'interactor_styles'": {
+                      "children": [
+                        {
+                          "ENUM_DECL:'INTERACTOR_STYLES'": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'CLICK_TRACKBALL'",
+                              {
+                                "ENUM_CONSTANT_DECL:'PCL_VISUALIZER'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "ENUM_CONSTANT_DECL:'RECTANGULAR_FRUSTUM'",
+                              "ENUM_CONSTANT_DECL:'SELECTED_TRACKBALL'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "UNEXPOSED_DECL:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

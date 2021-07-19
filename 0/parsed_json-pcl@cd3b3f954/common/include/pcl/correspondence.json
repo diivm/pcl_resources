@@ -1,0 +1,189 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/correspondence.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Geometry'",
+      "INCLUSION_DIRECTIVE:'Eigen/StdVector'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'pcl/types.h'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_DECL:'getRejectedQueryIndices'": {
+                "children": [
+                  "PARM_DECL:'correspondences_after'",
+                  "PARM_DECL:'correspondences_before'",
+                  "PARM_DECL:'indices'",
+                  {
+                    "PARM_DECL:'presorting_required'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'isBetterCorrespondence'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'distance'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:'distance'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'pc1'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'distance'": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:'distance'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'pc2'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pc1'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::Correspondence'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pc2'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::Correspondence'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Correspondence'": {
+                "children": [
+                  "CONSTRUCTOR:'Correspondence'",
+                  {
+                    "CONSTRUCTOR:'Correspondence'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'_distance'",
+                        "PARM_DECL:'_index_match'",
+                        "PARM_DECL:'_index_query'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'index_match'",
+                  "FIELD_DECL:'index_query'",
+                  {
+                    "UNION_DECL:''": {
+                      "children": [
+                        "FIELD_DECL:'distance'",
+                        "FIELD_DECL:'weight'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'PointCorrespondence3D'": {
+                "children": [
+                  {
+                    "CXX_BASE_SPECIFIER:'struct pcl::Correspondence'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::Correspondence'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'point1'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'point2'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'PointCorrespondence6D'": {
+                "children": [
+                  {
+                    "CXX_BASE_SPECIFIER:'struct pcl::PointCorrespondence3D'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::PointCorrespondence3D'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'transformation'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Affine3f'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'ostream'": {
+                "children": [
+                  "NAMESPACE_REF:'std'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

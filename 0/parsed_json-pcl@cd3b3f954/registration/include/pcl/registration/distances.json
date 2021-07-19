@@ -1,0 +1,397 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/distances.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'string.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'distances'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'computeMedian'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'fvec'",
+                        "PARM_DECL:'m'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'gedikli'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'clipping'",
+                        {
+                          "PARM_DECL:'slope'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'val'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'huber'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'diff'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'Eigen'",
+                                          "TYPE_REF:'Eigen::Array4f'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'norm'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'i'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'norm'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_src'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_tgt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sigma'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'huber'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'norm'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'diff'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'diff'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'sigma'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'sigma'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'norm'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "FLOATING_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'sigma'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'sigma'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'diff'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'diff'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'sigma'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'sigma'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'sigma'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'sigma'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'norm'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'norm'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'diff'",
+                        "PARM_DECL:'sigma'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'l1'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'p_src'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_tgt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'l2'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'p_src'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_tgt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'l2Sqr'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'p_src'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_tgt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

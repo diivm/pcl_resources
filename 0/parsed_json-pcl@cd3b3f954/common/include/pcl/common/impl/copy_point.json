@@ -1,0 +1,68 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/impl/copy_point.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/concatenate.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/copy_point.h'",
+      "INCLUSION_DIRECTIVE:'pcl/for_each_type.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/type_traits.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_TEMPLATE:'copyPoint'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'copy'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'point_in'": {
+                      "children": [
+                        "TYPE_REF:'PointInT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'point_out'": {
+                      "children": [
+                        "TYPE_REF:'PointOutT'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'CopyPointHelper'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'Enable'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                      ]
+                    }
+                  },
+                  "STRUCT_DECL:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

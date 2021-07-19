@@ -1,0 +1,333 @@
+{
+  "TRANSLATION_UNIT:'/pcl/keypoints/include/pcl/keypoints/harris_2d.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/intensity.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/impl/harris_2d.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/keypoint.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'HarrisKeypoint2D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'HarrisKeypoint2D<PointInT, PointOutT, IntensityT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'method_'",
+                        "MEMBER_REF:'min_distance_'",
+                        "MEMBER_REF:'nonmax_'",
+                        "MEMBER_REF:'refine_'",
+                        "MEMBER_REF:'skipped_pixels_'",
+                        "MEMBER_REF:'threads_'",
+                        "MEMBER_REF:'threshold_'",
+                        "MEMBER_REF:'window_height_'",
+                        "MEMBER_REF:'window_width_'",
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "DECL_REF_EXPR:'HARRIS'",
+                              "TYPE_REF:'enum pcl::HarrisKeypoint2D::ResponseMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'min_distance'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'threshold'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'window_height'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'window_width'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'method'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'min_distance'": {
+                            "children": [
+                              "DECL_REF_EXPR:'min_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'threshold'": {
+                            "children": [
+                              "DECL_REF_EXPR:'threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'window_height'": {
+                            "children": [
+                              "DECL_REF_EXPR:'window_height'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'window_width'": {
+                            "children": [
+                              "DECL_REF_EXPR:'window_width'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeSecondMomentMatrix'": {
+                      "children": [
+                        "PARM_DECL:'coefficients'",
+                        "PARM_DECL:'pos'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'detectKeypoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'greaterIntensityAtIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'responseHarris'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseLowe'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseNoble'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'responseTomasi'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMethod'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'type'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::HarrisKeypoint2D::ResponseMethod'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinimalDistance'": {
+                      "children": [
+                        "PARM_DECL:'min_distance'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNonMaxSupression'": {
+                      "children": [
+                        {
+                          "PARM_DECL:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'threads_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'nr_threads'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'nr_threads'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'nr_threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRefine'": {
+                      "children": [
+                        "PARM_DECL:'do_refine'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSkippedPixels'": {
+                      "children": [
+                        "PARM_DECL:'skipped_pixels'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setThreshold'": {
+                      "children": [
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setWindowHeight'": {
+                      "children": [
+                        "PARM_DECL:'window_height'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setWindowWidth'": {
+                      "children": [
+                        "PARM_DECL:'window_width'"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'ResponseMethod'": {
+                      "children": [
+                        {
+                          "ENUM_CONSTANT_DECL:'HARRIS'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "ENUM_CONSTANT_DECL:'LOWE'",
+                        "ENUM_CONSTANT_DECL:'NOBLE'",
+                        "ENUM_CONSTANT_DECL:'TOMASI'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'derivatives_cols_'",
+                  "FIELD_DECL:'derivatives_rows_'",
+                  "FIELD_DECL:'half_window_height_'",
+                  "FIELD_DECL:'half_window_width_'",
+                  {
+                    "FIELD_DECL:'intensity_'": {
+                      "children": [
+                        "TYPE_REF:'IntensityT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'method_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::HarrisKeypoint2D::ResponseMethod'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'min_distance_'",
+                  "FIELD_DECL:'nonmax_'",
+                  "FIELD_DECL:'refine_'",
+                  "FIELD_DECL:'skipped_pixels_'",
+                  "FIELD_DECL:'threads_'",
+                  "FIELD_DECL:'threshold_'",
+                  "FIELD_DECL:'window_height_'",
+                  "FIELD_DECL:'window_width_'",
+                  "TEMPLATE_TYPE_PARAMETER:'IntensityT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/containers/include/pcl/gpu/containers/kernel_containers.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "MACRO_DEFINITION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      "MACRO_INSTANTIATION:'__PCL_GPU_HOST_DEVICE__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "USING_DECLARATION:'PtrStep'": {
+                      "children": [
+                        "NAMESPACE_REF:'gpu'",
+                        "NAMESPACE_REF:'pcl'",
+                        "OVERLOADED_DECL_REF:'PtrStep'"
+                      ]
+                    }
+                  },
+                  {
+                    "USING_DECLARATION:'PtrStepSz'": {
+                      "children": [
+                        "NAMESPACE_REF:'gpu'",
+                        "NAMESPACE_REF:'pcl'",
+                        "OVERLOADED_DECL_REF:'PtrStepSz'"
+                      ]
+                    }
+                  },
+                  {
+                    "USING_DECLARATION:'PtrSz'": {
+                      "children": [
+                        "NAMESPACE_REF:'gpu'",
+                        "NAMESPACE_REF:'pcl'",
+                        "OVERLOADED_DECL_REF:'PtrSz'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'DevPtr'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'DevPtr<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'data'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'DevPtr<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'data'",
+                              {
+                                "PARM_DECL:'data_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'data_arg'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONVERSION_FUNCTION:'operator const type-parameter-0-0 *'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'data'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONVERSION_FUNCTION:'operator type-parameter-0-0 *'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'data'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'elemSize'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "TYPE_ALIAS_DECL:'elem_type'": {
+                            "children": [
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "VAR_DECL:'elem_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PtrStep'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PtrStep<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PtrStep<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'data_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'step_arg'",
+                              "TEMPLATE_REF:'DevPtr'",
+                              "TYPE_REF:'T'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'data_arg'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_BASE_SPECIFIER:'DevPtr<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'DevPtr'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "OVERLOADED_DECL_REF:'ptr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'x'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "OVERLOADED_DECL_REF:'ptr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'x'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'ptr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'y'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'ptr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'y'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'step'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PtrStepSz'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PtrStepSz<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''",
+                              "MEMBER_REF:'cols'",
+                              "MEMBER_REF:'rows'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PtrStepSz<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'cols'",
+                              "MEMBER_REF:'rows'",
+                              "PARM_DECL:'cols_arg'",
+                              {
+                                "PARM_DECL:'data_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'rows_arg'",
+                              "PARM_DECL:'step_arg'",
+                              {
+                                "UNEXPOSED_EXPR:'cols_arg'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'cols_arg'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'rows_arg'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'rows_arg'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_BASE_SPECIFIER:'PtrStep<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'PtrStep'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'cols'",
+                        "FIELD_DECL:'rows'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'PtrSz'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PtrSz<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'PtrSz<T>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'data_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'size_arg'",
+                              "TEMPLATE_REF:'DevPtr'",
+                              "TYPE_REF:'T'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'data_arg'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_BASE_SPECIFIER:'DevPtr<T>'": {
+                            "children": [
+                              "TEMPLATE_REF:'DevPtr'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'size'",
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

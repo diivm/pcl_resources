@@ -1,0 +1,641 @@
+{
+  "TRANSLATION_UNIT:'/pcl/search/include/pcl/search/organized.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'pcl/common/eigen.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'search'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OrganizedNeighbor'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OrganizedNeighbor<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'eps_'",
+                              "MEMBER_REF:'pyramid_level_'",
+                              {
+                                "PARM_DECL:'eps'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'pyramid_level'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sorted_results'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'eps'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'eps'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'pyramid_level'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'pyramid_level'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'clipRange'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'begin'",
+                              "PARM_DECL:'end'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeCameraMatrix'": {
+                            "children": [
+                              "PARM_DECL:'camera_matrix'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'estimateProjectionMatrix'",
+                        {
+                          "CXX_METHOD:'getProjectedRadiusSearchBox'": {
+                            "children": [
+                              "PARM_DECL:'maxX'",
+                              "PARM_DECL:'maxY'",
+                              "PARM_DECL:'minX'",
+                              "PARM_DECL:'minY'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'squared_radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'min_f'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'p_q'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'projectPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'q'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p_q'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'estimateProjectionMatrix'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'estimateProjectionMatrix'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          "NULL_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              {
+                                "PARM_DECL:'indices'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'testPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'point'": {
+                                              "children": [
+                                                "TYPE_REF:'PointT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'dist_x'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'point'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'query'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'dist_y'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'point'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'query'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'dist_z'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'point'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'query'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'squared_distance'": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'dist_x'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'dist_x'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'dist_x'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'dist_x'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'dist_y'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'dist_y'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'dist_y'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'dist_y'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'dist_z'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'dist_z'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'dist_z'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'dist_z'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'queue_size'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'insert_into_queue'": {
+                                                          "children": [
+                                                            {
+                                                              "OBJ_BOOL_LITERAL_EXPR:''": {
+                                                                "children": [
+                                                                  "COMPOUND_STMT:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:'insert_into_queue'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'insert_into_queue'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:'insert_into_queue'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'insert_into_queue'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "RETURN_STMT:''": {
+                                                                "children": [
+                                                                  "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'k'",
+                              {
+                                "PARM_DECL:'query'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'queue'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OrganizedNeighbor<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'KR_'",
+                        "FIELD_DECL:'KR_KRT_'",
+                        "FIELD_DECL:'eps_'",
+                        "FIELD_DECL:'mask_'",
+                        "FIELD_DECL:'projection_matrix_'",
+                        "FIELD_DECL:'pyramid_level_'",
+                        {
+                          "STRUCT_DECL:'Entry'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'distance'",
+                                    "PARM_DECL:'dist'",
+                                    "PARM_DECL:'idx'",
+                                    {
+                                      "UNEXPOSED_EXPR:'dist'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'dist'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'distance'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator<'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'other'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "MEMBER_REF_EXPR:'distance'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'other'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::search::OrganizedNeighbor::Entry'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'distance'",
+                              "FIELD_DECL:'index'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

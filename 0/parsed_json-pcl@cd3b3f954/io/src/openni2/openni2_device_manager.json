@@ -1,0 +1,242 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/src/openni2/openni2_device_manager.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'operator<<'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'device_info'"
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'stream'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'std'",
+            "PARM_DECL:'device_manager'",
+            {
+              "PARM_DECL:'stream'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::ostream'"
+                ]
+              }
+            },
+            "TYPE_REF:'std::ostream'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'OpenNI.h'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/io/io_exception.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni2/openni2_convert.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni2/openni2_device.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni2/openni2_device_manager.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'set'",
+      "INCLUSION_DIRECTIVE:'string'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "NAMESPACE:'openni2'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'OpenNI2DeviceInfoComparator'": {
+                            "children": [
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'operator()'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'di1'",
+                                    "PARM_DECL:'di2'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_DECL:'OpenNI2DeviceListener'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'OpenNI2DeviceListener'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'device_info_list'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'onDeviceConnected'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "FUNCTION_DECL:'l'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "NAMESPACE_REF:'std'",
+                                                      "PARM_DECL:''",
+                                                      "TEMPLATE_REF:'lock_guard'",
+                                                      "TYPE_REF:'class std::mutex'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'device_info_wrapped'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "CXX_OVERRIDE_ATTR:''",
+                                    "PARM_DECL:'pInfo'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'onDeviceDisconnected'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "FUNCTION_DECL:'l'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "NAMESPACE_REF:'std'",
+                                                      "PARM_DECL:''",
+                                                      "TEMPLATE_REF:'lock_guard'",
+                                                      "TYPE_REF:'class std::mutex'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'device_info_wrapped'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "CXX_OVERRIDE_ATTR:''",
+                                    "PARM_DECL:'pInfo'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'onDeviceStateChanged'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "CXX_OVERRIDE_ATTR:''",
+                                    "PARM_DECL:'pInfo'",
+                                    "PARM_DECL:'state'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~OpenNI2DeviceListener'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'device_set_'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "USING_DECLARATION:'OpenNI2Device'": {
+          "children": [
+            "NAMESPACE_REF:'io'",
+            "NAMESPACE_REF:'openni2'",
+            "NAMESPACE_REF:'pcl'",
+            "OVERLOADED_DECL_REF:'OpenNI2Device'"
+          ]
+        }
+      },
+      {
+        "USING_DECLARATION:'OpenNI2DeviceInfo'": {
+          "children": [
+            "NAMESPACE_REF:'io'",
+            "NAMESPACE_REF:'openni2'",
+            "NAMESPACE_REF:'pcl'",
+            "OVERLOADED_DECL_REF:'OpenNI2DeviceInfo'"
+          ]
+        }
+      },
+      {
+        "USING_DECLARATION:'OpenNI2DeviceManager'": {
+          "children": [
+            "NAMESPACE_REF:'io'",
+            "NAMESPACE_REF:'openni2'",
+            "NAMESPACE_REF:'pcl'",
+            "OVERLOADED_DECL_REF:'OpenNI2DeviceManager'"
+          ]
+        }
+      }
+    ]
+  }
+}

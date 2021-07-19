@@ -1,0 +1,906 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/src/pcd_select_object_plane.cpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'ObjectSelection'": {
+          "children": [
+            "CONSTRUCTOR:'ObjectSelection<PointT>'",
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'compute'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'estimateNormals'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'ne'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'map'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'ne'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'input'",
+                  "PARM_DECL:'normals'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'initGUI'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'rgba_index'": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'rgba_index'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'rgba_index'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_DELETE_EXPR:''",
+                                                      "MEMBER_REF_EXPR:'rgb_data_'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'poff'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'keyboard_callback'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:''",
+                  "PARM_DECL:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'load'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'tt'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'file'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'mouse_callback'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:''",
+                  "PARM_DECL:'mouse_event'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'pp_callback'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:''": {
+                            "children": [
+                              {
+                                "DECL_REF_EXPR:''": {
+                                  "children": [
+                                    "OVERLOADED_DECL_REF:'print_info'"
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'idx'",
+                              "DECL_REF_EXPR:'stderr'",
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'picked_pt'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'picked_pt'"
+                                  ]
+                                }
+                              },
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'picked_pt'"
+                                  ]
+                                }
+                              },
+                              "STRING_LITERAL:'\"Picked point with index %d, and coordinates %f, %f, %f.\\n\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'picked_pt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'sphere_name'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::string'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'region'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'idx'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'idx'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "RETURN_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'height'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'uint32_t'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "VAR_DECL:'width'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'uint32_t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'u'",
+                                          "VAR_DECL:'v'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:''",
+                  "PARM_DECL:'event'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'save'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'w'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'object_file'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'plane_file'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'segment'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'tt'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'mps'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'seg'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_segmented'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cloud_remaining'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'max_dist'": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'max'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'max'": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_REF_EXPR:'max'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'",
+                                                                  "TEMPLATE_REF:'numeric_limits'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'idx'": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'idx'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'idx'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "COMPOUND_STMT:''",
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_STMT:''": {
+                                                                "children": [
+                                                                  "VAR_DECL:'tt'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "DECL_STMT:''": {
+                                                                "children": [
+                                                                  "VAR_DECL:'cloud_projected'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "COMPOUND_STMT:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'object'",
+                  "PARM_DECL:'picked_idx'",
+                  {
+                    "PARM_DECL:'picked_point'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'region'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'segmentObject'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'plane_hull'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'object'",
+                  "PARM_DECL:'picked_idx'",
+                  "PARM_DECL:'plane_indices'"
+                ]
+              }
+            },
+            {
+              "DESTRUCTOR:'~ObjectSelection<PointT>'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CXX_UNARY_EXPR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'rgb_data_'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'rgb_data_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'cloud_'",
+            "FIELD_DECL:'cloud_viewer_'",
+            "FIELD_DECL:'distance_map_'",
+            "FIELD_DECL:'image_viewer_'",
+            "FIELD_DECL:'object_'",
+            "FIELD_DECL:'plane_'",
+            "FIELD_DECL:'plane_comparator_'",
+            "FIELD_DECL:'plane_indices_'",
+            "FIELD_DECL:'rgb_data_'",
+            "TEMPLATE_TYPE_PARAMETER:'PointT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'object_file'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'plane_file'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'reader'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'dummy'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'s'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'s'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'pcl/common/angles.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/integral_image_normal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/normal_3d.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/extract_indices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/project_inliers.h'",
+      "INCLUSION_DIRECTIVE:'pcl/geometry/polygon_operations.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model_plane.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/edge_aware_plane_comparator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/euclidean_cluster_comparator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/extract_clusters.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/extract_polygonal_prism_data.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/organized_connected_component_segmentation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/organized_multi_plane_segmentation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/segmentation/sac_segmentation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/convex_hull.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/image_viewer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/point_cloud_handlers.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      }
+    ]
+  }
+}

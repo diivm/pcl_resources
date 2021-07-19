@@ -1,0 +1,231 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/3rdparty/opennurbs/opennurbs_rtree.h'": {
+    "children": [
+      "CLASS_DECL:'ON_CLASS'",
+      "MACRO_DEFINITION:'ON_RTree_MAX_NODE_COUNT'",
+      "MACRO_DEFINITION:'ON_RTree_MIN_NODE_COUNT'",
+      "MACRO_DEFINITION:'OPENNURBS_RTREE_INC_'",
+      "MACRO_INSTANTIATION:'ON_RTree_MAX_NODE_COUNT'",
+      {
+        "STRUCT_DECL:'ON_RTreeBBox'": {
+          "children": [
+            {
+              "FIELD_DECL:'m_max'": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_min'": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeBranch'": {
+          "children": [
+            {
+              "FIELD_DECL:'m_rect'": {
+                "children": [
+                  "TYPE_REF:'struct ON_RTreeBBox'"
+                ]
+              }
+            },
+            {
+              "UNION_DECL:''": {
+                "children": [
+                  {
+                    "FIELD_DECL:'m_child'": {
+                      "children": [
+                        "TYPE_REF:'struct ON_RTreeNode'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'m_id'",
+                  "STRUCT_DECL:'ON_RTreeNode'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeCapsule'": {
+          "children": [
+            {
+              "FIELD_DECL:'m_domain'": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_point'": {
+                "children": [
+                  "INTEGER_LITERAL:''",
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            "FIELD_DECL:'m_radius'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeLeaf'": {
+          "children": [
+            "FIELD_DECL:'m_id'",
+            {
+              "FIELD_DECL:'m_rect'": {
+                "children": [
+                  "TYPE_REF:'struct ON_RTreeBBox'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeNode'": {
+          "children": [
+            {
+              "CXX_METHOD:'IsInternalNode'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'m_level'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'m_level'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'IsLeaf'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'m_level'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'m_level'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'m_branch'": {
+                "children": [
+                  "INTEGER_LITERAL:''",
+                  "TYPE_REF:'struct ON_RTreeBranch'"
+                ]
+              }
+            },
+            "FIELD_DECL:'m_count'",
+            "FIELD_DECL:'m_level'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeSearchResult'": {
+          "children": [
+            "FIELD_DECL:'m_capacity'",
+            "FIELD_DECL:'m_count'",
+            "FIELD_DECL:'m_id'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ON_RTreeSphere'": {
+          "children": [
+            {
+              "FIELD_DECL:'m_point'": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            "FIELD_DECL:'m_radius'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'ON_RTree'": {
+          "children": [
+            "TYPE_REF:'class ON_CLASS'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'ON_RTreeIterator'": {
+          "children": [
+            "TYPE_REF:'class ON_CLASS'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'ON_RTreeMemPool'": {
+          "children": [
+            "TYPE_REF:'class ON_CLASS'"
+          ]
+        }
+      }
+    ]
+  }
+}

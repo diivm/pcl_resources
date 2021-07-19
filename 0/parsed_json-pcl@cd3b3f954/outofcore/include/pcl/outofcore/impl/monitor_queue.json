@@ -1,0 +1,140 @@
+{
+  "TRANSLATION_UNIT:'/pcl/outofcore/include/pcl/outofcore/impl/monitor_queue.hpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'MonitorQueue'": {
+          "children": [
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'pop'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'lock'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "NAMESPACE_REF:'std'",
+                                    "TEMPLATE_REF:'unique_lock'",
+                                    "TYPE_REF:'class std::mutex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'temp'": {
+                                  "children": [
+                                    "TYPE_REF:'DataT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'temp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'DataT'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'push'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'notify_one'": {
+                            "children": [
+                              {
+                                "MEMBER_REF_EXPR:'notify_one'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'item_available_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'lock'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "NAMESPACE_REF:'std'",
+                                    "TEMPLATE_REF:'lock_guard'",
+                                    "TYPE_REF:'class std::mutex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'newData'": {
+                      "children": [
+                        "TYPE_REF:'DataT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'item_available_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'class std::condition_variable'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'monitor_mutex_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'class std::mutex'"
+                ]
+              }
+            },
+            "FIELD_DECL:'queue_'",
+            "TEMPLATE_TYPE_PARAMETER:'DataT'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'condition_variable'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'queue'",
+      "MACRO_DEFINITION:'PCL_OUTOFCORE_MONITOR_QUEUE_IMPL_H_'"
+    ]
+  }
+}

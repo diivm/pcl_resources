@@ -1,0 +1,243 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/items/cloud_composer_item.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/properties_model.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'CloudComposerItem'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CloudComposerItem'": {
+                            "children": [
+                              "PARM_DECL:'name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'CloudComposerItem'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'to_copy'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudComposerItem'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addChild'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'item_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudComposerItem'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'clone'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudComposerItem'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getChildren'",
+                        {
+                          "CXX_METHOD:'getId'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getInspectorTabs'",
+                        {
+                          "CXX_METHOD:'getPropertiesModel'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'properties_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'properties_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'class pcl::cloud_composer::PropertiesModel'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isSanitized'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'paintView'": {
+                            "children": [
+                              "PARM_DECL:'vis'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'propertyChanged'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeFromView'": {
+                            "children": [
+                              "PARM_DECL:'vis'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'type'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'CLOUD_COMPOSER_ITEM'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'CLOUD_COMPOSER_ITEM'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~CloudComposerItem'",
+                        {
+                          "ENUM_DECL:'ItemType'": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'CLOUD_COMPOSER_ITEM'",
+                              "ENUM_CONSTANT_DECL:'CLOUD_ITEM'",
+                              "ENUM_CONSTANT_DECL:'FPFH_ITEM'",
+                              "ENUM_CONSTANT_DECL:'NORMALS_ITEM'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'properties_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::PropertiesModel'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'PropertiesModel'",
+                  {
+                    "CLASS_TEMPLATE:'VPtr'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'asPtr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'v'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'asQVariant'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "NAMESPACE:'ItemDataRole'": {
+                      "children": [
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              "ENUM_CONSTANT_DECL:'CLOUD_BLOB'",
+                              "ENUM_CONSTANT_DECL:'CLOUD_TEMPLATED'",
+                              "ENUM_CONSTANT_DECL:'COLOR_HANDLER'",
+                              "ENUM_CONSTANT_DECL:'GEOMETRY_HANDLER'",
+                              "ENUM_CONSTANT_DECL:'ITEM_ID'",
+                              "ENUM_CONSTANT_DECL:'KD_TREE_SEARCH'",
+                              "ENUM_CONSTANT_DECL:'ORIENTATION'",
+                              "ENUM_CONSTANT_DECL:'ORIGIN'",
+                              "ENUM_CONSTANT_DECL:'PROPERTIES'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "UNEXPOSED_DECL:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'CloudComposerItem'": {
+          "children": [
+            "NAMESPACE_REF:'cloud_composer'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      },
+      "VAR_DECL:'ITEM_TYPES_STRINGS'"
+    ]
+  }
+}

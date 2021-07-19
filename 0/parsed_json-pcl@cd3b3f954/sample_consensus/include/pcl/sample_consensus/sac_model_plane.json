@@ -1,0 +1,347 @@
+{
+  "TRANSLATION_UNIT:'/pcl/sample_consensus/include/pcl/sample_consensus/sac_model_plane.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/model_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model.h'",
+      "INCLUSION_DIRECTIVE:'xmmintrin.h'",
+      "MACRO_INSTANTIATION:'__SSE2__'",
+      "MACRO_INSTANTIATION:'__SSE__'",
+      "MACRO_INSTANTIATION:'__SSE__'",
+      "MACRO_INSTANTIATION:'__SSE__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModelPlane'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelPlane<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelPlane<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'countWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'countWithinDistanceStandard'",
+                  "CXX_METHOD:'dist4'",
+                  {
+                    "CXX_METHOD:'doSamplesVerifyModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistancesToModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getModelType'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isSampleGood'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'optimizeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'optimized_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        {
+                          "PARM_DECL:'copy_data_fields'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'projected_points'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'selectWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModelPlane<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'pointToPlaneDistance'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'a'",
+                  "PARM_DECL:'b'",
+                  "PARM_DECL:'c'",
+                  "PARM_DECL:'d'",
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'Point'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'pointToPlaneDistance'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'plane_coefficients'",
+                  "TEMPLATE_TYPE_PARAMETER:'Point'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'pointToPlaneDistanceSigned'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'",
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'p'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'",
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'p'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'c'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'p'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'d'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'a'",
+                  "PARM_DECL:'b'",
+                  "PARM_DECL:'c'",
+                  "PARM_DECL:'d'",
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'Point'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'pointToPlaneDistanceSigned'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'plane_coefficients'",
+                  "TEMPLATE_TYPE_PARAMETER:'Point'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'projectPoint'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'distance_to_plane'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'q_e'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'model_coefficients'",
+                  {
+                    "PARM_DECL:'p'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'q'": {
+                      "children": [
+                        "TYPE_REF:'Point'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'Point'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

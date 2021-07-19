@@ -1,0 +1,681 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/grid_projection.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/dynamic_bitset/dynamic_bitset.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/reconstruction.h'",
+      "INCLUSION_DIRECTIVE:'unordered_map'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'GridProjection'": {
+                "children": [
+                  "CONSTRUCTOR:'GridProjection<PointNT>'",
+                  {
+                    "CONSTRUCTOR:'GridProjection<PointNT>'": {
+                      "children": [
+                        "PARM_DECL:'in_resolution'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'createSurfaceForCell'": {
+                      "children": [
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'fillPad'": {
+                      "children": [
+                        "PARM_DECL:'index'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'findIntersection'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "PARM_DECL:'level'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCellCenterFromIndex'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'center'",
+                        "PARM_DECL:'index'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCellHashMap'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCellIndex'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'p'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClassName'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getD1AtPoint'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'pt_union_indices'",
+                        "PARM_DECL:'vec'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getD2AtPoint'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'pt_union_indices'",
+                        "PARM_DECL:'vec'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDataPtsUnion'": {
+                      "children": [
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getIndexIn1D'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'index'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getIndexIn3D'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'index_1d'",
+                        "PARM_DECL:'index_3d'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMagAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMaxBinarySearchLevel'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'max_binary_search_level_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNearestNeighborNum'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'k_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPaddingSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'padding_size_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getProjection'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'projection'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getProjectionWithPlaneFit'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'projection'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'leaf_size_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getVectorAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'pt_union_indices'",
+                        "PARM_DECL:'vo'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getVectorAtPointKNN'": {
+                      "children": [
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_squared_distances'",
+                        "PARM_DECL:'p'",
+                        "PARM_DECL:'vo'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getVertexFromCellCenter'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "PARM_DECL:'cell_center'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isIntersected'": {
+                      "children": [
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performReconstruction'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performReconstruction'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'points'",
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'reconstructPolygons'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'scaleInputDataPoint'": {
+                      "children": [
+                        "PARM_DECL:'scale_factor'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMaxBinarySearchLevel'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_binary_search_level_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max_binary_search_level'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_binary_search_level'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_binary_search_level'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNearestNeighborNum'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'k_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'k'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPaddingSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'padding_size_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'padding_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'padding_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'padding_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setResolution'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'leaf_size_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'resolution'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'resolution'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'resolution'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'storeVectAndSurfacePoint'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'cell_data'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::GridProjection::Leaf'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'index_1d'",
+                        "PARM_DECL:'index_3d'",
+                        "PARM_DECL:'pt_union_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'storeVectAndSurfacePointKNN'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'cell_data'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::GridProjection::Leaf'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'index_1d'",
+                        "PARM_DECL:'index_3d'"
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~GridProjection<PointNT>'",
+                  "FIELD_DECL:'cell_hash_map_'",
+                  "FIELD_DECL:'data_'",
+                  "FIELD_DECL:'data_size_'",
+                  "FIELD_DECL:'gaussian_scale_'",
+                  "FIELD_DECL:'k_'",
+                  "FIELD_DECL:'leaf_size_'",
+                  "FIELD_DECL:'max_binary_search_level_'",
+                  "FIELD_DECL:'max_p_'",
+                  "FIELD_DECL:'min_p_'",
+                  "FIELD_DECL:'occupied_cell_list_'",
+                  "FIELD_DECL:'padding_size_'",
+                  {
+                    "STRUCT_DECL:'Leaf'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Leaf'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'data_indices'",
+                        "FIELD_DECL:'pt_on_surface'",
+                        "FIELD_DECL:'vect_at_grid_pt'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'I_SHIFT_EDGE'": {
+                "children": [
+                  {
+                    "INIT_LIST_EXPR:''": {
+                      "children": [
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "INTEGER_LITERAL:''",
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'I_SHIFT_EP'": {
+                "children": [
+                  {
+                    "INIT_LIST_EXPR:''": {
+                      "children": [
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "INIT_LIST_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "INTEGER_LITERAL:''",
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'I_SHIFT_PT'": {
+                "children": [
+                  {
+                    "INIT_LIST_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  },
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

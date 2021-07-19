@@ -1,0 +1,182 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/multiscale_feature_persistence.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'list'",
+      "INCLUSION_DIRECTIVE:'pcl/common/norms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_representation.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'MultiscaleFeaturePersistence'": {
+                "children": [
+                  "CONSTRUCTOR:'MultiscaleFeaturePersistence<PointSource, PointFeature>'",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_METHOD:'calculateMeanFeature'",
+                  {
+                    "CXX_METHOD:'computeFeatureAtScale'": {
+                      "children": [
+                        "PARM_DECL:'features'",
+                        "PARM_DECL:'scale'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'computeFeaturesAtAllScales'",
+                  {
+                    "CXX_METHOD:'determinePersistentFeatures'": {
+                      "children": [
+                        "PARM_DECL:'output_features'",
+                        "PARM_DECL:'output_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'distanceBetweenFeatures'": {
+                      "children": [
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'extractUniqueFeatures'",
+                  {
+                    "CXX_METHOD:'getAlpha'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'alpha_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'alpha_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistanceMetric'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFeatureEstimator'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPointRepresentation'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getScalesVector'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'setAlpha'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'alpha_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'alpha'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'alpha'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'alpha'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDistanceMetric'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'distance_metric'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setFeatureEstimator'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'feature_estimator'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPointRepresentation'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'feature_representation'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setScalesVector'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'scale_values'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~MultiscaleFeaturePersistence<PointSource, PointFeature>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'alpha_'",
+                  "FIELD_DECL:'distance_metric_'",
+                  "FIELD_DECL:'feature_estimator_'",
+                  "FIELD_DECL:'feature_representation_'",
+                  "FIELD_DECL:'features_at_scale_'",
+                  "FIELD_DECL:'mean_feature_'",
+                  "FIELD_DECL:'scale_values_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointFeature'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointSource'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

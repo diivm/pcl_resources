@@ -1,0 +1,253 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/ppf_registration.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/ppf.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/ppf_registration.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/registration.h'",
+      "INCLUSION_DIRECTIVE:'unordered_map'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "CLASS_TEMPLATE:'PPFRegistration'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'PPFRegistration<PointSource, PointTarget>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "MEMBER_REF:'clustering_position_diff_threshold_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'clusterPoses'": {
+                      "children": [
+                        "PARM_DECL:'poses'",
+                        "PARM_DECL:'result'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clusterVotesCompareFunction'": {
+                      "children": [
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeTransformation'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'guess'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPositionClusteringThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'clustering_position_diff_threshold_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'clustering_position_diff_threshold_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getRotationClusteringThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'clustering_rotation_diff_threshold_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'clustering_rotation_diff_threshold_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSceneReferencePointSamplingRate'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'poseWithVotesCompareFunction'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'a'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::PPFRegistration::PoseWithVotes'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::PPFRegistration::PoseWithVotes'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'posesWithinErrorBounds'": {
+                      "children": [
+                        "PARM_DECL:'pose1'",
+                        "PARM_DECL:'pose2'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPositionClusteringThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'clustering_position_diff_threshold_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'clustering_position_diff_threshold'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'clustering_position_diff_threshold'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'clustering_position_diff_threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRotationClusteringThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'clustering_rotation_diff_threshold_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'clustering_rotation_diff_threshold'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'clustering_rotation_diff_threshold'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'clustering_rotation_diff_threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSceneReferencePointSamplingRate'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'scene_reference_point_sampling_rate'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'search_method'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:''",
+                  "FIELD_DECL:''",
+                  "FIELD_DECL:'clustering_position_diff_threshold_'",
+                  "FIELD_DECL:'clustering_rotation_diff_threshold_'",
+                  "FIELD_DECL:'scene_reference_point_sampling_rate_'",
+                  {
+                    "STRUCT_DECL:'PoseWithVotes'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PoseWithVotes'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'votes'",
+                              "PARM_DECL:'a_pose'",
+                              "PARM_DECL:'a_votes'",
+                              {
+                                "UNEXPOSED_EXPR:'a_votes'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'a_votes'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'pose'",
+                        "FIELD_DECL:'votes'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointTarget'"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'PPFHashMapSearch'": {
+                "children": [
+                  "TYPE_REF:'class pcl::PCL_EXPORTS'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

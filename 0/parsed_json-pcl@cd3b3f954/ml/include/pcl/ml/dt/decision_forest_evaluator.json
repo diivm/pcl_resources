@@ -1,0 +1,77 @@
+{
+  "TRANSLATION_UNIT:'/pcl/ml/include/pcl/ml/dt/decision_forest_evaluator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/dt/decision_forest.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/dt/decision_tree_evaluator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/feature_handler.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/impl/dt/decision_forest_evaluator.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/stats_estimator.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'DecisionForestEvaluator'": {
+                "children": [
+                  "CONSTRUCTOR:'DecisionForestEvaluator<FeatureType, DataSet, LabelType, ExampleIndex, NodeType>'",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'evaluate'": {
+                      "children": [
+                        "PARM_DECL:'DecisionForestEvaluator'",
+                        {
+                          "PARM_DECL:'data_set'": {
+                            "children": [
+                              "TYPE_REF:'DataSet'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'examples'",
+                        "PARM_DECL:'feature_handler'",
+                        "PARM_DECL:'label_data'",
+                        "PARM_DECL:'stats_estimator'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'evaluate'": {
+                      "children": [
+                        "PARM_DECL:'DecisionForestEvaluator'",
+                        {
+                          "PARM_DECL:'data_set'": {
+                            "children": [
+                              "TYPE_REF:'DataSet'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'example'": {
+                            "children": [
+                              "TYPE_REF:'ExampleIndex'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'feature_handler'",
+                        "PARM_DECL:'leaves'",
+                        "PARM_DECL:'stats_estimator'"
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~DecisionForestEvaluator<FeatureType, DataSet, LabelType, ExampleIndex, NodeType>'",
+                  "FIELD_DECL:'tree_evaluator_'",
+                  "TEMPLATE_TYPE_PARAMETER:'DataSet'",
+                  "TEMPLATE_TYPE_PARAMETER:'ExampleIndex'",
+                  "TEMPLATE_TYPE_PARAMETER:'FeatureType'",
+                  "TEMPLATE_TYPE_PARAMETER:'LabelType'",
+                  "TEMPLATE_TYPE_PARAMETER:'NodeType'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

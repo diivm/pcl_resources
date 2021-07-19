@@ -1,0 +1,244 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/common/include/pcl/cuda/common/eigen.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'float.h'",
+      "INCLUSION_DIRECTIVE:'limits'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/cutil_math.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/point_cloud.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OrganizedRadiusSearch'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OrganizedRadiusSearch<CloudPtr>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'height_'",
+                              "MEMBER_REF:'sqr_radius_'",
+                              "MEMBER_REF:'width_'",
+                              "PARM_DECL:'focalLength'",
+                              {
+                                "PARM_DECL:'input'": {
+                                  "children": [
+                                    "TYPE_REF:'CloudPtr'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'sqr_radius'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'input'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'input'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'sqr_radius'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'sqr_radius'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "FIELD_DECL:'__device__'",
+                        "FIELD_DECL:'height_'",
+                        "FIELD_DECL:'points_'",
+                        "FIELD_DECL:'sqr_radius_'",
+                        "FIELD_DECL:'width_'",
+                        "TEMPLATE_TYPE_PARAMETER:'CloudPtr'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'isMuchSmallerThan'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'prec_sqr'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'prec_sqr'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'prec_sqr'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'y'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'y'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'x'",
+                        "PARM_DECL:'y'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'compute3DCentroid'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'begin'": {
+                            "children": [
+                              "TYPE_REF:'IteratorT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'centroid'",
+                        {
+                          "PARM_DECL:'end'": {
+                            "children": [
+                              "TYPE_REF:'IteratorT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'IteratorT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'computeCovariance'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'begin'": {
+                            "children": [
+                              "TYPE_REF:'IteratorT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'centroid'",
+                        "PARM_DECL:'cov'",
+                        {
+                          "PARM_DECL:'end'": {
+                            "children": [
+                              "TYPE_REF:'IteratorT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'IteratorT'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AddCovariances'": {
+                      "children": [
+                        "FIELD_DECL:'__device__'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'ComputeCovarianceForPoint'": {
+                      "children": [
+                        "FIELD_DECL:'__device__'",
+                        "FIELD_DECL:'centroid_'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'convert_point_to_float3'": {
+                      "children": [
+                        "FIELD_DECL:'__device__'"
+                      ]
+                    }
+                  },
+                  "VAR_DECL:'__device__'",
+                  "VAR_DECL:'__device__'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

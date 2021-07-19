@@ -1,0 +1,391 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/on_nurbs/sequential_fitter.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/fitting_surface_pdm.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_data.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'on_nurbs'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'SequentialFitter'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'SequentialFitter'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::on_nurbs::SequentialFitter::Parameter'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'Parameter'": {
+                                                          "children": [
+                                                            "TYPE_REF:'struct pcl::on_nurbs::SequentialFitter::Parameter'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'PCL2ON'": {
+                            "children": [
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'compute'",
+                        {
+                          "CXX_METHOD:'compute_boundary'": {
+                            "children": [
+                              "PARM_DECL:'fitting'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'compute_boundary'",
+                        {
+                          "CXX_METHOD:'compute_interior'": {
+                            "children": [
+                              "PARM_DECL:'fitting'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'compute_interior'",
+                        "CXX_METHOD:'compute_quadfit'",
+                        {
+                          "CXX_METHOD:'compute_refinement'": {
+                            "children": [
+                              "PARM_DECL:'fitting'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBoundaryError'": {
+                            "children": [
+                              "PARM_DECL:'error'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBoundaryNormals'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBoundaryParams'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getClosestPointOnNurbs'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'accuracy'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'maxSteps'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nurbs'",
+                              "PARM_DECL:'params'",
+                              "PARM_DECL:'pt'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInteriorError'": {
+                            "children": [
+                              "PARM_DECL:'error'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInteriorNormals'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInteriorParams'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNurbs'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'grow'",
+                        {
+                          "CXX_METHOD:'is_back_facing'": {
+                            "children": [
+                              "PARM_DECL:'v0'",
+                              "PARM_DECL:'v1'",
+                              "PARM_DECL:'v2'",
+                              "PARM_DECL:'v3'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'project'",
+                        {
+                          "CXX_METHOD:'setBoundary'": {
+                            "children": [
+                              "PARM_DECL:'pcl_cloud_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCorners'": {
+                            "children": [
+                              "PARM_DECL:'corners'",
+                              {
+                                "PARM_DECL:'flip_on_demand'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInterior'": {
+                            "children": [
+                              "PARM_DECL:'pcl_cloud_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setParams'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'operator='": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'p'",
+                                          "MEMBER_REF_EXPR:'m_params'",
+                                          {
+                                            "UNEXPOSED_EXPR:'operator='": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'operator='"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::on_nurbs::SequentialFitter::Parameter'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setProjectionMatrix'": {
+                            "children": [
+                              "PARM_DECL:'extrinsic'",
+                              "PARM_DECL:'intrinsic'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'m_boundary_indices'",
+                        "FIELD_DECL:'m_corners'",
+                        "FIELD_DECL:'m_data'",
+                        "FIELD_DECL:'m_extrinsic'",
+                        "FIELD_DECL:'m_have_cloud'",
+                        "FIELD_DECL:'m_have_corners'",
+                        "FIELD_DECL:'m_interior_indices'",
+                        "FIELD_DECL:'m_intrinsic'",
+                        "FIELD_DECL:'m_nurbs'",
+                        {
+                          "FIELD_DECL:'m_params'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::on_nurbs::SequentialFitter::Parameter'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'m_surf_id'",
+                        {
+                          "STRUCT_DECL:'Parameter'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Parameter'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:'forceBoundary'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'forceBoundaryInside'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'forceInterior'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'iterationsAdjust'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'iterationsBoundary'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'iterationsInterior'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'iterationsQuad'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'order'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'refinement'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'resolution'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'stiffnessBoundary'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'stiffnessInterior'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'forceBoundary'",
+                              "FIELD_DECL:'forceBoundaryInside'",
+                              "FIELD_DECL:'forceInterior'",
+                              "FIELD_DECL:'iterationsAdjust'",
+                              "FIELD_DECL:'iterationsBoundary'",
+                              "FIELD_DECL:'iterationsInterior'",
+                              "FIELD_DECL:'iterationsQuad'",
+                              "FIELD_DECL:'order'",
+                              "FIELD_DECL:'refinement'",
+                              "FIELD_DECL:'resolution'",
+                              "FIELD_DECL:'stiffnessBoundary'",
+                              "FIELD_DECL:'stiffnessInterior'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

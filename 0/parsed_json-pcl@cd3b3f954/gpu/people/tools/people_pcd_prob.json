@@ -1,0 +1,822 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/tools/people_pcd_prob.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'PeoplePCDApp'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'PeoplePCDApp'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'color_map_'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "INTEGER_LITERAL:''",
+                  "MEMBER_REF:'counter_'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'cloud_cb'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "MEMBER_REF_EXPR:'counter_'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'ConstPtr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'convertProbToRGB'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'histograms'",
+                  "PARM_DECL:'label'",
+                  "PARM_DECL:'rgb'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'readXMLFile'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'fb'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::filebuf'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'is'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'filename'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'visualizeAndWrite'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'labels'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'c'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'ConstPtr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'writeProb'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'c'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'ConstPtr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'writeXMLFile'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'fb'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::filebuf'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'os'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'filename'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_DECL:''": {
+                "children": [
+                  {
+                    "ENUM_CONSTANT_DECL:'COLS'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_CONSTANT_DECL:'ROWS'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'cmap_device_'",
+            "FIELD_DECL:'color_map_'",
+            "FIELD_DECL:'counter_'",
+            "FIELD_DECL:'people_detector_'",
+            "FIELD_DECL:'processReturn'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'estimateFocalLength'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'proj_matrix'": {
+                            "children": [
+                              "CALL_EXPR:'ProjMatrix'",
+                              "TYPE_REF:'struct ProjMatrix'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'KR'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix3f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'ConstPtr'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'readXMLFile'": {
+                      "children": [
+                        "DECL_REF_EXPR:'XMLfilename'",
+                        {
+                          "MEMBER_REF_EXPR:'readXMLFile'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'app'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'app'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'saveProb'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'debugOutput'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'treeFilenames'": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'numTrees'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'XMLfilename'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pcdname'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'res'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'app'": {
+                            "children": [
+                              "CALL_EXPR:'PeoplePCDApp'",
+                              "TYPE_REF:'class PeoplePCDApp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'print_help'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'print_help'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'print_help'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'numTrees'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'numTrees'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'numTrees'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'numTrees'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'res'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'res'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'res'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'res'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'processReturn'": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:'processReturn'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'app'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "COMPOUND_STMT:''",
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'processReturn'": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:'processReturn'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'app'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "COMPOUND_STMT:''",
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'make_ext_name'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'sprintf'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"./people_%04d_%04d_%s.png\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'buf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'buf'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'counter1'": {
+                            "children": [
+                              "DECL_REF_EXPR:'counter1'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'counter2'": {
+                            "children": [
+                              "DECL_REF_EXPR:'counter2'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'sprintf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'sprintf'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'suffix'": {
+                            "children": [
+                              "DECL_REF_EXPR:'suffix'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'buf'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'std'",
+            "PARM_DECL:'counter1'",
+            "PARM_DECL:'counter2'",
+            "PARM_DECL:'suffix'",
+            "TYPE_REF:'std::string'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'make_name'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'sprintf'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"./people%04d_%s.png\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'buf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'buf'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'counter'": {
+                            "children": [
+                              "DECL_REF_EXPR:'counter'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'sprintf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'sprintf'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'suffix'": {
+                            "children": [
+                              "DECL_REF_EXPR:'suffix'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'buf'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'std'",
+            "PARM_DECL:'counter'",
+            "PARM_DECL:'suffix'",
+            "TYPE_REF:'std::string'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'print_help'": {
+          "children": [
+            "COMPOUND_STMT:''"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'savePNGFile'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'c'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'arr'",
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'T'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'savePNGFile'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "PARM_DECL:'cloud'",
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'T'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/colormap.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/people_detector.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/png_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/image_viewer.h'",
+      "STRUCT_DECL:'ProjMatrix'"
+    ]
+  }
+}

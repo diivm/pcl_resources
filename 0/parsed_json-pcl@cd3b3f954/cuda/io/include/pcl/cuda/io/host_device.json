@@ -1,0 +1,77 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/io/include/pcl/cuda/io/host_device.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/cuda/point_cloud.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PointCloud'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  {
+                    "FUNCTION_TEMPLATE:'toDevice'": {
+                      "children": [
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'output'",
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'toHost'": {
+                      "children": [
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'output'",
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'toStorage'": {
+                      "children": [
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'OtherStorage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "STRUCT_DECL:'PointXYZRGB'"
+          ]
+        }
+      }
+    ]
+  }
+}

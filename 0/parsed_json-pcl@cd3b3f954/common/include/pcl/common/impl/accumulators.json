@@ -1,0 +1,1032 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/impl/accumulators.hpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/fusion/include/as_vector.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/fusion/include/filter_if.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/fusion/include/for_each.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/fusion/include/mpl.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/mpl/filter_view.hpp'",
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "MACRO_DEFINITION:'PCL_COMMON_IMPL_DETAIL_ACCUMULATORS_HPP'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Accumulators'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'AddPoint'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'AddPoint<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'p'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'p'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'accumulator'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'p'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'accumulator'": {
+                                  "children": [
+                                    "TYPE_REF:'AccumulatorT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'AccumulatorT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'GetPoint'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'GetPoint<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'n'",
+                              "MEMBER_REF:'p'",
+                              {
+                                "PARM_DECL:'num'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'num'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'num'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'n'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::size_t'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'p'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'operator()'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'accumulator'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'n'",
+                                          "MEMBER_REF_EXPR:'p'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'accumulator'": {
+                                  "children": [
+                                    "TYPE_REF:'AccumulatorT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'AccumulatorT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'IsAccumulatorCompatible'": {
+                      "children": [
+                        {
+                          "CLASS_TEMPLATE:'apply'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:'AccumulatorT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'Point1T'",
+                        {
+                          "TEMPLATE_TYPE_PARAMETER:'Point2T'": {
+                            "children": [
+                              "TYPE_REF:'Point1T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorCurvature'": {
+                      "children": [
+                        {
+                          "FIELD_DECL:'curvature'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'curvature'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'curvature'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'curvature'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'n'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'n'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'n'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'n'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorIntensity'": {
+                      "children": [
+                        {
+                          "FIELD_DECL:'intensity'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'intensity'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'intensity'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'intensity'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'n'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'n'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'n'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'n'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorLabel'": {
+                      "children": [
+                        "FIELD_DECL:'labels'",
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'itr'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'max'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'std::size_t'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorNormal'": {
+                      "children": [
+                        "FIELD_DECL:'normal'",
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorRGBA'": {
+                      "children": [
+                        {
+                          "FIELD_DECL:'a'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'b'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'g'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'r'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_STATIC_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'r'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_STATIC_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'g'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_STATIC_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'b'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_STATIC_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'t'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'a'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CXX_STATIC_CAST_EXPR:''": {
+                                                                      "children": [
+                                                                        "NAMESPACE_REF:'std'",
+                                                                        "TYPE_REF:'uint32_t'",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'a'": {
+                                                                                        "children": [
+                                                                                          "MEMBER_REF_EXPR:'a'"
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'n'": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'n'": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'n'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CXX_STATIC_CAST_EXPR:''": {
+                                                                      "children": [
+                                                                        "NAMESPACE_REF:'std'",
+                                                                        "TYPE_REF:'uint32_t'",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'n'": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'n'": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'n'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'r'": {
+                                                                                        "children": [
+                                                                                          "MEMBER_REF_EXPR:'r'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CXX_STATIC_CAST_EXPR:''": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'",
+                                                                  "TYPE_REF:'uint32_t'",
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'g'": {
+                                                                                  "children": [
+                                                                                    "MEMBER_REF_EXPR:'g'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'n'": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'n'": {
+                                                                                        "children": [
+                                                                                          "DECL_REF_EXPR:'n'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "CXX_STATIC_CAST_EXPR:''": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TYPE_REF:'uint32_t'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'b'": {
+                                                                      "children": [
+                                                                        "MEMBER_REF_EXPR:'b'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'n'": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'n'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'n'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'n'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'AccumulatorXYZ'": {
+                      "children": [
+                        "FIELD_DECL:'xyz'",
+                        {
+                          "FUNCTION_TEMPLATE:'add'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'get'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'n'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "TYPE_REF:'std::size_t'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'t'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/toolbox_model.h'": {
+    "children": [
+      "CLASS_DECL:'QItemSelection'",
+      "CLASS_DECL:'QItemSelectionModel'",
+      "CLASS_DECL:'QTreeView'",
+      "CLASS_DECL:'QTreeView'",
+      {
+        "ENUM_DECL:'TOOLBOX_ROLES'": {
+          "children": [
+            "ENUM_CONSTANT_DECL:'ALLOWED_INPUT_ITEM_TYPES'",
+            "ENUM_CONSTANT_DECL:'FACTORY'",
+            "ENUM_CONSTANT_DECL:'PARAMETER_MODEL'",
+            "ENUM_CONSTANT_DECL:'REQUIRED_INPUT_CHILDREN_TYPES'"
+          ]
+        }
+      },
+      "FUNCTION_DECL:'Q_DECLARE_METATYPE'",
+      "INCLUSION_DIRECTIVE:'QSet'",
+      "INCLUSION_DIRECTIVE:'QStandardItemModel'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'AbstractTool'",
+                  "CLASS_DECL:'CloudCommand'",
+                  "CLASS_DECL:'ProjectModel'",
+                  {
+                    "CLASS_DECL:'ToolBoxModel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ToolBoxModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'to_copy'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ToolBoxModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addTool'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'tool_factory'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ToolFactory'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'addToolGroup'",
+                        "CXX_METHOD:'enableAllTools'",
+                        "CXX_METHOD:'modelChanged'",
+                        {
+                          "CXX_METHOD:'selectedItemChanged'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'deselected'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'selected'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectedToolChanged'": {
+                            "children": [
+                              "PARM_DECL:'current'",
+                              "PARM_DECL:'previous'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSelectionModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'selection_model'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelectionModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'toolAction'",
+                        {
+                          "CXX_METHOD:'updateEnabledTools'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'current_selection'": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:''",
+                        {
+                          "FIELD_DECL:'parameter_view_'": {
+                            "children": [
+                              "TYPE_REF:'class QTreeView'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'project_model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'selection_model_'": {
+                            "children": [
+                              "TYPE_REF:'class QItemSelectionModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tool_items'",
+                        {
+                          "FIELD_DECL:'tool_view_'": {
+                            "children": [
+                              "TYPE_REF:'class QTreeView'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'ToolFactory'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'ToolBoxModel'": {
+          "children": [
+            "NAMESPACE_REF:'cloud_composer'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      }
+    ]
+  }
+}

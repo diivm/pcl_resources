@@ -1,0 +1,1700 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/src/on_nurbs/nurbs_solve_umfpack.cpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_solve.h'",
+      "INCLUSION_DIRECTIVE:'stdexcept'",
+      "INCLUSION_DIRECTIVE:'stdio.h'",
+      "INCLUSION_DIRECTIVE:'suitesparse/cholmod.h'",
+      "INCLUSION_DIRECTIVE:'suitesparse/umfpack.h'",
+      "INCLUSION_DIRECTIVE:'time.h'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CHOLMOD_REAL'",
+      "MACRO_INSTANTIATION:'CLOCKS_PER_SEC'",
+      "MACRO_INSTANTIATION:'UMFPACK_A'",
+      "MACRO_INSTANTIATION:'UMFPACK_At'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'on_nurbs'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'solveSparseLinearSystem'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'umfpack_di_free_numeric'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Numeric'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'umfpack_di_free_numeric'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'umfpack_di_free_numeric'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'umfpack_di_free_symbolic'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Symbolic'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'umfpack_di_free_symbolic'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'umfpack_di_free_symbolic'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_UNARY_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'tempRhs'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'tempRhs'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_UNARY_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'tempSol'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'tempSol'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'vals'": {
+                                        "children": [
+                                          {
+                                            "CSTYLE_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'A'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'A'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'cols'": {
+                                        "children": [
+                                          {
+                                            "CSTYLE_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'p'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'p'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'A'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'A'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'rows'": {
+                                        "children": [
+                                          {
+                                            "CSTYLE_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'i'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'A'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'A'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'rhs'": {
+                                        "children": [
+                                          {
+                                            "CSTYLE_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'b'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'sol'": {
+                                        "children": [
+                                          {
+                                            "CSTYLE_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'x'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'x'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'x'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'noOfVerts'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'noOfCols'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'tempRhs'": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'noOfVerts'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'tempSol'": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'noOfVerts'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'null'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'Numeric'",
+                                    "VAR_DECL:'Symbolic'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'i'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'noOfCols'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'noOfCols'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'k'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'k'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'noOfVerts'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'k'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'k'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'tempRhs'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'tempRhs'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'i'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'i'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'noOfVerts'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'k'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'k'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'rhs'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'rhs'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'k'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'k'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'k'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'k'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'noOfVerts'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'i'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'i'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'noOfVerts'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'noOfVerts'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'k'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'k'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'sol'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'sol'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'k'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'k'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'tempSol'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'tempSol'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'k'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'k'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'umfpack_di_solve'": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'Numeric'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'Numeric'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'cols'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'cols'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cols'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'null'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'null'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'null'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'null'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'null'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'rows'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'rows'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'rows'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'tempRhs'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'tempRhs'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'tempRhs'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'tempSol'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'tempSol'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'umfpack_di_solve'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'umfpack_di_solve'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'vals'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'vals'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'vals'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "CALL_EXPR:'umfpack_di_solve'": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'Numeric'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'Numeric'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'cols'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'cols'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cols'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'null'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'null'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'null'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'null'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'null'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'rows'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'rows'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'rows'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'tempRhs'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'tempRhs'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'tempRhs'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'tempSol'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'tempSol'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'umfpack_di_solve'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'umfpack_di_solve'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'vals'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'vals'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'vals'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'transpose'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'transpose'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CXX_UNARY_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'tempRhs'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tempRhs'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CXX_UNARY_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'tempSol'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tempSol'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'umfpack_di_numeric'": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Numeric'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'Symbolic'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Symbolic'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cols'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'cols'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'cols'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'null'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'null'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'null'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'null'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'null'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'rows'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'rows'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'rows'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'umfpack_di_numeric'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'umfpack_di_numeric'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'vals'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'vals'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'vals'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CXX_UNARY_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'tempRhs'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tempRhs'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CXX_UNARY_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'tempSol'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'tempSol'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'A'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_sparse'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_dense'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'transpose'",
+                        {
+                          "PARM_DECL:'x'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_dense'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'solveSparseLinearSystemLQ'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "MEMBER_REF_EXPR:'print'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_finish'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_finish'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_finish'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_free_dense'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Atb'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_free_dense'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_free_dense'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_free_sparse'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'At'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_free_sparse'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_free_sparse'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_free_sparse'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'AtA'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_free_sparse'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_free_sparse'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_sdmult'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'A'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'A'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'Atb'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Atb'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'b'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'b'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_sdmult'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_sdmult'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'one'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'one'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'zero'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'zero'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'cholmod_start'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'cholmod_start'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cholmod_start'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'c'": {
+                                        "children": [
+                                          "CALL_EXPR:'cholmod_common_struct'",
+                                          "TYPE_REF:'cholmod_common'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'At'": {
+                                        "children": [
+                                          "TYPE_REF:'cholmod_sparse'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'Atb'": {
+                                        "children": [
+                                          "TYPE_REF:'cholmod_dense'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'one'": {
+                                        "children": [
+                                          {
+                                            "INIT_LIST_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'zero'": {
+                                        "children": [
+                                          {
+                                            "INIT_LIST_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'trials'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'i'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'AtA'": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'cholmod_ssmult'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "INTEGER_LITERAL:''",
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'c'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'A'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'A'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'At'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'At'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cholmod_ssmult'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cholmod_ssmult'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'cholmod_sparse'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'success'": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'solveSparseLinearSystem'": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'AtA'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'AtA'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'Atb'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Atb'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'solveSparseLinearSystem'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'solveSparseLinearSystem'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'i'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'trials'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'trials'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'cholmod_free_dense'": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Atb'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'c'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cholmod_free_dense'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cholmod_free_dense'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CALL_EXPR:'cholmod_free_sparse'": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'At'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'c'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cholmod_free_sparse'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cholmod_free_sparse'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CALL_EXPR:'printf'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "STRING_LITERAL:'\"[NurbsSolveUmfpack::solveSparseLinearSystemLQ] Not enough memory for system to solve. (%d trials)\\n\"'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'printf'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'printf'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'trials'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'trials'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'success'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'success'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'A'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_sparse'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_dense'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'x'": {
+                            "children": [
+                              "TYPE_REF:'cholmod_dense'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

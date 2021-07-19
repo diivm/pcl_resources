@@ -1,0 +1,338 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/on_nurbs/fitting_sphere_pdm.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_data.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_solve.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/on_nurbs/nurbs_tools.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'on_nurbs'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'FittingSphere'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FittingSphere'": {
+                            "children": [
+                              "PARM_DECL:'data'",
+                              "PARM_DECL:'order'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'FittingSphere'": {
+                            "children": [
+                              "PARM_DECL:'data'",
+                              "PARM_DECL:'ns'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addCageBoundaryRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'side'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addCageInteriorRegularisation'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addPointConstraint'": {
+                            "children": [
+                              "PARM_DECL:'params'",
+                              "PARM_DECL:'point'",
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assemble'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'smoothness'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'assembleInterior'": {
+                            "children": [
+                              "PARM_DECL:'row'",
+                              "PARM_DECL:'wInt'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'findClosestElementMidPoint'",
+                        "CXX_METHOD:'getElementVector'",
+                        {
+                          "CXX_METHOD:'gl2gc'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'A'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'gl2gr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'A'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'grc2gl'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'cp_red'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'ncpj'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'I'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'I'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'ncpj'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'ncpj'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'J'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'J'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'ncpj'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'ncpj'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'I'",
+                              "PARM_DECL:'J'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'init'",
+                        "CXX_METHOD:'initNurbsSphere'",
+                        "CXX_METHOD:'inverseMapping'",
+                        {
+                          "CXX_METHOD:'lrc2gl'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'grc2gl'": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'E'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'E'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'i'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'i'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'F'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'F'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'j'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'grc2gl'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'E'",
+                              "PARM_DECL:'F'",
+                              "PARM_DECL:'i'",
+                              "PARM_DECL:'j'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInvMapParams'": {
+                            "children": [
+                              "PARM_DECL:'in_max_steps'",
+                              "PARM_DECL:'invMapInt_accuracy'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setQuiet'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'m_quiet'",
+                                          {
+                                            "UNEXPOSED_EXPR:'val'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'val'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'val'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'solve'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'damp'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'updateSurf'": {
+                            "children": [
+                              "PARM_DECL:'damp'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'in_accuracy'",
+                        "FIELD_DECL:'in_max_steps'",
+                        "FIELD_DECL:'m_data'",
+                        "FIELD_DECL:'m_nurbs'",
+                        "FIELD_DECL:'m_out'",
+                        "FIELD_DECL:'m_quiet'",
+                        "FIELD_DECL:'m_solver'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

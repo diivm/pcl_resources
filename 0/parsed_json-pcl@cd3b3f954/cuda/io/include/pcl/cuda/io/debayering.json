@@ -1,0 +1,182 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/io/include/pcl/cuda/io/debayering.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/cuda/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_camera/openni_image.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'DebayerBilinear'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'DebayerBilinear<Storage>'": {
+                            "children": [
+                              "PARM_DECL:'bayer_image'",
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'width'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'__device__'",
+                        "FIELD_DECL:'data'",
+                        "FIELD_DECL:'height'",
+                        "FIELD_DECL:'width'",
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'Debayering'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'computeBilinear'": {
+                            "children": [
+                              "PARM_DECL:'bayer_image'",
+                              "PARM_DECL:'rgb_image'"
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'DebayeringDownsampling'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "PARM_DECL:'bayer_image'",
+                              "PARM_DECL:'rgb_image'"
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'YUV2RGB'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "PARM_DECL:'rgb_image'",
+                              "PARM_DECL:'yuv_image'"
+                            ]
+                          }
+                        },
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'YUV2RGBKernel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'YUV2RGBKernel<Storage>'": {
+                            "children": [
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'width'",
+                              "PARM_DECL:'yuv_image'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'__device__'",
+                        "FIELD_DECL:'data'",
+                        "FIELD_DECL:'height'",
+                        "FIELD_DECL:'width'",
+                        {
+                          "TEMPLATE_TEMPLATE_PARAMETER:'Storage'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'downsampleIndices'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'downsampleIndices'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'height'",
+                              "MEMBER_REF:'stride'",
+                              "MEMBER_REF:'width'",
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'stride'",
+                              "PARM_DECL:'width'",
+                              {
+                                "UNEXPOSED_EXPR:'height'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'height'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'stride'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'stride'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'width'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'width'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'__device__'",
+                        "FIELD_DECL:'height'",
+                        "FIELD_DECL:'stride'",
+                        "FIELD_DECL:'width'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

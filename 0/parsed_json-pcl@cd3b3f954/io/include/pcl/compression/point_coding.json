@@ -1,0 +1,171 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/compression/point_coding.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_ColorCoding'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'PointCoding'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PointCoding<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "FLOATING_LITERAL:''",
+                              "MEMBER_REF:'pointCompressionResolution_'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'decodePoints'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'pointCount'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'beginIdx_arg'",
+                              "PARM_DECL:'endIdx_arg'",
+                              "PARM_DECL:'outputCloud_arg'",
+                              "PARM_DECL:'referencePoint_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'encodePoints'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'indexVector_arg'",
+                              "PARM_DECL:'inputCloud_arg'",
+                              "PARM_DECL:'referencePoint_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getDifferentialDataVector'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPrecision'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'pointCompressionResolution_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'initializeDecoding'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'initializeEncoding'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointCount'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'pointCount_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPrecision'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'pointCompressionResolution_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'precision_arg'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'precision_arg'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'precision_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PointCoding<PointT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'const_iterator'",
+                        "FIELD_DECL:'output_'",
+                        "FIELD_DECL:'pointCompressionResolution_'",
+                        "FIELD_DECL:'pointDiffDataVector_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

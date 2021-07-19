@@ -1,0 +1,291 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/include/pcl/gpu/people/face_detector.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'NCVHaarObjectDetection.hpp'",
+      "INCLUSION_DIRECTIVE:'cuda_runtime_api.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'gpu'": {
+                "children": [
+                  {
+                    "NAMESPACE:'people'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'FaceDetector'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'FaceDetector'": {
+                                  "children": [
+                                    "PARM_DECL:'cols'",
+                                    "PARM_DECL:'rows'"
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_METHOD:'NCVprocess'",
+                              {
+                                "CXX_METHOD:'configure'": {
+                                  "children": [
+                                    "PARM_DECL:'cascade_file_name'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getCascadeFileName'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getCols'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'cols_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cols_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getDeviceId'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'cuda_dev_id_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cuda_dev_id_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getLargestObject'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'largest_object_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'largest_object_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getRows'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'rows_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'rows_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_METHOD:'loadFromNVBIN'",
+                              "CXX_METHOD:'loadFromXML2'",
+                              "CXX_METHOD:'ncvHaarGetClassifierSize'",
+                              "CXX_METHOD:'ncvHaarLoadFromFile_host'",
+                              {
+                                "CXX_METHOD:'process'": {
+                                  "children": [
+                                    "PARM_DECL:'cloud'",
+                                    "PARM_DECL:'cloud_out'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setCascadeFileName'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "PARM_DECL:'cascadeFileName'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setCols'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'cols_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'cols'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cols'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'cols'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setDeviceId'": {
+                                  "children": [
+                                    "PARM_DECL:'id'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setLargestObject'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'largest_object_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'largest_object'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'largest_object'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'largest_object'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setRows'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'rows_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'rows'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'rows'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'rows'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'cascade_file_name_'",
+                              "FIELD_DECL:'cols_'",
+                              "FIELD_DECL:'cpu_allocator_'",
+                              "FIELD_DECL:'cpu_counter_'",
+                              "FIELD_DECL:'cpu_stack_allocator_'",
+                              "FIELD_DECL:'cuda_dev_id_'",
+                              "FIELD_DECL:'cuda_dev_prop_'",
+                              "FIELD_DECL:'filter_rects_'",
+                              "FIELD_DECL:'gpu_allocator_'",
+                              "FIELD_DECL:'gpu_counter_'",
+                              "FIELD_DECL:'gpu_stack_allocator_'",
+                              "FIELD_DECL:'haar_clas_casc_descr_'",
+                              "FIELD_DECL:'haar_features_dev_'",
+                              "FIELD_DECL:'haar_features_host_'",
+                              "FIELD_DECL:'haar_nodes_dev_'",
+                              "FIELD_DECL:'haar_nodes_host_'",
+                              "FIELD_DECL:'haar_stages_dev_'",
+                              "FIELD_DECL:'haar_stages_host_'",
+                              "FIELD_DECL:'largest_object_'",
+                              "FIELD_DECL:'rows_'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

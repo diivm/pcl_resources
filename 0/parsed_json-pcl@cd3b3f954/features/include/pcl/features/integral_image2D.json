@@ -1,0 +1,439 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/integral_image2D.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/impl/integral_image2D.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'IntegralImage2D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'IntegralImage2D<DataType, Dimension>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'compute_second_order_integral_images_'",
+                        "MEMBER_REF:'height_'",
+                        "MEMBER_REF:'width_'",
+                        "PARM_DECL:'compute_second_order_integral_images'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'compute_second_order_integral_images'": {
+                            "children": [
+                              "DECL_REF_EXPR:'compute_second_order_integral_images'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeIntegralImages'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'DataType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'element_stride'",
+                        "PARM_DECL:'row_stride'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFiniteElementsCount'": {
+                      "children": [
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "PARM_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFiniteElementsCountSE'": {
+                      "children": [
+                        "PARM_DECL:'end_x'",
+                        "PARM_DECL:'end_y'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'getFirstOrderSum'",
+                  "CXX_METHOD:'getFirstOrderSumSE'",
+                  "CXX_METHOD:'getSecondOrderSum'",
+                  "CXX_METHOD:'getSecondOrderSumSE'",
+                  {
+                    "CXX_METHOD:'setInput'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'DataType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'element_stride'",
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'row_stride'",
+                        "PARM_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSecondOrderComputation'": {
+                      "children": [
+                        "PARM_DECL:'compute_second_order_integral_images'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~IntegralImage2D<DataType, Dimension>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'compute_second_order_integral_images_'",
+                  "FIELD_DECL:'finite_values_integral_image_'",
+                  "FIELD_DECL:'height_'",
+                  "FIELD_DECL:'width_'",
+                  "TEMPLATE_NON_TYPE_PARAMETER:'Dimension'",
+                  "TEMPLATE_TYPE_PARAMETER:'DataType'",
+                  {
+                    "VAR_DECL:'second_order_size'": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Dimension'",
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Dimension'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'DataType'",
+                  {
+                    "TYPE_ALIAS_DECL:'IntegralType'": {
+                      "children": [
+                        "TYPE_REF:'DataType'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'Type'": {
+                      "children": [
+                        "TYPE_REF:'DataType'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'IntegralImage2D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'IntegralImage2D<type-parameter-0-0, 1>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'compute_second_order_integral_images_'",
+                        "MEMBER_REF:'height_'",
+                        "MEMBER_REF:'width_'",
+                        "PARM_DECL:'compute_second_order_integral_images'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'compute_second_order_integral_images'": {
+                            "children": [
+                              "DECL_REF_EXPR:'compute_second_order_integral_images'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeIntegralImages'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'DataType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'element_stride'",
+                        "PARM_DECL:'row_stride'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFiniteElementsCount'": {
+                      "children": [
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "PARM_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFiniteElementsCountSE'": {
+                      "children": [
+                        "PARM_DECL:'end_x'",
+                        "PARM_DECL:'end_y'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFirstOrderSum'": {
+                      "children": [
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "PARM_DECL:'width'",
+                        "TYPE_REF:'pcl::IntegralImage2D<type-parameter-0-0, 1>::ElementType'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFirstOrderSumSE'": {
+                      "children": [
+                        "PARM_DECL:'end_x'",
+                        "PARM_DECL:'end_y'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "TYPE_REF:'pcl::IntegralImage2D<type-parameter-0-0, 1>::ElementType'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSecondOrderSum'": {
+                      "children": [
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "PARM_DECL:'width'",
+                        "TYPE_REF:'pcl::IntegralImage2D<type-parameter-0-0, 1>::SecondOrderType'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSecondOrderSumSE'": {
+                      "children": [
+                        "PARM_DECL:'end_x'",
+                        "PARM_DECL:'end_y'",
+                        "PARM_DECL:'start_x'",
+                        "PARM_DECL:'start_y'",
+                        "TYPE_REF:'pcl::IntegralImage2D<type-parameter-0-0, 1>::SecondOrderType'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInput'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data'": {
+                            "children": [
+                              "TYPE_REF:'DataType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'element_stride'",
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'row_stride'",
+                        "PARM_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~IntegralImage2D<type-parameter-0-0, 1>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'compute_second_order_integral_images_'",
+                  "FIELD_DECL:'finite_values_integral_image_'",
+                  "FIELD_DECL:'height_'",
+                  "FIELD_DECL:'width_'",
+                  "TEMPLATE_TYPE_PARAMETER:'DataType'",
+                  {
+                    "TYPE_ALIAS_DECL:'ElementType'": {
+                      "children": [
+                        "TEMPLATE_REF:'IntegralImageTypeTraits'",
+                        "TYPE_REF:'DataType'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'SecondOrderType'": {
+                      "children": [
+                        "TEMPLATE_REF:'IntegralImageTypeTraits'",
+                        "TYPE_REF:'DataType'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'DataType'",
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'second_order_size'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'IntegralImageTypeTraits'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'IntegralType'",
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

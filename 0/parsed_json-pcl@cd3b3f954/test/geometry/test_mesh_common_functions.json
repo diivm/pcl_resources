@@ -1,0 +1,1918 @@
+{
+  "TRANSLATION_UNIT:'/pcl/test/geometry/test_mesh_common_functions.h'": {
+    "children": [
+      {
+        "FUNCTION_TEMPLATE:'checkHalfEdge'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ind_he_ab'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'ind_v_a'"
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'ind_he_ab'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'ind_v_b'"
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'ind_he_ab'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'ind_v_a'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'ind_v_b'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'mesh'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'findHalfEdge'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VAVC'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_v_0'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'VAVC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ_end'": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ'",
+                              "TYPE_REF:'VAVC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DO_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ_end'",
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'circ'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'circ'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'idx_v_1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'circ'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_v_0'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'idx_v_1'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'HalfEdgeIndex'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "TYPE_REF:'HalfEdgeIndex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'idx_v_0'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'idx_v_1'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'mesh'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+            "TYPE_REF:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'getBoundaryVertices'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VAFC'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndices'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'boundary_he'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'first'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'HalfEdgeIndex'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'boundary_he'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'VAFC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ_end'": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ'",
+                              "TYPE_REF:'VAFC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'boundary_vertices'": {
+                            "children": [
+                              "TYPE_REF:'VertexIndices'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'counter'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DO_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ_end'",
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'circ'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'circ'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'boundary_vertices'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'counter'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'max_number_boundary_vertices'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_number_boundary_vertices'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            "TYPE_REF:'VertexIndices'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'VertexIndices'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'boundary_he'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'boundary_vertices'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'first'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'mesh'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'verbose'": {
+                "children": [
+                  "CXX_NULL_PTR_LITERAL_EXPR:''"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'",
+            "TYPE_REF:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'getBoundaryVertices'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VAFC'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'HalfEdgeIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'boundary_he'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'first'",
+                                          "TYPE_REF:'VertexIndex'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'HalfEdgeIndex'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'boundary_he'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'VAFC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'circ_end'": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ'",
+                              "TYPE_REF:'VAFC'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'counter'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DO_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'circ_end'",
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'circ'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'counter'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'max_number_boundary_vertices'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_number_boundary_vertices'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'boundary_he'",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'hasFaces'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VAFC'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VertexIndices'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'vi'": {
+                            "children": [
+                              "TYPE_REF:'VertexIndices'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'verbose'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'verbose'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'faces'",
+            {
+              "PARM_DECL:'mesh'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'verbose'": {
+                "children": [
+                  "CXX_NULL_PTR_LITERAL_EXPR:''"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'hasFaces'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VAFC'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'FaceIndex'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "TYPE_ALIAS_DECL:'VertexDataCloud'": {
+                            "children": [
+                              "TYPE_REF:'MeshT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'vdc'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'VertexDataCloud'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:''",
+            {
+              "PARM_DECL:'mesh'": {
+                "children": [
+                  "TYPE_REF:'MeshT'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'MeshT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'isCircularPermutation'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:''": {
+                            "children": [
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'actual'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_REF_EXPR:''": {
+                            "children": [
+                              "OVERLOADED_DECL_REF:'EXPECT_EQ'"
+                            ]
+                          }
+                        },
+                        "DECL_REF_EXPR:'n'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'n'": {
+                            "children": [
+                              {
+                                "CXX_STATIC_CAST_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'expected'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FOR_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'i'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'i'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'n'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'n'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'all_equal'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'j'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'j'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'n'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'n'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'i'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'i'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'j'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'j'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'n'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'n'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            "DECL_REF_EXPR:'actual'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'expected'",
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                            "DECL_REF_EXPR:'all_equal'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'j'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'j'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'all_equal'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'all_equal'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'i'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'i'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'actual'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'n'"
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'actual'": {
+                "children": [
+                  "TYPE_REF:'ContainerT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'expected'": {
+                "children": [
+                  "TYPE_REF:'ContainerT'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'verbose'": {
+                "children": [
+                  "CXX_NULL_PTR_LITERAL_EXPR:''"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'ContainerT'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'isCircularPermutationVec'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'n'"
+                      ]
+                    }
+                  },
+                  {
+                    "FOR_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'i'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'i'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'n'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'n'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'all_equal'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'j'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'j'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'n'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'n'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                            "DECL_REF_EXPR:'all_equal'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'j'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'j'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'all_equal'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'all_equal'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'i'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'i'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'actual'",
+            "PARM_DECL:'expected'",
+            {
+              "PARM_DECL:'verbose'": {
+                "children": [
+                  "CXX_NULL_PTR_LITERAL_EXPR:''"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'ContainerT'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "VAR_DECL:'max_number_boundary_vertices'": {
+          "children": [
+            {
+              "UNEXPOSED_EXPR:''": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'max_number_polygon_vertices'": {
+          "children": [
+            {
+              "UNEXPOSED_EXPR:''": {
+                "children": [
+                  "INTEGER_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

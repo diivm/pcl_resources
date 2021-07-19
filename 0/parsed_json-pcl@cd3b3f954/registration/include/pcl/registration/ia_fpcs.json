@@ -1,0 +1,727 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/ia_fpcs.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/ia_fpcs.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/matching_candidate.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/registration.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "FUNCTION_TEMPLATE:'getMeanPointDensity'": {
+                "children": [
+                  "PARM_DECL:''",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'getMeanPointDensity'": {
+                "children": [
+                  "PARM_DECL:''",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'registration'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'FPCSInitialAlignment'": {
+                      "children": [
+                        "CONSTRUCTOR:'FPCSInitialAlignment<PointSource, PointTarget, NormalT, Scalar>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'bruteForceCorrespondences'": {
+                            "children": [
+                              "PARM_DECL:'idx1'",
+                              "PARM_DECL:'idx2'",
+                              "PARM_DECL:'pairs'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'checkBaseMatch'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'ds'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'match_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeTransformation'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'guess'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'determineBaseMatches'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              "PARM_DECL:'matches'",
+                              "PARM_DECL:'pairs_a'",
+                              "PARM_DECL:'pairs_b'",
+                              {
+                                "PARM_DECL:'ratio'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'finalCompute'": {
+                            "children": [
+                              "PARM_DECL:'candidates'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getApproxOverlap'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'approx_overlap_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getDelta'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'delta_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getFitnessScore'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'fitness_score_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMaxComputationTime'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'max_runtime_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMaxNormalDifference'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'max_norm_diff_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumberOfSamples'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'nr_samples_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumberOfThreads'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'nr_threads_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getScoreThreshold'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'score_threshold_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSourceNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetIndices'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTargetNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'handleMatches'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              "PARM_DECL:'candidates'",
+                              "PARM_DECL:'matches'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'initCompute'",
+                        {
+                          "CXX_METHOD:'linkMatchWithBase'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              "PARM_DECL:'correspondences'",
+                              "PARM_DECL:'match_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'segmentToSegmentDist'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              {
+                                "PARM_DECL:'ratio'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectBase'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              {
+                                "PARM_DECL:'ratio'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'selectBaseTriangle'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setApproxOverlap'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'approx_overlap_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'approx_overlap'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'approx_overlap'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'approx_overlap'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setDelta'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'delta_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'delta'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'delta'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'normalize_delta_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'normalize'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'normalize'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'delta'",
+                              {
+                                "PARM_DECL:'normalize'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMaxComputationTime'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_runtime_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'max_runtime'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_runtime'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_runtime'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMaxNormalDifference'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_norm_diff_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'max_norm_diff'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max_norm_diff'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max_norm_diff'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfSamples'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'nr_samples_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'nr_samples'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'nr_samples'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nr_samples'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfThreads'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'nr_threads_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'nr_threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'nr_threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nr_threads'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setScoreThreshold'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'score_threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'score_threshold'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'score_threshold'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'score_threshold'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSourceNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'source_normals'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTargetIndices'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'target_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTargetNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'target_normals'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setupBase'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              {
+                                "PARM_DECL:'ratio'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'validateMatch'": {
+                            "children": [
+                              "PARM_DECL:'base_indices'",
+                              "PARM_DECL:'correspondences'",
+                              "PARM_DECL:'match_indices'",
+                              "PARM_DECL:'transformation'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'validateTransformation'": {
+                            "children": [
+                              "PARM_DECL:'fitness_score'",
+                              "PARM_DECL:'transformation'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~FPCSInitialAlignment<PointSource, PointTarget, NormalT, Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'approx_overlap_'",
+                        "FIELD_DECL:'coincidation_limit_'",
+                        "FIELD_DECL:'delta_'",
+                        "FIELD_DECL:'diameter_'",
+                        "FIELD_DECL:'fitness_score_'",
+                        "FIELD_DECL:'max_base_diameter_sqr_'",
+                        "FIELD_DECL:'max_edge_diff_'",
+                        "FIELD_DECL:'max_inlier_dist_sqr_'",
+                        "FIELD_DECL:'max_mse_'",
+                        "FIELD_DECL:'max_norm_diff_'",
+                        "FIELD_DECL:'max_pair_diff_'",
+                        "FIELD_DECL:'max_runtime_'",
+                        "FIELD_DECL:'normalize_delta_'",
+                        "FIELD_DECL:'nr_samples_'",
+                        "FIELD_DECL:'nr_threads_'",
+                        "FIELD_DECL:'score_threshold_'",
+                        "FIELD_DECL:'small_error_'",
+                        "FIELD_DECL:'source_indices_'",
+                        "FIELD_DECL:'source_normals_'",
+                        "FIELD_DECL:'target_indices_'",
+                        "FIELD_DECL:'target_normals_'",
+                        "FIELD_DECL:'use_normals_'",
+                        "TEMPLATE_TYPE_PARAMETER:'NormalT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTarget'",
+                        "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "UNEXPOSED_DECL:''"
+          ]
+        }
+      },
+      "UNEXPOSED_DECL:''"
+    ]
+  }
+}

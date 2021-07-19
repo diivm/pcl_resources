@@ -1,0 +1,691 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/nn/organized_neighbor_search.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'queue'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'OrganizedNeighborSearch'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'nearestNeighborCandidate'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'nearestNeighborCandidate'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'operator<'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'rhs_arg'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rhs_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::OrganizedNeighborSearch::nearestNeighborCandidate'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~nearestNeighborCandidate'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'index_'",
+                        "FIELD_DECL:'squared_distance_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'radiusSearchLoopkupEntry'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'radiusSearchLoopkupEntry'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'defineShiftedSearchPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'x_diff_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'x_shift'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'x_shift'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'y_diff_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'y_shift'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'y_shift'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x_diff_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'x_diff_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'x_diff_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'x_diff_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'y_diff_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'y_diff_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'y_diff_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'y_diff_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'squared_distance_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'x_shift'",
+                              "PARM_DECL:'y_shift'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator<'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'rhs_arg'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rhs_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::OrganizedNeighborSearch::radiusSearchLoopkupEntry'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~radiusSearchLoopkupEntry'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'squared_distance_'",
+                        "FIELD_DECL:'x_diff_'",
+                        "FIELD_DECL:'y_diff_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'OrganizedNeighborSearch<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'focalLength_'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "MEMBER_REF:'radiusLookupTableHeight_'",
+                        "MEMBER_REF:'radiusLookupTableWidth_'",
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_METHOD:'estimateFocalLengthFromInputCloud'",
+                  {
+                    "CXX_METHOD:'generateRadiusLookupTable'": {
+                      "children": [
+                        "PARM_DECL:'height'",
+                        "PARM_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMaxDistance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'max_distance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getName'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPointByIndex'": {
+                      "children": [
+                        "PARM_DECL:'index_arg'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getProjectedRadiusSearchBox'": {
+                      "children": [
+                        "PARM_DECL:'maxX_arg'",
+                        "PARM_DECL:'maxY_arg'",
+                        "PARM_DECL:'minX_arg'",
+                        "PARM_DECL:'minY_arg'",
+                        {
+                          "PARM_DECL:'point_arg'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'squared_radius_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "PARM_DECL:'cloud_arg'",
+                        "PARM_DECL:'index_arg'",
+                        "PARM_DECL:'k_arg'",
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "PARM_DECL:'index_arg'",
+                        "PARM_DECL:'k_arg'",
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "PARM_DECL:'k_arg'",
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'",
+                        {
+                          "PARM_DECL:'p_q_arg'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'pointPlaneProjection'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CSTYLE_CAST_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'point'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'point'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "MEMBER_REF_EXPR:'focalLength_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'pcl_round'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'xpos'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CSTYLE_CAST_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'point'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'point'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "MEMBER_REF_EXPR:'focalLength_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'pcl_round'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'ypos'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'xpos'",
+                        "PARM_DECL:'ypos'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "PARM_DECL:'cloud_arg'",
+                        "PARM_DECL:'index_arg'",
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'",
+                        {
+                          "PARM_DECL:'max_nn_arg'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "PARM_DECL:'index_arg'",
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'",
+                        {
+                          "PARM_DECL:'max_nn_arg'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "PARM_DECL:'k_indices_arg'",
+                        "PARM_DECL:'k_sqr_distances_arg'",
+                        {
+                          "PARM_DECL:'max_nn_arg'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_q_arg'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'estimateFocalLengthFromInputCloud'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'estimateFocalLengthFromInputCloud'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud_arg'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMaxDistance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_distance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max_dist'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max_dist'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max_dist'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~OrganizedNeighborSearch<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'focalLength_'",
+                  "FIELD_DECL:'input_'",
+                  "FIELD_DECL:'max_distance_'",
+                  "FIELD_DECL:'radiusLookupTableHeight_'",
+                  "FIELD_DECL:'radiusLookupTableWidth_'",
+                  "FIELD_DECL:'radiusSearchLookup_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

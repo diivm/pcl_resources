@@ -1,0 +1,338 @@
+{
+  "TRANSLATION_UNIT:'/pcl/geometry/include/pcl/geometry/mesh_conversion.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PolygonMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/conversions.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'geometry'": {
+                "children": [
+                  {
+                    "FUNCTION_TEMPLATE:'toFaceVertexMesh'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'HalfEdgeMesh'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMeshT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'VAFC'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'FaceIndex'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'polygon'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'face_vertex_mesh'",
+                        {
+                          "PARM_DECL:'half_edge_mesh'": {
+                            "children": [
+                              "TYPE_REF:'HalfEdgeMeshT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'HalfEdgeMeshT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'toHalfEdgeMesh'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'vertices'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'half_edge_mesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'half_edge_mesh'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'vertices'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'assert'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'vi'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_FOR_RANGE_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'vertex'",
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'half_edge_mesh'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'vertices'",
+                                    "VAR_DECL:'vertex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'HalfEdgeMesh'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMeshT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'VertexDataCloud'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "TYPE_ALIAS_DECL:'VertexIndices'": {
+                                        "children": [
+                                          "TYPE_REF:'HalfEdgeMesh'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "STATIC_ASSERT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'HalfEdgeMesh'"
+                                              ]
+                                            }
+                                          },
+                                          "STRING_LITERAL:'\"Output mesh must have data associated with the vertices!\"'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'vertices'": {
+                                        "children": [
+                                          "TYPE_REF:'VertexDataCloud'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'count_not_added'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'vi'": {
+                                        "children": [
+                                          "TYPE_REF:'VertexIndices'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'count_not_added'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'face_vertex_mesh'",
+                        {
+                          "PARM_DECL:'half_edge_mesh'": {
+                            "children": [
+                              "TYPE_REF:'HalfEdgeMeshT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'HalfEdgeMeshT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/tracking/src/internal.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'curand.h'",
+      "INCLUSION_DIRECTIVE:'curand_kernel.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'computeTracking'": {
+                      "children": [
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'input_color'",
+                        {
+                          "PARM_DECL:'motion'": {
+                            "children": [
+                              "TYPE_REF:'pcl::device::StateType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'motion_ratio'",
+                        "PARM_DECL:'particles'",
+                        "PARM_DECL:'ref'",
+                        "PARM_DECL:'ref_color'",
+                        {
+                          "PARM_DECL:'representative_state'": {
+                            "children": [
+                              "TYPE_REF:'pcl::device::StateType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'rng_states'",
+                        "PARM_DECL:'step_noise_covariance'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'initParticles'": {
+                      "children": [
+                        "PARM_DECL:'initial_noise_covariance'",
+                        "PARM_DECL:'initial_noise_mean'",
+                        "PARM_DECL:'particles'",
+                        {
+                          "PARM_DECL:'representative_state'": {
+                            "children": [
+                              "TYPE_REF:'pcl::device::StateType'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'rng_states'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'float8'": {
+                      "children": [
+                        "FIELD_DECL:'pitch'",
+                        "FIELD_DECL:'roll'",
+                        "FIELD_DECL:'w'",
+                        "FIELD_DECL:'weight'",
+                        "FIELD_DECL:'x'",
+                        "FIELD_DECL:'y'",
+                        "FIELD_DECL:'yaw'",
+                        "FIELD_DECL:'z'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'StateType'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::device::float8'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

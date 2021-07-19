@@ -1,0 +1,69 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/work_queue.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'QQueue'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/commands.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'AbstractTool'",
+                  "CLASS_DECL:'CloudComposerItem'",
+                  {
+                    "CLASS_DECL:'WorkQueue'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'actionFinished'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'finished_action'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::cloud_composer::ActionPair'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'checkQueue'",
+                        {
+                          "CXX_METHOD:'commandComplete'": {
+                            "children": [
+                              "PARM_DECL:'completed_command'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~WorkQueue'",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:'work_queue_'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'ActionPair'": {
+                      "children": [
+                        "FIELD_DECL:'command'",
+                        {
+                          "FIELD_DECL:'tool'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

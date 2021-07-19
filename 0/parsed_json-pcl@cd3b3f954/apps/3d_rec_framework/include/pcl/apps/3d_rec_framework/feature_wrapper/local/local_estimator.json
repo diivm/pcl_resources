@@ -1,0 +1,709 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/feature_wrapper/local/local_estimator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/3d_rec_framework/feature_wrapper/normal_estimator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/uniform_sampling.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/harris_3d.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/sift_keypoint.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/susan.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/mls.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "STRUCT_DECL:'SIFTKeypointFieldSelector'": {
+                "children": [
+                  {
+                    "CXX_METHOD:'operator()'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'p'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'rec_3d_framework'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'HarrisKeypointExtractor'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'HarrisKeypointExtractor<PointInT, NormalT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'non_max_radius_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'threshold_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'KeypointExtractor<PointInT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'needNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNonMaximaRadius'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'non_max_radius_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'r'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'r'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'r'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setResponseMethod'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setThreshold'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'t'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'t'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'t'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'non_max_radius_'",
+                        "FIELD_DECL:'threshold_'",
+                        "TEMPLATE_TYPE_PARAMETER:'NormalT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'radius_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'KeypointExtractor'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'needNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'input'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSupportRadius'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'radius_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'f'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~KeypointExtractor<PointInT>'",
+                        "FIELD_DECL:'radius_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'LocalEstimator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'LocalEstimator<PointInT, FeatureT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'adaptative_MLS_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addKeypointExtractor'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'ke'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeKeypoints'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'Ptr'",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimate'": {
+                            "children": [
+                              "PARM_DECL:'in'",
+                              "PARM_DECL:'keypoints'",
+                              "PARM_DECL:'processed'",
+                              "PARM_DECL:'signatures'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setAdaptativeMLS'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'adaptative_MLS_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setKeypointExtractors'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormalEstimator'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'ne'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSupportRadius'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'support_radius_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'r'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'r'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'r'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~LocalEstimator<PointInT, FeatureT>'",
+                        "FIELD_DECL:'adaptative_MLS_'",
+                        "FIELD_DECL:'normal_estimator_'",
+                        "FIELD_DECL:'support_radius_'",
+                        "TEMPLATE_TYPE_PARAMETER:'FeatureT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'SIFTKeypointExtractor'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'KeypointExtractor<PointInT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'radius_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'SIFTSurfaceKeypointExtractor'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'KeypointExtractor<PointInT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'needNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'Ptr'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'radius_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'SUSANKeypointExtractor'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'SUSANKeypointExtractor<PointInT, NormalT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'KeypointExtractor<PointInT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'needNormals'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNormals'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'Ptr'",
+                        "TEMPLATE_TYPE_PARAMETER:'NormalT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'radius_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'UniformSamplingExtractor'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'KeypointExtractor<PointInT>'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'keypoints'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'filterPlanar'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'keypoints_cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setFilterPlanar'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'filter_planar_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSamplingDensity'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'sampling_density_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'f'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'filter_planar_'",
+                        "FIELD_DECL:'sampling_density_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "USING_DECLARATION:'input_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "USING_DECLARATION:'radius_'": {
+                            "children": [
+                              "TEMPLATE_REF:'KeypointExtractor'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

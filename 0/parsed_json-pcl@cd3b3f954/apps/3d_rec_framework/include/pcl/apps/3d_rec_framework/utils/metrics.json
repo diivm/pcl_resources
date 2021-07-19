@@ -1,0 +1,1223 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/utils/metrics.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/utils.h'",
+      {
+        "NAMESPACE:'Metrics'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Accumulator'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'",
+                  {
+                    "TYPE_ALIAS_DECL:'Type'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'HistIntersectionUnionDistance'": {
+                "children": [
+                  {
+                    "FUNCTION_TEMPLATE:'accum_dist'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CONDITIONAL_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'",
+                                                            "DECL_REF_EXPR:'b'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'a'",
+                                                      "DECL_REF_EXPR:'b'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'min0'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CONDITIONAL_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'",
+                                                            "DECL_REF_EXPR:'b'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'a'",
+                                                      "DECL_REF_EXPR:'b'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'max0'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'min0'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'max0'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'max0'",
+                                                            "DECL_REF_EXPR:'min0'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:''",
+                        {
+                          "PARM_DECL:'a'": {
+                            "children": [
+                              "TYPE_REF:'U'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "TYPE_REF:'V'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'U'",
+                        "TEMPLATE_TYPE_PARAMETER:'V'",
+                        "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'operator()'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'sum_min'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'sum_max'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CXX_STATIC_CAST_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'sum_min'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'sum_max'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'result'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'worst_dist'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'result'": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'min0'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'min1'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'min2'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'min3'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'max0'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'max1'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'max2'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'max3'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'last'": {
+                                        "children": [
+                                          "TYPE_REF:'Iterator1'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'lastgroup'": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'last'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'Iterator1'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'sum_max'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'sum_min'": {
+                                        "children": [
+                                          "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'result'"
+                                  ]
+                                }
+                              },
+                              {
+                                "WHILE_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'a'",
+                                          "DECL_REF_EXPR:'lastgroup'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min0'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max0'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min1'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max1'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min2'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max2'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min3'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max3'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CONDITIONAL_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'a'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'b'",
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'min0'",
+                                                                  "DECL_REF_EXPR:'min1'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "DECL_REF_EXPR:'min2'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'min3'"
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'sum_min'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'max0'",
+                                                                  "DECL_REF_EXPR:'max1'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "DECL_REF_EXPR:'max2'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'max3'"
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'sum_max'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'a'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "WHILE_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'a'",
+                                          "DECL_REF_EXPR:'last'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CONDITIONAL_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'min0'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CONDITIONAL_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'a'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'b'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'max0'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min0'",
+                                                "DECL_REF_EXPR:'sum_min'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max0'",
+                                                "DECL_REF_EXPR:'sum_max'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'a'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'a'": {
+                            "children": [
+                              "TYPE_REF:'Iterator1'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "TYPE_REF:'Iterator2'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'size'",
+                        {
+                          "PARM_DECL:'worst_dist'": {
+                            "children": [
+                              "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'",
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'Iterator1'",
+                        "TEMPLATE_TYPE_PARAMETER:'Iterator2'",
+                        "TYPE_REF:'Metrics::HistIntersectionUnionDistance::ResultType'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'T'",
+                  {
+                    "TYPE_ALIAS_DECL:'ElementType'": {
+                      "children": [
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'ResultType'": {
+                      "children": [
+                        "TEMPLATE_REF:'Accumulator'",
+                        "TYPE_REF:'T'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'Accumulator'": {
+                "children": [
+                  "TYPE_ALIAS_DECL:'Type'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "TRANSLATION_UNIT:'/pcl/keypoints/src/narf_keypoint.cpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/common/polynomial_calculations.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/range_image_border_extractor.h'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/narf_keypoint.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/range_image/range_image.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_DEFINITION:'USE_BEAM_AVERAGE'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:''": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'isBetterInterestPoint'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'p1'",
+                        "PARM_DECL:'p2'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'nkdGetDirectionAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'rotated_direction'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'angle'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'angle'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'direction'",
+                        "PARM_DECL:'rotation'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'nkdGetScores'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'pixelDistance'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'pixelDistance'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'pixelDistance'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'positive_score'",
+                                          {
+                                            "UNEXPOSED_EXPR:'surface_change_score'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'surface_change_score'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "FLOATING_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'distance_factor'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'distance_factor'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'surface_change_score'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'surface_change_score'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'positive_score'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'distance_factor'",
+                        "PARM_DECL:'negative_score'",
+                        "PARM_DECL:'optimal_distance'",
+                        "PARM_DECL:'pixelDistance'",
+                        "PARM_DECL:'positive_score'",
+                        "PARM_DECL:'surface_change_score'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'propagateInvalidBeams'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'new_radius'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'new_radius'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'mapping_factor'": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "FLOATING_LITERAL:''",
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CXX_STATIC_CAST_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "BINARY_OPERATOR:''": {
+                                                                                        "children": [
+                                                                                          "INTEGER_LITERAL:''",
+                                                                                          {
+                                                                                            "UNEXPOSED_EXPR:'new_radius'": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'new_radius'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "FLOATING_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'new_beams'",
+                        "PARM_DECL:'new_radius'",
+                        "PARM_DECL:'old_beams'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'secondPairElementIsGreater'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'p1'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'pair'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p2'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'pair'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/pc_source/source.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/algorithm/string.hpp'",
+      "INCLUSION_DIRECTIVE:'boost/filesystem.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/3d_rec_framework/utils/persistence_utils.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/voxel_grid.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'rec_3d_framework'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Model'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getAssembled'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'voxelized'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator=='": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'other'": {
+                                  "children": [
+                                    "TYPE_REF:'Model<PointT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'assembled_'",
+                        "FIELD_DECL:'class_'",
+                        "FIELD_DECL:'id_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'Source'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Source<PointInT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'load_views_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'createClassAndModelDirectories'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'class_str'",
+                              "PARM_DECL:'id_str'",
+                              "PARM_DECL:'training_dir'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'createTrainingDir'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'trained_dir'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'bf'",
+                                                "TYPE_REF:'class boost::filesystem::path'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:'create_directory'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'create_directory'": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_REF_EXPR:'create_directory'": {
+                                                          "children": [
+                                                            "NAMESPACE_REF:'bf'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'trained_dir'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'trained_dir'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'exists'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'exists'": {
+                                                          "children": [
+                                                            {
+                                                              "DECL_REF_EXPR:'exists'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'bf'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'trained_dir'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'trained_dir'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'training_dir'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'generate'": {
+                            "children": [
+                              "PARM_DECL:'training_dir'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIdAndClassFromFilename'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'path'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'bf'",
+                                                "TYPE_REF:'class boost::filesystem::path'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'classname'",
+                              "PARM_DECL:'filename'",
+                              "PARM_DECL:'id'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getModelsInDirectory'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'dir'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'bf'",
+                                    "TYPE_REF:'class boost::filesystem::path'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'ext'",
+                              "PARM_DECL:'rel_path_so_far'",
+                              "PARM_DECL:'relative_paths'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getScale'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'model_scale_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'model_scale_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setFilterDuplicateViews'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'filter_duplicate_views_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'f'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setModelScale'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'model_scale_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'s'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'s'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'s'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'voxelizeAllModels'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'resolution'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~Source<PointInT>'",
+                        "FIELD_DECL:'filter_duplicate_views_'",
+                        "FIELD_DECL:'load_views_'",
+                        "FIELD_DECL:'model_scale_'",
+                        "FIELD_DECL:'path_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        {
+                          "TYPE_ALIAS_DECL:'ModelT'": {
+                            "children": [
+                              "TEMPLATE_REF:'Model'",
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE_ALIAS:'bf'": {
+          "children": [
+            "NAMESPACE_REF:'boost'",
+            "NAMESPACE_REF:'filesystem'"
+          ]
+        }
+      }
+    ]
+  }
+}

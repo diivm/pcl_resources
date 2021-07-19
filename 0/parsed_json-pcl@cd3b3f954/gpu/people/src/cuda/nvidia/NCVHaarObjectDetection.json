@@ -1,0 +1,828 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/cuda/nvidia/NCVHaarObjectDetection.hpp'": {
+    "children": [
+      {
+        "ENUM_DECL:''": {
+          "children": [
+            {
+              "ENUM_CONSTANT_DECL:'NCVPipeObjDet_Default'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'NCVPipeObjDet_FindLargestObject'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'NCVPipeObjDet_UseFairImageScaling'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ENUM_CONSTANT_DECL:'NCVPipeObjDet_VisualizeInPlace'": {
+                "children": [
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvApplyHaarClassifierCascade_device'": {
+          "children": [
+            {
+              "PARM_DECL:'anchorsRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'bMaskElements'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'cpuAllocator'": {
+                "children": [
+                  "TYPE_REF:'class INCVMemAllocator'"
+                ]
+              }
+            },
+            "PARM_DECL:'cuStream'",
+            {
+              "PARM_DECL:'d_HaarFeatures'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarFeature64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_HaarNodes'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarClassifierNode128'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_integralImage'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_pixelMask'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrixAlloc'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_weights'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'gpuAllocator'": {
+                "children": [
+                  "TYPE_REF:'class INCVMemAllocator'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'haar'": {
+                "children": [
+                  "TYPE_REF:'struct HaarClassifierCascadeDescriptor'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pixelStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scaleArea'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvApplyHaarClassifierCascade_host'": {
+          "children": [
+            {
+              "PARM_DECL:'anchorsRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'bMaskElements'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarFeatures'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarFeature64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarNodes'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarClassifierNode128'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_integralImage'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_pixelMask'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrixAlloc'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_weights'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'haar'": {
+                "children": [
+                  "TYPE_REF:'struct HaarClassifierCascadeDescriptor'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pixelStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scaleArea'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvDetectObjectsMultiScale_device'": {
+          "children": [
+            {
+              "PARM_DECL:'cpuAllocator'": {
+                "children": [
+                  "TYPE_REF:'class INCVMemAllocator'"
+                ]
+              }
+            },
+            "PARM_DECL:'cuStream'",
+            {
+              "PARM_DECL:'d_HaarFeatures'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarFeature64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_HaarNodes'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarClassifierNode128'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_dstRects'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'d_srcImg'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Ncv8u'"
+                ]
+              }
+            },
+            "PARM_DECL:'devProp'",
+            {
+              "PARM_DECL:'dstNumRects'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'flags'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'gpuAllocator'": {
+                "children": [
+                  "TYPE_REF:'class INCVMemAllocator'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'haar'": {
+                "children": [
+                  "TYPE_REF:'struct HaarClassifierCascadeDescriptor'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'minNeighbors'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'minObjSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pixelStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'scaleStep'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'srcRoi'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvGrowDetectionsVector_device'": {
+          "children": [
+            "PARM_DECL:'cuStream'",
+            {
+              "PARM_DECL:'curScale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'hypotheses'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numPixelMaskDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pixelMask'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rectHeight'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rectWidth'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'totalDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'totalMaxDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvGrowDetectionsVector_host'": {
+          "children": [
+            {
+              "PARM_DECL:'curScale'": {
+                "children": [
+                  "TYPE_REF:'Ncv32f'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'hypotheses'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct NcvRect32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numPixelMaskDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'pixelMask'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rectHeight'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'rectWidth'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'totalDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'totalMaxDetections'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvHaarGetClassifierSize'": {
+          "children": [
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numFeatures'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numNodes'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'numStages'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvHaarLoadFromFile_host'": {
+          "children": [
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarFeatures'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarFeature64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarNodes'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarClassifierNode128'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'haar'": {
+                "children": [
+                  "TYPE_REF:'struct HaarClassifierCascadeDescriptor'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'ncvHaarStoreNVBIN_host'": {
+          "children": [
+            {
+              "PARM_DECL:'filename'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'std::string'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarFeatures'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarFeature64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarNodes'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarClassifierNode128'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_HaarStages'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVVector'",
+                  "TYPE_REF:'struct HaarStage64'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'haar'": {
+                "children": [
+                  "TYPE_REF:'struct HaarClassifierCascadeDescriptor'"
+                ]
+              }
+            },
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'NCV.hpp'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "MACRO_DEFINITION:'HAAR_STDDEV_BORDER'",
+      "MACRO_DEFINITION:'HaarFeature64_CreateCheck_MaxRectField'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_CreateCheck_MaxFeatureOffset'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_CreateCheck_MaxNumFeatures'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_Interpret_MaskFlagLeftNodeLeaf'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_Interpret_MaskFlagRightNodeLeaf'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_Interpret_MaskFlagTilted'",
+      "MACRO_DEFINITION:'HaarFeatureDescriptor32_NumFeatures_Shift'",
+      "MACRO_DEFINITION:'HaarStage64_Interpret_MaskRootNodeOffset'",
+      "MACRO_DEFINITION:'HaarStage64_Interpret_MaskRootNodes'",
+      "MACRO_DEFINITION:'HaarStage64_Interpret_ShiftRootNodeOffset'",
+      "MACRO_DEFINITION:'OBJDET_MASK_ELEMENT_INVALID_32U'",
+      "MACRO_DEFINITION:'PCL_GPU_PEOPLE_NCVHAAROBJECTDETECTION_HPP_'",
+      "MACRO_DEFINITION:'RECT_SIMILARITY_PROPORTION'",
+      "MACRO_INSTANTIATION:'HaarFeature64_CreateCheck_MaxRectField'",
+      "MACRO_INSTANTIATION:'HaarFeature64_CreateCheck_MaxRectField'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_CreateCheck_MaxFeatureOffset'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_CreateCheck_MaxFeatureOffset'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_CreateCheck_MaxNumFeatures'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_CreateCheck_MaxNumFeatures'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagLeftNodeLeaf'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagLeftNodeLeaf'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagRightNodeLeaf'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagRightNodeLeaf'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagTilted'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_Interpret_MaskFlagTilted'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_NumFeatures_Shift'",
+      "MACRO_INSTANTIATION:'HaarFeatureDescriptor32_NumFeatures_Shift'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_MaskRootNodeOffset'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_MaskRootNodeOffset'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_MaskRootNodes'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_MaskRootNodes'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_MaskRootNodes'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_ShiftRootNodeOffset'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_ShiftRootNodeOffset'",
+      "MACRO_INSTANTIATION:'HaarStage64_Interpret_ShiftRootNodeOffset'",
+      "MACRO_INSTANTIATION:'NCV_CT_ASSERT'",
+      "MACRO_INSTANTIATION:'NCV_CT_ASSERT'",
+      "MACRO_INSTANTIATION:'NCV_CT_ASSERT'",
+      "MACRO_INSTANTIATION:'NCV_CT_ASSERT'",
+      "MACRO_INSTANTIATION:'NCV_CT_ASSERT'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'NCV_EXPORTS'",
+      "MACRO_INSTANTIATION:'ncvAssertReturn'",
+      {
+        "STRUCT_DECL:'HaarClassifierCascadeDescriptor'": {
+          "children": [
+            {
+              "FIELD_DECL:'ClassifierSize'": {
+                "children": [
+                  "TYPE_REF:'struct NcvSize32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'NumClassifierRootNodes'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'NumClassifierTotalNodes'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'NumFeatures'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'NumStages'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'bHasStumpsOnly'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            },
+            {
+              "FIELD_DECL:'bNeedsTiltedII'": {
+                "children": [
+                  "TYPE_REF:'NcvBool'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'HaarClassifierNode128'": {
+          "children": [
+            "FIELD_DECL:'NCVStatus'",
+            "FIELD_DECL:'_ui4'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'HaarClassifierNodeDescriptor32'": {
+          "children": [
+            "FIELD_DECL:'NCVStatus'",
+            "FIELD_DECL:'_ui1'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'HaarFeature64'": {
+          "children": [
+            "FIELD_DECL:'NCVStatus'",
+            "FIELD_DECL:'_ui2'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'HaarFeatureDescriptor32'": {
+          "children": [
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            "FIELD_DECL:'NCVStatus'",
+            {
+              "FIELD_DECL:'desc'": {
+                "children": [
+                  "TYPE_REF:'Ncv32u'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'HaarStage64'": {
+          "children": [
+            "FIELD_DECL:'NCVStatus'",
+            "FIELD_DECL:'_ui2'"
+          ]
+        }
+      },
+      "TYPEDEF_DECL:'__ct_assert_typedef_305'",
+      "TYPEDEF_DECL:'__ct_assert_typedef_306'",
+      "TYPEDEF_DECL:'__ct_assert_typedef_307'",
+      "TYPEDEF_DECL:'__ct_assert_typedef_308'",
+      "TYPEDEF_DECL:'__ct_assert_typedef_309'"
+    ]
+  }
+}

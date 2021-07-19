@@ -1,0 +1,490 @@
+{
+  "TRANSLATION_UNIT:'/pcl/kdtree/include/pcl/kdtree/kdtree_flann.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'flann/util/params.h'",
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree.h'",
+      {
+        "NAMESPACE:'flann'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Index'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'L2_Simple'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'T'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'KdTreeFLANN'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'KdTreeFLANN<PointT, Dist>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'sorted'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'KdTreeFLANN<PointT, Dist>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'k'": {
+                            "children": [
+                              "TEMPLATE_REF:'KdTreeFLANN'",
+                              "TYPE_REF:'Dist'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_METHOD:'cleanup'",
+                  {
+                    "CXX_METHOD:'convertCloudToArray'": {
+                      "children": [
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'convertCloudToArray'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getName'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'makeShared'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_DELETE_EXPR:''": {
+                                              "children": [
+                                                "TEMPLATE_REF:'KdTreeFLANN'",
+                                                "TYPE_REF:'Dist'",
+                                                "TYPE_REF:'PointT'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'Ptr'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'operator='": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'identity_mapping_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'dim_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'param_k_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'param_radius_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'k'": {
+                            "children": [
+                              "TEMPLATE_REF:'KdTreeFLANN'",
+                              "TYPE_REF:'Dist'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_REF:'KdTreeFLANN'",
+                        "TYPE_REF:'Dist'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setEpsilon'": {
+                      "children": [
+                        "PARM_DECL:'eps'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'indices'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSortedResults'": {
+                      "children": [
+                        "PARM_DECL:'sorted'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~KdTreeFLANN<PointT, Dist>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'cleanup'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'cleanup'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'cloud_'",
+                  "FIELD_DECL:'dim_'",
+                  "FIELD_DECL:'flann_index_'",
+                  "FIELD_DECL:'identity_mapping_'",
+                  "FIELD_DECL:'index_mapping_'",
+                  {
+                    "FIELD_DECL:'param_k_'": {
+                      "children": [
+                        "NAMESPACE_REF:'flann'",
+                        "TYPE_REF:'struct flann::SearchParams'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'param_radius_'": {
+                      "children": [
+                        "NAMESPACE_REF:'flann'",
+                        "TYPE_REF:'struct flann::SearchParams'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'total_nr_points_'",
+                  {
+                    "TEMPLATE_TYPE_PARAMETER:'Dist'": {
+                      "children": [
+                        "NAMESPACE_REF:'flann'",
+                        "TEMPLATE_REF:'L2_Simple'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  {
+                    "TYPE_ALIAS_DECL:'FLANNIndex'": {
+                      "children": [
+                        "NAMESPACE_REF:'flann'",
+                        "TEMPLATE_REF:'Index'",
+                        "TYPE_REF:'Dist'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'knn_search'": {
+                "children": [
+                  {
+                    "PARM_DECL:'dists'": {
+                      "children": [
+                        "TYPE_REF:'Distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'index'": {
+                      "children": [
+                        "TYPE_REF:'FlannIndex'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'indices'": {
+                      "children": [
+                        "TYPE_REF:'Indices'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'k'",
+                  {
+                    "PARM_DECL:'params'": {
+                      "children": [
+                        "TYPE_REF:'SearchParams'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'query'": {
+                      "children": [
+                        "TYPE_REF:'Query'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'Distances'",
+                  "TEMPLATE_TYPE_PARAMETER:'FlannIndex'",
+                  "TEMPLATE_TYPE_PARAMETER:'Indices'",
+                  "TEMPLATE_TYPE_PARAMETER:'Query'",
+                  "TEMPLATE_TYPE_PARAMETER:'SearchParams'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'radius_search'": {
+                "children": [
+                  {
+                    "PARM_DECL:'dists'": {
+                      "children": [
+                        "TYPE_REF:'Distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'index'": {
+                      "children": [
+                        "TYPE_REF:'FlannIndex'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'indices'": {
+                      "children": [
+                        "TYPE_REF:'Indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'params'": {
+                      "children": [
+                        "TYPE_REF:'SearchParams'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'query'": {
+                      "children": [
+                        "TYPE_REF:'Query'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'radius'",
+                  "TEMPLATE_TYPE_PARAMETER:'Distances'",
+                  "TEMPLATE_TYPE_PARAMETER:'FlannIndex'",
+                  "TEMPLATE_TYPE_PARAMETER:'Indices'",
+                  "TEMPLATE_TYPE_PARAMETER:'Query'",
+                  "TEMPLATE_TYPE_PARAMETER:'SearchParams'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'compat_with_flann'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'IndexT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

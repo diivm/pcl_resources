@@ -1,0 +1,491 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/random.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/impl/random.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'random'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'common'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'NormalGenerator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'NormalGenerator<T>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'mean'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'seed'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sigma'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'NormalGenerator<T>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'parameters'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::common::NormalGenerator::Parameters'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getParameters'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'parameters_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'struct pcl::common::NormalGenerator::Parameters'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'run'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setParameters'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'mean'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'seed'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'sigma'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setParameters'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'parameters'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::common::NormalGenerator::Parameters'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSeed'": {
+                            "children": [
+                              "PARM_DECL:'seed'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'distribution_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::common::NormalGenerator::DistributionType'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'parameters_'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::common::NormalGenerator::Parameters'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'rng_'",
+                        {
+                          "STRUCT_DECL:'Parameters'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Parameters'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'mean'",
+                                    "MEMBER_REF:'sigma'",
+                                    {
+                                      "PARM_DECL:'_mean'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'_seed'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'_sigma'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'_mean'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'_sigma'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'mean'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'seed'",
+                              {
+                                "FIELD_DECL:'sigma'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        {
+                          "TYPE_ALIAS_DECL:'DistributionType'": {
+                            "children": [
+                              "TEMPLATE_REF:'normal_distribution'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'UniformGenerator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'UniformGenerator<T>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'min'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'seed'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'UniformGenerator<T>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'parameters'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::common::UniformGenerator::Parameters'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'getParameters'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'parameters_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'struct pcl::common::UniformGenerator::Parameters'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'run'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setParameters'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'max'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'min'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'seed'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setParameters'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'parameters'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::common::UniformGenerator::Parameters'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSeed'": {
+                            "children": [
+                              "PARM_DECL:'seed'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'distribution_'",
+                        {
+                          "FIELD_DECL:'parameters_'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::common::UniformGenerator::Parameters'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'rng_'",
+                        {
+                          "STRUCT_DECL:'Parameters'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Parameters'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'max'",
+                                    "MEMBER_REF:'min'",
+                                    {
+                                      "PARM_DECL:'_max'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'_min'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'_seed'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'_min'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'_max'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'max'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'min'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'seed'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'normal_distribution'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'T'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'uniform_distribution'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'T'",
+                        "TEMPLATE_TYPE_PARAMETER:'T2'"
+                      ]
+                    }
+                  },
+                  "STRUCT_DECL:''",
+                  "STRUCT_DECL:''"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

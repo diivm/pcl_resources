@@ -1,0 +1,164 @@
+{
+  "TRANSLATION_UNIT:'/pcl/keypoints/include/pcl/keypoints/sift_keypoint.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/impl/sift_keypoint.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/keypoints/keypoint.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SIFTKeypoint'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SIFTKeypoint<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'getFieldValue_'",
+                        "MEMBER_REF:'min_scale_'",
+                        "MEMBER_REF:'nr_octaves_'",
+                        "MEMBER_REF:'nr_scales_per_octave_'",
+                        "MEMBER_REF:'scale_idx_'",
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "UNEXPOSED_EXPR:''"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeScaleSpace'": {
+                      "children": [
+                        "PARM_DECL:'diff_of_gauss'",
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'scales'",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'detectKeypoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'detectKeypointsForOctave'": {
+                      "children": [
+                        "PARM_DECL:'base_scale'",
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'nr_scales_per_octave'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'findScaleSpaceExtrema'": {
+                      "children": [
+                        "PARM_DECL:'diff_of_gauss'",
+                        "PARM_DECL:'extrema_indices'",
+                        "PARM_DECL:'extrema_scales'",
+                        "PARM_DECL:'input'",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'setMinimumContrast'": {
+                      "children": [
+                        "PARM_DECL:'min_contrast'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setScales'": {
+                      "children": [
+                        "PARM_DECL:'min_scale'",
+                        "PARM_DECL:'nr_octaves'",
+                        "PARM_DECL:'nr_scales_per_octave'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'getFieldValue_'": {
+                      "children": [
+                        "TEMPLATE_REF:'SIFTKeypointFieldSelector'",
+                        "TYPE_REF:'PointInT'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'min_contrast_'",
+                  "FIELD_DECL:'min_scale_'",
+                  "FIELD_DECL:'nr_octaves_'",
+                  "FIELD_DECL:'nr_scales_per_octave_'",
+                  "FIELD_DECL:'out_fields_'",
+                  "FIELD_DECL:'scale_idx_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'SIFTKeypointFieldSelector'": {
+                "children": [
+                  {
+                    "CXX_METHOD:'operator()'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'p'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

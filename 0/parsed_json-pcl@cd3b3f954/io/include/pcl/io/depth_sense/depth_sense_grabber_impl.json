@@ -1,0 +1,208 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/depth_sense/depth_sense_grabber_impl.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'DepthSense.hxx'",
+      "INCLUSION_DIRECTIVE:'memory'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/buffers.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/depth_sense_grabber.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "NAMESPACE:'depth_sense'": {
+                      "children": [
+                        {
+                          "STRUCT_DECL:'DepthSenseGrabberImpl'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'DepthSenseGrabberImpl'": {
+                                  "children": [
+                                    "PARM_DECL:'device_id'",
+                                    "PARM_DECL:'parent'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'configureColorNode'": {
+                                  "children": [
+                                    "PARM_DECL:'node'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'configureDepthNode'": {
+                                  "children": [
+                                    "PARM_DECL:'node'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'enableTemporalFiltering'": {
+                                  "children": [
+                                    "PARM_DECL:'type'",
+                                    "PARM_DECL:'window_size'"
+                                  ]
+                                }
+                              },
+                              "CXX_METHOD:'getFramesPerSecond'",
+                              {
+                                "CXX_METHOD:'onColorDataReceived'": {
+                                  "children": [
+                                    "PARM_DECL:'data'",
+                                    "PARM_DECL:'node'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'onDepthDataReceived'": {
+                                  "children": [
+                                    "PARM_DECL:'data'",
+                                    "PARM_DECL:'node'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setCameraParameters'": {
+                                  "children": [
+                                    "PARM_DECL:'parameters'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setConfidenceThreshold'": {
+                                  "children": [
+                                    "PARM_DECL:'threshold'"
+                                  ]
+                                }
+                              },
+                              "CXX_METHOD:'start'",
+                              "CXX_METHOD:'stop'",
+                              "DESTRUCTOR:'~DepthSenseGrabberImpl'",
+                              "FIELD_DECL:'color_data_'",
+                              "FIELD_DECL:'confidence_threshold_'",
+                              "FIELD_DECL:'device_id_'",
+                              "FIELD_DECL:'fps_mutex_'",
+                              "FIELD_DECL:'frequency_'",
+                              "FIELD_DECL:'is_running_'",
+                              "FIELD_DECL:'need_xyz_'",
+                              "FIELD_DECL:'need_xyzrgba_'",
+                              "FIELD_DECL:'p_'",
+                              "FIELD_DECL:'point_cloud_rgba_signal_'",
+                              "FIELD_DECL:'point_cloud_signal_'",
+                              "FIELD_DECL:'projection_'",
+                              "FIELD_DECL:'temporal_filtering_type_'",
+                              {
+                                "FUNCTION_TEMPLATE:'computeXYZ'": {
+                                  "children": [
+                                    "PARM_DECL:'cloud'",
+                                    "TEMPLATE_TYPE_PARAMETER:'Point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'COLOR_HEIGHT'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'COLOR_SIZE'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'COLOR_HEIGHT'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'COLOR_HEIGHT'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'COLOR_WIDTH'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'COLOR_WIDTH'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'COLOR_WIDTH'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'FRAMERATE'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'HEIGHT'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'SIZE'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'HEIGHT'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'HEIGHT'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'WIDTH'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'WIDTH'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'WIDTH'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

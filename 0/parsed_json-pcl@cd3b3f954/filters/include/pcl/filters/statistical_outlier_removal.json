@@ -1,0 +1,179 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/statistical_outlier_removal.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter_indices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "CLASS_TEMPLATE:'StatisticalOutlierRemoval'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'StatisticalOutlierRemoval<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'mean_k_'",
+                        "MEMBER_REF:'std_mul_'",
+                        {
+                          "PARM_DECL:'extract_removed_indices'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilterIndices'": {
+                      "children": [
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMeanK'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'mean_k_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getStddevMulThresh'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'std_mul_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMeanK'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'mean_k_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'nr_k'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'nr_k'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'nr_k'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setStddevMulThresh'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'std_mul_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'stddev_mult'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'stddev_mult'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'stddev_mult'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'mean_k_'",
+                  "FIELD_DECL:'searcher_'",
+                  "FIELD_DECL:'std_mul_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

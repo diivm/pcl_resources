@@ -1,0 +1,342 @@
+{
+  "TRANSLATION_UNIT:'/pcl/recognition/include/pcl/recognition/face_detection/face_common.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'pcl/features/integral_image2D.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'face_detection'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'FeatureType'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'FeatureType'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'used_ii_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'deserialize'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'stream'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serialize'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'stream'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'col1_'",
+                        "FIELD_DECL:'col2_'",
+                        "FIELD_DECL:'row1_'",
+                        "FIELD_DECL:'row2_'",
+                        "FIELD_DECL:'threshold_'",
+                        "FIELD_DECL:'used_ii_'",
+                        "FIELD_DECL:'wsizex1_'",
+                        "FIELD_DECL:'wsizex2_'",
+                        "FIELD_DECL:'wsizey1_'",
+                        "FIELD_DECL:'wsizey2_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'TrainingExample'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'col_'",
+                        "FIELD_DECL:'label_'",
+                        {
+                          "FIELD_DECL:'rot_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'row_'",
+                        {
+                          "FIELD_DECL:'trans_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'wsize_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'RFTreeNode'": {
+                      "children": [
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'deserialize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'num_of_sub_nodes'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'num_of_sub_nodes'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'num_of_sub_nodes'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'num_of_sub_nodes'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'num_of_sub_nodes'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "FOR_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'num_of_sub_nodes'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'num_of_sub_nodes'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'sub_node_index'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'sub_node_index'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "COMPOUND_STMT:''",
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'sub_node_index'": {
+                                                                "children": [
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'sub_node_index'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'stream'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serialize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'num_of_sub_nodes'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'num_of_sub_nodes'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'num_of_sub_nodes'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'sub_node_index'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'sub_node_index'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'sub_node_index'": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'sub_node_index'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'covariance_rot_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'covariance_trans_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'feature'": {
+                            "children": [
+                              "TYPE_REF:'FeatureType'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'purity_'",
+                        {
+                          "FIELD_DECL:'rot_mean_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'sub_nodes'",
+                        "FIELD_DECL:'threshold'",
+                        {
+                          "FIELD_DECL:'trans_mean_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'value'",
+                        "FIELD_DECL:'variance'",
+                        "TEMPLATE_TYPE_PARAMETER:'FeatureType'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

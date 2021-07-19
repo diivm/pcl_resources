@@ -1,0 +1,197 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/point_cloud.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Geometry'",
+      "INCLUSION_DIRECTIVE:'Eigen/StdVector'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLHeader.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/exceptions.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/type_traits.h'",
+      "INCLUSION_DIRECTIVE:'pcl/types.h'",
+      "INCLUSION_DIRECTIVE:'utility'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_PointCloud'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "CLASS_TEMPLATE:'NdCopyEigenPointFunctor'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'NdCopyEigenPointFunctor<PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "DECL_REF_EXPR:'p1'",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'f_idx_'",
+                        "MEMBER_REF:'p1_'",
+                        {
+                          "PARM_DECL:'p1'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::VectorXf'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p2'": {
+                            "children": [
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "FIELD_DECL:'f_idx_'",
+                  {
+                    "FIELD_DECL:'p1_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::VectorXf'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'p2_'",
+                  {
+                    "FUNCTION_TEMPLATE:'operator()'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'data_ptr'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'Key'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'NdCopyPointEigenFunctor'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'NdCopyPointEigenFunctor<PointInT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "DECL_REF_EXPR:'p2'",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'f_idx_'",
+                        "MEMBER_REF:'p2_'",
+                        {
+                          "PARM_DECL:'p1'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p2'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::VectorXf'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "FIELD_DECL:'f_idx_'",
+                  "FIELD_DECL:'p1_'",
+                  {
+                    "FIELD_DECL:'p2_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::VectorXf'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'operator()'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'data_ptr'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'Key'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'PointCloud'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'operator<<'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'detail'": {
+                "children": [
+                  {
+                    "STRUCT_DECL:'FieldMapping'": {
+                      "children": [
+                        "FIELD_DECL:'serialized_offset'",
+                        "FIELD_DECL:'size'",
+                        "FIELD_DECL:'struct_offset'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "TYPE_ALIAS_DECL:'MsgFieldMap'": {
+                "children": [
+                  "NAMESPACE_REF:'detail'",
+                  "NAMESPACE_REF:'std'",
+                  "TEMPLATE_REF:'vector'",
+                  "TYPE_REF:'struct pcl::detail::FieldMapping'"
+                ]
+              }
+            },
+            "UNEXPOSED_DECL:'PointCloud'"
+          ]
+        }
+      }
+    ]
+  }
+}

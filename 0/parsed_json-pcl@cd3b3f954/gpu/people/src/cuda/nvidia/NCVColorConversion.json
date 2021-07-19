@@ -1,0 +1,958 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/cuda/nvidia/NCVColorConversion.hpp'": {
+    "children": [
+      {
+        "CLASS_TEMPLATE:'__pixColorConv'": {
+          "children": [
+            {
+              "CXX_METHOD:'_pixColorConv'": {
+                "children": [
+                  {
+                    "PARM_DECL:'pixIn'": {
+                      "children": [
+                        "TYPE_REF:'Tin'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pixOut'": {
+                      "children": [
+                        "TYPE_REF:'Tout'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "TEMPLATE_NON_TYPE_PARAMETER:'CSin'": {
+                "children": [
+                  "TYPE_REF:'enum NCVColorSpace'"
+                ]
+              }
+            },
+            {
+              "TEMPLATE_NON_TYPE_PARAMETER:'CSout'": {
+                "children": [
+                  "TYPE_REF:'enum NCVColorSpace'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'Tin'",
+            "TEMPLATE_TYPE_PARAMETER:'Tout'"
+          ]
+        }
+      },
+      {
+        "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'__pixColorConv'": {
+          "children": [
+            {
+              "CXX_METHOD:'_pixColorConv'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'luma'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'pixIn'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''",
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'pixIn'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'pixIn'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'Ncv32f'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pixIn'": {
+                      "children": [
+                        "TYPE_REF:'Tin'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pixOut'": {
+                      "children": [
+                        "TYPE_REF:'Tout'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "DECL_REF_EXPR:'NCVColorSpaceGray'",
+            "DECL_REF_EXPR:'NCVColorSpaceRGBA'",
+            "TEMPLATE_TYPE_PARAMETER:'Tin'",
+            "TEMPLATE_TYPE_PARAMETER:'Tout'",
+            "TYPE_REF:'Tin'",
+            "TYPE_REF:'Tout'"
+          ]
+        }
+      },
+      {
+        "CLASS_TEMPLATE_PARTIAL_SPECIALIZATION:'__pixColorConv'": {
+          "children": [
+            {
+              "CXX_METHOD:'_pixColorConv'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "MEMBER_REF_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'pixOut'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pixIn'": {
+                      "children": [
+                        "TYPE_REF:'Tin'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pixOut'": {
+                      "children": [
+                        "TYPE_REF:'Tout'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "DECL_REF_EXPR:'NCVColorSpaceGray'",
+            "DECL_REF_EXPR:'NCVColorSpaceRGBA'",
+            "TEMPLATE_TYPE_PARAMETER:'Tin'",
+            "TEMPLATE_TYPE_PARAMETER:'Tout'",
+            "TYPE_REF:'Tin'",
+            "TYPE_REF:'Tout'"
+          ]
+        }
+      },
+      {
+        "ENUM_DECL:'NCVColorSpace'": {
+          "children": [
+            "ENUM_CONSTANT_DECL:'NCVColorSpaceGray'",
+            "ENUM_CONSTANT_DECL:'NCVColorSpaceRGBA'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_TEMPLATE:'_ncvColorConv_host'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'__ncv_skip_cond'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'h_imgIn'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'NCVMemoryTypeNone'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DO_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DO_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'oss'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'",
+                                                                  "TYPE_REF:'std::ostringstream'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "CALL_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'h_imgIn'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "CALL_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "MEMBER_REF_EXPR:''": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'h_imgOut'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'NCV_DIMENSIONS_INVALID'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'NCV_DIMENSIONS_INVALID'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'h_imgIn'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'h_imgOut'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DO_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DO_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'oss'": {
+                                                                "children": [
+                                                                  "NAMESPACE_REF:'std'",
+                                                                  "TYPE_REF:'std::ostringstream'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'h_imgIn'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "CALL_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'h_imgOut'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CALL_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "MEMBER_REF_EXPR:''": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'h_imgIn'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    "DECL_REF_EXPR:'NCVMemoryTypeHostPinned'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "BINARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CALL_EXPR:''": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "MEMBER_REF_EXPR:''": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'h_imgIn'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    "DECL_REF_EXPR:'NCVMemoryTypeNone'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'NCV_MEM_RESIDENCE_ERROR'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'NCV_MEM_RESIDENCE_ERROR'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'h_imgIn'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'h_imgOut'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'h_imgIn'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "DECL_REF_EXPR:'NCVMemoryTypeHostPinned'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "MEMBER_REF_EXPR:''": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'h_imgIn'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "DECL_REF_EXPR:'NCVMemoryTypeNone'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "FOR_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'h_imgIn'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'h_imgIn'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'j'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'i'",
+                                                                  "DECL_REF_EXPR:'j'",
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'h_imgIn'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'i'",
+                                                                  "DECL_REF_EXPR:'j'",
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'h_imgOut'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "DECL_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'CSin'",
+                                                                  "DECL_REF_EXPR:'CSout'",
+                                                                  "TEMPLATE_REF:'__pixColorConv'",
+                                                                  "TYPE_REF:'Tin'",
+                                                                  "TYPE_REF:'Tout'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'j'": {
+                                                          "children": [
+                                                            "TYPE_REF:'Ncv32u'",
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'j'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "TYPE_REF:'Ncv32u'",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'i'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'__ncv_skip_cond'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'__ncv_skip_cond'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:'NCV_SUCCESS'": {
+                            "children": [
+                              "DECL_REF_EXPR:'NCV_SUCCESS'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_imgIn'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Tin'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'h_imgOut'": {
+                "children": [
+                  "TEMPLATE_REF:'NCVMatrix'",
+                  "TYPE_REF:'Tout'"
+                ]
+              }
+            },
+            {
+              "TEMPLATE_NON_TYPE_PARAMETER:'CSin'": {
+                "children": [
+                  "TYPE_REF:'enum NCVColorSpace'"
+                ]
+              }
+            },
+            {
+              "TEMPLATE_NON_TYPE_PARAMETER:'CSout'": {
+                "children": [
+                  "TYPE_REF:'enum NCVColorSpace'"
+                ]
+              }
+            },
+            "TEMPLATE_TYPE_PARAMETER:'Tin'",
+            "TEMPLATE_TYPE_PARAMETER:'Tout'",
+            "TYPE_REF:'NCVStatus'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'NCVPixelOperations.hpp'",
+      "MACRO_DEFINITION:'_ncv_color_conversion_hpp_'",
+      "MACRO_INSTANTIATION:'NCV_SET_SKIP_COND'",
+      "MACRO_INSTANTIATION:'NCV_SKIP_COND_BEGIN'",
+      "MACRO_INSTANTIATION:'NCV_SKIP_COND_END'",
+      "MACRO_INSTANTIATION:'ncvAssertReturn'",
+      "MACRO_INSTANTIATION:'ncvAssertReturn'"
+    ]
+  }
+}

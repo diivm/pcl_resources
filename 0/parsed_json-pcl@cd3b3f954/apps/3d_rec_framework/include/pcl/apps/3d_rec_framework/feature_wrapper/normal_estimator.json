@@ -1,0 +1,760 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/3d_rec_framework/include/pcl/apps/3d_rec_framework/feature_wrapper/normal_estimator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/integral_image_normal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/normal_3d.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/radius_outlier_removal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/voxel_grid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'rec_3d_framework'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'PreProcessorAndNormalEstimator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PreProcessorAndNormalEstimator<PointInT, PointOutT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'remove_outliers_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'do_voxel_grid_'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                                  "MEMBER_REF_EXPR:'compute_mesh_resolution_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'computeMeshResolution'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'tree'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'sum_distances'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'avg'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'avg'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'avg'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'input'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimate'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'radius'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'normal_radius_'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'normal_radius_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'compute_mesh_resolution_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'compute_mesh_resolution_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'voxel_grid_size'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'grid_resolution_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'grid_resolution_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'factor_voxel_grid_'": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'factor_voxel_grid_'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'mesh_resolution_'": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'mesh_resolution_'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "DECL_REF_EXPR:'voxel_grid_size'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'compute_mesh_resolution_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'compute_mesh_resolution_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "COMPOUND_STMT:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'do_voxel_grid_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'do_voxel_grid_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                "RETURN_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'out2'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'radius'": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'normal_radius_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'normal_radius_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'factor_normals_'": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'factor_normals_'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'mesh_resolution_'": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'mesh_resolution_'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "DECL_REF_EXPR:'radius'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "IF_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'radius'",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'factor_voxel_grid_'": {
+                                                                            "children": [
+                                                                              "MEMBER_REF_EXPR:'factor_voxel_grid_'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'do_voxel_grid_'": {
+                                                                      "children": [
+                                                                        "MEMBER_REF_EXPR:'do_voxel_grid_'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'compute_mesh_resolution_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'compute_mesh_resolution_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'remove_outliers_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'remove_outliers_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                "RETURN_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'factor_normals_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'factor_normals_'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'mesh_resolution_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'mesh_resolution_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'radius'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'radius'",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'factor_voxel_grid_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'factor_voxel_grid_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'do_voxel_grid_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'do_voxel_grid_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'compute_mesh_resolution_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'compute_mesh_resolution_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                "COMPOUND_STMT:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            "VAR_DECL:'j'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            "COMPOUND_STMT:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "COMPOUND_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'j'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'NaNs'": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "IF_STMT:''": {
+                                                    "children": [
+                                                      "COMPOUND_STMT:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'NaNs'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'NaNs'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'Ptr'",
+                              "PARM_DECL:'in'",
+                              "PARM_DECL:'out'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCMR'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'compute_mesh_resolution_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setDoVoxelGrid'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'do_voxel_grid_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setFactorsForCMR'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'factor_voxel_grid_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f1'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'factor_normals_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f2'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f2'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'f1'",
+                              "PARM_DECL:'f2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setRemoveOutliers'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'remove_outliers_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setValuesForCMRFalse'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'grid_resolution_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f1'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'normal_radius_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'f2'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'f2'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'f1'",
+                              "PARM_DECL:'f2'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'compute_mesh_resolution_'",
+                        "FIELD_DECL:'do_voxel_grid_'",
+                        "FIELD_DECL:'factor_normals_'",
+                        "FIELD_DECL:'factor_voxel_grid_'",
+                        "FIELD_DECL:'grid_resolution_'",
+                        "FIELD_DECL:'mesh_resolution_'",
+                        "FIELD_DECL:'normal_radius_'",
+                        "FIELD_DECL:'remove_outliers_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

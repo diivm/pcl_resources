@@ -1,0 +1,592 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/internal.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/label_common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/tree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'MultiTreeLiveProc'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'MultiTreeLiveProc'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'def_cols'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'def_rows'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'process'": {
+                            "children": [
+                              "PARM_DECL:'dmap'",
+                              "PARM_DECL:'lmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'process'": {
+                            "children": [
+                              "PARM_DECL:'FGThresh'",
+                              "PARM_DECL:'dmap'",
+                              "PARM_DECL:'lmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'processProb'": {
+                            "children": [
+                              "PARM_DECL:'FGThresh'",
+                              "PARM_DECL:'dmap'",
+                              "PARM_DECL:'lmap'",
+                              "PARM_DECL:'prob'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~MultiTreeLiveProc'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'multilmap'",
+                        "FIELD_DECL:'trees'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'ProbabilityProc'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ProbabilityProc'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'CUDA_CombineProb'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'probIn1'",
+                              "PARM_DECL:'probIn2'",
+                              "PARM_DECL:'probOut'",
+                              "PARM_DECL:'weight1'",
+                              "PARM_DECL:'weight2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CUDA_GaussianBlur'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'kernel'",
+                              "PARM_DECL:'probIn'",
+                              "PARM_DECL:'probOut'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CUDA_GaussianBlur'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'kernel'",
+                              "PARM_DECL:'probIn'",
+                              "PARM_DECL:'probOut'",
+                              "PARM_DECL:'probTemp'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CUDA_SelectLabel'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'labels'",
+                              "PARM_DECL:'probabilities'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'CUDA_WeightedSumProb'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'probIn'",
+                              "PARM_DECL:'probOut'",
+                              "PARM_DECL:'weight'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~ProbabilityProc'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'colorLMap'": {
+                      "children": [
+                        "PARM_DECL:'cmap'",
+                        "PARM_DECL:'labels'",
+                        "PARM_DECL:'rgb'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeCloud'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'depth'",
+                        {
+                          "PARM_DECL:'intr'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::device::Intr'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeHue'": {
+                      "children": [
+                        "PARM_DECL:'rgba'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'computeHueWithNans'": {
+                      "children": [
+                        "PARM_DECL:'depth'",
+                        "PARM_DECL:'hue'",
+                        "PARM_DECL:'image'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'mixedColorMap'": {
+                      "children": [
+                        "PARM_DECL:'labels'",
+                        "PARM_DECL:'map'",
+                        "PARM_DECL:'output'",
+                        "PARM_DECL:'rgba'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'prepareForeGroundDepth'": {
+                      "children": [
+                        "PARM_DECL:'depth1'",
+                        "PARM_DECL:'depth2'",
+                        "PARM_DECL:'inverse_mask'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'setZero'": {
+                      "children": [
+                        "PARM_DECL:'mask'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'smoothLabelImage'": {
+                      "children": [
+                        "PARM_DECL:'depth'",
+                        "PARM_DECL:'depthThres'",
+                        "PARM_DECL:'dst'",
+                        "PARM_DECL:'num_parts'",
+                        "PARM_DECL:'patch_size'",
+                        "PARM_DECL:'src'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'CUDATree'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CUDATree'": {
+                            "children": [
+                              "PARM_DECL:'leaves'",
+                              "PARM_DECL:'nodes'",
+                              "PARM_DECL:'treeHeight_'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'leaves_device'",
+                        "FIELD_DECL:'nodes_device'",
+                        "FIELD_DECL:'numNodes'",
+                        "FIELD_DECL:'treeHeight'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'ConnectedComponents'": {
+                      "children": [
+                        {
+                          "CXX_METHOD:'computeEdges'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'edges'",
+                              "PARM_DECL:'labels'",
+                              "PARM_DECL:'num_parts'",
+                              "PARM_DECL:'sq_radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'initEdges'": {
+                            "children": [
+                              "PARM_DECL:'cols'",
+                              "PARM_DECL:'edges'",
+                              "PARM_DECL:'rows'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'labelComponents'": {
+                            "children": [
+                              "PARM_DECL:'comps'",
+                              "PARM_DECL:'edges'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Dilatation'": {
+                      "children": [
+                        {
+                          "CXX_METHOD:'invoke'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'kernel'",
+                              "PARM_DECL:'src'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'prepareRect5x5Kernel'": {
+                            "children": [
+                              "PARM_DECL:'kernel'"
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              {
+                                "ENUM_CONSTANT_DECL:'ANCH_X'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'KSIZE_X'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'ANCH_Y'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'KSIZE_Y'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'KSIZE_X'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'KSIZE_Y'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Intr'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Intr'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'Intr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'cx'",
+                              "MEMBER_REF:'cy'",
+                              "MEMBER_REF:'fx'",
+                              "MEMBER_REF:'fy'",
+                              "PARM_DECL:'cx_'",
+                              "PARM_DECL:'cy_'",
+                              "PARM_DECL:'fx_'",
+                              "PARM_DECL:'fy_'",
+                              {
+                                "UNEXPOSED_EXPR:'cx_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'cx_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'cy_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'cy_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'fx_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'fx_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'fy_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'fy_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setDefaultPPIfIncorrect'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CONDITIONAL_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'cx'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'cx'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "INTEGER_LITERAL:''",
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'cols'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'cols'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cx'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cx'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'cx'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CONDITIONAL_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'cy'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'cy'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "FLOATING_LITERAL:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "INTEGER_LITERAL:''",
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'rows'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'rows'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cy'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'cy'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "MEMBER_REF_EXPR:'cy'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'cols'",
+                              "PARM_DECL:'rows'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'cx'",
+                        "FIELD_DECL:'cy'",
+                        "FIELD_DECL:'fx'",
+                        "FIELD_DECL:'fy'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

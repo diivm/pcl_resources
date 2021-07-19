@@ -1,0 +1,124 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/marching_cubes_rbf.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/marching_cubes.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'MarchingCubesRBF'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'MarchingCubesRBF<PointNT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'off_surface_epsilon_'",
+                        {
+                          "PARM_DECL:'iso_level'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'off_surface_epsilon'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'percentage_extend_grid'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'off_surface_epsilon'": {
+                            "children": [
+                              "DECL_REF_EXPR:'off_surface_epsilon'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'getOffSurfaceDisplacement'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'off_surface_epsilon_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'off_surface_epsilon_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'kernel'": {
+                      "children": [
+                        "PARM_DECL:'c'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setOffSurfaceDisplacement'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'off_surface_epsilon_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'epsilon'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'epsilon'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'epsilon'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'voxelizeData'",
+                  "DESTRUCTOR:'~MarchingCubesRBF<PointNT>'",
+                  "FIELD_DECL:'off_surface_epsilon_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

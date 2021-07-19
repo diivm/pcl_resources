@@ -1,0 +1,722 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/people/src/people_detector.cpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'internal.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/label_common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/label_tree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/organized_plane_detector.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/people_detector.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/people/probability_processor.h'",
+      "MACRO_DEFINITION:'AREA_THRES'",
+      "MACRO_DEFINITION:'AREA_THRES2'",
+      "MACRO_DEFINITION:'CLUST_TOL_SHS'",
+      "MACRO_DEFINITION:'DELTA_HUE_SHS'",
+      "MACRO_INSTANTIATION:'AREA_THRES'",
+      "MACRO_INSTANTIATION:'AREA_THRES'",
+      "MACRO_INSTANTIATION:'AREA_THRES2'",
+      "MACRO_INSTANTIATION:'AREA_THRES2'",
+      "MACRO_INSTANTIATION:'CLUST_TOL_SHS'",
+      "MACRO_INSTANTIATION:'CLUST_TOL_SHS'",
+      "MACRO_INSTANTIATION:'DELTA_HUE_SHS'",
+      {
+        "NAMESPACE:''": {
+          "children": [
+            {
+              "FUNCTION_DECL:'getProjectedRadiusSearchBox'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'b'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'a'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'a'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'c'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'c'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "DECL_REF_EXPR:'det'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'max'",
+                              "VAR_DECL:'min'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'q'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'coeff8'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'coeff7'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'cy'": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:'cy'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'intr'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'coeff4'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'fy'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'fy'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'fy'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'fy'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'cy'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'cy'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cy'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'cy'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'coeff6'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'cx'": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:'cx'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'intr'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'coeff0'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'fx'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'fx'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'fx'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'fx'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'cx'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'cx'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'cx'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'cx'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'intr'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'a'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'b'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'c'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'det'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'b'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'b'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'b'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'b'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'a'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'a'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'c'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'c'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'det'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'det'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'minY'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'rows'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'rows'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'maxY'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'y1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'y2'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'det'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'det'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'minX'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'cols'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cols'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "DECL_REF_EXPR:'maxX'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'x1'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'x2'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cols'",
+                  {
+                    "PARM_DECL:'intr'": {
+                      "children": [
+                        "NAMESPACE_REF:'device'",
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'struct pcl::device::Intr'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'maxX'",
+                  "PARM_DECL:'maxY'",
+                  "PARM_DECL:'minX'",
+                  "PARM_DECL:'minY'",
+                  "PARM_DECL:'point'",
+                  "PARM_DECL:'rows'",
+                  "PARM_DECL:'squared_radius'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'sqnorm'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'dx'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'dy'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'dz'"
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'dx'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'dx'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'dx'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'dx'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'dy'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'dy'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'dy'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'dy'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'dz'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'dz'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'dz'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'dz'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'p1'",
+                  "PARM_DECL:'p2'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      }
+    ]
+  }
+}

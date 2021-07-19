@@ -1,0 +1,522 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/kinfu_large_scale/src/internal.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/gpu/kinfu_large_scale/device.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/utils/safe_call.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "NAMESPACE:'kinfuLS'": {
+                      "children": [
+                        {
+                          "FUNCTION_DECL:'bilateralFilter'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'src'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'bindTextures'": {
+                            "children": [
+                              "PARM_DECL:'edgeBuf'",
+                              "PARM_DECL:'numVertsBuf'",
+                              "PARM_DECL:'triBuf'"
+                            ]
+                          }
+                        },
+                        "FUNCTION_DECL:'clearTSDFSlice'",
+                        {
+                          "FUNCTION_DECL:'computeNormalsEigen'": {
+                            "children": [
+                              "PARM_DECL:'nmap'",
+                              "PARM_DECL:'vmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'computeOffsetsAndTotalVertexes'": {
+                            "children": [
+                              "PARM_DECL:'occupied_voxels'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'createNMap'": {
+                            "children": [
+                              "PARM_DECL:'nmap'",
+                              "PARM_DECL:'vmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'createVMap'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'vmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'estimateCombined'": {
+                            "children": [
+                              "PARM_DECL:'Rcurr'",
+                              "PARM_DECL:'Rprev_inv'",
+                              "PARM_DECL:'angleThres'",
+                              "PARM_DECL:'distThres'",
+                              "PARM_DECL:'gbuf'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'matrixA_host'",
+                              "PARM_DECL:'mbuf'",
+                              "PARM_DECL:'nmap_curr'",
+                              "PARM_DECL:'nmap_g_prev'",
+                              "PARM_DECL:'tcurr'",
+                              "PARM_DECL:'tprev'",
+                              "PARM_DECL:'vectorB_host'",
+                              "PARM_DECL:'vmap_curr'",
+                              "PARM_DECL:'vmap_g_prev'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'estimateCombined'": {
+                            "children": [
+                              "PARM_DECL:'Rcurr'",
+                              "PARM_DECL:'Rprev_inv'",
+                              "PARM_DECL:'angleThres'",
+                              "PARM_DECL:'distThres'",
+                              "PARM_DECL:'gbuf'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'matrixA_host'",
+                              "PARM_DECL:'mbuf'",
+                              "PARM_DECL:'nmap_curr'",
+                              "PARM_DECL:'nmap_g_prev'",
+                              "PARM_DECL:'tcurr'",
+                              "PARM_DECL:'tprev'",
+                              "PARM_DECL:'vectorB_host'",
+                              "PARM_DECL:'vmap_curr'",
+                              "PARM_DECL:'vmap_g_prev'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'estimateTransform'": {
+                            "children": [
+                              "PARM_DECL:'coresp'",
+                              "PARM_DECL:'gbuf'",
+                              "PARM_DECL:'matrixA_host'",
+                              "PARM_DECL:'mbuf'",
+                              "PARM_DECL:'n_dst'",
+                              "PARM_DECL:'v_dst'",
+                              "PARM_DECL:'v_src'",
+                              "PARM_DECL:'vectorB_host'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'exctractColors'": {
+                            "children": [
+                              "PARM_DECL:'color_volume'",
+                              "PARM_DECL:'colors'",
+                              "PARM_DECL:'points'",
+                              "PARM_DECL:'volume_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'findCoresp'": {
+                            "children": [
+                              "PARM_DECL:'Rprev_inv'",
+                              "PARM_DECL:'angleThres'",
+                              "PARM_DECL:'coresp'",
+                              "PARM_DECL:'distThres'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'nmap_g_curr'",
+                              "PARM_DECL:'nmap_g_prev'",
+                              "PARM_DECL:'tprev'",
+                              "PARM_DECL:'vmap_g_curr'",
+                              "PARM_DECL:'vmap_g_prev'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'generateDepth'": {
+                            "children": [
+                              "PARM_DECL:'R_inv'",
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'t'",
+                              "PARM_DECL:'vmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'generateImage'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              {
+                                "PARM_DECL:'light'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::device::kinfuLS::LightSource'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nmap'",
+                              "PARM_DECL:'vmap'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'generateTriangles'": {
+                            "children": [
+                              "PARM_DECL:'occupied_voxels'",
+                              "PARM_DECL:'output'",
+                              "PARM_DECL:'volume'",
+                              "PARM_DECL:'volume_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'getOccupiedVoxels'": {
+                            "children": [
+                              "PARM_DECL:'occupied_voxels'",
+                              "PARM_DECL:'volume'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'initColorVolume'": {
+                            "children": [
+                              "PARM_DECL:'color_volume'"
+                            ]
+                          }
+                        },
+                        "FUNCTION_DECL:'initVolume'",
+                        {
+                          "FUNCTION_DECL:'integrateTsdfVolume'": {
+                            "children": [
+                              "PARM_DECL:'Rcurr_inv'",
+                              "PARM_DECL:'depth_raw'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'tcurr'",
+                              "PARM_DECL:'tranc_dist'",
+                              "PARM_DECL:'volume'",
+                              "PARM_DECL:'volume_size'"
+                            ]
+                          }
+                        },
+                        "FUNCTION_DECL:'integrateTsdfVolume'",
+                        {
+                          "FUNCTION_DECL:'mergePointNormal'": {
+                            "children": [
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'normals'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'paint3DView'": {
+                            "children": [
+                              "PARM_DECL:'colors'",
+                              {
+                                "PARM_DECL:'colors_weight'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'dst'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'pushCloudAsSliceGPU'": {
+                            "children": [
+                              "PARM_DECL:'buffer'",
+                              "PARM_DECL:'cloud_gpu'",
+                              "PARM_DECL:'volume'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'pyrDown'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'src'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'raycast'": {
+                            "children": [
+                              "PARM_DECL:'Rcurr'",
+                              "PARM_DECL:'buffer'",
+                              "PARM_DECL:'intr'",
+                              "PARM_DECL:'nmap'",
+                              "PARM_DECL:'tcurr'",
+                              "PARM_DECL:'tranc_dist'",
+                              "PARM_DECL:'vmap'",
+                              "PARM_DECL:'volume'",
+                              "PARM_DECL:'volume_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'resizeNMap'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'resizeVMap'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'sync'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'transformMaps'": {
+                            "children": [
+                              "PARM_DECL:'Rmat'",
+                              "PARM_DECL:'nmap_dst'",
+                              "PARM_DECL:'nmap_src'",
+                              "PARM_DECL:'tvec'",
+                              "PARM_DECL:'vmap_dst'",
+                              "PARM_DECL:'vmap_src'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'truncateDepth'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'max_distance'"
+                            ]
+                          }
+                        },
+                        "FUNCTION_DECL:'unbindTextures'",
+                        {
+                          "FUNCTION_DECL:'updateColorVolume'": {
+                            "children": [
+                              "PARM_DECL:'R_inv'",
+                              "PARM_DECL:'color_volume'",
+                              "PARM_DECL:'colors'",
+                              "PARM_DECL:'intr'",
+                              {
+                                "PARM_DECL:'max_weight'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'t'",
+                              "PARM_DECL:'tranc_dist'",
+                              "PARM_DECL:'vmap'",
+                              "PARM_DECL:'volume_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'valid_host'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CXX_REINTERPRET_CAST_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'value'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'value'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'convert'": {
+                            "children": [
+                              "PARM_DECL:'output'",
+                              "PARM_DECL:'vmap'",
+                              "TEMPLATE_TYPE_PARAMETER:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'device_cast'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CXX_REINTERPRET_CAST_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'matx'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            "TYPE_REF:'D'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'matx'": {
+                                  "children": [
+                                    "TYPE_REF:'Matx'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'D'",
+                              "TEMPLATE_TYPE_PARAMETER:'Matx'",
+                              "TYPE_REF:'D'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'extractNormals'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              {
+                                "PARM_DECL:'output'": {
+                                  "children": [
+                                    "TYPE_REF:'NormalType'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'volume'",
+                              "PARM_DECL:'volume_size'",
+                              "TEMPLATE_TYPE_PARAMETER:'NormalType'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'LightSource'": {
+                            "children": [
+                              "FIELD_DECL:'number'",
+                              "FIELD_DECL:'pos'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'float12'": {
+                            "children": [
+                              "FIELD_DECL:'c1'",
+                              "FIELD_DECL:'c2'",
+                              "FIELD_DECL:'c3'",
+                              "FIELD_DECL:'c4'",
+                              "FIELD_DECL:'n4'",
+                              "FIELD_DECL:'normal_x'",
+                              "FIELD_DECL:'normal_y'",
+                              "FIELD_DECL:'normal_z'",
+                              "FIELD_DECL:'w'",
+                              "FIELD_DECL:'x'",
+                              "FIELD_DECL:'y'",
+                              "FIELD_DECL:'z'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'float8'": {
+                            "children": [
+                              "FIELD_DECL:'c1'",
+                              "FIELD_DECL:'c2'",
+                              "FIELD_DECL:'c3'",
+                              "FIELD_DECL:'c4'",
+                              "FIELD_DECL:'w'",
+                              "FIELD_DECL:'x'",
+                              "FIELD_DECL:'y'",
+                              "FIELD_DECL:'z'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

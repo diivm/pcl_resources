@@ -1,0 +1,125 @@
+{
+  "TRANSLATION_UNIT:'/pcl/2d/include/pcl/2d/convolution.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/2d/impl/convolution.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Convolution'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'Convolution<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'BOUNDARY_OPTION_CLAMP'",
+                                    "MEMBER_REF_EXPR:'boundary_options_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'filter'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setBoundaryOptions'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'boundary_options'",
+                                    "MEMBER_REF_EXPR:'boundary_options_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'boundary_options'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::Convolution::BOUNDARY_OPTIONS_ENUM'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setKernel'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'BOUNDARY_OPTIONS_ENUM'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'BOUNDARY_OPTION_CLAMP'",
+                        "ENUM_CONSTANT_DECL:'BOUNDARY_OPTION_MIRROR'",
+                        "ENUM_CONSTANT_DECL:'BOUNDARY_OPTION_ZERO_PADDING'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'boundary_options_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::Convolution::BOUNDARY_OPTIONS_ENUM'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'kernel_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            "STRUCT_DECL:'EIGEN_ALIGN16'",
+            {
+              "VAR_DECL:'PointXYZIEdge'": {
+                "children": [
+                  "TYPE_REF:'struct pcl::EIGEN_ALIGN16'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "VAR_DECL:'POINT_CLOUD_REGISTER_POINT_STRUCT'"
+    ]
+  }
+}

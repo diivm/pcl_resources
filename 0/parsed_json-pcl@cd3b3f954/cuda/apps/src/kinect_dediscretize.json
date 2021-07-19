@@ -1,0 +1,204 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/apps/src/kinect_dediscretize.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'SimpleKinectTool'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'SimpleKinectTool'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "CXX_NULL_PTR_LITERAL_EXPR:''",
+                  "MEMBER_REF:'init_'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'cloud_cb_'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'constant'",
+                  "PARM_DECL:'depth_image'",
+                  "PARM_DECL:'image'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'run'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'interface'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'f'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'std'",
+                                    "PARM_DECL:''",
+                                    "PARM_DECL:'depth_image'",
+                                    "PARM_DECL:'image'",
+                                    "TEMPLATE_REF:'function'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "WHILE_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'device_id'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'d2c'",
+            "FIELD_DECL:'init_'",
+            {
+              "FIELD_DECL:'mutex_'": {
+                "children": [
+                  "NAMESPACE_REF:'std'",
+                  "TYPE_REF:'class std::mutex'"
+                ]
+              }
+            },
+            "FIELD_DECL:'viewer'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'run'": {
+                      "children": [
+                        {
+                          "MEMBER_REF_EXPR:'run'": {
+                            "children": [
+                              "DECL_REF_EXPR:'v'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'device_id'": {
+                            "children": [
+                              "DECL_REF_EXPR:'device_id'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'device_id'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'v'": {
+                            "children": [
+                              "CALL_EXPR:'SimpleKinectTool'",
+                              "TYPE_REF:'class SimpleKinectTool'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'argc'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'argc'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'functional'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/io/cloud_to_pcl.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/io/disparity_to_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/sample_consensus/ransac.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/sample_consensus/sac_model_plane.h'",
+      "INCLUSION_DIRECTIVE:'pcl/cuda/time_cpu.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/cloud_viewer.h'"
+    ]
+  }
+}

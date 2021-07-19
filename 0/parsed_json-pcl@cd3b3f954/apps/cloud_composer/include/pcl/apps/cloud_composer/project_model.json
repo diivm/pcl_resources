@@ -1,0 +1,313 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/project_model.h'": {
+    "children": [
+      "CLASS_DECL:'QItemSelection'",
+      "CLASS_DECL:'QItemSelectionModel'",
+      "INCLUSION_DIRECTIVE:'QDir'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/commands.h'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/point_selectors/interactor_style_switch.h'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/point_selectors/manipulation_event.h'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/point_selectors/selection_event.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'vtkCamera.h'",
+      "INCLUSION_DIRECTIVE:'vtkSmartPointer.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'AbstractTool'",
+                  "CLASS_DECL:'CloudCommand'",
+                  "CLASS_DECL:'CloudComposerItem'",
+                  "CLASS_DECL:'CloudView'",
+                  "CLASS_DECL:'InteractorStyleSwitch'",
+                  {
+                    "CLASS_DECL:'ProjectModel'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ProjectModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'to_copy'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'ProjectModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'project_name'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'axisVisible'": {
+                            "children": [
+                              "PARM_DECL:'axis_visible'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'clearSelection'",
+                        "CXX_METHOD:'createNewCloudFromSelection'",
+                        {
+                          "CXX_METHOD:'deleteAvailable'": {
+                            "children": [
+                              "PARM_DECL:'can_delete'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'deleteSelectedItems'",
+                        "CXX_METHOD:'emitAllStateSignals'",
+                        {
+                          "CXX_METHOD:'enqueueToolAction'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getName'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSelectionModel'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'selection_model_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'selection_model_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'class QItemSelectionModel'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getUndoStack'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'insertNewCloudComposerItem'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'new_item'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudComposerItem'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'parent_item'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'insertNewCloudFromFile'",
+                        "CXX_METHOD:'insertNewCloudFromRGBandDepth'",
+                        {
+                          "CXX_METHOD:'itemSelectionChanged'": {
+                            "children": [
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'class QItemSelection'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'manipulateClouds'": {
+                            "children": [
+                              "PARM_DECL:'manip_event'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'modelChanged'",
+                        {
+                          "CXX_METHOD:'mouseStyleChanged'": {
+                            "children": [
+                              "PARM_DECL:'new_style_action'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'mouseStyleState'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'newCloudFromSelectionAvailable'": {
+                            "children": [
+                              "PARM_DECL:'can_create'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'onlyCloudItemsSelected'",
+                        "CXX_METHOD:'saveSelectedCloudToFile'",
+                        {
+                          "CXX_METHOD:'selectAllItems'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'item'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setAxisVisibility'": {
+                            "children": [
+                              "PARM_DECL:'visible'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setCloudView'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'view'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudView'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setName'": {
+                            "children": [
+                              "PARM_DECL:'new_name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointSelection'": {
+                            "children": [
+                              "PARM_DECL:'selected_event'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSelectedStyle'": {
+                            "children": [
+                              "PARM_DECL:'style'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~ProjectModel'",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:''",
+                        "FIELD_DECL:'axis_visible_'",
+                        {
+                          "FIELD_DECL:'cloud_view_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudView'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'last_directory_'",
+                        "FIELD_DECL:'name_to_type_map_'",
+                        "FIELD_DECL:'selected_item_index_map_'",
+                        "FIELD_DECL:'selected_style_map_'",
+                        "FIELD_DECL:'selection_event_'",
+                        {
+                          "FIELD_DECL:'selection_model_'": {
+                            "children": [
+                              "TYPE_REF:'class QItemSelectionModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'undo_stack_'",
+                        {
+                          "FIELD_DECL:'work_queue_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::WorkQueue'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'work_thread_'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'WorkQueue'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'ProjectModel'": {
+          "children": [
+            "NAMESPACE_REF:'cloud_composer'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      }
+    ]
+  }
+}

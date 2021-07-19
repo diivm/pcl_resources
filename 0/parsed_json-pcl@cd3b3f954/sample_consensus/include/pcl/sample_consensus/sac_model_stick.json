@@ -1,0 +1,149 @@
+{
+  "TRANSLATION_UNIT:'/pcl/sample_consensus/include/pcl/sample_consensus/sac_model_stick.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/model_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModelStick'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelStick<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelStick<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'countWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'doSamplesVerifyModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistancesToModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getModelType'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isSampleGood'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'optimizeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'optimized_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoints'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        {
+                          "PARM_DECL:'copy_data_fields'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'projected_points'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'selectWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModelStick<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

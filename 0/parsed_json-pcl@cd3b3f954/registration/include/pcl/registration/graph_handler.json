@@ -1,0 +1,253 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/graph_handler.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/graph/graph_traits.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/exceptions.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/edge_measurements.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/vertex_estimates.h'",
+      "MACRO_INSTANTIATION:'__FILE__'",
+      "MACRO_INSTANTIATION:'__FILE__'",
+      "MACRO_INSTANTIATION:'__LINE__'",
+      "MACRO_INSTANTIATION:'__LINE__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'registration'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'GraphHandler'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'GraphHandler<GraphT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'clear'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'deinit'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'deinit'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deinit'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getGraph'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getGraph'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'init'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeConstraint'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'e'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::registration::GraphHandler::Edge'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeVertex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'v'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::registration::GraphHandler::Vertex'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~GraphHandler<GraphT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'deinit'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'deinit'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'graph_impl_'",
+                        {
+                          "FUNCTION_TEMPLATE:'addGenericConstraint'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'measurement'": {
+                                  "children": [
+                                    "TYPE_REF:'MeasurementT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'MeasurementT'",
+                              "TYPE_REF:'pcl::registration::GraphHandler::Edge'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'addGenericVertex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'estimate'": {
+                                  "children": [
+                                    "TYPE_REF:'EstimateT'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'EstimateT'",
+                              "TYPE_REF:'pcl::registration::GraphHandler::Vertex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'addPointCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''",
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                              "TYPE_REF:'pcl::registration::GraphHandler::Vertex'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'addPoseConstraint'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'information_matrix'": {
+                                  "children": [
+                                    "TYPE_REF:'InformationT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'relative_transformation'",
+                              {
+                                "PARM_DECL:'v_end'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::registration::GraphHandler::Vertex'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'v_start'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::registration::GraphHandler::Vertex'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'InformationT'",
+                              "TYPE_REF:'pcl::registration::GraphHandler::Edge'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'GraphT'",
+                        {
+                          "TYPE_ALIAS_DECL:'Edge'": {
+                            "children": [
+                              "NAMESPACE_REF:'boost'",
+                              "TEMPLATE_REF:'graph_traits'",
+                              "TYPE_REF:'GraphT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'Vertex'": {
+                            "children": [
+                              "NAMESPACE_REF:'boost'",
+                              "TEMPLATE_REF:'graph_traits'",
+                              "TYPE_REF:'GraphT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "TRANSLATION_UNIT:'/pcl/cuda/segmentation/include/pcl/cuda/segmentation/mssegmentation.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'opencv2/core/core.hpp'",
+      "INCLUSION_DIRECTIVE:'opencv2/gpu/gpu.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cuda'": {
+                "children": [
+                  "FUNCTION_DECL:'meanShiftSegmentation'",
+                  {
+                    "NAMESPACE:'detail'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'DjSets'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'DjSets'": {
+                                  "children": [
+                                    "PARM_DECL:'n'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'DjSets'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'find'": {
+                                  "children": [
+                                    "PARM_DECL:'elem'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'init'": {
+                                  "children": [
+                                    "PARM_DECL:'n'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'merge'": {
+                                  "children": [
+                                    "PARM_DECL:'set1'",
+                                    "PARM_DECL:'set2'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator='": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'parent'",
+                              "FIELD_DECL:'rank'",
+                              "FIELD_DECL:'size'"
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_TEMPLATE:'Graph'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Graph<T>'": {
+                                  "children": [
+                                    "PARM_DECL:'nume_max'",
+                                    "PARM_DECL:'numv'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'Graph<T>'": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'Graph<T>'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'addEdge'": {
+                                  "children": [
+                                    "PARM_DECL:'from'",
+                                    "PARM_DECL:'to'",
+                                    {
+                                      "PARM_DECL:'val'": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "TYPE_REF:'T'"
+                                              ]
+                                            }
+                                          },
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator='": {
+                                  "children": [
+                                    {
+                                      "PARM_DECL:''": {
+                                        "children": [
+                                          "TYPE_REF:'Graph<T>'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'edges'",
+                              "FIELD_DECL:'nume'",
+                              "FIELD_DECL:'nume_max'",
+                              "FIELD_DECL:'numv'",
+                              "FIELD_DECL:'start'",
+                              "TEMPLATE_TYPE_PARAMETER:'T'",
+                              {
+                                "TYPE_ALIAS_DECL:'Edge'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'GraphEdge'",
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CLASS_TEMPLATE:'GraphEdge'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'GraphEdge<T>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'GraphEdge<T>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'next'",
+                                    "MEMBER_REF:'to'",
+                                    "MEMBER_REF:'val'",
+                                    "PARM_DECL:'next'",
+                                    "PARM_DECL:'to'",
+                                    {
+                                      "PARM_DECL:'val'": {
+                                        "children": [
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'val'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'next'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'next'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'to'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'to'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'next'",
+                              "FIELD_DECL:'to'",
+                              {
+                                "FIELD_DECL:'val'": {
+                                  "children": [
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'DjSets'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'init'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'init'",
+                                          {
+                                            "UNEXPOSED_EXPR:'n'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'n'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'n'",
+                              "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'Graph<T>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'numv'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'nume_max'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'nume'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'nume_max'",
+                              "PARM_DECL:'numv'",
+                              "TEMPLATE_REF:'Graph'",
+                              "TEMPLATE_TYPE_PARAMETER:'T'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'addEdge'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'nume'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'from'",
+                              "PARM_DECL:'to'",
+                              {
+                                "PARM_DECL:'val'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "TYPE_REF:'T'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'T'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'Graph'",
+                              "TEMPLATE_TYPE_PARAMETER:'T'",
+                              "TYPE_REF:'T'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'find'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'set'": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'elem'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'elem'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'set'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'set'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'elem'",
+                              "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'init'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'n'",
+                              "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'merge'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'set2'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'set2'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'set1'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'set1'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'set2'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'set2'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'set1'",
+                              "PARM_DECL:'set2'",
+                              "TYPE_REF:'class pcl::cuda::detail::DjSets'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'dist2'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'lhs'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'cv'",
+                                    "TYPE_REF:'cv::Vec4b'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rhs'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'cv'",
+                                    "TYPE_REF:'cv::Vec4b'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'dist2'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'lhs'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'cv'",
+                                    "TYPE_REF:'cv::Vec2s'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'rhs'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'cv'",
+                                    "TYPE_REF:'cv::Vec2s'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'pix'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'ncols'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'ncols'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'y'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'y'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'ncols'",
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_DECL:'sqr'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'x'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'SegmLink'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'SegmLink'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'SegmLink'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'SegmLinkVal'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'val'"
+                                        ]
+                                      }
+                                    },
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'from'",
+                                    "MEMBER_REF:'to'",
+                                    "MEMBER_REF:'val'",
+                                    "PARM_DECL:'from'",
+                                    "PARM_DECL:'to'",
+                                    {
+                                      "PARM_DECL:'val'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::cuda::detail::SegmLinkVal'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'from'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'from'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'to'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'to'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator<'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:'operator<'": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'val'",
+                                                      {
+                                                        "MEMBER_REF_EXPR:'val'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'other'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'operator<'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'operator<'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'other'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::cuda::detail::SegmLink'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'from'",
+                              "FIELD_DECL:'to'",
+                              {
+                                "FIELD_DECL:'val'": {
+                                  "children": [
+                                    "TYPE_REF:'struct pcl::cuda::detail::SegmLinkVal'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'SegmLinkVal'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'SegmLinkVal'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'SegmLinkVal'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'dr'",
+                                    "MEMBER_REF:'dsp'",
+                                    "PARM_DECL:'dr'",
+                                    "PARM_DECL:'dsp'",
+                                    {
+                                      "UNEXPOSED_EXPR:'dr'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'dr'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'dsp'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'dsp'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator<'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dr'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'dr'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dsp'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'dsp'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dr'": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:'dr'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'other'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dsp'": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:'dsp'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'other'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'other'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::cuda::detail::SegmLinkVal'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'dr'",
+                              "FIELD_DECL:'dsp'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

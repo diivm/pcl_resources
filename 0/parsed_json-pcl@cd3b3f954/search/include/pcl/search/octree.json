@@ -1,0 +1,235 @@
+{
+  "TRANSLATION_UNIT:'/pcl/search/include/pcl/search/octree.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_search.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_Octree'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'search'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'Octree'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Octree<PointT, LeafTWrap, BranchTWrap, OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'resolution'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'approxNearestSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'query_index'",
+                              "PARM_DECL:'result_index'",
+                              "PARM_DECL:'sqr_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'approxNearestSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'p_q'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'result_index'",
+                              "PARM_DECL:'sqr_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'approxNearestSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'query_index'",
+                              "PARM_DECL:'result_index'",
+                              "PARM_DECL:'sqr_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'boxSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'nearestKSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'k'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p_q'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'radiusSearch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'index'",
+                              "PARM_DECL:'k_indices'",
+                              "PARM_DECL:'k_sqr_distances'",
+                              {
+                                "PARM_DECL:'max_nn'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'radius'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~Octree<PointT, LeafTWrap, BranchTWrap, OctreeT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tree_'",
+                        "TEMPLATE_TYPE_PARAMETER:'BranchTWrap'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafTWrap'",
+                        "TEMPLATE_TYPE_PARAMETER:'OctreeT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "TRANSLATION_UNIT:'/pcl/recognition/include/pcl/recognition/ransac_based/orr_graph.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'cstddef'",
+      "INCLUSION_DIRECTIVE:'list'",
+      "INCLUSION_DIRECTIVE:'set'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'recognition'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'ORRGraph'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'Node'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Node'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'id_'",
+                                    "MEMBER_REF:'state_'",
+                                    "PARM_DECL:'id'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'UNDEF'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'id'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'id'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'compare'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'a'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'a'": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::recognition::ORRGraph::Node'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'b'": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::recognition::ORRGraph::Node'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'data_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'NodeData'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getId'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'id_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNeighbors'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setData'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'data'",
+                                                "MEMBER_REF_EXPR:'data_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'data'": {
+                                        "children": [
+                                          "TYPE_REF:'NodeData'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setFitness'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'fitness_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'fitness'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'fitness'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'fitness'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setId'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'id_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'id'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'id'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'id'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~Node'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_DECL:'State'": {
+                                  "children": [
+                                    "ENUM_CONSTANT_DECL:'OFF'",
+                                    "ENUM_CONSTANT_DECL:'ON'",
+                                    "ENUM_CONSTANT_DECL:'UNDEF'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'data_'": {
+                                  "children": [
+                                    "TYPE_REF:'NodeData'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'fitness_'",
+                              "FIELD_DECL:'id_'",
+                              "FIELD_DECL:'neighbors_'",
+                              {
+                                "FIELD_DECL:'state_'": {
+                                  "children": [
+                                    "TYPE_REF:'enum pcl::recognition::ORRGraph::Node::State'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FRIEND_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'ORRGraph<NodeData>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'ORRGraph<NodeData>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'clear'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeMaximalOnOffPartition'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'i'": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'off_nodes'",
+                              "PARM_DECL:'on_nodes'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteDirectedEdge'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'id2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteUndirectedEdge'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'id2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'insertDirectedEdge'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'id2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'insertUndirectedEdge'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'id1'",
+                              "PARM_DECL:'id2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'resize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''",
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'n'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'n'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'n'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'n'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~ORRGraph<NodeData>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'NodeData'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

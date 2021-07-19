@@ -1,0 +1,394 @@
+{
+  "TRANSLATION_UNIT:'/pcl/features/include/pcl/features/spin_image.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SpinImageEstimation'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SpinImageEstimation<PointInT, PointNT, PointOutT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'image_width'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'min_pts_neighb'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'support_angle_cos'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeFeature'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'computeSiForPoint'",
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'setAngularDomain'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'is_angular_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'is_angular'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'is_angular'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'is_angular'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setImageWidth'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'image_width_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'bin_count'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'bin_count'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'bin_count'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputNormals'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputRotationAxes'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axes_cloud_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axis_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'axes'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinPointCountInNeighbourhood'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'min_pts_neighb_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_pts_neighb'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_pts_neighb'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'min_pts_neighb'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRadialStructure'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'is_radial_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'is_radial'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'is_radial'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'is_radial'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRotationAxis'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'axis'",
+                                    "MEMBER_REF_EXPR:'rotation_axis_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axis_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axes_cloud_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'axis'": {
+                            "children": [
+                              "TYPE_REF:'PointNT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSupportAngle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'support_angle_cos_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'support_angle_cos'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'support_angle_cos'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'support_angle_cos'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'support_angle_cos'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'support_angle_cos'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'support_angle_cos'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'support_angle_cos'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'useNormalsAsRotationAxis'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axis_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'use_custom_axes_cloud_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SpinImageEstimation<PointInT, PointNT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'image_width_'",
+                  "FIELD_DECL:'input_normals_'",
+                  "FIELD_DECL:'is_angular_'",
+                  "FIELD_DECL:'is_radial_'",
+                  "FIELD_DECL:'min_pts_neighb_'",
+                  "FIELD_DECL:'rotation_axes_cloud_'",
+                  {
+                    "FIELD_DECL:'rotation_axis_'": {
+                      "children": [
+                        "TYPE_REF:'PointNT'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'support_angle_cos_'",
+                  "FIELD_DECL:'use_custom_axes_cloud_'",
+                  "FIELD_DECL:'use_custom_axis_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "TRANSLATION_UNIT:'/pcl/2d/include/pcl/2d/kernel.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/2d/impl/kernel.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'kernel'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'kernel<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'kernel_size_'",
+                        "MEMBER_REF:'kernel_type_'",
+                        "MEMBER_REF:'sigma_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'GAUSSIAN'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'derivativeXBackwardKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'derivativeXCentralKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'derivativeXForwardKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'derivativeYBackwardKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'derivativeYCentralKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'derivativeYForwardKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'fetchKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'gaussianKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'loGKernel'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'prewittKernelX'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'prewittKernelY'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'robertsKernelX'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'robertsKernelY'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setKernelSigma'": {
+                      "children": [
+                        "PARM_DECL:'kernel_sigma'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setKernelSize'": {
+                      "children": [
+                        "PARM_DECL:'kernel_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setKernelType'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'kernel_type'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::kernel::KERNEL_ENUM'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'sobelKernelX'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'sobelKernelY'": {
+                      "children": [
+                        "PARM_DECL:'kernel'"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'KERNEL_ENUM'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_BACKWARD_X'",
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_BACKWARD_Y'",
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_CENTRAL_X'",
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_CENTRAL_Y'",
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_FORWARD_X'",
+                        "ENUM_CONSTANT_DECL:'DERIVATIVE_FORWARD_Y'",
+                        "ENUM_CONSTANT_DECL:'GAUSSIAN'",
+                        "ENUM_CONSTANT_DECL:'LOG'",
+                        "ENUM_CONSTANT_DECL:'PREWITT_X'",
+                        "ENUM_CONSTANT_DECL:'PREWITT_Y'",
+                        "ENUM_CONSTANT_DECL:'ROBERTS_X'",
+                        "ENUM_CONSTANT_DECL:'ROBERTS_Y'",
+                        "ENUM_CONSTANT_DECL:'SOBEL_X'",
+                        "ENUM_CONSTANT_DECL:'SOBEL_Y'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'kernel_size_'",
+                  {
+                    "FIELD_DECL:'kernel_type_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::kernel::KERNEL_ENUM'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'sigma_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

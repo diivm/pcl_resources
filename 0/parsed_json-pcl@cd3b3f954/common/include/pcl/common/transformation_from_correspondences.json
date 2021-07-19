@@ -1,0 +1,179 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/transformation_from_correspondences.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'Eigen/Geometry'",
+      "INCLUSION_DIRECTIVE:'pcl/common/impl/transformation_from_correspondences.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_DECL:'TransformationFromCorrespondences'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'TransformationFromCorrespondences'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'reset'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'reset'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'add'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'corresponding_point'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'weight'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getAccumulatedWeight'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'accumulated_weight_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'accumulated_weight_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNoOfSamples'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'no_of_samples_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'no_of_samples_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTransformation'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Affine3f'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'reset'",
+                  {
+                    "FIELD_DECL:'accumulated_weight_'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'covariance_'",
+                  {
+                    "FIELD_DECL:'mean1_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'mean2_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3f'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'no_of_samples_'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

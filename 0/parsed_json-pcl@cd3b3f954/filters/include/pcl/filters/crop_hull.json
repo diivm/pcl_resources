@@ -1,0 +1,205 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/crop_hull.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/Vertices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter_indices.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'CropHull'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'CropHull<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'crop_outside_'",
+                        "MEMBER_REF:'dim_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilter3D'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'applyFilter3D'": {
+                      "children": [
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getHullCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'getHullCloudRange'",
+                  {
+                    "CXX_METHOD:'getHullIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'rayTriangleIntersect'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'ray'",
+                        "PARM_DECL:'verts'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setCropOutside'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'crop_outside_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'crop_outside'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'crop_outside'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'crop_outside'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDim'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'dim_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'dim'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'dim'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'dim'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setHullCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'points'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setHullIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'crop_outside_'",
+                  "FIELD_DECL:'dim_'",
+                  "FIELD_DECL:'hull_cloud_'",
+                  "FIELD_DECL:'hull_polygons_'",
+                  {
+                    "FUNCTION_TEMPLATE:'applyFilter2D'": {
+                      "children": [
+                        "PARM_DECL:'output'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim1'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim2'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'applyFilter2D'": {
+                      "children": [
+                        "PARM_DECL:'indices'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim1'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim2'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'isPointIn2DPolyWithVertIndices'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'verts'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim1'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'PlaneDim2'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

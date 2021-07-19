@@ -1,0 +1,87 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/processing.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PolygonMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/impl/processing.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "CLASS_TEMPLATE:'CloudSurfaceProcessing'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'CloudSurfaceProcessing<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'performProcessing'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'output'": {
+                            "children": [
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'PointCloud'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'process'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'output'": {
+                            "children": [
+                              "NAMESPACE_REF:'pcl'",
+                              "TEMPLATE_REF:'PointCloud'",
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~CloudSurfaceProcessing<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                  "TYPEDEF_DECL:'ConstPtr'",
+                  "TYPEDEF_DECL:'Ptr'"
+                ]
+              }
+            },
+            {
+              "CLASS_TEMPLATE:'PointCloud'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'MeshProcessing'": {
+                "children": [
+                  "TYPE_REF:'class pcl::PCL_EXPORTS'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

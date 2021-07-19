@@ -1,0 +1,387 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/bivariate_polynomial.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/common/impl/bivariate_polynomial.hpp'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'BivariatePolynomialT'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'BivariatePolynomialT<real>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'new_degree'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'BivariatePolynomialT<real>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'other'": {
+                            "children": [
+                              "TYPE_REF:'BivariatePolynomialT<real>'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'calculateGradient'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'forceRecalc'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'deepCopy'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'other'": {
+                            "children": [
+                              "TEMPLATE_REF:'BivariatePolynomialT'",
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'findCriticalPoints'": {
+                      "children": [
+                        "PARM_DECL:'types'",
+                        "PARM_DECL:'x_values'",
+                        "PARM_DECL:'y_values'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNoOfParameters'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'getNoOfParametersFromDegree'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'degree'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'degree'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'getNoOfParametersFromDegree'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'getNoOfParametersFromDegree'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNoOfParametersFromDegree'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "INTEGER_LITERAL:''",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'n'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'n'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "INTEGER_LITERAL:''",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'n'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'n'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'n'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getValue'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'x'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'y'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'real'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getValueOfGradient'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'gradX'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'gradY'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'x'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'y'": {
+                            "children": [
+                              "TYPE_REF:'real'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'memoryCleanUp'",
+                  {
+                    "CXX_METHOD:'operator='": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'deepCopy'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'other'",
+                                    "MEMBER_REF_EXPR:'deepCopy'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_THROW_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'other'": {
+                            "children": [
+                              "TYPE_REF:'BivariatePolynomialT<real>'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'BivariatePolynomialT<real>'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'readBinary'": {
+                      "children": [
+                        "PARM_DECL:'os'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'readBinary'": {
+                      "children": [
+                        "PARM_DECL:'filename'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDegree'": {
+                      "children": [
+                        "PARM_DECL:'new_degree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'writeBinary'": {
+                      "children": [
+                        "PARM_DECL:'os'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'writeBinary'": {
+                      "children": [
+                        "PARM_DECL:'filename'"
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~BivariatePolynomialT<real>'",
+                  "FIELD_DECL:'degree'",
+                  {
+                    "FIELD_DECL:'gradient_x'": {
+                      "children": [
+                        "TEMPLATE_REF:'BivariatePolynomialT'",
+                        "TYPE_REF:'real'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'gradient_y'": {
+                      "children": [
+                        "TEMPLATE_REF:'BivariatePolynomialT'",
+                        "TYPE_REF:'real'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'parameters'": {
+                      "children": [
+                        "TYPE_REF:'real'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'real'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'operator<<'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'real'"
+                ]
+              }
+            },
+            {
+              "TYPE_ALIAS_DECL:'BivariatePolynomial'": {
+                "children": [
+                  "TEMPLATE_REF:'BivariatePolynomialT'"
+                ]
+              }
+            },
+            {
+              "TYPE_ALIAS_DECL:'BivariatePolynomiald'": {
+                "children": [
+                  "TEMPLATE_REF:'BivariatePolynomialT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

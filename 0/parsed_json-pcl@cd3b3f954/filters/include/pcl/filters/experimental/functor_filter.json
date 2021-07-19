@@ -1,0 +1,180 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/experimental/functor_filter.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter_indices.h'",
+      "INCLUSION_DIRECTIVE:'pcl/type_traits.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'experimental'": {
+                "children": [
+                  {
+                    "NAMESPACE:'advanced'": {
+                      "children": [
+                        {
+                          "CLASS_TEMPLATE:'FunctorFilter'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'FunctorFilter<PointT, FunctionObject>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "PARM_DECL:'extract_removed_indices'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'function_object'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'FunctorFilter<PointT, FunctionObject>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "PARM_DECL:'extract_removed_indices'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'applyFilter'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                "COMPOUND_STMT:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "CXX_OVERRIDE_ATTR:''",
+                                    "PARM_DECL:'indices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getFunctionObject'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'functionObject_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getFunctionObject'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'functionObject_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'setFunctionObject'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    {
+                                      "PARM_DECL:'function_object'": {
+                                        "children": [
+                                          "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'functionObject_'": {
+                                  "children": [
+                                    "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                  ]
+                                }
+                              },
+                              {
+                                "STATIC_ASSERT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'is_function_object_for_filter_v'",
+                                          "TYPE_REF:'PointT'",
+                                          "TYPE_REF:'pcl::experimental::advanced::FunctorFilter::FunctionObjectT'"
+                                        ]
+                                      }
+                                    },
+                                    "STRING_LITERAL:'\"Function object signature must be similar to `bool(const PointCloud<PointT>&, index_t)`\"'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'FunctionObject'",
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                              {
+                                "TYPE_ALIAS_DECL:'FunctionObjectT'": {
+                                  "children": [
+                                    "TYPE_REF:'FunctionObject'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "UNEXPOSED_DECL:'is_function_object_for_filter_v'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

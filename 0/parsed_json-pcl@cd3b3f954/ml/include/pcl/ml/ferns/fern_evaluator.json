@@ -1,0 +1,86 @@
+{
+  "TRANSLATION_UNIT:'/pcl/ml/include/pcl/ml/ferns/fern_evaluator.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/common.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/feature_handler.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/ferns/fern.h'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/impl/ferns/fern_evaluator.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/ml/stats_estimator.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'FernEvaluator'": {
+                "children": [
+                  "CONSTRUCTOR:'FernEvaluator<FeatureType, DataSet, LabelType, ExampleIndex, NodeType>'",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'evaluate'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data_set'": {
+                            "children": [
+                              "TYPE_REF:'DataSet'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'examples'",
+                        "PARM_DECL:'feature_handler'",
+                        "PARM_DECL:'fern'",
+                        "PARM_DECL:'label_data'",
+                        "PARM_DECL:'stats_estimator'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'evaluateAndAdd'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data_set'": {
+                            "children": [
+                              "TYPE_REF:'DataSet'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'examples'",
+                        "PARM_DECL:'feature_handler'",
+                        "PARM_DECL:'fern'",
+                        "PARM_DECL:'label_data'",
+                        "PARM_DECL:'stats_estimator'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNodes'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'data_set'": {
+                            "children": [
+                              "TYPE_REF:'DataSet'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'examples'",
+                        "PARM_DECL:'feature_handler'",
+                        "PARM_DECL:'fern'",
+                        "PARM_DECL:'nodes'",
+                        "PARM_DECL:'stats_estimator'"
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~FernEvaluator<FeatureType, DataSet, LabelType, ExampleIndex, NodeType>'",
+                  "TEMPLATE_TYPE_PARAMETER:'DataSet'",
+                  "TEMPLATE_TYPE_PARAMETER:'ExampleIndex'",
+                  "TEMPLATE_TYPE_PARAMETER:'FeatureType'",
+                  "TEMPLATE_TYPE_PARAMETER:'LabelType'",
+                  "TEMPLATE_TYPE_PARAMETER:'NodeType'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,515 @@
+{
+  "TRANSLATION_UNIT:'/pcl/test/gpu/octree/test_approx_nearest.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'PCL_OctreeGPU_approxNearesSearch_Test'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'PCL_OctreeGPU_approxNearesSearch_Test'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CONSTRUCTOR:'PCL_OctreeGPU_approxNearesSearch_Test'": {
+                "children": [
+                  {
+                    "PARM_DECL:''": {
+                      "children": [
+                        "TYPE_REF:'class PCL_OctreeGPU_approxNearesSearch_Test'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_BASE_SPECIFIER:'::testing::Test'": {
+                "children": [
+                  "NAMESPACE_REF:'testing'",
+                  "TYPE_REF:'class testing::Test'"
+                ]
+              }
+            },
+            "CXX_METHOD:'TestBody'",
+            {
+              "CXX_METHOD:'operator='": {
+                "children": [
+                  {
+                    "PARM_DECL:''": {
+                      "children": [
+                        "TYPE_REF:'class PCL_OctreeGPU_approxNearesSearch_Test'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'test_info_'": {
+                "children": [
+                  "NAMESPACE_REF:'testing'",
+                  "TYPE_REF:'class testing::TestInfo'",
+                  "UNEXPOSED_ATTR:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "CXX_METHOD:'TestBody'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'coords'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'point_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'queries'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'cloud_device'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'octree_device'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'host_octree_resolution'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'queries_device'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'result_host_gpu'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'dists_pcl'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'dists_gpu'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'dists_device'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'downloaded'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'dists_device_downloaded'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'expected_sqr_dists'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'array'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "SWITCH_STMT:''": {
+                      "children": [
+                        {
+                          "CASE_STMT:''": {
+                            "children": [
+                              {
+                                "DEFAULT_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          "NULL_STMT:''",
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "CALL_EXPR:'operator='": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "CALL_EXPR:'AssertHelper'": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "CALL_EXPR:'failure_message'": {
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "MEMBER_REF_EXPR:'failure_message'": {
+                                                                                              "children": [
+                                                                                                "DECL_REF_EXPR:'gtest_ar'"
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    {
+                                                                                      "DECL_REF_EXPR:'kFatalFailure'": {
+                                                                                        "children": [
+                                                                                          "NAMESPACE_REF:'testing'",
+                                                                                          "TYPE_REF:'class testing::TestPartResult'"
+                                                                                        ]
+                                                                                      }
+                                                                                    },
+                                                                                    "INTEGER_LITERAL:''",
+                                                                                    "NAMESPACE_REF:'internal'",
+                                                                                    "NAMESPACE_REF:'testing'",
+                                                                                    "TYPE_REF:'class testing::internal::AssertHelper'",
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:''": {
+                                                                                        "children": [
+                                                                                          "STRING_LITERAL:'\"/pcl/test/gpu/octree/test_approx_nearest.cpp\"'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'Message'": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CALL_EXPR:'Message'": {
+                                                                            "children": [
+                                                                              "NAMESPACE_REF:'testing'",
+                                                                              "TYPE_REF:'class testing::Message'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'operator='": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'operator='"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'operator bool'": {
+                                              "children": [
+                                                "CALL_EXPR:'operator bool'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "VAR_DECL:'gtest_ar'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'testing'",
+                                                "TYPE_REF:'class testing::AssertionResult'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "TYPE_REF:'class PCL_OctreeGPU_approxNearesSearch_Test'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'InitGoogleTest'": {
+                      "children": [
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'argc'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'InitGoogleTest'": {
+                            "children": [
+                              {
+                                "DECL_REF_EXPR:'InitGoogleTest'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'testing'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'argv'": {
+                            "children": [
+                              "DECL_REF_EXPR:'argv'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'RUN_ALL_TESTS'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'RUN_ALL_TESTS'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'RUN_ALL_TESTS'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'array'",
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'gtest/gtest.h'",
+      "INCLUSION_DIRECTIVE:'iostream'",
+      "INCLUSION_DIRECTIVE:'pcl/common/distances.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/octree/octree.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_search.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "MACRO_INSTANTIATION:'ASSERT_EQ'",
+      "MACRO_INSTANTIATION:'ASSERT_EQ'",
+      "MACRO_INSTANTIATION:'ASSERT_NEAR'",
+      "MACRO_INSTANTIATION:'ASSERT_NEAR'",
+      "MACRO_INSTANTIATION:'TEST'",
+      {
+        "STATIC_ASSERT:''": {
+          "children": [
+            {
+              "BINARY_OPERATOR:''": {
+                "children": [
+                  {
+                    "OBJC_STRING_LITERAL:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"PCL_OctreeGPU\"'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "STRING_LITERAL:'\"test_suite_name must not be empty\"'"
+          ]
+        }
+      },
+      {
+        "STATIC_ASSERT:''": {
+          "children": [
+            {
+              "BINARY_OPERATOR:''": {
+                "children": [
+                  {
+                    "OBJC_STRING_LITERAL:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"approxNearesSearch\"'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "UNEXPOSED_EXPR:''": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "STRING_LITERAL:'\"test_name must not be empty\"'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'test_info_'": {
+          "children": [
+            "NAMESPACE_REF:'testing'",
+            "TYPE_REF:'class PCL_OctreeGPU_approxNearesSearch_Test'",
+            "TYPE_REF:'class testing::TestInfo'",
+            "UNEXPOSED_ATTR:''"
+          ]
+        }
+      }
+    ]
+  }
+}

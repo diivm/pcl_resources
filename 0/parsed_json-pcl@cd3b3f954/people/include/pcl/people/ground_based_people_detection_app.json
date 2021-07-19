@@ -1,0 +1,210 @@
+{
+  "TRANSLATION_UNIT:'/pcl/people/include/pcl/people/ground_based_people_detection_app.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/head_based_subcluster.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/impl/ground_based_people_detection_app.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/people/person_classifier.h'",
+      "INCLUSION_DIRECTIVE:'pcl/people/person_cluster.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/ransac.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model_plane.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'people'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'GroundBasedPeopleDetectionApp'": {
+                      "children": [
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'GroundBasedPeopleDetectionApp'": {
+                      "children": [
+                        "CONSTRUCTOR:'GroundBasedPeopleDetectionApp<PointT>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'applyTransformationGround'",
+                        "CXX_METHOD:'applyTransformationIntrinsics'",
+                        "CXX_METHOD:'applyTransformationPointCloud'",
+                        {
+                          "CXX_METHOD:'compute'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'extractRGBFromPointCloud'": {
+                            "children": [
+                              "PARM_DECL:'Ptr'",
+                              "PARM_DECL:'input_cloud'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'filter'",
+                        {
+                          "CXX_METHOD:'getDimensionLimits'": {
+                            "children": [
+                              "PARM_DECL:'max_points'",
+                              "PARM_DECL:'min_points'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getFilteredCloud'",
+                        "CXX_METHOD:'getGround'",
+                        "CXX_METHOD:'getMinimumDistanceBetweenHeads'",
+                        "CXX_METHOD:'getNoGroundCloud'",
+                        {
+                          "CXX_METHOD:'getPersonClusterLimits'": {
+                            "children": [
+                              "PARM_DECL:'max_height'",
+                              "PARM_DECL:'max_width'",
+                              "PARM_DECL:'min_height'",
+                              "PARM_DECL:'min_width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setClassifier'": {
+                            "children": [
+                              "PARM_DECL:'person_classifier'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setFOV'": {
+                            "children": [
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setGround'": {
+                            "children": [
+                              "PARM_DECL:'ground_coeffs'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setHeadCentroid'": {
+                            "children": [
+                              "PARM_DECL:'head_centroid'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputCloud'": {
+                            "children": [
+                              "PARM_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setIntrinsics'": {
+                            "children": [
+                              "PARM_DECL:'intrinsics_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMinimumDistanceBetweenHeads'": {
+                            "children": [
+                              "PARM_DECL:'heads_minimum_distance'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPersonClusterLimits'": {
+                            "children": [
+                              "PARM_DECL:'max_height'",
+                              "PARM_DECL:'max_width'",
+                              "PARM_DECL:'min_height'",
+                              "PARM_DECL:'min_width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSamplingFactor'": {
+                            "children": [
+                              "PARM_DECL:'sampling_factor'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSensorPortraitOrientation'": {
+                            "children": [
+                              "PARM_DECL:'vertical'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTransformation'": {
+                            "children": [
+                              "PARM_DECL:'transformation'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setVoxelSize'": {
+                            "children": [
+                              "PARM_DECL:'voxel_size'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'swapDimensions'": {
+                            "children": [
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'updateMinMaxPoints'",
+                        "DESTRUCTOR:'~GroundBasedPeopleDetectionApp<PointT>'",
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'cloud_'",
+                        "FIELD_DECL:'cloud_filtered_'",
+                        "FIELD_DECL:'ground_coeffs_'",
+                        "FIELD_DECL:'ground_coeffs_set_'",
+                        "FIELD_DECL:'ground_coeffs_transformed_'",
+                        "FIELD_DECL:'head_centroid_'",
+                        "FIELD_DECL:'heads_minimum_distance_'",
+                        "FIELD_DECL:'intrinsics_matrix_'",
+                        "FIELD_DECL:'intrinsics_matrix_set_'",
+                        "FIELD_DECL:'intrinsics_matrix_transformed_'",
+                        "FIELD_DECL:'max_fov_'",
+                        "FIELD_DECL:'max_height_'",
+                        "FIELD_DECL:'max_points_'",
+                        "FIELD_DECL:'max_width_'",
+                        "FIELD_DECL:'min_fov_'",
+                        "FIELD_DECL:'min_height_'",
+                        "FIELD_DECL:'min_points_'",
+                        "FIELD_DECL:'min_width_'",
+                        "FIELD_DECL:'no_ground_cloud_'",
+                        "FIELD_DECL:'person_classifier_'",
+                        "FIELD_DECL:'person_classifier_set_flag_'",
+                        "FIELD_DECL:'sampling_factor_'",
+                        "FIELD_DECL:'sqrt_ground_coeffs_'",
+                        "FIELD_DECL:'transformation_'",
+                        "FIELD_DECL:'transformation_set_'",
+                        "FIELD_DECL:'vertical_'",
+                        "FIELD_DECL:'voxel_size_'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

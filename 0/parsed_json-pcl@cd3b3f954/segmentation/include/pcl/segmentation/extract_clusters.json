@@ -1,0 +1,363 @@
+{
+  "TRANSLATION_UNIT:'/pcl/segmentation/include/pcl/segmentation/extract_clusters.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/kdtree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'EuclideanClusterExtraction'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'EuclideanClusterExtraction<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'cluster_tolerance_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'extract'": {
+                      "children": [
+                        "PARM_DECL:'clusters'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClassName'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClusterTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'cluster_tolerance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMaxClusterSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMinClusterSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setClusterTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'cluster_tolerance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'tolerance'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'tolerance'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'tolerance'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMaxClusterSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'max_cluster_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinClusterSize'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'min_cluster_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'cluster_tolerance_'",
+                  "FIELD_DECL:'max_pts_per_cluster_'",
+                  "FIELD_DECL:'min_pts_per_cluster_'",
+                  "FIELD_DECL:'tree_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'comparePointClusters'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'a'",
+                  "PARM_DECL:'b'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'extractEuclideanClusters'": {
+                "children": [
+                  "PARM_DECL:''",
+                  "PARM_DECL:'cloud'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'extractEuclideanClusters'": {
+                "children": [
+                  "PARM_DECL:''",
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'indices'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'extractEuclideanClusters'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'cos_eps_angle'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'nn_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'clusters'",
+                  "PARM_DECL:'eps_angle'",
+                  {
+                    "PARM_DECL:'max_pts_per_cluster'": {
+                      "children": [
+                        "UNEXPOSED_EXPR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'min_pts_per_cluster'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'normals'",
+                  "PARM_DECL:'tolerance'",
+                  "PARM_DECL:'tree'",
+                  "TEMPLATE_TYPE_PARAMETER:'Normal'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'extractEuclideanClusters'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'cos_eps_angle'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'nn_indices'"
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'cloud'",
+                  "PARM_DECL:'clusters'",
+                  "PARM_DECL:'eps_angle'",
+                  "PARM_DECL:'indices'",
+                  {
+                    "PARM_DECL:'max_pts_per_cluster'": {
+                      "children": [
+                        "UNEXPOSED_EXPR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'min_pts_per_cluster'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'normals'",
+                  "PARM_DECL:'tolerance'",
+                  "PARM_DECL:'tree'",
+                  "TEMPLATE_TYPE_PARAMETER:'Normal'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

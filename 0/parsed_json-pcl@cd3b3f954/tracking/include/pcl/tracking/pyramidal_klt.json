@@ -1,0 +1,725 @@
+{
+  "TRANSLATION_UNIT:'/pcl/tracking/include/pcl/tracking/pyramidal_klt.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/intensity.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/transformation_from_correspondences.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/impl/pyramidal_klt.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/tracker.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'tracking'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'PyramidalKLTTracker'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'PyramidalKLTTracker<PointInT, IntensityT>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'accuracy_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'epsilon_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_iterations_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_eigenvalue_threshold_'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_NULL_PTR_LITERAL_EXPR:''",
+                              "MEMBER_REF:'initialized_'",
+                              "MEMBER_REF:'nb_levels_'",
+                              "MEMBER_REF:'threads_'",
+                              "MEMBER_REF:'track_height_'",
+                              "MEMBER_REF:'track_width_'",
+                              {
+                                "PARM_DECL:'nb_levels'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'tracking_window_height'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'tracking_window_width'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'nb_levels'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'nb_levels'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'tracking_window_height'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'tracking_window_height'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'tracking_window_width'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'tracking_window_width'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'PCL_DEPRECATED'",
+                        {
+                          "CXX_METHOD:'computePyramids'": {
+                            "children": [
+                              "PARM_DECL:'border_type'",
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'pyramid'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'computeTracking'",
+                        {
+                          "CXX_METHOD:'convolve'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convolveCols'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'convolveRows'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'derivatives'": {
+                            "children": [
+                              "PARM_DECL:'grad_x'",
+                              "PARM_DECL:'grad_y'",
+                              "PARM_DECL:'src'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'downsample'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'downsample'": {
+                            "children": [
+                              "PARM_DECL:'input'",
+                              "PARM_DECL:'output'",
+                              "PARM_DECL:'output_grad_x'",
+                              "PARM_DECL:'output_grad_y'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getAccuracy'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'accuracy_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'epsilon_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMaxIterationsNumber'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'max_iterations_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumberOfKeypoints'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumberOfPyramidLevels'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'nb_levels_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getReferenceCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTrackingWindowHeight'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'track_height_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTrackingWindowWidth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'track_width_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'mismatchVector'": {
+                            "children": [
+                              "PARM_DECL:'b'",
+                              "PARM_DECL:'location'",
+                              "PARM_DECL:'next'",
+                              "PARM_DECL:'prev'",
+                              "PARM_DECL:'prev_grad_x'",
+                              "PARM_DECL:'prev_grad_y'",
+                              "PARM_DECL:'weights'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setAccuracy'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'accuracy_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'accuracy'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'accuracy'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'accuracy'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setEpsilon'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'epsilon_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'epsilon'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'epsilon'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'epsilon'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMaxIterationsNumber'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_iterations_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'max'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'max'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'max'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfKeypoints'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'number'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfPyramidLevels'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'nb_levels_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'levels'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'levels'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'levels'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setNumberOfThreads'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'threads_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'nr_threads'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'nr_threads'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'nr_threads'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointsToTrack'": {
+                            "children": [
+                              "PARM_DECL:'points'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setPointsToTrack'": {
+                            "children": [
+                              "PARM_DECL:'ConstPtr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTrackingWindowHeight'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'track_height_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'height'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'height'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'height'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTrackingWindowSize'": {
+                            "children": [
+                              "PARM_DECL:'height'",
+                              "PARM_DECL:'width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTrackingWindowWidth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'track_width_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'width'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'width'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'width'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'spatialGradient'": {
+                            "children": [
+                              "PARM_DECL:'covariance'",
+                              "PARM_DECL:'grad_x'",
+                              "PARM_DECL:'grad_x_win'",
+                              "PARM_DECL:'grad_y'",
+                              "PARM_DECL:'grad_y_win'",
+                              "PARM_DECL:'img'",
+                              "PARM_DECL:'location'",
+                              "PARM_DECL:'weights'",
+                              "PARM_DECL:'win'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'track'": {
+                            "children": [
+                              "PARM_DECL:'ConstPtr'",
+                              "PARM_DECL:'current_input'",
+                              "PARM_DECL:'current_pyramid'",
+                              "PARM_DECL:'previous_input'",
+                              "PARM_DECL:'previous_pyramid'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~PyramidalKLTTracker<PointInT, IntensityT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'ConstPtr'",
+                        "FIELD_DECL:'accuracy_'",
+                        "FIELD_DECL:'epsilon_'",
+                        "FIELD_DECL:'initialized_'",
+                        {
+                          "FIELD_DECL:'intensity_'": {
+                            "children": [
+                              "TYPE_REF:'IntensityT'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'kernel_'",
+                        "FIELD_DECL:'kernel_last_'",
+                        "FIELD_DECL:'kernel_size_2_'",
+                        "FIELD_DECL:'keypoints_nbr_'",
+                        "FIELD_DECL:'max_iterations_'",
+                        "FIELD_DECL:'max_residue_'",
+                        "FIELD_DECL:'min_eigenvalue_threshold_'",
+                        "FIELD_DECL:'motion_'",
+                        "FIELD_DECL:'nb_levels_'",
+                        "FIELD_DECL:'ref_'",
+                        "FIELD_DECL:'ref_pyramid_'",
+                        "FIELD_DECL:'threads_'",
+                        "FIELD_DECL:'track_height_'",
+                        "FIELD_DECL:'track_height_2_'",
+                        "FIELD_DECL:'track_width_'",
+                        "FIELD_DECL:'track_width_2_'",
+                        "FIELD_DECL:'transformation_computer_'",
+                        "TEMPLATE_TYPE_PARAMETER:'IntensityT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

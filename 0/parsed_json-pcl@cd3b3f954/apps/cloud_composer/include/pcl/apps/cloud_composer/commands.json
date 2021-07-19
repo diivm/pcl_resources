@@ -1,0 +1,395 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/commands.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'QUndoCommand'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/items/cloud_item.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  "CLASS_DECL:'AbstractTool'",
+                  {
+                    "CLASS_DECL:'CloudCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CloudCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'canUseTemplates'": {
+                            "children": [
+                              "PARM_DECL:'input_data'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'replaceOriginalWithNew'": {
+                            "children": [
+                              "PARM_DECL:'new_items'",
+                              "PARM_DECL:'originals'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'restoreOriginalRemoveNew'": {
+                            "children": [
+                              "PARM_DECL:'new_items'",
+                              "PARM_DECL:'originals'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setInputData'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'input_data'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setProjectModel'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'model'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'",
+                        "DESTRUCTOR:'~CloudCommand'",
+                        "FIELD_DECL:'can_use_templates_'",
+                        "FIELD_DECL:'last_was_undo_'",
+                        "FIELD_DECL:'original_data_'",
+                        "FIELD_DECL:'output_data_'",
+                        {
+                          "FIELD_DECL:'project_model_'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::ProjectModel'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'removed_to_parent_map_'",
+                        "FIELD_DECL:'template_type_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'DeleteItemCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'DeleteItemCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'class pcl::cloud_composer::CloudCommand'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudCommand'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'MergeCloudCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'MergeCloudCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'class pcl::cloud_composer::CloudCommand'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudCommand'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSelectedIndicesMap'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'selected_item_index_map'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'",
+                        "FIELD_DECL:'selected_item_index_map_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'ModifyItemCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'ModifyItemCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'class pcl::cloud_composer::CloudCommand'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudCommand'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'NewItemCloudCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'NewItemCloudCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'class pcl::cloud_composer::CloudCommand'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudCommand'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'"
+                      ]
+                    }
+                  },
+                  "CLASS_DECL:'ProjectModel'",
+                  {
+                    "CLASS_DECL:'SplitCloudCommand'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'SplitCloudCommand'": {
+                            "children": [
+                              "PARM_DECL:'input_data'",
+                              {
+                                "PARM_DECL:'parent'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "CXX_THIS_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_BASE_SPECIFIER:'class pcl::cloud_composer::CloudCommand'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudCommand'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'redo'",
+                        {
+                          "CXX_METHOD:'runCommand'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'tool'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::AbstractTool'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'undo'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OutputPair'": {
+                      "children": [
+                        "FIELD_DECL:'input_items_'",
+                        "FIELD_DECL:'output_items_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "VAR_DECL:'ConstItemList'"
+    ]
+  }
+}

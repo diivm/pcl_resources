@@ -1,0 +1,161 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/plane_clipper3D.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'clipper3D.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/impl/plane_clipper3D.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PlaneClipper3D'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'PlaneClipper3D<PointT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'plane_params'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_BASE_SPECIFIER:'Clipper3D<PointT>'": {
+                      "children": [
+                        "TEMPLATE_REF:'Clipper3D'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipLineSegment3D'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'from'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'to'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "PARM_DECL:'clipped_polygon'",
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPoint3D'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPointCloud3D'": {
+                      "children": [
+                        "PARM_DECL:'clipped'",
+                        "PARM_DECL:'cloud_in'",
+                        {
+                          "PARM_DECL:'indices'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clone'": {
+                      "children": [
+                        "TEMPLATE_REF:'Clipper3D'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistance'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPlaneParameters'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPlaneParameters'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'plane_params'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "DESTRUCTOR:'~PlaneClipper3D<PointT>'",
+                  {
+                    "FIELD_DECL:'plane_params_'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

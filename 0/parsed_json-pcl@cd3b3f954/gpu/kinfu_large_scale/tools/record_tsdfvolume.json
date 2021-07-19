@@ -1,0 +1,309 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/kinfu_large_scale/tools/record_tsdfvolume.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'DeviceVolume'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'DeviceVolume'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'device_volume_'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'voxel_size'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'volume_res'",
+                  "PARM_DECL:'volume_size'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'createFromDepth'": {
+                "children": [
+                  "PARM_DECL:'depth'",
+                  "PARM_DECL:'intr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'getCloud'": {
+                "children": [
+                  "PARM_DECL:'Ptr'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'getVolume'": {
+                "children": [
+                  "PARM_DECL:'Ptr'"
+                ]
+              }
+            },
+            "FIELD_DECL:'device_volume_'",
+            "FIELD_DECL:'trunc_dist_'",
+            "FIELD_DECL:'volume_size_'",
+            {
+              "FUNCTION_TEMPLATE:'device_cast'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "CXX_REINTERPRET_CAST_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'matx'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "TYPE_REF:'D'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'matx'": {
+                      "children": [
+                        "TYPE_REF:'Matx'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'D'",
+                  "TEMPLATE_TYPE_PARAMETER:'Matx'",
+                  "TYPE_REF:'D'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "CXX_METHOD:'createFromDepth'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "USING_DIRECTIVE:''": {
+                            "children": [
+                              "NAMESPACE_REF:'pcl'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'rows'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'cols'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'device_depth'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'init_Rcam'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'init_tcam'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'init_Rcam_inv'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'device_Rcam_inv'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'device_tcam'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'device_volume_size'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'depth'",
+            "PARM_DECL:'intr'",
+            "TYPE_REF:'class DeviceVolume'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'openni_capture.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/file_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/parse.h'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/device_array.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/containers/initialization.h'",
+      "INCLUSION_DIRECTIVE:'pcl/gpu/kinfu_large_scale/kinfu.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/point_cloud_handlers.h'",
+      "INCLUSION_DIRECTIVE:'tsdf_volume.h'",
+      "INCLUSION_DIRECTIVE:'tsdf_volume.hpp'",
+      "MACRO_INSTANTIATION:'EXIT_FAILURE'",
+      "MACRO_INSTANTIATION:'EXIT_FAILURE'",
+      "MACRO_INSTANTIATION:'EXIT_FAILURE'",
+      "MACRO_INSTANTIATION:'EXIT_FAILURE'",
+      "MACRO_INSTANTIATION:'EXIT_SUCCESS'",
+      "MACRO_INSTANTIATION:'EXIT_SUCCESS'",
+      "TYPE_ALIAS_DECL:'VoxelT'",
+      "TYPE_ALIAS_DECL:'WeightT'",
+      {
+        "VAR_DECL:'cloud_file'": {
+          "children": [
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'std::string'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'extract_cloud_volume'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'getVolume'": {
+          "children": [
+            "TYPE_REF:'class DeviceVolume'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'min_trunc_dist'": {
+          "children": [
+            {
+              "UNEXPOSED_EXPR:''": {
+                "children": [
+                  "FLOATING_LITERAL:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'quit'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'save'": {
+          "children": [
+            "CXX_NULL_PTR_LITERAL_EXPR:''"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'volume_file'": {
+          "children": [
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'std::string'"
+          ]
+        }
+      }
+    ]
+  }
+}

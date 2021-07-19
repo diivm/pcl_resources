@@ -1,0 +1,406 @@
+{
+  "TRANSLATION_UNIT:'/pcl/ml/include/pcl/ml/svm.h'": {
+    "children": [
+      "MACRO_DEFINITION:'LIBSVM_VERSION'",
+      "MACRO_INSTANTIATION:'__cplusplus'",
+      "MACRO_INSTANTIATION:'__cplusplus'",
+      {
+        "UNEXPOSED_DECL:''": {
+          "children": [
+            {
+              "ENUM_DECL:''": {
+                "children": [
+                  "ENUM_CONSTANT_DECL:'C_SVC'",
+                  "ENUM_CONSTANT_DECL:'EPSILON_SVR'",
+                  "ENUM_CONSTANT_DECL:'NU_SVC'",
+                  "ENUM_CONSTANT_DECL:'NU_SVR'",
+                  "ENUM_CONSTANT_DECL:'ONE_CLASS'"
+                ]
+              }
+            },
+            {
+              "ENUM_DECL:''": {
+                "children": [
+                  "ENUM_CONSTANT_DECL:'LINEAR'",
+                  "ENUM_CONSTANT_DECL:'POLY'",
+                  "ENUM_CONSTANT_DECL:'PRECOMPUTED'",
+                  "ENUM_CONSTANT_DECL:'RBF'",
+                  "ENUM_CONSTANT_DECL:'SIGMOID'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_check_parameter'": {
+                "children": [
+                  {
+                    "PARM_DECL:'param'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_parameter'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'prob'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_problem'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_check_probability_model'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_cross_validation'": {
+                "children": [
+                  "PARM_DECL:'nr_fold'",
+                  {
+                    "PARM_DECL:'param'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_parameter'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'prob'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_problem'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'target'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_destroy_param'": {
+                "children": [
+                  {
+                    "PARM_DECL:'param'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_parameter'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_free_and_destroy_model'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model_ptr_ptr'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_free_model_content'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model_ptr'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_get_labels'": {
+                "children": [
+                  "PARM_DECL:'label'",
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_get_nr_class'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_get_svm_type'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_get_svr_probability'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_load_model'": {
+                "children": [
+                  "PARM_DECL:'model_file_name'",
+                  "TYPE_REF:'struct svm_model'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_predict'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'x'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_predict_probability'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'prob_estimates'",
+                  {
+                    "PARM_DECL:'x'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_predict_values'": {
+                "children": [
+                  "PARM_DECL:'dec_values'",
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'x'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_save_model'": {
+                "children": [
+                  {
+                    "PARM_DECL:'model'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_model'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'model_file_name'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_set_print_string_function'": {
+                "children": [
+                  {
+                    "PARM_DECL:'print_func'": {
+                      "children": [
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'svm_train'": {
+                "children": [
+                  {
+                    "PARM_DECL:'param'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_parameter'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'prob'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_problem'"
+                      ]
+                    }
+                  },
+                  "TYPE_REF:'struct svm_model'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'svm_model'": {
+                "children": [
+                  {
+                    "FIELD_DECL:'SV'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'free_sv'",
+                  "FIELD_DECL:'l'",
+                  "FIELD_DECL:'label'",
+                  "FIELD_DECL:'nSV'",
+                  "FIELD_DECL:'nr_class'",
+                  {
+                    "FIELD_DECL:'param'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_parameter'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'probA'",
+                  "FIELD_DECL:'probB'",
+                  "FIELD_DECL:'rho'",
+                  {
+                    "FIELD_DECL:'scaling'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'sv_coef'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'svm_node'": {
+                "children": [
+                  "FIELD_DECL:'index'",
+                  "FIELD_DECL:'value'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'svm_parameter'": {
+                "children": [
+                  "FIELD_DECL:'C'",
+                  "FIELD_DECL:'cache_size'",
+                  "FIELD_DECL:'coef0'",
+                  "FIELD_DECL:'degree'",
+                  "FIELD_DECL:'eps'",
+                  "FIELD_DECL:'gamma'",
+                  "FIELD_DECL:'kernel_type'",
+                  "FIELD_DECL:'nr_weight'",
+                  "FIELD_DECL:'nu'",
+                  "FIELD_DECL:'p'",
+                  "FIELD_DECL:'probability'",
+                  "FIELD_DECL:'shrinking'",
+                  "FIELD_DECL:'svm_type'",
+                  "FIELD_DECL:'weight'",
+                  "FIELD_DECL:'weight_label'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'svm_problem'": {
+                "children": [
+                  "FIELD_DECL:'l'",
+                  {
+                    "FIELD_DECL:'x'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'y'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'svm_scaling'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'svm_scaling'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'max'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'max'",
+                  {
+                    "FIELD_DECL:'obj'": {
+                      "children": [
+                        "TYPE_REF:'struct svm_node'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "VAR_DECL:'libsvm_version'"
+          ]
+        }
+      }
+    ]
+  }
+}

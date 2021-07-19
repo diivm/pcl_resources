@@ -1,0 +1,113 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_pointcloud_occupancy.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_pointcloud.h'",
+      "MACRO_DEFINITION:'PCL_INSTANTIATE_OctreePointCloudOccupancy'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreePointCloudOccupancy'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreePointCloudOccupancy<PointT, LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'resolution_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'setOccupiedVoxelAtPoint'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'point_arg'",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'key'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setOccupiedVoxelsAtPointsFromCloud'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'cloud_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~OctreePointCloudOccupancy<PointT, LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'BranchContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'DoubleBuffer'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreePointCloudOccupancy'",
+                              "TYPE_REF:'BranchContainerT'",
+                              "TYPE_REF:'LeafContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'SingleBuffer'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreePointCloudOccupancy'",
+                              "TYPE_REF:'BranchContainerT'",
+                              "TYPE_REF:'LeafContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

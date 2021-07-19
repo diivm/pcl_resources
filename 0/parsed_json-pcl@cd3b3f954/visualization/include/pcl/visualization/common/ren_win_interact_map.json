@@ -1,0 +1,73 @@
+{
+  "TRANSLATION_UNIT:'/pcl/visualization/include/pcl/visualization/common/ren_win_interact_map.h'": {
+    "children": [
+      "CLASS_DECL:'vtkInteractorStyleTrackballCamera'",
+      "CLASS_DECL:'vtkRenderWindow'",
+      "CLASS_DECL:'vtkRenderWindowInteractor'",
+      "CLASS_DECL:'vtkRenderer'",
+      {
+        "CLASS_TEMPLATE:'vtkSmartPointer'": {
+          "children": [
+            "TEMPLATE_TYPE_PARAMETER:'T'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'vtkXYPlotActor.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'visualization'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'RenWinInteract'": {
+                      "children": [
+                        "CONSTRUCTOR:'RenWinInteract'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "FIELD_DECL:'interactor_'": {
+                            "children": [
+                              "TEMPLATE_REF:'vtkSmartPointer'",
+                              "TYPE_REF:'class vtkRenderWindowInteractor'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'ren_'": {
+                            "children": [
+                              "TEMPLATE_REF:'vtkSmartPointer'",
+                              "TYPE_REF:'class vtkRenderer'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'style_'": {
+                            "children": [
+                              "TEMPLATE_REF:'vtkSmartPointer'",
+                              "TYPE_REF:'class vtkInteractorStyleTrackballCamera'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'win_'": {
+                            "children": [
+                              "TEMPLATE_REF:'vtkSmartPointer'",
+                              "TYPE_REF:'class vtkRenderWindow'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'xy_plot_'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

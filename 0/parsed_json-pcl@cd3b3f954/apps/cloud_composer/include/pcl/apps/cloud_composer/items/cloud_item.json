@@ -1,0 +1,397 @@
+{
+  "TRANSLATION_UNIT:'/pcl/apps/cloud_composer/include/pcl/apps/cloud_composer/items/cloud_item.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'QDebug'",
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/apps/cloud_composer/items/cloud_composer_item.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/kdtree.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/point_cloud_color_handlers.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/point_cloud_geometry_handlers.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'cloud_composer'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'CloudItem'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'CloudItem'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'to_copy'": {
+                                  "children": [
+                                    "TYPE_REF:'class pcl::cloud_composer::CloudItem'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'checkIfFinite'",
+                        {
+                          "CXX_METHOD:'clone'": {
+                            "children": [
+                              "TYPE_REF:'class pcl::cloud_composer::CloudItem'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'data'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPointType'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'point_type_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'point_type_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'isSanitized'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'is_sanitized_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'is_sanitized_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'paintView'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'vis'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeFromView'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'vis'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setData'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              {
+                                "PARM_DECL:'role'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'value'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'setTemplateCloudFromBlob'",
+                        {
+                          "CXX_METHOD:'type'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~CloudItem'",
+                        "FIELD_DECL:'cloud_blob_ptr_'",
+                        "FIELD_DECL:'color_handler_'",
+                        "FIELD_DECL:'geometry_handler_'",
+                        "FIELD_DECL:'is_sanitized_'",
+                        "FIELD_DECL:'orientation_'",
+                        "FIELD_DECL:'origin_'",
+                        "FIELD_DECL:'point_type_'",
+                        "FIELD_DECL:'template_cloud_set_'",
+                        {
+                          "FUNCTION_TEMPLATE:'createCloudItemFromTemplate'": {
+                            "children": [
+                              "PARM_DECL:'cloud_ptr'",
+                              "PARM_DECL:'name'",
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                              "TYPE_REF:'class pcl::cloud_composer::CloudItem'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'printNumPoints'": {
+                            "children": [
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "FUNCTION_TEMPLATE:'setPointType'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'point_type_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'NONE'": {
+                                              "children": [
+                                                {
+                                                  "DECL_REF_EXPR:'NONE'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'PointTypeFlags'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "NAMESPACE:'PointTypeFlags'": {
+                      "children": [
+                        {
+                          "ENUM_DECL:'PointType'": {
+                            "children": [
+                              {
+                                "ENUM_CONSTANT_DECL:'AXIS'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'HSV'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'NONE'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'NORMAL'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'RGB'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'RGBA'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'XYZ'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "VAR_DECL:'Q_DECLARE_METATYPE'",
+      "VAR_DECL:'Q_DECLARE_METATYPE'",
+      "VAR_DECL:'Q_DECLARE_METATYPE'"
+    ]
+  }
+}

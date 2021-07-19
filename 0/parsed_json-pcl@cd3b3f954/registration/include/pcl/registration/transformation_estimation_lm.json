@@ -1,0 +1,587 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/transformation_estimation_lm.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/transformation_estimation_lm.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/transformation_estimation.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/warp_point_rigid.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'registration'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'TransformationEstimationLM'": {
+                      "children": [
+                        {
+                          "CLASS_TEMPLATE:'Functor'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Functor<_Scalar, NX, NY>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'m_data_points_'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ValuesAtCompileTime'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'Functor<_Scalar, NX, NY>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'m_data_points_'",
+                                    "PARM_DECL:'m_data_points'",
+                                    {
+                                      "UNEXPOSED_EXPR:'m_data_points'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'m_data_points'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'values'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'m_data_points_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~Functor<_Scalar, NX, NY>'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_DECL:''": {
+                                  "children": [
+                                    {
+                                      "ENUM_CONSTANT_DECL:'InputsAtCompileTime'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'NX'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "ENUM_CONSTANT_DECL:'ValuesAtCompileTime'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'NY'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'m_data_points_'",
+                              "TEMPLATE_NON_TYPE_PARAMETER:'NX'",
+                              "TEMPLATE_NON_TYPE_PARAMETER:'NY'",
+                              "TEMPLATE_TYPE_PARAMETER:'_Scalar'",
+                              {
+                                "TYPE_ALIAS_DECL:'Scalar'": {
+                                  "children": [
+                                    "TYPE_REF:'_Scalar'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CONSTRUCTOR:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'",
+                        {
+                          "CONSTRUCTOR:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'src'": {
+                                  "children": [
+                                    "TYPE_REF:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'computeDistance'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'s'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'t'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p_src'": {
+                                  "children": [
+                                    "TYPE_REF:'PointSource'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p_tgt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointTarget'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'MatScalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeDistance'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'t'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'p_src'",
+                              {
+                                "PARM_DECL:'p_tgt'": {
+                                  "children": [
+                                    "TYPE_REF:'PointTarget'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'MatScalar'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimateRigidTransformation'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimateRigidTransformation'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'indices_src'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimateRigidTransformation'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'indices_src'",
+                              "PARM_DECL:'indices_tgt'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'estimateRigidTransformation'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'correspondences'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'src'": {
+                                  "children": [
+                                    "TYPE_REF:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setWarpFunction'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'warp_fcn'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~TransformationEstimationLM<PointSource, PointTarget, MatScalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'tmp_idx_src_'",
+                        "FIELD_DECL:'tmp_idx_tgt_'",
+                        "FIELD_DECL:'tmp_src_'",
+                        "FIELD_DECL:'tmp_tgt_'",
+                        {
+                          "STRUCT_DECL:'OptimizationFunctor'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'OptimizationFunctor'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'estimator_'",
+                                    {
+                                      "PARM_DECL:'estimator'": {
+                                        "children": [
+                                          "TYPE_REF:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'m_data_points'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'estimator'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'OptimizationFunctor'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'src'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF:'estimator_'",
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctor'"
+                                        ]
+                                      }
+                                    },
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator()'": {
+                                  "children": [
+                                    "PARM_DECL:'fvec'",
+                                    "PARM_DECL:'x'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator='": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'src'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'estimator_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctor'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctor'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~OptimizationFunctor'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'estimator_'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'TransformationEstimationLM'",
+                                    "TYPE_REF:'MatScalar'",
+                                    "TYPE_REF:'PointSource'",
+                                    "TYPE_REF:'PointTarget'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'OptimizationFunctorWithIndices'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'OptimizationFunctorWithIndices'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'estimator_'",
+                                    {
+                                      "PARM_DECL:'estimator'": {
+                                        "children": [
+                                          "TYPE_REF:'TransformationEstimationLM<PointSource, PointTarget, MatScalar>'"
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'m_data_points'",
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'estimator'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'OptimizationFunctorWithIndices'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'src'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF:'estimator_'",
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctorWithIndices'"
+                                        ]
+                                      }
+                                    },
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator()'": {
+                                  "children": [
+                                    "PARM_DECL:'fvec'",
+                                    "PARM_DECL:'x'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator='": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'src'"
+                                                    ]
+                                                  }
+                                                },
+                                                "MEMBER_REF_EXPR:'estimator_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctorWithIndices'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'struct pcl::registration::TransformationEstimationLM::OptimizationFunctorWithIndices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DESTRUCTOR:'~OptimizationFunctorWithIndices'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'estimator_'": {
+                                  "children": [
+                                    "TEMPLATE_REF:'TransformationEstimationLM'",
+                                    "TYPE_REF:'MatScalar'",
+                                    "TYPE_REF:'PointSource'",
+                                    "TYPE_REF:'PointTarget'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'MatScalar'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTarget'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

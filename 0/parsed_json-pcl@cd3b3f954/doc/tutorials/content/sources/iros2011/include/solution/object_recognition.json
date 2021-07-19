@@ -1,0 +1,312 @@
+{
+  "TRANSLATION_UNIT:'/pcl/doc/tutorials/content/sources/iros2011/include/solution/object_recognition.h'": {
+    "children": [
+      {
+        "CLASS_DECL:'ObjectRecognition'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'ObjectRecognition'": {
+                "children": [
+                  {
+                    "CALL_EXPR:'ObjectRecognitionParameters'": {
+                      "children": [
+                        "DECL_REF_EXPR:'params'"
+                      ]
+                    }
+                  },
+                  "COMPOUND_STMT:''",
+                  "MEMBER_REF:'params_'",
+                  {
+                    "PARM_DECL:'params'": {
+                      "children": [
+                        "TYPE_REF:'struct ObjectRecognitionParameters'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'alignModelPoints'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'tform'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'output'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'applyFiltersAndSegment'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'largest_cluster'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'constructObjectModel'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'normals'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'output'": {
+                      "children": [
+                        "TYPE_REF:'struct ObjectModel'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'points'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'estimateFeatures'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'global_descriptor_out'",
+                  "PARM_DECL:'keypoints_out'",
+                  "PARM_DECL:'local_descriptors_out'",
+                  "PARM_DECL:'normals_out'",
+                  {
+                    "PARM_DECL:'params'": {
+                      "children": [
+                        "TYPE_REF:'struct ObjectRecognitionParameters'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'points'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'populateDatabase'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'n'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'filenames'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'recognizeAndAlignPoints'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'query_object'": {
+                                  "children": [
+                                    "CALL_EXPR:'ObjectModel'",
+                                    "TYPE_REF:'struct ObjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'query_descriptor'": {
+                                  "children": [
+                                    "TYPE_REF:'GlobalDescriptorT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'best_match'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'output'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'recognizeObject'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'query_object'": {
+                                  "children": [
+                                    "CALL_EXPR:'ObjectModel'",
+                                    "TYPE_REF:'struct ObjectModel'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'query_descriptor'": {
+                                  "children": [
+                                    "TYPE_REF:'GlobalDescriptorT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'best_match'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'query_cloud'",
+                  "TYPE_REF:'struct ObjectModel'"
+                ]
+              }
+            },
+            "FIELD_DECL:'Ptr'",
+            "FIELD_DECL:'descriptors_'",
+            "FIELD_DECL:'models_'",
+            {
+              "FIELD_DECL:'params_'": {
+                "children": [
+                  "TYPE_REF:'struct ObjectRecognitionParameters'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'load_clouds.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree_flann.h'",
+      "INCLUSION_DIRECTIVE:'solution/feature_estimation.h'",
+      "INCLUSION_DIRECTIVE:'solution/filters.h'",
+      "INCLUSION_DIRECTIVE:'solution/registration.h'",
+      "INCLUSION_DIRECTIVE:'solution/segmentation.h'",
+      "INCLUSION_DIRECTIVE:'typedefs.h'",
+      {
+        "STRUCT_DECL:'ObjectModel'": {
+          "children": [
+            "FIELD_DECL:'global_descriptor'",
+            "FIELD_DECL:'keypoints'",
+            "FIELD_DECL:'local_descriptors'",
+            "FIELD_DECL:'points'"
+          ]
+        }
+      },
+      {
+        "STRUCT_DECL:'ObjectRecognitionParameters'": {
+          "children": [
+            "FIELD_DECL:'cluster_tolerance'",
+            "FIELD_DECL:'downsample_leaf_size'",
+            "FIELD_DECL:'icp_max_correspondence_distance'",
+            "FIELD_DECL:'icp_max_iterations'",
+            "FIELD_DECL:'icp_outlier_rejection_threshold'",
+            "FIELD_DECL:'icp_transformation_epsilon'",
+            "FIELD_DECL:'initial_alignment_max_correspondence_distance'",
+            "FIELD_DECL:'initial_alignment_min_sample_distance'",
+            "FIELD_DECL:'initial_alignment_nr_iterations'",
+            "FIELD_DECL:'keypoints_min_contrast'",
+            "FIELD_DECL:'keypoints_min_scale'",
+            "FIELD_DECL:'keypoints_nr_octaves'",
+            "FIELD_DECL:'keypoints_nr_scales_per_octave'",
+            "FIELD_DECL:'local_descriptor_radius'",
+            "FIELD_DECL:'max_cluster_size'",
+            "FIELD_DECL:'max_depth'",
+            "FIELD_DECL:'max_ransac_iterations'",
+            "FIELD_DECL:'min_cluster_size'",
+            "FIELD_DECL:'min_depth'",
+            "FIELD_DECL:'outlier_rejection_min_neighbors'",
+            "FIELD_DECL:'outlier_rejection_radius'",
+            "FIELD_DECL:'plane_inlier_distance_threshold'",
+            "FIELD_DECL:'surface_normal_radius'"
+          ]
+        }
+      }
+    ]
+  }
+}

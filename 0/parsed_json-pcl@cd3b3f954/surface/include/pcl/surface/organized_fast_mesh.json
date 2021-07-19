@@ -1,0 +1,1584 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/organized_fast_mesh.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/angles.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/point_tests.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/reconstruction.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'OrganizedFastMesh'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'OrganizedFastMesh<PointInT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'distance_dependent_'",
+                        "MEMBER_REF:'distance_tolerance_'",
+                        "MEMBER_REF:'max_edge_length_a_'",
+                        "MEMBER_REF:'max_edge_length_b_'",
+                        "MEMBER_REF:'max_edge_length_c_'",
+                        "MEMBER_REF:'max_edge_length_dist_dependent_'",
+                        "MEMBER_REF:'max_edge_length_set_'",
+                        "MEMBER_REF:'store_shadowed_faces_'",
+                        "MEMBER_REF:'triangle_pixel_size_columns_'",
+                        "MEMBER_REF:'triangle_pixel_size_rows_'",
+                        "MEMBER_REF:'triangulation_type_'",
+                        "MEMBER_REF:'use_depth_as_distance_'",
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'QUAD_MESH'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'addQuad'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'",
+                        "PARM_DECL:'d'",
+                        "PARM_DECL:'idx'",
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'addTriangle'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'",
+                        "PARM_DECL:'idx'",
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getViewpoint'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isShadowed'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'valid'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'dir_a'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'dir_b'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'distance_to_points'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'distance_between_points'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'cos_angle_tolerance_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'cos_angle_tolerance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'valid'",
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'check_angle'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'check_angle'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'check_distance'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'check_distance'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'cos_angle'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'check_angle'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'check_distance'": {
+                                                    "children": [
+                                                      "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cos_angle'",
+                                                      "FLOATING_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:''": {
+                                                                      "children": [
+                                                                        "INTEGER_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'distance_tolerance_'": {
+                                                                      "children": [
+                                                                        "MEMBER_REF_EXPR:'distance_tolerance_'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'check_angle'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'check_angle'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'check_distance'",
+                                                            {
+                                                              "PAREN_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'dist_thresh'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'dist_thresh'"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'distance_between_points'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'distance_between_points'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'dist_thresh'": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'distance_tolerance_'": {
+                                                                      "children": [
+                                                                        "MEMBER_REF_EXPR:'distance_tolerance_'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "IF_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "COMPOUND_STMT:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "BINARY_OPERATOR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'d'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'d'"
+                                                                                  ]
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'d'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'d'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "DECL_REF_EXPR:'dist_thresh'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'dist_thresh'",
+                                                                        {
+                                                                          "UNEXPOSED_EXPR:'dist_thresh'": {
+                                                                            "children": [
+                                                                              "DECL_REF_EXPR:'dist_thresh'"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "DECL_STMT:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "VAR_DECL:'d'": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'distance_to_points'": {
+                                                                                  "children": [
+                                                                                    "DECL_REF_EXPR:'distance_to_points'"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'distance_dependent_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'distance_dependent_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'valid'",
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dist_thresh'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'dist_thresh'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'distance_between_points'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'distance_between_points'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'dist'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'dist_thresh'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'max_edge_length_a_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'max_edge_length_a_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dist'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'dist'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'max_edge_length_b_'": {
+                                                                "children": [
+                                                                  "MEMBER_REF_EXPR:'max_edge_length_b_'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'dist_thresh'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'dist'": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'dist'"
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "UNEXPOSED_EXPR:'max_edge_length_c_'": {
+                                                                      "children": [
+                                                                        "MEMBER_REF_EXPR:'max_edge_length_c_'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "UNEXPOSED_EXPR:'dist'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'dist'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'dist_thresh'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'max_edge_length_set_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_edge_length_set_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'valid'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'valid'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point_a'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point_b'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isShadowedQuad'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'",
+                        "PARM_DECL:'d'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isShadowedTriangle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isValidQuad'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'",
+                        "PARM_DECL:'d'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isValidTriangle'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        "PARM_DECL:'b'",
+                        "PARM_DECL:'c'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'makeAdaptiveCutMesh'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'makeLeftCutMesh'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'makeQuadMesh'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'makeRightCutMesh'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performReconstruction'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performReconstruction'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'reconstructPolygons'": {
+                      "children": [
+                        "PARM_DECL:'polygons'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'resetPointData'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'new_value'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'value'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'value'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'field_x_idx'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'field_y_idx'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'field_z_idx'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'mesh'",
+                        "PARM_DECL:'point_index'",
+                        {
+                          "PARM_DECL:'value'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setAngleTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'angle_tolerance'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'angle_tolerance'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'cos_angle_tolerance_'",
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "FLOATING_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "NULL_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'angle_tolerance'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDistanceTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'distance_tolerance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'distance_tolerance'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'distance_tolerance'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'distance_dependent_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'depth_dependent'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'depth_dependent'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'distance_tolerance_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'distance_tolerance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'distance_tolerance_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'distance_tolerance_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'distance_tolerance_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'distance_dependent_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'distance_dependent_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'depth_dependent'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'distance_tolerance'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMaxEdgeLength'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_edge_length_a_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'a'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'a'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_edge_length_b_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'b'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'b'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_edge_length_c_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'c'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'c'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'max_edge_length_set_'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                          "MEMBER_REF_EXPR:'max_edge_length_set_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a'",
+                        {
+                          "PARM_DECL:'b'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'c'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrianglePixelSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'setTrianglePixelSizeColumns'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'triangle_size'",
+                                    "MEMBER_REF_EXPR:'setTrianglePixelSizeColumns'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CALL_EXPR:'setTrianglePixelSizeRows'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'triangle_size'",
+                                    "MEMBER_REF_EXPR:'setTrianglePixelSizeRows'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'triangle_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrianglePixelSizeColumns'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'triangle_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTrianglePixelSizeRows'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'triangle_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTriangulationType'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'type'",
+                                    "MEMBER_REF_EXPR:'triangulation_type_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'type'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::OrganizedFastMesh::TriangulationType'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setViewpoint'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'viewpoint'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'storeShadowedFaces'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'store_shadowed_faces_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'enable'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'enable'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'enable'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'unsetMaxEdgeLength'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'max_edge_length_set_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'useDepthAsDistance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'use_depth_as_distance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'enable'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'enable'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'enable'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~OrganizedFastMesh<PointInT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'TriangulationType'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'QUAD_MESH'",
+                        "ENUM_CONSTANT_DECL:'TRIANGLE_ADAPTIVE_CUT'",
+                        "ENUM_CONSTANT_DECL:'TRIANGLE_LEFT_CUT'",
+                        "ENUM_CONSTANT_DECL:'TRIANGLE_RIGHT_CUT'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'cos_angle_tolerance_'",
+                  "FIELD_DECL:'distance_dependent_'",
+                  "FIELD_DECL:'distance_tolerance_'",
+                  "FIELD_DECL:'max_edge_length_a_'",
+                  "FIELD_DECL:'max_edge_length_b_'",
+                  "FIELD_DECL:'max_edge_length_c_'",
+                  "FIELD_DECL:'max_edge_length_dist_dependent_'",
+                  "FIELD_DECL:'max_edge_length_set_'",
+                  "FIELD_DECL:'store_shadowed_faces_'",
+                  "FIELD_DECL:'triangle_pixel_size_columns_'",
+                  "FIELD_DECL:'triangle_pixel_size_rows_'",
+                  {
+                    "FIELD_DECL:'triangulation_type_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::OrganizedFastMesh::TriangulationType'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'use_depth_as_distance_'",
+                  "FIELD_DECL:'viewpoint_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

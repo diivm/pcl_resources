@@ -1,0 +1,1000 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_base.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_container.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_iterator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_key.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_nodes.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreeBase'": {
+                      "children": [
+                        "CONSTRUCTOR:'OctreeBase<LeafContainerT, BranchContainerT>'",
+                        {
+                          "CONSTRUCTOR:'OctreeBase<LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'dynamic_depth_enabled_'",
+                              {
+                                "PARM_DECL:'source'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeBase<LeafContainerT, BranchContainerT>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'source'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'branchHasChild'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'child_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'breadth_begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'breadth_end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'BreadthFirstIterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'createBranchChild'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'new_branch_child'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'createLeaf'": {
+                            "children": [
+                              "PARM_DECL:'idx_x_arg'",
+                              "PARM_DECL:'idx_y_arg'",
+                              "PARM_DECL:'idx_z_arg'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'createLeaf'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'leaf_node'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'leaf_node_parent'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'ret'": {
+                                              "children": [
+                                                "TYPE_REF:'LeafContainerT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'ret'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'key_arg'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'createLeafChild'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'new_leaf_child'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'createLeafRecursive'",
+                        {
+                          "CXX_METHOD:'deleteBranch'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'branch_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteBranchChild'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "IF_STMT:''": {
+                                        "children": [
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'branch_child'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'child_idx_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deleteLeafRecursive'": {
+                            "children": [
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'depth_mask_arg'",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'deleteTree'",
+                        {
+                          "CXX_METHOD:'depth_begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'depth_end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'DepthFirstIterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deserializeTree'": {
+                            "children": [
+                              "PARM_DECL:'binary_tree_input_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deserializeTree'": {
+                            "children": [
+                              "PARM_DECL:'binary_tree_input_arg'",
+                              "PARM_DECL:'leaf_container_vector_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deserializeTreeCallback'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'LeafContainerT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'deserializeTreeRecursive'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'depth_mask_arg'",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'Iterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'existLeaf'": {
+                            "children": [
+                              "PARM_DECL:'idx_x_arg'",
+                              "PARM_DECL:'idx_y_arg'",
+                              "PARM_DECL:'idx_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'existLeaf'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'findLeaf'": {
+                            "children": [
+                              "PARM_DECL:'idx_x_arg'",
+                              "PARM_DECL:'idx_y_arg'",
+                              "PARM_DECL:'idx_z_arg'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'findLeaf'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'result'": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "TYPE_REF:'LeafContainerT'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'result'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'key_arg'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'findLeafRecursive'": {
+                            "children": [
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'depth_mask_arg'",
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'result_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'LeafContainerT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'fixed_depth_begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'fixed_depth_end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'FixedDepthIterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBranchBitPattern'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'node_bits'",
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          "VAR_DECL:'node_bits'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'i'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'i'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'i'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      "VAR_DECL:'child'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'node_bits'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'branch_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBranchChildPtr'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBranchCount'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getLeafCount'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRootNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTreeDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "CXX_THROW_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'leaf_breadth_begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'leaf_breadth_end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'LeafNodeBreadthFirstIterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'leaf_depth_begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'leaf_depth_end'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''",
+                                                "CXX_THROW_EXPR:''",
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'LeafNodeDepthFirstIterator'"
+                                                    ]
+                                                  }
+                                                },
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'octreeCanResize'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'source'": {
+                                  "children": [
+                                    "TYPE_REF:'OctreeBase<LeafContainerT, BranchContainerT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OctreeBase<LeafContainerT, BranchContainerT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeLeaf'": {
+                            "children": [
+                              "PARM_DECL:'idx_x_arg'",
+                              "PARM_DECL:'idx_y_arg'",
+                              "PARM_DECL:'idx_z_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'removeLeaf'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serializeLeafs'": {
+                            "children": [
+                              "PARM_DECL:'leaf_container_vector_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serializeTree'": {
+                            "children": [
+                              "PARM_DECL:'binary_tree_out_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serializeTree'": {
+                            "children": [
+                              "PARM_DECL:'binary_tree_out_arg'",
+                              "PARM_DECL:'leaf_container_vector_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serializeTreeCallback'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'LeafContainerT'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'serializeTreeRecursive'": {
+                            "children": [
+                              "PARM_DECL:''",
+                              "PARM_DECL:'binary_tree_out_arg'",
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'key_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setBranchChildPtr'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'branch_arg'",
+                              "PARM_DECL:'child_idx_arg'",
+                              "PARM_DECL:'new_child_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setMaxVoxelIndex'": {
+                            "children": [
+                              "PARM_DECL:'max_voxel_index_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTreeDepth'": {
+                            "children": [
+                              "PARM_DECL:'max_depth_arg'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~OctreeBase<LeafContainerT, BranchContainerT>'",
+                        "FIELD_DECL:'branch_count_'",
+                        "FIELD_DECL:'depth_mask_'",
+                        "FIELD_DECL:'dynamic_depth_enabled_'",
+                        "FIELD_DECL:'leaf_count_'",
+                        "FIELD_DECL:'max_key_'",
+                        "FIELD_DECL:'octree_depth_'",
+                        "FIELD_DECL:'root_node_'",
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeIteratorBase'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeDepthFirstIterator'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeBreadthFirstIterator'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeFixedDepthIterator'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeLeafNodeDepthFirstIterator'"
+                            ]
+                          }
+                        },
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::octree::OctreeLeafNodeBreadthFirstIterator'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'BranchContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafContainerT'",
+                        {
+                          "TYPE_ALIAS_DECL:'BranchContainer'": {
+                            "children": [
+                              "TYPE_REF:'BranchContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'LeafContainer'": {
+                            "children": [
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "TYPE_ALIAS_DECL:'OctreeT'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreeBase'",
+                              "TYPE_REF:'BranchContainerT'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

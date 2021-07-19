@@ -1,0 +1,620 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/gicp.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/registration/bfgs.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/icp.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/impl/gicp.hpp'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'GeneralizedIterativeClosestPoint'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'GeneralizedIterativeClosestPoint<PointSource, PointTarget>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'gicp_epsilon_'",
+                        "MEMBER_REF:'k_correspondences_'",
+                        "MEMBER_REF:'max_inner_iterations_'",
+                        "MEMBER_REF:'rotation_epsilon_'",
+                        "MEMBER_REF:'rotation_gradient_tolerance_'",
+                        "MEMBER_REF:'translation_gradient_tolerance_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyState'": {
+                      "children": [
+                        "PARM_DECL:'t'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeRDerivative'": {
+                      "children": [
+                        "PARM_DECL:'R'",
+                        "PARM_DECL:'g'",
+                        "PARM_DECL:'x'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeTransformation'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'guess'",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'estimateRigidTransformationBFGS'": {
+                      "children": [
+                        "PARM_DECL:'cloud_src'",
+                        "PARM_DECL:'cloud_tgt'",
+                        "PARM_DECL:'indices_src'",
+                        "PARM_DECL:'indices_tgt'",
+                        "PARM_DECL:'transformation_matrix'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCorrespondenceRandomness'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'k_correspondences_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'k_correspondences_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMaximumOptimizerIterations'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'max_inner_iterations_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'max_inner_iterations_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getRotationEpsilon'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'rotation_epsilon_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'rotation_epsilon_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getRotationGradientTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'rotation_gradient_tolerance_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'rotation_gradient_tolerance_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTranslationGradientTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'translation_gradient_tolerance_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'translation_gradient_tolerance_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'mahalanobis'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'matricesInnerProd'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'r'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'n'"
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'r'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'r'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'mat1'",
+                        "PARM_DECL:'mat2'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'searchForNeighbors'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'k'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'k'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'k'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'distance'",
+                        "PARM_DECL:'index'",
+                        {
+                          "PARM_DECL:'query'": {
+                            "children": [
+                              "TYPE_REF:'PointSource'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setCorrespondenceRandomness'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'k_correspondences_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'k'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'k'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputSource'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'input'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputTarget'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'target'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMaximumOptimizerIterations'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'max_inner_iterations_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'max'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'max'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'max'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRotationEpsilon'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'rotation_epsilon_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'epsilon'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'epsilon'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'epsilon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setRotationGradientTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'rotation_gradient_tolerance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'tolerance'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'tolerance'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'tolerance'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSourceCovariances'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'covariances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTargetCovariances'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'covariances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTranslationGradientTolerance'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'translation_gradient_tolerance_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'tolerance'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'tolerance'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'tolerance'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'base_transformation_'",
+                  "FIELD_DECL:'gicp_epsilon_'",
+                  "FIELD_DECL:'input_covariances_'",
+                  "FIELD_DECL:'k_correspondences_'",
+                  "FIELD_DECL:'mahalanobis_'",
+                  "FIELD_DECL:'max_inner_iterations_'",
+                  "FIELD_DECL:'rigid_transformation_estimation_'",
+                  "FIELD_DECL:'rotation_epsilon_'",
+                  "FIELD_DECL:'rotation_gradient_tolerance_'",
+                  "FIELD_DECL:'target_covariances_'",
+                  "FIELD_DECL:'tmp_idx_src_'",
+                  "FIELD_DECL:'tmp_idx_tgt_'",
+                  "FIELD_DECL:'tmp_src_'",
+                  "FIELD_DECL:'tmp_tgt_'",
+                  "FIELD_DECL:'translation_gradient_tolerance_'",
+                  {
+                    "FUNCTION_TEMPLATE:'computeCovariances'": {
+                      "children": [
+                        "PARM_DECL:''",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OptimizationFunctorWithIndices'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OptimizationFunctorWithIndices'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'gicp_'",
+                              {
+                                "PARM_DECL:'gicp'": {
+                                  "children": [
+                                    "TYPE_REF:'GeneralizedIterativeClosestPoint<PointSource, PointTarget>'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'gicp'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'checkGradient'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'df'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'df'",
+                              "PARM_DECL:'x'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'fdf'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'df'",
+                              "PARM_DECL:'f'",
+                              "PARM_DECL:'x'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'x'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'gicp_'": {
+                            "children": [
+                              "TYPE_REF:'GeneralizedIterativeClosestPoint<PointSource, PointTarget>'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointTarget'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

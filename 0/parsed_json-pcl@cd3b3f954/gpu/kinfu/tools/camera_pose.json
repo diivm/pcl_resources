@@ -1,0 +1,142 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/kinfu/tools/camera_pose.h'": {
+    "children": [
+      {
+        "CLASS_DECL:'CameraPoseProcessor'": {
+          "children": [
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'processPose'": {
+                "children": [
+                  {
+                    "PARM_DECL:'pose'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Affine3f'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "DESTRUCTOR:'~CameraPoseProcessor'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "CLASS_DECL:'CameraPoseWriter'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'CameraPoseWriter'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "PARM_DECL:'output_filename'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_BASE_SPECIFIER:'class CameraPoseProcessor'": {
+                "children": [
+                  "TYPE_REF:'class CameraPoseProcessor'"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'processPose'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'q'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Quaternionf'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'t'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector3f'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_OVERRIDE_ATTR:''",
+                  {
+                    "PARM_DECL:'pose'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Affine3f'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "DESTRUCTOR:'~CameraPoseWriter'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "IF_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "FIELD_DECL:'out_stream_'",
+            "FIELD_DECL:'output_filename_'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'Eigen/Geometry'",
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'"
+    ]
+  }
+}

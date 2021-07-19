@@ -1,0 +1,1032 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/voxel_grid_covariance.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/voxel_grid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree_flann.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'VoxelGridCovariance'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'VoxelGridCovariance<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'min_covar_eigvalue_mult_'",
+                        "MEMBER_REF:'min_points_per_voxel_'",
+                        "MEMBER_REF:'searchable_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'applyFilter'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'filter'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'searchable_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'searchable'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'searchable'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'output'",
+                        {
+                          "PARM_DECL:'searchable'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'filter'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'searchable_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'searchable'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'searchable'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'searchable'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getAllNeighborsAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'neighbors'",
+                        {
+                          "PARM_DECL:'reference_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCentroids'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCovEigValueInflationRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'min_covar_eigvalue_mult_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_covar_eigvalue_mult_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDisplayCloud'": {
+                      "children": [
+                        "PARM_DECL:'cell_cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getFaceNeighborsAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'neighbors'",
+                        {
+                          "PARM_DECL:'reference_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getLeaf'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'ret'": {
+                                                    "children": [
+                                                      "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'ret'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'index'",
+                        "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getLeaf'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk0'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk1'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk2'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'idx'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'ret'": {
+                                                    "children": [
+                                                      "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'ret'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getLeaf'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk0'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk1'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ijk2'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'idx'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'ret'": {
+                                                    "children": [
+                                                      "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'ret'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_THIS_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'p'",
+                        "TYPE_REF:'pcl::VoxelGridCovariance::LeafConstPtr'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getLeaves'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMinPointPerVoxel'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'min_points_per_voxel_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'min_points_per_voxel_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNeighborhoodAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'neighbors'",
+                        {
+                          "PARM_DECL:'reference_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'relative_coordinates'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getNeighborhoodAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'neighbors'",
+                        {
+                          "PARM_DECL:'reference_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getVoxelAtPoint'": {
+                      "children": [
+                        "PARM_DECL:'neighbors'",
+                        {
+                          "PARM_DECL:'reference_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'k_indices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "CXX_THROW_EXPR:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'PCL_WARN'"
+                                                    ]
+                                                  }
+                                                },
+                                                "STRING_LITERAL:'\"%s: Not Searchable\"'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'searchable_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'searchable_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_leaves'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_leaves'",
+                        "PARM_DECL:'k_sqr_distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'k_indices'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'k'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "CXX_THROW_EXPR:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'PCL_WARN'"
+                                                    ]
+                                                  }
+                                                },
+                                                "STRING_LITERAL:'\"%s: Not Searchable\"'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'searchable_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'searchable_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k_leaves'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k_leaves'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setCovEigValueInflationRatio'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'min_covar_eigvalue_mult_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_covar_eigvalue_mult'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_covar_eigvalue_mult'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'min_covar_eigvalue_mult'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinPointPerVoxel'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "UNEXPOSED_EXPR:'min_points_per_voxel'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'min_points_per_voxel'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'min_points_per_voxel_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'min_points_per_voxel'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'min_points_per_voxel'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''",
+                                                "MEMBER_REF_EXPR:'min_points_per_voxel_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "CALL_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "CALL_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "MEMBER_REF_EXPR:''": {
+                                                                      "children": [
+                                                                        "CXX_THROW_EXPR:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_REF_EXPR:''": {
+                                                    "children": [
+                                                      "OVERLOADED_DECL_REF:'PCL_WARN'"
+                                                    ]
+                                                  }
+                                                },
+                                                "STRING_LITERAL:'\"%s: Covariance calculation requires at least 3 points, setting Min Point per Voxel to 3 \"'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'min_points_per_voxel'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'kdtree_'",
+                  "FIELD_DECL:'leaves_'",
+                  "FIELD_DECL:'min_covar_eigvalue_mult_'",
+                  "FIELD_DECL:'min_points_per_voxel_'",
+                  "FIELD_DECL:'searchable_'",
+                  "FIELD_DECL:'voxel_centroids_'",
+                  "FIELD_DECL:'voxel_centroids_leaf_indices_'",
+                  {
+                    "STRUCT_DECL:'Leaf'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Leaf'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "INTEGER_LITERAL:''",
+                              "MEMBER_REF:'nr_points'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getCov'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEvals'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEvecs'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getInverseCov'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getMean'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPointCount'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'nr_points'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'centroid'",
+                        "FIELD_DECL:'cov_'",
+                        "FIELD_DECL:'evals_'",
+                        "FIELD_DECL:'evecs_'",
+                        "FIELD_DECL:'icov_'",
+                        "FIELD_DECL:'mean_'",
+                        "FIELD_DECL:'nr_points'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  {
+                    "TYPE_ALIAS_DECL:'LeafConstPtr'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::VoxelGridCovariance::Leaf'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'LeafPtr'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::VoxelGridCovariance::Leaf'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

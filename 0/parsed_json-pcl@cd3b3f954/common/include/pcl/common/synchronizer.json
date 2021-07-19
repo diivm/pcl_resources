@@ -1,0 +1,266 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/synchronizer.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'deque'",
+      "INCLUSION_DIRECTIVE:'functional'",
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'utility'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Synchronizer'": {
+                "children": [
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'add0'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'publish'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'publish'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'t'": {
+                            "children": [
+                              "TYPE_REF:'T1'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'time'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'add1'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'publish'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'publish'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'t'": {
+                            "children": [
+                              "TYPE_REF:'T2'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'time'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'addCallback'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'callback_counter'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'callback'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'publish'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'t1'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'t2'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'do_publish'": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                            "DECL_REF_EXPR:'do_publish'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                            "DECL_REF_EXPR:'do_publish'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'publishData'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'publishData'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'do_publish'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'do_publish'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'publishData'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'removeCallback'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'i'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'callback_counter'": {
+                      "children": [
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'cb_'",
+                  "FIELD_DECL:'mutex1_'",
+                  "FIELD_DECL:'mutex2_'",
+                  "FIELD_DECL:'publish_mutex_'",
+                  "FIELD_DECL:'queueT1'",
+                  "FIELD_DECL:'queueT2'",
+                  "TEMPLATE_TYPE_PARAMETER:'T1'",
+                  "TEMPLATE_TYPE_PARAMETER:'T2'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

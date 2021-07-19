@@ -1,0 +1,549 @@
+{
+  "TRANSLATION_UNIT:'/pcl/outofcore/include/pcl/outofcore/octree_base.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PCLPointCloud2.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/filter.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/random_sample.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/boost.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/impl/outofcore_breadth_first_iterator.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/impl/outofcore_depth_first_iterator.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/metadata.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/octree_base_node.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/octree_disk_container.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/octree_ram_container.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/outofcore_base_data.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/outofcore_breadth_first_iterator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/outofcore_depth_first_iterator.h'",
+      "INCLUSION_DIRECTIVE:'pcl/outofcore/outofcore_iterator_base.h'",
+      "INCLUSION_DIRECTIVE:'shared_mutex'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'outofcore'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OutofcoreOctreeBase'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBase<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'load_all'",
+                              "PARM_DECL:'root_node_name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBase<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'coord_sys'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'resolution_arg'",
+                              "PARM_DECL:'root_node_name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBase<ContainerT, PointT>'": {
+                            "children": [
+                              "PARM_DECL:'coord_sys'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'max_depth'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'root_node_name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBase<ContainerT, PointT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'OutofcoreOctreeBase<ContainerT, PointT>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'DeAllocEmptyNodeCache'": {
+                            "children": [
+                              "PARM_DECL:'current'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'DeAllocEmptyNodeCache'",
+                        "CXX_METHOD:'addDataToLeaf'",
+                        "CXX_METHOD:'addDataToLeaf_and_genLOD'",
+                        "CXX_METHOD:'addPointCloud'",
+                        "CXX_METHOD:'addPointCloud'",
+                        "CXX_METHOD:'addPointCloud'",
+                        "CXX_METHOD:'addPointCloud_and_genLOD'",
+                        "CXX_METHOD:'addPointCloud_and_genLOD'",
+                        "CXX_METHOD:'buildLOD'",
+                        {
+                          "CXX_METHOD:'buildLODRecursive'": {
+                            "children": [
+                              "PARM_DECL:'current_branch'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'calculateDepth'",
+                        {
+                          "CXX_METHOD:'checkExtension'": {
+                            "children": [
+                              "PARM_DECL:'path_name'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'convertToXYZ'",
+                        {
+                          "CXX_METHOD:'enlargeToCube'": {
+                            "children": [
+                              "PARM_DECL:'bb_max'",
+                              "PARM_DECL:'bb_min'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'flushToDisk'",
+                        "CXX_METHOD:'flushToDiskLazy'",
+                        {
+                          "CXX_METHOD:'getBinDimension'": {
+                            "children": [
+                              "PARM_DECL:'x'",
+                              "PARM_DECL:'y'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'getBranchChildPtr'",
+                        {
+                          "CXX_METHOD:'getCoordSystem'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getDepth'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumPointsAtDepth'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumPointsVector'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCenters'": {
+                            "children": [
+                              "PARM_DECL:'query_depth'",
+                              "PARM_DECL:'voxel_centers'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCenters'": {
+                            "children": [
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCenters'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'voxel_centers'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getOccupiedVoxelCenters'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRootNode'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "MEMBER_REF_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THROW_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getSamplePercent'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'sample_percent_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getTreeDepth'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSideLength'": {
+                            "children": [
+                              "PARM_DECL:'depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getVoxelSideLength'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'incrementPointsInLOD'": {
+                            "children": [
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'inc'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'init'": {
+                            "children": [
+                              "PARM_DECL:'coord_sys'",
+                              "PARM_DECL:'depth'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'root_name'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator='": {
+                            "children": [
+                              {
+                                "PARM_DECL:'rval'": {
+                                  "children": [
+                                    "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'OutofcoreOctreeBase<ContainerT, PointT>'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'printBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'printBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'node'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'printBoundingBox'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes'": {
+                            "children": [
+                              "PARM_DECL:'dst_blob'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIncludes_subsample'": {
+                            "children": [
+                              "PARM_DECL:'dst'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'percent'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBBIntersects'": {
+                            "children": [
+                              "PARM_DECL:'bin_name'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBoundingBox'": {
+                            "children": [
+                              "PARM_DECL:'dst_blob'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              {
+                                "PARM_DECL:'percent'": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryBoundingBox'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'filenames'",
+                              "PARM_DECL:'max'",
+                              "PARM_DECL:'min'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'queryBoundingBoxNumPoints'",
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'file_names'",
+                              "PARM_DECL:'planes'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'file_names'",
+                              "PARM_DECL:'planes'",
+                              "PARM_DECL:'query_depth'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'queryFrustum'": {
+                            "children": [
+                              "PARM_DECL:'eye'",
+                              "PARM_DECL:'file_names'",
+                              "PARM_DECL:'planes'",
+                              "PARM_DECL:'query_depth'",
+                              "PARM_DECL:'view_projection_matrix'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'saveToFile'",
+                        {
+                          "CXX_METHOD:'setLODFilter'": {
+                            "children": [
+                              "PARM_DECL:'Ptr'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSamplePercent'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'sample_percent_arg'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'writeVPythonVisual'": {
+                            "children": [
+                              "PARM_DECL:'filename'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~OutofcoreOctreeBase<ContainerT, PointT>'",
+                        "FIELD_DECL:'ConstPtr'",
+                        "FIELD_DECL:'Ptr'",
+                        "FIELD_DECL:'metadata_'",
+                        "FIELD_DECL:'read_write_mutex_'",
+                        "FIELD_DECL:'root_node_'",
+                        "FIELD_DECL:'sample_percent_'",
+                        {
+                          "FRIEND_DECL:''": {
+                            "children": [
+                              "TYPE_REF:'class pcl::outofcore::OutofcoreOctreeBaseNode'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'ContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        "VAR_DECL:'LOAD_COUNT_'",
+                        "VAR_DECL:'OUTOFCORE_VERSION_'",
+                        "VAR_DECL:'TREE_EXTENSION_'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'OutofcoreParams'": {
+                      "children": [
+                        "FIELD_DECL:'node_container_basename_'",
+                        "FIELD_DECL:'node_container_extension_'",
+                        "FIELD_DECL:'node_index_basename_'",
+                        "FIELD_DECL:'node_index_extension_'",
+                        "FIELD_DECL:'sample_percent'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

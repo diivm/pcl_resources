@@ -1,0 +1,872 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/texture_mapping.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/TextureMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_search.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/reconstruction.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'TextureMapping'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'TextureMapping<PointInT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'f_'"
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'checkPointInsideTriangle'": {
+                      "children": [
+                        "PARM_DECL:'p1'",
+                        "PARM_DECL:'p2'",
+                        "PARM_DECL:'p3'",
+                        "PARM_DECL:'pt'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClassName'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPointUVCoordinates'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'pt'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'sizeX'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'width'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'width'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'sizeY'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'height'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'height'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'cx'",
+                                                "VAR_DECL:'cy'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                "VAR_DECL:'focal_x'",
+                                                "VAR_DECL:'focal_y'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'center_w'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'center_w'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cx'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'center_w'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'center_w'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "FLOATING_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'sizeX'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'cx'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'center_h'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'center_h'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'cy'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'center_h'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'center_h'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "FLOATING_LITERAL:''",
+                                                            {
+                                                              "UNEXPOSED_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "PAREN_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'sizeY'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "DECL_REF_EXPR:'cy'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length_w'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length_w'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'focal_x'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length_w'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length_w'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'focal_x'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length_h'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length_h'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'focal_y'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length_h'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length_h'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'focal_y'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'focal_length'": {
+                                                          "children": [
+                                                            {
+                                                              "MEMBER_REF_EXPR:'focal_length'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'cam'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "RETURN_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'UV_coordinates'",
+                        {
+                          "PARM_DECL:'cam'": {
+                            "children": [
+                              "TYPE_REF:'pcl::TextureMapping::Camera'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPointUVCoordinates'": {
+                      "children": [
+                        "PARM_DECL:'UV_coordinates'",
+                        {
+                          "PARM_DECL:'cam'": {
+                            "children": [
+                              "TYPE_REF:'pcl::TextureMapping::Camera'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTriangleCircumcenterAndSize'": {
+                      "children": [
+                        "PARM_DECL:'circumcenter'",
+                        "PARM_DECL:'p1'",
+                        "PARM_DECL:'p2'",
+                        "PARM_DECL:'p3'",
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getTriangleCircumcscribedCircleCentroid'": {
+                      "children": [
+                        "PARM_DECL:'circumcenter'",
+                        "PARM_DECL:'p1'",
+                        "PARM_DECL:'p2'",
+                        "PARM_DECL:'p3'",
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isFaceProjected'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'camera'": {
+                            "children": [
+                              "TYPE_REF:'pcl::TextureMapping::Camera'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p1'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p2'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p3'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'proj1'",
+                        "PARM_DECL:'proj2'",
+                        "PARM_DECL:'proj3'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isPointOccluded'": {
+                      "children": [
+                        "PARM_DECL:'octree'",
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'mapMultipleTexturesToMeshUV'": {
+                      "children": [
+                        "PARM_DECL:'cams'",
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'mapTexture2Mesh'": {
+                      "children": [
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'mapTexture2MeshUV'": {
+                      "children": [
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'removeOccludedPoints'": {
+                      "children": [
+                        "PARM_DECL:'filtered_cloud'",
+                        "PARM_DECL:'input_cloud'",
+                        "PARM_DECL:'occluded_indices'",
+                        "PARM_DECL:'octree_voxel_size'",
+                        "PARM_DECL:'visible_indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'removeOccludedPoints'": {
+                      "children": [
+                        "PARM_DECL:'cleaned_mesh'",
+                        "PARM_DECL:'octree_voxel_size'",
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'removeOccludedPoints'": {
+                      "children": [
+                        "PARM_DECL:'filtered_cloud'",
+                        "PARM_DECL:'octree_voxel_size'",
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setF'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'f_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'f'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'f'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'f'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTextureFiles'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'tex_files'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setTextureMaterials'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'tex_material'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setVectorField'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'x'",
+                        "PARM_DECL:'y'",
+                        "PARM_DECL:'z'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'showOcclusions'": {
+                      "children": [
+                        "PARM_DECL:'Ptr'",
+                        "PARM_DECL:'input_cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'showOcclusions'": {
+                      "children": [
+                        "PARM_DECL:'Ptr'",
+                        "PARM_DECL:'tex_mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'sortFacesByCamera'": {
+                      "children": [
+                        "PARM_DECL:'cameras'",
+                        "PARM_DECL:'octree_voxel_size'",
+                        "PARM_DECL:'sorted_mesh'",
+                        "PARM_DECL:'tex_mesh'",
+                        "PARM_DECL:'visible_pts'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'textureMeshwithMultipleCameras'": {
+                      "children": [
+                        "PARM_DECL:'cameras'",
+                        "PARM_DECL:'mesh'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~TextureMapping<PointInT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'f_'",
+                  "FIELD_DECL:'tex_files_'",
+                  "FIELD_DECL:'tex_material_'",
+                  "FIELD_DECL:'vector_field_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  {
+                    "TYPE_ALIAS_DECL:'Camera'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'",
+                        "NAMESPACE_REF:'texture_mapping'",
+                        "TYPE_REF:'struct pcl::texture_mapping::Camera'"
+                      ]
+                    }
+                  },
+                  {
+                    "TYPE_ALIAS_DECL:'UvIndex'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'",
+                        "NAMESPACE_REF:'texture_mapping'",
+                        "TYPE_REF:'struct pcl::texture_mapping::UvIndex'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "NAMESPACE:'texture_mapping'": {
+                "children": [
+                  {
+                    "STRUCT_DECL:'Camera'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'Camera'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'center_h'",
+                              "MEMBER_REF:'center_w'",
+                              "MEMBER_REF:'focal_length'",
+                              "MEMBER_REF:'focal_length_h'",
+                              "MEMBER_REF:'focal_length_w'",
+                              "MEMBER_REF:'height'",
+                              "MEMBER_REF:'width'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'center_h'",
+                        "FIELD_DECL:'center_w'",
+                        "FIELD_DECL:'focal_length'",
+                        "FIELD_DECL:'focal_length_h'",
+                        "FIELD_DECL:'focal_length_w'",
+                        "FIELD_DECL:'height'",
+                        "FIELD_DECL:'pose'",
+                        "FIELD_DECL:'texture_file'",
+                        "FIELD_DECL:'width'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'UvIndex'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'UvIndex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'idx_cloud'",
+                              "MEMBER_REF:'idx_face'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'idx_cloud'",
+                        "FIELD_DECL:'idx_face'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

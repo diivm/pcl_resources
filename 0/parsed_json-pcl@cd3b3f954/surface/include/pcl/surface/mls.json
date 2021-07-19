@@ -1,0 +1,1513 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/mls.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'functional'",
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      "INCLUSION_DIRECTIVE:'pcl/surface/processing.h'",
+      "INCLUSION_DIRECTIVE:'random'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'MovingLeastSquares'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'MLSVoxelGrid'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'MLSVoxelGrid'": {
+                            "children": [
+                              "PARM_DECL:'cloud'",
+                              "PARM_DECL:'indices'",
+                              "PARM_DECL:'voxel_size'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_METHOD:'dilate'",
+                        {
+                          "CXX_METHOD:'getCellIndex'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'index'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector3i'"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'p'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector3f'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndexIn1D'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'index'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector3i'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'index_1d'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getIndexIn3D'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'index_1d'",
+                              {
+                                "PARM_DECL:'index_3d'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector3i'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getPosition'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "DECL_STMT:''": {
+                                        "children": [
+                                          {
+                                            "VAR_DECL:'index_3d'": {
+                                              "children": [
+                                                "NAMESPACE_REF:'Eigen'",
+                                                "TYPE_REF:'Eigen::Vector3i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'index_1d'",
+                              {
+                                "PARM_DECL:'point'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "TYPE_REF:'Eigen::Vector3f'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'bounding_max_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'bounding_min_'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector4f'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'data_size_'",
+                        {
+                          "FIELD_DECL:'voxel_grid_'": {
+                            "children": [
+                              "TYPE_REF:'pcl::MovingLeastSquares::MLSVoxelGrid::HashMap'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'voxel_size_'",
+                        {
+                          "STRUCT_DECL:'Leaf'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Leaf'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF:'valid'"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'valid'"
+                            ]
+                          }
+                        },
+                        "TYPEDEF_DECL:'HashMap'"
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'MovingLeastSquares<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        {
+                          "DECL_REF_EXPR:'SIMPLE'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::MLSResult'"
+                            ]
+                          }
+                        },
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'cache_mls_results_'",
+                        "MEMBER_REF:'compute_normals_'",
+                        "MEMBER_REF:'desired_num_points_in_radius_'",
+                        "MEMBER_REF:'dilation_iteration_num_'",
+                        "MEMBER_REF:'nr_coeff_'",
+                        "MEMBER_REF:'order_'",
+                        "MEMBER_REF:'projection_method_'",
+                        "MEMBER_REF:'search_radius_'",
+                        "MEMBER_REF:'sqr_gauss_param_'",
+                        "MEMBER_REF:'threads_'",
+                        "MEMBER_REF:'upsample_method_'",
+                        "MEMBER_REF:'upsampling_radius_'",
+                        "MEMBER_REF:'upsampling_step_'",
+                        "MEMBER_REF:'voxel_size_'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'NONE'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'addProjectedPointNormal'": {
+                      "children": [
+                        "PARM_DECL:'corresponding_input_indices'",
+                        "PARM_DECL:'curvature'",
+                        "PARM_DECL:'index'",
+                        {
+                          "PARM_DECL:'normal'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'projected_points'",
+                        "PARM_DECL:'projected_points_normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeMLSPointNormal'": {
+                      "children": [
+                        "PARM_DECL:'corresponding_input_indices'",
+                        "PARM_DECL:'index'",
+                        {
+                          "PARM_DECL:'mls_result'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::MLSResult'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'nn_indices'",
+                        "PARM_DECL:'projected_points'",
+                        "PARM_DECL:'projected_points_normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'copyMissingFields'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'point_in'": {
+                            "children": [
+                              "TYPE_REF:'PointInT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point_out'": {
+                            "children": [
+                              "TYPE_REF:'PointOutT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCacheMLSResults'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'cache_mls_results_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getClassName'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getCorrespondingIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDilationIterations'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'dilation_iteration_num_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDilationVoxelSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'voxel_size_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistinctCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMLSResults'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPointDensity'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'desired_num_points_in_radius_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPolynomialOrder'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'order_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getProjectionMethod'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'projection_method_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'enum pcl::MLSResult::ProjectionMethod'",
+                        "TYPE_REF:'struct pcl::MLSResult'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSearchRadius'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'search_radius_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getSqrGaussParam'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'sqr_gauss_param_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getUpsamplingRadius'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'upsampling_radius_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getUpsamplingStepSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'upsampling_step_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performProcessing'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'performUpsampling'": {
+                      "children": [
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'process'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'output'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'searchForNeighbors'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'indices'",
+                        "PARM_DECL:'sqr_distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setCacheMLSResults'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'cache_mls_results_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'cache_mls_results'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cache_mls_results'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cache_mls_results'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setComputeNormals'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'compute_normals_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'compute_normals'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'compute_normals'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'compute_normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDilationIterations'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'dilation_iteration_num_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'iterations'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'iterations'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'iterations'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDilationVoxelSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'voxel_size_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'voxel_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'voxel_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'voxel_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setDistinctCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'distinct_cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setNumberOfThreads'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'threads_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'threads'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'threads'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'threads'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPointDensity'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'desired_num_points_in_radius_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'desired_num_points_in_radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'desired_num_points_in_radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'desired_num_points_in_radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPolynomialOrder'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'order_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'order'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'order'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'order'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setProjectionMethod'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'projection_method_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'method'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'method'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::MLSResult::ProjectionMethod'",
+                              "TYPE_REF:'struct pcl::MLSResult'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'tree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchRadius'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'search_radius_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'search_radius_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'search_radius_'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNEXPOSED_EXPR:'search_radius_'": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'search_radius_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "MEMBER_REF_EXPR:'sqr_gauss_param_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSqrGaussParam'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sqr_gauss_param_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sqr_gauss_param'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'sqr_gauss_param'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'sqr_gauss_param'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setUpsamplingMethod'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'method'",
+                                    "MEMBER_REF_EXPR:'upsample_method_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::MovingLeastSquares::UpsamplingMethod'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setUpsamplingRadius'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'upsampling_radius_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'radius'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'radius'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setUpsamplingStepSize'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'upsampling_step_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'step_size'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'step_size'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'step_size'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~MovingLeastSquares<PointInT, PointOutT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'UpsamplingMethod'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'DISTINCT_CLOUD'",
+                        "ENUM_CONSTANT_DECL:'NONE'",
+                        "ENUM_CONSTANT_DECL:'RANDOM_UNIFORM_DENSITY'",
+                        "ENUM_CONSTANT_DECL:'SAMPLE_LOCAL_PLANE'",
+                        "ENUM_CONSTANT_DECL:'VOXEL_GRID_DILATION'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'cache_mls_results_'",
+                  "FIELD_DECL:'compute_normals_'",
+                  "FIELD_DECL:'corresponding_input_indices_'",
+                  "FIELD_DECL:'desired_num_points_in_radius_'",
+                  "FIELD_DECL:'dilation_iteration_num_'",
+                  "FIELD_DECL:'distinct_cloud_'",
+                  "FIELD_DECL:'mls_results_'",
+                  "FIELD_DECL:'normals_'",
+                  "FIELD_DECL:'nr_coeff_'",
+                  "FIELD_DECL:'order_'",
+                  {
+                    "FIELD_DECL:'projection_method_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::MLSResult::ProjectionMethod'",
+                        "TYPE_REF:'struct pcl::MLSResult'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'rng_'",
+                  "FIELD_DECL:'search_method_'",
+                  "FIELD_DECL:'search_radius_'",
+                  "FIELD_DECL:'sqr_gauss_param_'",
+                  "FIELD_DECL:'threads_'",
+                  "FIELD_DECL:'tree_'",
+                  {
+                    "FIELD_DECL:'upsample_method_'": {
+                      "children": [
+                        "TYPE_REF:'enum pcl::MovingLeastSquares::UpsamplingMethod'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'upsampling_radius_'",
+                  "FIELD_DECL:'upsampling_step_'",
+                  "FIELD_DECL:'voxel_size_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointInT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointOutT'",
+                  "TYPEDEF_DECL:'ConstPtr'",
+                  "TYPEDEF_DECL:'Ptr'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'MLSResult'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'MLSResult'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "FLOATING_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "INTEGER_LITERAL:''",
+                        "MEMBER_REF:'curvature'",
+                        "MEMBER_REF:'num_neighbors'",
+                        "MEMBER_REF:'order'",
+                        "MEMBER_REF:'valid'"
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'MLSResult'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'a_c_vec'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::VectorXd'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a_curvature'",
+                        {
+                          "PARM_DECL:'a_mean'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'a_num_neighbors'",
+                        "PARM_DECL:'a_order'",
+                        {
+                          "PARM_DECL:'a_plane_normal'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'a_query_point'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'a_u'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'a_v'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'PCL_DEPRECATED'",
+                  {
+                    "CXX_METHOD:'calculatePrincipalCurvatures'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "TYPE_REF:'Eigen::Vector2f'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMLSCoordinates'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "PARM_DECL:'w'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMLSCoordinates'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPolynomialPartialDerivative'": {
+                      "children": [
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "TYPE_REF:'struct pcl::MLSResult::PolynomialPartialDerivative'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getPolynomialValue'": {
+                      "children": [
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoint'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::MLSResult::ProjectionMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'pt'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'required_neighbors'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'struct pcl::MLSResult::MLSProjectionResults'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPointOrthogonalToPolynomialSurface'": {
+                      "children": [
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "PARM_DECL:'w'",
+                        "TYPE_REF:'struct pcl::MLSResult::MLSProjectionResults'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPointSimpleToPolynomialSurface'": {
+                      "children": [
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "TYPE_REF:'struct pcl::MLSResult::MLSProjectionResults'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPointToMLSPlane'": {
+                      "children": [
+                        "PARM_DECL:'u'",
+                        "PARM_DECL:'v'",
+                        "TYPE_REF:'struct pcl::MLSResult::MLSProjectionResults'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectQueryPoint'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'method'": {
+                            "children": [
+                              "TYPE_REF:'enum pcl::MLSResult::ProjectionMethod'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'required_neighbors'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "TYPE_REF:'struct pcl::MLSResult::MLSProjectionResults'"
+                      ]
+                    }
+                  },
+                  {
+                    "ENUM_DECL:'ProjectionMethod'": {
+                      "children": [
+                        "ENUM_CONSTANT_DECL:'NONE'",
+                        "ENUM_CONSTANT_DECL:'ORTHOGONAL'",
+                        "ENUM_CONSTANT_DECL:'SIMPLE'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'c_vec'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::VectorXd'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'curvature'",
+                  {
+                    "FIELD_DECL:'mean'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3d'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'num_neighbors'",
+                  "FIELD_DECL:'order'",
+                  {
+                    "FIELD_DECL:'plane_normal'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3d'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'query_point'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3d'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'u_axis'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3d'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'v_axis'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector3d'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'valid'",
+                  {
+                    "FUNCTION_TEMPLATE:'computeMLSSurface'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'nn_indices'",
+                        {
+                          "PARM_DECL:'polynomial_order'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'search_radius'",
+                        {
+                          "PARM_DECL:'weight_func'": {
+                            "children": [
+                              "INIT_LIST_EXPR:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'MLSProjectionResults'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'MLSProjectionResults'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "MEMBER_REF:'u'",
+                              "MEMBER_REF:'v'",
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'normal'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'point'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3d'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'u'",
+                        "FIELD_DECL:'v'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'PolynomialPartialDerivative'": {
+                      "children": [
+                        "FIELD_DECL:'z'",
+                        "FIELD_DECL:'z_u'",
+                        "FIELD_DECL:'z_uu'",
+                        "FIELD_DECL:'z_uv'",
+                        "FIELD_DECL:'z_v'",
+                        "FIELD_DECL:'z_vv'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

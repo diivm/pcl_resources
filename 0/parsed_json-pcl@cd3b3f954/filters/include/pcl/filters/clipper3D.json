@@ -1,0 +1,103 @@
+{
+  "TRANSLATION_UNIT:'/pcl/filters/include/pcl/filters/clipper3D.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/StdVector'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'vector'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'Clipper3D'": {
+                "children": [
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'clipLineSegment3D'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'pt1'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'pt2'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPlanarPolygon3D'": {
+                      "children": [
+                        "PARM_DECL:'clipped_polygon'",
+                        "PARM_DECL:'polygon'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPoint3D'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clipPointCloud3D'": {
+                      "children": [
+                        "PARM_DECL:'clipped'",
+                        "PARM_DECL:'cloud_in'",
+                        {
+                          "PARM_DECL:'indices'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'clone'": {
+                      "children": [
+                        "TEMPLATE_REF:'Clipper3D'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~Clipper3D<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

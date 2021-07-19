@@ -1,0 +1,196 @@
+{
+  "TRANSLATION_UNIT:'/pcl/visualization/src/cloud_viewer.cpp'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/cloud_viewer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      "INCLUSION_DIRECTIVE:'vtkOrientationMarkerWidget.h'",
+      "INCLUSION_DIRECTIVE:'vtkRenderWindowInteractor.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'cloud_show'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'cloud_show<CloudT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "MEMBER_REF:'cloud'",
+                        "MEMBER_REF:'cloud_name'",
+                        "MEMBER_REF:'popped_'",
+                        {
+                          "PARM_DECL:'cloud'": {
+                            "children": [
+                              "TYPE_REF:'CloudT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'cloud_name'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'viewer'",
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "DECL_REF_EXPR:'cloud'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'cloud_name'": {
+                            "children": [
+                              "DECL_REF_EXPR:'cloud_name'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_BASE_SPECIFIER:'struct pcl::cloud_show_base'": {
+                      "children": [
+                        "TYPE_REF:'struct pcl::cloud_show_base'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'pop'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'popped'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'popped_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'popped_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'cloud'": {
+                      "children": [
+                        "TYPE_REF:'CloudT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FIELD_DECL:'cloud_name'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'popped_'",
+                  "FIELD_DECL:'viewer'",
+                  {
+                    "FUNCTION_TEMPLATE:'pop'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "MEMBER_REF_EXPR:'popped_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'linesize'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'opacity'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "VAR_DECL:'psize'": {
+                                        "children": [
+                                          "FLOATING_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'handler'": {
+                            "children": [
+                              "TYPE_REF:'Handler'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'Handler'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'CloudT'"
+                ]
+              }
+            },
+            {
+              "STRUCT_DECL:'cloud_show_base'": {
+                "children": [
+                  "CXX_METHOD:'pop'",
+                  "CXX_METHOD:'popped'",
+                  "DESTRUCTOR:'~cloud_show_base'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "STRUCT_DECL:''"
+    ]
+  }
+}

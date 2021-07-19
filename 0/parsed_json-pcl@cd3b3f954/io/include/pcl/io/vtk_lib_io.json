@@ -1,0 +1,79 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/vtk_lib_io.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/PolygonMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/TextureMesh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/conversions.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/impl/vtk_lib_io.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/range_image/range_image_planar.h'",
+      "INCLUSION_DIRECTIVE:'vtkCellArray.h'",
+      "INCLUSION_DIRECTIVE:'vtkFloatArray.h'",
+      "INCLUSION_DIRECTIVE:'vtkImageData.h'",
+      "INCLUSION_DIRECTIVE:'vtkOBJReader.h'",
+      "INCLUSION_DIRECTIVE:'vtkPLYReader.h'",
+      "INCLUSION_DIRECTIVE:'vtkPLYWriter.h'",
+      "INCLUSION_DIRECTIVE:'vtkPNGReader.h'",
+      "INCLUSION_DIRECTIVE:'vtkPointData.h'",
+      "INCLUSION_DIRECTIVE:'vtkPoints.h'",
+      "INCLUSION_DIRECTIVE:'vtkPolyDataNormals.h'",
+      "INCLUSION_DIRECTIVE:'vtkPolyDataReader.h'",
+      "INCLUSION_DIRECTIVE:'vtkPolyDataWriter.h'",
+      "INCLUSION_DIRECTIVE:'vtkSTLReader.h'",
+      "INCLUSION_DIRECTIVE:'vtkSTLWriter.h'",
+      "INCLUSION_DIRECTIVE:'vtkSmartPointer.h'",
+      "INCLUSION_DIRECTIVE:'vtkStructuredGrid.h'",
+      "INCLUSION_DIRECTIVE:'vtkUnsignedCharArray.h'",
+      "MACRO_INSTANTIATION:'__GNUC__'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  "FUNCTION_DECL:'loadPolygonFile'",
+                  "FUNCTION_DECL:'loadPolygonFileOBJ'",
+                  "FUNCTION_DECL:'loadPolygonFileOBJ'",
+                  "FUNCTION_DECL:'loadPolygonFilePLY'",
+                  "FUNCTION_DECL:'loadPolygonFileSTL'",
+                  "FUNCTION_DECL:'loadPolygonFileVTK'",
+                  "FUNCTION_DECL:'mesh2vtk'",
+                  "FUNCTION_DECL:'pointCloudTovtkPolyData'",
+                  "FUNCTION_DECL:'savePolygonFile'",
+                  "FUNCTION_DECL:'savePolygonFilePLY'",
+                  "FUNCTION_DECL:'savePolygonFileSTL'",
+                  "FUNCTION_DECL:'savePolygonFileVTK'",
+                  "FUNCTION_DECL:'saveRangeImagePlanarFilePNG'",
+                  "FUNCTION_DECL:'vtk2mesh'",
+                  "FUNCTION_DECL:'vtk2mesh'",
+                  {
+                    "FUNCTION_TEMPLATE:'pointCloudTovtkPolyData'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'polydata'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'pointCloudTovtkStructuredGrid'": {
+                      "children": [
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'structured_grid'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  "UNEXPOSED_DECL:'vtkPolyDataToPointCloud'",
+                  "UNEXPOSED_DECL:'vtkStructuredGridToPointCloud'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

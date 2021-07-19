@@ -1,0 +1,762 @@
+{
+  "TRANSLATION_UNIT:'/pcl/doc/tutorials/content/sources/template_alignment/template_alignment.cpp'": {
+    "children": [
+      {
+        "CLASS_DECL:'FeatureCloud'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'FeatureCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  "FLOATING_LITERAL:''",
+                  "FLOATING_LITERAL:''",
+                  "MEMBER_REF:'feature_radius_'",
+                  "MEMBER_REF:'normal_radius_'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'computeLocalFeatures'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'computeSurfaceNormals'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'getLocalFeatures'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'getPointCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'getSurfaceNormals'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'loadInputCloud'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'processInput'": {
+                            "children": [
+                              "MEMBER_REF_EXPR:'processInput'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pcd_file'": {
+                      "children": [
+                        "NAMESPACE_REF:'std'",
+                        "TYPE_REF:'std::string'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'processInput'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'computeLocalFeatures'": {
+                            "children": [
+                              "MEMBER_REF_EXPR:'computeLocalFeatures'"
+                            ]
+                          }
+                        },
+                        {
+                          "CALL_EXPR:'computeSurfaceNormals'": {
+                            "children": [
+                              "MEMBER_REF_EXPR:'computeSurfaceNormals'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'setInputCloud'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "CALL_EXPR:'processInput'": {
+                            "children": [
+                              "MEMBER_REF_EXPR:'processInput'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'xyz'"
+                ]
+              }
+            },
+            {
+              "DESTRUCTOR:'~FeatureCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            "FIELD_DECL:'feature_radius_'",
+            "FIELD_DECL:'features_'",
+            "FIELD_DECL:'normal_radius_'",
+            "FIELD_DECL:'normals_'",
+            "FIELD_DECL:'search_method_xyz_'",
+            "FIELD_DECL:'xyz_'",
+            "TYPEDEF_DECL:'LocalFeatures'",
+            "TYPEDEF_DECL:'PointCloud'",
+            "TYPEDEF_DECL:'SearchMethod'",
+            "TYPEDEF_DECL:'SurfaceNormals'"
+          ]
+        }
+      },
+      {
+        "CLASS_DECL:'TemplateAlignment'": {
+          "children": [
+            {
+              "CONSTRUCTOR:'TemplateAlignment'": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "FLOATING_LITERAL:''",
+                        "FLOATING_LITERAL:''"
+                      ]
+                    }
+                  },
+                  "COMPOUND_STMT:''",
+                  "FLOATING_LITERAL:''",
+                  "INTEGER_LITERAL:''",
+                  "MEMBER_REF:'max_correspondence_distance_'",
+                  "MEMBER_REF:'min_sample_distance_'",
+                  "MEMBER_REF:'nr_iterations_'"
+                ]
+              }
+            },
+            "CXX_ACCESS_SPEC_DECL:''",
+            "CXX_ACCESS_SPEC_DECL:''",
+            {
+              "CXX_METHOD:'addTemplateCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'template_cloud'": {
+                      "children": [
+                        "TYPE_REF:'class FeatureCloud'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'align'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'result'": {
+                      "children": [
+                        "TYPE_REF:'class TemplateAlignment'",
+                        "TYPE_REF:'struct TemplateAlignment::Result'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'template_cloud'": {
+                      "children": [
+                        "TYPE_REF:'class FeatureCloud'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'alignAll'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'results'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "NAMESPACE_REF:'std'",
+                        "TEMPLATE_REF:'aligned_allocator'",
+                        "TEMPLATE_REF:'vector'",
+                        "TYPE_REF:'class TemplateAlignment'",
+                        "TYPE_REF:'struct TemplateAlignment::Result'",
+                        "TYPE_REF:'struct TemplateAlignment::Result'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'findBestAlignment'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'results'": {
+                                  "children": [
+                                    "NAMESPACE_REF:'Eigen'",
+                                    "NAMESPACE_REF:'std'",
+                                    "TEMPLATE_REF:'aligned_allocator'",
+                                    "TEMPLATE_REF:'vector'",
+                                    "TYPE_REF:'struct TemplateAlignment::Result'",
+                                    "TYPE_REF:'struct TemplateAlignment::Result'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'lowest_score'": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:'infinity'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:'infinity'": {
+                                              "children": [
+                                                {
+                                                  "DECL_REF_EXPR:'infinity'": {
+                                                    "children": [
+                                                      "NAMESPACE_REF:'std'",
+                                                      "TEMPLATE_REF:'numeric_limits'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'best_template'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'best_template'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'result'": {
+                      "children": [
+                        "TYPE_REF:'class TemplateAlignment'",
+                        "TYPE_REF:'struct TemplateAlignment::Result'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "CXX_METHOD:'setTargetCloud'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'target_cloud'": {
+                      "children": [
+                        "TYPE_REF:'class FeatureCloud'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "DESTRUCTOR:'~TemplateAlignment'": {
+                "children": [
+                  "COMPOUND_STMT:''"
+                ]
+              }
+            },
+            "FIELD_DECL:'max_correspondence_distance_'",
+            "FIELD_DECL:'min_sample_distance_'",
+            "FIELD_DECL:'nr_iterations_'",
+            "FIELD_DECL:'sac_ia_'",
+            {
+              "FIELD_DECL:'target_'": {
+                "children": [
+                  "TYPE_REF:'class FeatureCloud'"
+                ]
+              }
+            },
+            "FIELD_DECL:'templates_'",
+            {
+              "STRUCT_DECL:'Result'": {
+                "children": [
+                  {
+                    "FIELD_DECL:'final_transformation'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Matrix4f'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'fitness_score'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "CALL_EXPR:'printf'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"Best fitness score: %f\\n\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'fitness_score'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'fitness_score'": {
+                                  "children": [
+                                    {
+                                      "MEMBER_REF_EXPR:'fitness_score'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'best_alignment'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'printf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'printf'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CALL_EXPR:'printf'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"\\n\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'printf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'printf'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CALL_EXPR:'printf'": {
+                      "children": [
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "STRING_LITERAL:'\"\\n\"'"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'printf'": {
+                            "children": [
+                              "DECL_REF_EXPR:'printf'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CALL_EXPR:'setTargetCloud'": {
+                      "children": [
+                        "DECL_REF_EXPR:'target_cloud'",
+                        {
+                          "MEMBER_REF_EXPR:'setTargetCloud'": {
+                            "children": [
+                              "DECL_REF_EXPR:'template_align'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'object_templates'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'input_stream'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::ifstream'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pcd_filename'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'depth_limit'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'voxel_grid_size'": {
+                            "children": [
+                              "FLOATING_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'target_cloud'": {
+                            "children": [
+                              "CALL_EXPR:'FeatureCloud'",
+                              "TYPE_REF:'class FeatureCloud'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'template_align'": {
+                            "children": [
+                              "CALL_EXPR:'TemplateAlignment'",
+                              "TYPE_REF:'class TemplateAlignment'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'best_alignment'": {
+                            "children": [
+                              "CALL_EXPR:'Result'",
+                              "TYPE_REF:'class TemplateAlignment'",
+                              "TYPE_REF:'struct TemplateAlignment::Result'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'best_index'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'findBestAlignment'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'best_alignment'",
+                                    {
+                                      "MEMBER_REF_EXPR:'findBestAlignment'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'template_align'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'best_template'": {
+                            "children": [
+                              "TYPE_REF:'class FeatureCloud'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'rotation'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Matrix3f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'translation'": {
+                            "children": [
+                              "NAMESPACE_REF:'Eigen'",
+                              "TYPE_REF:'Eigen::Vector3f'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'argc'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'argc'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'printf'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"No target PCD file given!\\n\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'printf'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'printf'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        {
+                          "PAREN_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'fstream'",
+      "INCLUSION_DIRECTIVE:'limits'",
+      "INCLUSION_DIRECTIVE:'pcl/features/fpfh.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/normal_3d.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/passthrough.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/voxel_grid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/kdtree/kdtree_flann.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/ia_ransac.h'",
+      "INCLUSION_DIRECTIVE:'vector'"
+    ]
+  }
+}

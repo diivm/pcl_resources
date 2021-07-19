@@ -1,0 +1,176 @@
+{
+  "TRANSLATION_UNIT:'/pcl/io/include/pcl/io/pcd_io.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/interprocess/sync/file_lock.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/io/file_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/impl/pcd_io.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            "CLASS_DECL:'PCL_EXPORTS'",
+            {
+              "NAMESPACE:'io'": {
+                "children": [
+                  {
+                    "FUNCTION_DECL:'loadPCDFile'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'loadPCDFile'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'pcd_version'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'orientation'",
+                        "PARM_DECL:'origin'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_DECL:'savePCDFile'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'binary_mode'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        {
+                          "PARM_DECL:'orientation'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'origin'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'loadPCDFile'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'savePCDFile'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'binary_mode'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'savePCDFile'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        {
+                          "PARM_DECL:'binary_mode'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "PARM_DECL:'indices'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'savePCDFileASCII'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'savePCDFileBinary'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'savePCDFileBinaryCompressed'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'file_name'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'PCDReader'": {
+                "children": [
+                  "TYPE_REF:'class pcl::PCL_EXPORTS'"
+                ]
+              }
+            },
+            {
+              "VAR_DECL:'PCDWriter'": {
+                "children": [
+                  "TYPE_REF:'class pcl::PCL_EXPORTS'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

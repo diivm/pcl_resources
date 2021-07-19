@@ -1,0 +1,481 @@
+{
+  "TRANSLATION_UNIT:'/pcl/kdtree/include/pcl/kdtree/kdtree.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/copy_point.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_representation.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'KdTree'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'KdTree<PointT>'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'sorted'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'getEpsilon'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'epsilon_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getIndices'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getInputCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getMinPts'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'min_pts_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'getName'",
+                  {
+                    "CXX_METHOD:'getPointRepresentation'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'p_q'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'nearestKSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'p_q'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'radiusSearch'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'index'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setEpsilon'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'epsilon_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'eps'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'eps'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'eps'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'indices'": {
+                            "children": [
+                              "UNEXPOSED_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setMinPts'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'min_pts_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'min_pts'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'min_pts'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'min_pts'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setPointRepresentation'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "RETURN_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'point_representation'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~KdTree<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'epsilon_'",
+                  "FIELD_DECL:'indices_'",
+                  "FIELD_DECL:'input_'",
+                  "FIELD_DECL:'min_pts_'",
+                  "FIELD_DECL:'point_representation_'",
+                  "FIELD_DECL:'sorted_'",
+                  {
+                    "FUNCTION_TEMPLATE:'nearestKSearchT'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'copyPoint'"
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'p'",
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'p'": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k'",
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointTDiff'"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointTDiff'"
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'radiusSearchT'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "DECL_REF_EXPR:''": {
+                                        "children": [
+                                          "OVERLOADED_DECL_REF:'copyPoint'"
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'p'",
+                                    "DECL_REF_EXPR:'point'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'p'": {
+                                        "children": [
+                                          "TYPE_REF:'PointT'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'k_indices'",
+                        "PARM_DECL:'k_sqr_distances'",
+                        {
+                          "PARM_DECL:'max_nn'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'point'": {
+                            "children": [
+                              "TYPE_REF:'PointTDiff'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'radius'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTDiff'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

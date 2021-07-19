@@ -1,0 +1,144 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/surfel_smoothing.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/search/search.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SurfelSmoothing'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SurfelSmoothing<PointT, PointNT>'": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'a_scale'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'a_scale'"
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'a_scale'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'a_scale'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'scale_'",
+                        "MEMBER_REF:'scale_squared_'",
+                        {
+                          "PARM_DECL:'a_scale'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:''": {
+                                  "children": [
+                                    "FLOATING_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'a_scale'": {
+                            "children": [
+                              "DECL_REF_EXPR:'a_scale'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeSmoothedCloud'": {
+                      "children": [
+                        "PARM_DECL:'output_normals'",
+                        "PARM_DECL:'output_positions'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'extractSalientFeaturesBetweenScales'": {
+                      "children": [
+                        "PARM_DECL:'cloud2'",
+                        "PARM_DECL:'cloud2_normals'",
+                        "PARM_DECL:'output_features'"
+                      ]
+                    }
+                  },
+                  "CXX_METHOD:'initCompute'",
+                  {
+                    "CXX_METHOD:'setInputNormals'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a_normals'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setSearchMethod'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "PARM_DECL:'a_tree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'smoothCloudIteration'": {
+                      "children": [
+                        "PARM_DECL:'output_normals'",
+                        "PARM_DECL:'output_positions'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'smoothPoint'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'output_normal'": {
+                            "children": [
+                              "TYPE_REF:'PointNT'"
+                            ]
+                          }
+                        },
+                        {
+                          "PARM_DECL:'output_point'": {
+                            "children": [
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'point_index'"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'interm_cloud_'",
+                  "FIELD_DECL:'interm_normals_'",
+                  "FIELD_DECL:'normals_'",
+                  "FIELD_DECL:'scale_'",
+                  "FIELD_DECL:'scale_squared_'",
+                  "FIELD_DECL:'tree_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointNT'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                  "TYPEDEF_DECL:'ConstPtr'",
+                  "TYPEDEF_DECL:'Ptr'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

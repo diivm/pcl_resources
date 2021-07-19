@@ -1,0 +1,72 @@
+{
+  "TRANSLATION_UNIT:'/pcl/registration/include/pcl/registration/transformation_validation.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/correspondence.h'",
+      "INCLUSION_DIRECTIVE:'pcl/features/feature.h'",
+      "INCLUSION_DIRECTIVE:'pcl/registration/correspondence_types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'registration'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'TransformationValidation'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'TransformationValidation<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'isValid'": {
+                            "children": [
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator()'": {
+                            "children": [
+                              "PARM_DECL:'score1'",
+                              "PARM_DECL:'score2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'validateTransformation'": {
+                            "children": [
+                              "PARM_DECL:'cloud_src'",
+                              "PARM_DECL:'cloud_tgt'",
+                              "PARM_DECL:'transformation_matrix'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~TransformationValidation<PointSource, PointTarget, Scalar>'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "TEMPLATE_TYPE_PARAMETER:'PointSource'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointTarget'",
+                        "TEMPLATE_TYPE_PARAMETER:'Scalar'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/src/print.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'getVerbosityLevel'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'initVerbosityLevel'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "DECL_REF_EXPR:'s_NeedVerbosityInit'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'pcl_verbosity_level'": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'getenv'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "STRING_LITERAL:'\"PCL_VERBOSITY_LEVEL\"'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'getenv'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'getenv'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'s_pcl_verbosity_level'": {
+                                        "children": [
+                                          "NAMESPACE_REF:'std'",
+                                          "TYPE_REF:'std::string'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:'pcl_verbosity_level'": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'pcl_verbosity_level'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'pcl_verbosity_level'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "RETURN_STMT:''": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'isVerbosityLevelEnabled'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'",
+            "PARM_DECL:'level'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'print'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'ap'": {
+                            "children": [
+                              "TYPE_REF:'va_list'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "RETURN_STMT:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'",
+            "PARM_DECL:'format'",
+            "PARM_DECL:'level'",
+            {
+              "PARM_DECL:'stream'": {
+                "children": [
+                  "TYPE_REF:'FILE'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'print'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'stream'": {
+                            "children": [
+                              "TYPE_REF:'FILE'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'ap'": {
+                            "children": [
+                              "TYPE_REF:'va_list'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "RETURN_STMT:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'",
+            "PARM_DECL:'format'",
+            "PARM_DECL:'level'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'setVerbosityLevel'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            "NAMESPACE_REF:'console'",
+            "NAMESPACE_REF:'pcl'",
+            "PARM_DECL:'level'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'useColoredOutput'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'colored'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'stream'": {
+                "children": [
+                  "TYPE_REF:'FILE'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'algorithm'",
+      "INCLUSION_DIRECTIVE:'boost/optional.hpp'",
+      "INCLUSION_DIRECTIVE:'cctype'",
+      "INCLUSION_DIRECTIVE:'cstdarg'",
+      "INCLUSION_DIRECTIVE:'cstdio'",
+      "INCLUSION_DIRECTIVE:'cstdlib'",
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'pcl/console/print.h'",
+      "INCLUSION_DIRECTIVE:'string'",
+      "INCLUSION_DIRECTIVE:'unistd.h'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stderr'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'stdout'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      "MACRO_INSTANTIATION:'va_end'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'console'": {
+                "children": [
+                  {
+                    "VAR_DECL:'s_NeedVerbosityInit'": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''"
+                      ]
+                    }
+                  },
+                  "VAR_DECL:'s_VerbosityLevel'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "VAR_DECL:'colored_output'"
+    ]
+  }
+}

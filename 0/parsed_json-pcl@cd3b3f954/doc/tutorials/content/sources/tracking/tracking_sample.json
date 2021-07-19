@@ -1,0 +1,675 @@
+{
+  "TRANSLATION_UNIT:'/pcl/doc/tutorials/content/sources/tracking/tracking_sample.cpp'": {
+    "children": [
+      {
+        "FUNCTION_DECL:'cloud_cb'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'lock'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'lock_guard'",
+                              "TYPE_REF:'class std::mutex'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'counter'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'counter'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "UNARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'counter'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                    "DECL_REF_EXPR:'new_cloud_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'cloud'": {
+                "children": [
+                  "TYPE_REF:'CloudConstPtr'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'drawParticles'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'particles'"
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'viz'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'drawResult'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'result'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'transformation'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'result_cloud'": {
+                            "children": [
+                              "TYPE_REF:'CloudPtr'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'viz'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'filterPassThrough'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            {
+              "PARM_DECL:'cloud'": {
+                "children": [
+                  "TYPE_REF:'CloudConstPtr'"
+                ]
+              }
+            },
+            {
+              "PARM_DECL:'result'": {
+                "children": [
+                  "TYPE_REF:'Cloud'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'gridSampleApprox'": {
+          "children": [
+            "COMPOUND_STMT:''",
+            {
+              "PARM_DECL:'cloud'": {
+                "children": [
+                  "TYPE_REF:'CloudConstPtr'"
+                ]
+              }
+            },
+            "PARM_DECL:'leaf_size'",
+            {
+              "PARM_DECL:'result'": {
+                "children": [
+                  "TYPE_REF:'Cloud'"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'main'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "DECL_REF_EXPR:'counter'",
+                        "INTEGER_LITERAL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "DECL_REF_EXPR:'new_cloud_'"
+                      ]
+                    }
+                  },
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "DECL_REF_EXPR:'downsampling_grid_size_'",
+                        "FLOATING_LITERAL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'device_id'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "TYPE_REF:'std::string'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'default_step_covariance'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'initial_noise_covariance'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'default_initial_mean'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'bin_size'": {
+                            "children": [
+                              "TYPE_REF:'ParticleT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'c'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'trans'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'transed_ref'": {
+                            "children": [
+                              "TYPE_REF:'CloudPtr'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'transed_ref_downsampled'": {
+                            "children": [
+                              "TYPE_REF:'CloudPtr'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'viewer_'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        "VAR_DECL:'interface'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'f'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              {
+                                "PARM_DECL:''": {
+                                  "children": [
+                                    "TYPE_REF:'CloudConstPtr'"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'function'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''",
+                              {
+                                "UNEXPOSED_EXPR:'argc'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'argc'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'exit'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'exit'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'exit'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'exit'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'exit'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'exit'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'argc'",
+            "PARM_DECL:'argv'"
+          ]
+        }
+      },
+      {
+        "FUNCTION_DECL:'viz_cb'": {
+          "children": [
+            {
+              "COMPOUND_STMT:''": {
+                "children": [
+                  {
+                    "BINARY_OPERATOR:''": {
+                      "children": [
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "DECL_REF_EXPR:'new_cloud_'"
+                      ]
+                    }
+                  },
+                  {
+                    "DECL_STMT:''": {
+                      "children": [
+                        {
+                          "VAR_DECL:'lock'": {
+                            "children": [
+                              "NAMESPACE_REF:'std'",
+                              "NAMESPACE_REF:'std'",
+                              "TEMPLATE_REF:'lock_guard'",
+                              "TYPE_REF:'class std::mutex'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              "RETURN_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'cloud_pass_'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'cloud_pass_'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cloud_pass_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "IF_STMT:''": {
+                      "children": [
+                        {
+                          "BINARY_OPERATOR:''": {
+                            "children": [
+                              {
+                                "UNEXPOSED_EXPR:'cloud_pass_downsampled_'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'cloud_pass_downsampled_'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cloud_pass_downsampled_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "UNEXPOSED_EXPR:'new_cloud_'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'new_cloud_'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'cloud_pass'",
+                                    {
+                                      "UNEXPOSED_EXPR:'cloud_pass_downsampled_'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'cloud_pass_downsampled_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    {
+                                      "VAR_DECL:'cloud_pass'": {
+                                        "children": [
+                                          "TYPE_REF:'CloudPtr'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'ret'"
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    "COMPOUND_STMT:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "PARM_DECL:'viz'"
+          ]
+        }
+      },
+      "INCLUSION_DIRECTIVE:'boost/format.hpp'",
+      "INCLUSION_DIRECTIVE:'mutex'",
+      "INCLUSION_DIRECTIVE:'pcl/common/centroid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/transforms.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/approximate_voxel_grid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/filters/passthrough.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/openni_grabber.h'",
+      "INCLUSION_DIRECTIVE:'pcl/io/pcd_io.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_cloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/approx_nearest_pair_point_cloud_coherence.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/coherence.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/distance_coherence.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/kld_adaptive_particle_filter_omp.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/nearest_pair_point_cloud_coherence.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/particle_filter.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/particle_filter_omp.h'",
+      "INCLUSION_DIRECTIVE:'pcl/tracking/tracking.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/cloud_viewer.h'",
+      "INCLUSION_DIRECTIVE:'pcl/visualization/pcl_visualizer.h'",
+      "INCLUSION_DIRECTIVE:'thread'",
+      "TYPEDEF_DECL:'Cloud'",
+      "TYPEDEF_DECL:'CloudConstPtr'",
+      "TYPEDEF_DECL:'CloudPtr'",
+      "TYPEDEF_DECL:'ParticleFilter'",
+      "TYPEDEF_DECL:'ParticleT'",
+      "TYPEDEF_DECL:'RefPointType'",
+      {
+        "USING_DIRECTIVE:''": {
+          "children": [
+            "NAMESPACE_REF:'chrono_literals'",
+            "NAMESPACE_REF:'std'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'cloud_pass_'": {
+          "children": [
+            "TYPE_REF:'CloudPtr'"
+          ]
+        }
+      },
+      {
+        "VAR_DECL:'cloud_pass_downsampled_'": {
+          "children": [
+            "TYPE_REF:'CloudPtr'"
+          ]
+        }
+      },
+      "VAR_DECL:'counter'",
+      "VAR_DECL:'downsampling_grid_size_'",
+      {
+        "VAR_DECL:'mtx_'": {
+          "children": [
+            "CALL_EXPR:'mutex'",
+            "NAMESPACE_REF:'std'",
+            "TYPE_REF:'class std::mutex'"
+          ]
+        }
+      },
+      "VAR_DECL:'new_cloud_'",
+      {
+        "VAR_DECL:'target_cloud'": {
+          "children": [
+            "TYPE_REF:'CloudPtr'"
+          ]
+        }
+      },
+      "VAR_DECL:'tracker_'"
+    ]
+  }
+}

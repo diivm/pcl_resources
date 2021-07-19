@@ -1,0 +1,501 @@
+{
+  "TRANSLATION_UNIT:'/pcl/common/include/pcl/common/distances.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'Eigen/Core'",
+      "INCLUSION_DIRECTIVE:'limits'",
+      "INCLUSION_DIRECTIVE:'pcl/point_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/types.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'PointCloud'": {
+                "children": [
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            "FUNCTION_DECL:'lineToLineSegment'",
+            {
+              "FUNCTION_DECL:'sqrPointToLineDistance'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'line_dir'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'line_pt'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pt'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'sqrPointToLineDistance'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'line_dir'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'line_pt'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pt'": {
+                      "children": [
+                        "NAMESPACE_REF:'Eigen'",
+                        "TYPE_REF:'Eigen::Vector4f'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'sqr_length'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_DECL:'squaredEuclideanDistance'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'diff_x'",
+                              "VAR_DECL:'diff_y'"
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_x'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_x'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_x'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_y'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_y'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_y'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'p1'",
+                  "PARM_DECL:'p2'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'euclideanDistance'": {
+                "children": [
+                  "COMPOUND_STMT:''",
+                  {
+                    "PARM_DECL:'p1'": {
+                      "children": [
+                        "TYPE_REF:'PointType1'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'p2'": {
+                      "children": [
+                        "TYPE_REF:'PointType2'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointType1'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointType2'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'getMaxSegment'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'max_dist'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'token'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'i_min'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'cloud'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'",
+                        "TEMPLATE_REF:'PointCloud'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pmax'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pmin'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'getMaxSegment'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'max_dist'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'token'"
+                            ]
+                          }
+                        },
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              "VAR_DECL:'i_min'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'cloud'": {
+                      "children": [
+                        "NAMESPACE_REF:'pcl'",
+                        "TEMPLATE_REF:'PointCloud'",
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "PARM_DECL:'indices'",
+                  {
+                    "PARM_DECL:'pmax'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'pmin'": {
+                      "children": [
+                        "TYPE_REF:'PointT'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            },
+            {
+              "FUNCTION_TEMPLATE:'squaredEuclideanDistance'": {
+                "children": [
+                  {
+                    "COMPOUND_STMT:''": {
+                      "children": [
+                        {
+                          "DECL_STMT:''": {
+                            "children": [
+                              {
+                                "VAR_DECL:'diff_x'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p2'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'diff_y'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p2'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "VAR_DECL:'diff_z'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p2'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "MEMBER_REF_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'p1'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "RETURN_STMT:''": {
+                            "children": [
+                              {
+                                "PAREN_EXPR:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'diff_x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'diff_x'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'diff_x'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'diff_x'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'diff_y'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'diff_y'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNEXPOSED_EXPR:'diff_y'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'diff_y'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_z'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_z'"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNEXPOSED_EXPR:'diff_z'": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'diff_z'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'p1'": {
+                      "children": [
+                        "TYPE_REF:'PointType1'"
+                      ]
+                    }
+                  },
+                  {
+                    "PARM_DECL:'p2'": {
+                      "children": [
+                        "TYPE_REF:'PointType2'"
+                      ]
+                    }
+                  },
+                  "TEMPLATE_TYPE_PARAMETER:'PointType1'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointType2'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

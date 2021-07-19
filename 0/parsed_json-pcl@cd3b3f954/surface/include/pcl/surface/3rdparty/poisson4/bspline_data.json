@@ -1,0 +1,1155 @@
+{
+  "TRANSLATION_UNIT:'/pcl/surface/include/pcl/surface/3rdparty/poisson4/bspline_data.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'bspline_data.hpp'",
+      "INCLUSION_DIRECTIVE:'cstdio'",
+      "INCLUSION_DIRECTIVE:'cstring'",
+      "INCLUSION_DIRECTIVE:'ppolynomial.h'",
+      "MACRO_DEFINITION:'BSPLINE_DATA_INCLUDED'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'poisson'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'BSplineData'": {
+                      "children": [
+                        "CONSTRUCTOR:'BSplineData<Degree, Real>'",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'Index'": {
+                            "children": [
+                              "PARM_DECL:'i1'",
+                              "PARM_DECL:'i2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SymmetricIndex'": {
+                            "children": [
+                              "PARM_DECL:'i1'",
+                              "PARM_DECL:'i2'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'SymmetricIndex'": {
+                            "children": [
+                              "PARM_DECL:'i1'",
+                              "PARM_DECL:'i2'",
+                              "PARM_DECL:'index'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'clearDotTables'": {
+                            "children": [
+                              "PARM_DECL:'flags'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'clearValueTables'",
+                        {
+                          "CXX_METHOD:'set'": {
+                            "children": [
+                              "PARM_DECL:'maxDepth'",
+                              {
+                                "PARM_DECL:'reflectBoundary'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'useDotRatios'": {
+                                  "children": [
+                                    "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setDotTables'": {
+                            "children": [
+                              "PARM_DECL:'flags'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setSampleSpan'": {
+                            "children": [
+                              "PARM_DECL:'end'",
+                              "PARM_DECL:'idx'",
+                              {
+                                "PARM_DECL:'smooth'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'start'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setValueTables'": {
+                            "children": [
+                              "PARM_DECL:'flags'",
+                              {
+                                "PARM_DECL:'smooth'": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setValueTables'": {
+                            "children": [
+                              "PARM_DECL:'flags'",
+                              "PARM_DECL:'normalSmooth'",
+                              "PARM_DECL:'valueSmooth'"
+                            ]
+                          }
+                        },
+                        "DESTRUCTOR:'~BSplineData<Degree, Real>'",
+                        {
+                          "FIELD_DECL:'baseBSpline'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'baseBSplines'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'baseFunction'": {
+                            "children": [
+                              "DECL_REF_EXPR:'Degree'",
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'baseFunctions'": {
+                            "children": [
+                              "DECL_REF_EXPR:'Degree'",
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'dBaseFunction'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'dLeftBaseFunction'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'dRightBaseFunction'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'dValueTables'": {
+                            "children": [
+                              "TYPE_REF:'Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'ddDotTable'": {
+                            "children": [
+                              "TYPE_REF:'Real'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'depth'",
+                        {
+                          "FIELD_DECL:'dvDotTable'": {
+                            "children": [
+                              "TYPE_REF:'Real'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'functionCount'",
+                        {
+                          "FIELD_DECL:'leftBSpline'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'leftBaseFunction'": {
+                            "children": [
+                              "DECL_REF_EXPR:'Degree'",
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'reflectBoundary'",
+                        {
+                          "FIELD_DECL:'rightBSpline'": {
+                            "children": [
+                              "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'rightBaseFunction'": {
+                            "children": [
+                              "DECL_REF_EXPR:'Degree'",
+                              "TEMPLATE_REF:'PPolynomial'"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'sampleCount'",
+                        "FIELD_DECL:'useDotRatios'",
+                        {
+                          "FIELD_DECL:'valueTables'": {
+                            "children": [
+                              "TYPE_REF:'Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'vvDotTable'": {
+                            "children": [
+                              "TYPE_REF:'Real'"
+                            ]
+                          }
+                        },
+                        {
+                          "STRUCT_DECL:'BSplineComponents'": {
+                            "children": [
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'idx'",
+                                                      "MEMBER_REF_EXPR:'polys'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "PARM_DECL:'idx'",
+                                    "TEMPLATE_REF:'Polynomial'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator[]'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'idx'",
+                                                      "MEMBER_REF_EXPR:'polys'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "PARM_DECL:'idx'",
+                                    "TEMPLATE_REF:'Polynomial'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'printnl'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Degree'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'d'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'d'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'d'",
+                                                                  "MEMBER_REF_EXPR:'polys'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'d'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'d'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'scale'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'b'": {
+                                                    "children": [
+                                                      "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Degree'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'d'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'d'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'",
+                                                            "DECL_REF_EXPR:'d'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'s'",
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'d'",
+                                                                        "MEMBER_REF_EXPR:'polys'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'d'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'d'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'s'",
+                                    "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'shift'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'b'": {
+                                                    "children": [
+                                                      "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "FOR_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'Degree'",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'d'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'d'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      {
+                                                        "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'b'",
+                                                            "DECL_REF_EXPR:'d'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'s'",
+                                                            {
+                                                              "MEMBER_REF_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'d'",
+                                                                        "MEMBER_REF_EXPR:'polys'"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "DECL_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "VAR_DECL:'d'": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "UNARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "DECL_REF_EXPR:'d'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'b'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "PARM_DECL:'s'",
+                                    "TYPE_REF:'struct pcl::poisson::BSplineData::BSplineComponents'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'polys'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Degree'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "TEMPLATE_REF:'Polynomial'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree'",
+                        "TEMPLATE_TYPE_PARAMETER:'Real'",
+                        {
+                          "VAR_DECL:'DD_DOT_FLAG'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'DV_DOT_FLAG'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'D_VALUE_FLAG'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'VALUE_FLAG'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'VV_DOT_FLAG'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'BSplineElementCoefficients'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'BSplineElementCoefficients<Degree>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "CALL_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "OBJC_STRING_LITERAL:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "BINARY_OPERATOR:''": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'Degree'",
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_REF_EXPR:''": {
+                                              "children": [
+                                                "OVERLOADED_DECL_REF:'memset'"
+                                              ]
+                                            }
+                                          },
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'coeffs'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'idx'",
+                                                "MEMBER_REF_EXPR:'coeffs'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'operator[]'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "ARRAY_SUBSCRIPT_EXPR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'idx'",
+                                                "MEMBER_REF_EXPR:'coeffs'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'idx'"
+                            ]
+                          }
+                        },
+                        {
+                          "FIELD_DECL:'coeffs'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_TEMPLATE:'BSplineElements'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'BSplineElements<Degree>'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'denominator'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'BSplineElements<Degree>'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'boundary'": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'NONE'"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'offset'",
+                              "PARM_DECL:'res'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'_addLeft'": {
+                            "children": [
+                              "PARM_DECL:'boundary'",
+                              "PARM_DECL:'offset'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'_addRight'": {
+                            "children": [
+                              "PARM_DECL:'boundary'",
+                              "PARM_DECL:'offset'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'differentiate'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'d'": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'Degree'",
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    "TEMPLATE_REF:'BSplineElements'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'print'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "FOR_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                {
+                                                  "CALL_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "COMPOUND_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "FOR_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'Degree'",
+                                                            {
+                                                              "UNEXPOSED_EXPR:'j'": {
+                                                                "children": [
+                                                                  "DECL_REF_EXPR:'j'"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "CALL_EXPR:''": {
+                                                          "children": [
+                                                            {
+                                                              "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                "children": [
+                                                                  {
+                                                                    "ARRAY_SUBSCRIPT_EXPR:''": {
+                                                                      "children": [
+                                                                        "DECL_REF_EXPR:'i'",
+                                                                        {
+                                                                          "PAREN_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNARY_OPERATOR:''": {
+                                                                                  "children": [
+                                                                                    "CXX_THROW_EXPR:''"
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  },
+                                                                  "DECL_REF_EXPR:'j'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "DECL_REF_EXPR:''": {
+                                                                "children": [
+                                                                  "OVERLOADED_DECL_REF:'printf'"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "STRING_LITERAL:'\" %d\"'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'j'": {
+                                                                "children": [
+                                                                  "INTEGER_LITERAL:''"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'j'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "DECL_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "VAR_DECL:'i'": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'i'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'upSample'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'high'": {
+                                  "children": [
+                                    "TYPE_REF:'BSplineElements<Degree>'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "ENUM_DECL:''": {
+                            "children": [
+                              {
+                                "ENUM_CONSTANT_DECL:'DIRICHLET'": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'NEUMANN'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "ENUM_CONSTANT_DECL:'NONE'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'denominator'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree'",
+                        {
+                          "VAR_DECL:'_off'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'Degree'",
+                                                "INTEGER_LITERAL:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "FUNCTION_TEMPLATE:'SetBSplineElementIntegrals'": {
+                      "children": [
+                        {
+                          "PARM_DECL:'integrals'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree2'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "DECL_REF_EXPR:'Degree1'",
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree1'",
+                        "TEMPLATE_NON_TYPE_PARAMETER:'Degree2'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

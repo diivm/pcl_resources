@@ -1,0 +1,458 @@
+{
+  "TRANSLATION_UNIT:'/pcl/sample_consensus/include/pcl/sample_consensus/sac_model_registration.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'numeric'",
+      "INCLUSION_DIRECTIVE:'pcl/common/centroid.h'",
+      "INCLUSION_DIRECTIVE:'pcl/common/eigen.h'",
+      "INCLUSION_DIRECTIVE:'pcl/memory.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_base.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/impl/sac_model_registration.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/model_types.h'",
+      "INCLUSION_DIRECTIVE:'pcl/sample_consensus/sac_model.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "CLASS_TEMPLATE:'SampleConsensusModelRegistration'": {
+                "children": [
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelRegistration<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "MEMBER_REF:'sample_dist_thresh_'",
+                        "PARM_DECL:'cloud'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CONSTRUCTOR:'SampleConsensusModelRegistration<PointT>'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'computeOriginalIndexMapping'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'computeOriginalIndexMapping'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "MEMBER_REF:'sample_dist_thresh_'",
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'",
+                        {
+                          "PARM_DECL:'random'": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        },
+                        {
+                          "UNEXPOSED_EXPR:''": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  "CXX_ACCESS_SPEC_DECL:''",
+                  {
+                    "CXX_METHOD:'computeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeOriginalIndexMapping'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "IF_STMT:''": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          "RETURN_STMT:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeSampleDistanceThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sample_dist_thresh_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sample_dist_thresh_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'sample_dist_thresh_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'xyz_centroid'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'covariance_matrix'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'eigen_values'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'computeSampleDistanceThreshold'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "COMPOUND_ASSIGNMENT_OPERATOR:''": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'sample_dist_thresh_'",
+                                    {
+                                      "UNEXPOSED_EXPR:'sample_dist_thresh_'": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'sample_dist_thresh_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'xyz_centroid'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'covariance_matrix'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'eigen_values'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'cloud'",
+                        "PARM_DECL:'indices'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'countWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'doSamplesVerifyModel'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "RETURN_STMT:''": {
+                                  "children": [
+                                    {
+                                      "PAREN_EXPR:''": {
+                                        "children": [
+                                          "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:''",
+                        "PARM_DECL:''",
+                        "PARM_DECL:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'estimateRigidTransformationSVD'": {
+                      "children": [
+                        "PARM_DECL:'cloud_src'",
+                        "PARM_DECL:'cloud_tgt'",
+                        "PARM_DECL:'indices_src'",
+                        "PARM_DECL:'indices_tgt'",
+                        "PARM_DECL:'transform'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getDistancesToModel'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'distances'",
+                        "PARM_DECL:'model_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'getModelType'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'isSampleGood'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'samples'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'optimizeModelCoefficients'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'optimized_coefficients'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'projectPoints'": {
+                      "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:''",
+                        "PARM_DECL:''",
+                        "PARM_DECL:''",
+                        {
+                          "PARM_DECL:''": {
+                            "children": [
+                              "CXX_NULL_PTR_LITERAL_EXPR:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'selectWithinDistance'": {
+                      "children": [
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'inliers'",
+                        "PARM_DECL:'model_coefficients'",
+                        "PARM_DECL:'threshold'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputCloud'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'computeOriginalIndexMapping'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'computeOriginalIndexMapping'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'cloud'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "CXX_OVERRIDE_ATTR:''",
+                        "PARM_DECL:'cloud'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputTarget'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'computeOriginalIndexMapping'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'computeOriginalIndexMapping'"
+                                  ]
+                                }
+                              },
+                              {
+                                "DECL_STMT:''": {
+                                  "children": [
+                                    "VAR_DECL:'target_size'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'target'"
+                      ]
+                    }
+                  },
+                  {
+                    "CXX_METHOD:'setInputTarget'": {
+                      "children": [
+                        {
+                          "COMPOUND_STMT:''": {
+                            "children": [
+                              {
+                                "CALL_EXPR:'computeOriginalIndexMapping'": {
+                                  "children": [
+                                    "MEMBER_REF_EXPR:'computeOriginalIndexMapping'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "PARM_DECL:'indices_tgt'",
+                        "PARM_DECL:'target'"
+                      ]
+                    }
+                  },
+                  {
+                    "DESTRUCTOR:'~SampleConsensusModelRegistration<PointT>'": {
+                      "children": [
+                        "COMPOUND_STMT:''"
+                      ]
+                    }
+                  },
+                  "FIELD_DECL:'correspondences_'",
+                  "FIELD_DECL:'indices_tgt_'",
+                  "FIELD_DECL:'sample_dist_thresh_'",
+                  "FIELD_DECL:'target_'",
+                  "TEMPLATE_TYPE_PARAMETER:'PointT'"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "TRANSLATION_UNIT:'/pcl/octree/include/pcl/octree/octree_pointcloud_adjacency.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'boost/graph/adjacency_list.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/impl/octree_pointcloud_adjacency.hpp'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_pointcloud.h'",
+      "INCLUSION_DIRECTIVE:'pcl/octree/octree_pointcloud_adjacency_container.h'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'octree'": {
+                "children": [
+                  {
+                    "CLASS_TEMPLATE:'OctreePointCloudAdjacency'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'OctreePointCloudAdjacency<PointT, LeafContainerT, BranchContainerT>'": {
+                            "children": [
+                              "PARM_DECL:'resolution_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addPointIdx'": {
+                            "children": [
+                              "CXX_OVERRIDE_ATTR:''",
+                              "PARM_DECL:'point_idx_arg'"
+                            ]
+                          }
+                        },
+                        "CXX_METHOD:'addPointsFromInputCloud'",
+                        {
+                          "CXX_METHOD:'at'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'idx'",
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'begin'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeNeighbors'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'leaf_container'": {
+                                  "children": [
+                                    "TYPE_REF:'LeafContainerT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'computeVoxelAdjacencyGraph'": {
+                            "children": [
+                              "PARM_DECL:'voxel_adjacency_graph'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'end'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'genOctreeKeyforPoint'": {
+                            "children": [
+                              "PARM_DECL:'key_arg'",
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getLeafContainerAtPoint'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'LeafContainerT'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setTransformFunction'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "PARM_DECL:'transform_func'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'size'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'testForOcclusion'": {
+                            "children": [
+                              {
+                                "PARM_DECL:'camera_pos'": {
+                                  "children": [
+                                    "UNEXPOSED_EXPR:''"
+                                  ]
+                                }
+                              },
+                              {
+                                "PARM_DECL:'point_arg'": {
+                                  "children": [
+                                    "TYPE_REF:'PointT'"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'leaf_vector_'",
+                        "FIELD_DECL:'transform_func_'",
+                        "TEMPLATE_TYPE_PARAMETER:'BranchContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'LeafContainerT'",
+                        "TEMPLATE_TYPE_PARAMETER:'PointT'",
+                        {
+                          "TYPE_ALIAS_DECL:'OctreeAdjacencyT'": {
+                            "children": [
+                              "TEMPLATE_REF:'OctreePointCloudAdjacency'",
+                              "TYPE_REF:'BranchContainerT'",
+                              "TYPE_REF:'LeafContainerT'",
+                              "TYPE_REF:'PointT'"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

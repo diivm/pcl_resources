@@ -1,0 +1,110 @@
+{
+  "TRANSLATION_UNIT:'/pcl/gpu/octree/src/utils/morton.hpp'": {
+    "children": [
+      "MACRO_DEFINITION:'PCL_GPU_OCTREE_MORTON_HPP'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'device'": {
+                "children": [
+                  {
+                    "STRUCT_DECL:'CalcMorton'": {
+                      "children": [
+                        "FIELD_DECL:'__host__'",
+                        "FIELD_DECL:'dims_'",
+                        "FIELD_DECL:'minp_'",
+                        {
+                          "VAR_DECL:'depth_mult'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''",
+                                    {
+                                      "UNEXPOSED_EXPR:'levels'": {
+                                        "children": [
+                                          {
+                                            "DECL_REF_EXPR:'levels'": {
+                                              "children": [
+                                                "TYPE_REF:'struct pcl::device::Morton'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'CompareByLevelCode'": {
+                      "children": [
+                        "FIELD_DECL:'__host__'",
+                        "FIELD_DECL:'level'"
+                      ]
+                    }
+                  },
+                  {
+                    "STRUCT_DECL:'Morton'": {
+                      "children": [
+                        "FIELD_DECL:'__host__'",
+                        "TYPE_ALIAS_DECL:'code_t'",
+                        {
+                          "VAR_DECL:'bits_per_level'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'levels'": {
+                            "children": [
+                              "INTEGER_LITERAL:''"
+                            ]
+                          }
+                        },
+                        {
+                          "VAR_DECL:'nbits'": {
+                            "children": [
+                              {
+                                "BINARY_OPERATOR:''": {
+                                  "children": [
+                                    {
+                                      "UNEXPOSED_EXPR:'bits_per_level'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'bits_per_level'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'levels'": {
+                                        "children": [
+                                          "DECL_REF_EXPR:'levels'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

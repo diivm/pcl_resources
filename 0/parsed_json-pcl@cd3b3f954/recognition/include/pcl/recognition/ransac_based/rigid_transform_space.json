@@ -1,0 +1,703 @@
+{
+  "TRANSLATION_UNIT:'/pcl/recognition/include/pcl/recognition/ransac_based/rigid_transform_space.h'": {
+    "children": [
+      "INCLUSION_DIRECTIVE:'list'",
+      "INCLUSION_DIRECTIVE:'map'",
+      "INCLUSION_DIRECTIVE:'model_library.h'",
+      "INCLUSION_DIRECTIVE:'pcl/pcl_exports.h'",
+      "INCLUSION_DIRECTIVE:'simple_octree.h'",
+      "MACRO_INSTANTIATION:'AUX_PI_FLOAT'",
+      "MACRO_INSTANTIATION:'AUX_PI_FLOAT'",
+      {
+        "NAMESPACE:'pcl'": {
+          "children": [
+            {
+              "NAMESPACE:'recognition'": {
+                "children": [
+                  {
+                    "CLASS_DECL:'RotationSpaceCell'": {
+                      "children": [
+                        {
+                          "CLASS_DECL:'Entry'": {
+                            "children": [
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "INTEGER_LITERAL:''",
+                                    "MEMBER_REF:'num_transforms_'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CONSTRUCTOR:'Entry'": {
+                                  "children": [
+                                    "COMPOUND_STMT:''",
+                                    "MEMBER_REF:'num_transforms_'",
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "UNEXPOSED_EXPR:'num_transforms_'": {
+                                        "children": [
+                                          {
+                                            "MEMBER_REF_EXPR:'num_transforms_'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'src'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              "CXX_ACCESS_SPEC_DECL:''",
+                              {
+                                "CXX_METHOD:'addRigidTransform'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "UNARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'num_transforms_'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'axis_angle'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'translation'": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'computeAverageRigidTransform'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "BINARY_OPERATOR:''": {
+                                                    "children": [
+                                                      "INTEGER_LITERAL:''",
+                                                      {
+                                                        "UNEXPOSED_EXPR:'num_transforms_'": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'num_transforms_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "COMPOUND_STMT:''": {
+                                                    "children": [
+                                                      {
+                                                        "BINARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "INTEGER_LITERAL:''",
+                                                            "MEMBER_REF_EXPR:'num_transforms_'"
+                                                          ]
+                                                        }
+                                                      },
+                                                      {
+                                                        "DECL_STMT:''": {
+                                                          "children": [
+                                                            {
+                                                              "VAR_DECL:'factor'": {
+                                                                "children": [
+                                                                  {
+                                                                    "BINARY_OPERATOR:''": {
+                                                                      "children": [
+                                                                        {
+                                                                          "CXX_STATIC_CAST_EXPR:''": {
+                                                                            "children": [
+                                                                              {
+                                                                                "UNEXPOSED_EXPR:'num_transforms_'": {
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "UNEXPOSED_EXPR:'num_transforms_'": {
+                                                                                        "children": [
+                                                                                          "MEMBER_REF_EXPR:'num_transforms_'"
+                                                                                        ]
+                                                                                      }
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "FLOATING_LITERAL:''"
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "IF_STMT:''": {
+                                              "children": [
+                                                "COMPOUND_STMT:''",
+                                                {
+                                                  "UNEXPOSED_EXPR:'rigid_transform'": {
+                                                    "children": [
+                                                      {
+                                                        "UNEXPOSED_EXPR:'rigid_transform'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'rigid_transform'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'rigid_transform'": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                "CXX_THIS_EXPR:''"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getAxisAngle'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'axis_angle_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getNumberOfTransforms'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'num_transforms_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'getTranslation'": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "PAREN_EXPR:''": {
+                                                          "children": [
+                                                            "MEMBER_REF_EXPR:'translation_'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "CXX_METHOD:'operator='": {
+                                  "children": [
+                                    {
+                                      "COMPOUND_STMT:''": {
+                                        "children": [
+                                          {
+                                            "BINARY_OPERATOR:''": {
+                                              "children": [
+                                                "MEMBER_REF_EXPR:'num_transforms_'",
+                                                {
+                                                  "UNEXPOSED_EXPR:'num_transforms_'": {
+                                                    "children": [
+                                                      {
+                                                        "MEMBER_REF_EXPR:'num_transforms_'": {
+                                                          "children": [
+                                                            "DECL_REF_EXPR:'src'"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "RETURN_STMT:''": {
+                                              "children": [
+                                                {
+                                                  "UNEXPOSED_EXPR:''": {
+                                                    "children": [
+                                                      {
+                                                        "UNARY_OPERATOR:''": {
+                                                          "children": [
+                                                            "CXX_THROW_EXPR:''"
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "PARM_DECL:'src'": {
+                                        "children": [
+                                          "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                                        ]
+                                      }
+                                    },
+                                    "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                                  ]
+                                }
+                              },
+                              {
+                                "FIELD_DECL:'axis_angle_'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "FIELD_DECL:'num_transforms_'",
+                              {
+                                "FIELD_DECL:'translation_'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CONSTRUCTOR:'RotationSpaceCell'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'addRigidTransform'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              {
+                                "PARM_DECL:'axis_angle'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'model'",
+                              {
+                                "PARM_DECL:'translation'": {
+                                  "children": [
+                                    "INTEGER_LITERAL:''"
+                                  ]
+                                }
+                              },
+                              "TYPE_REF:'class pcl::recognition::RotationSpaceCell'",
+                              "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEntries'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getEntry'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "CXX_THIS_EXPR:''"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'model'",
+                              "TYPE_REF:'class pcl::recognition::RotationSpaceCell'",
+                              "TYPE_REF:'class pcl::recognition::RotationSpaceCell::Entry'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~RotationSpaceCell'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'model_to_entry_'"
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'RotationSpaceCellCreator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'RotationSpaceCellCreator'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'create'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "PAREN_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "CXX_DELETE_EXPR:''": {
+                                                    "children": [
+                                                      "CALL_EXPR:'RotationSpaceCell'",
+                                                      "TYPE_REF:'class pcl::recognition::RotationSpaceCell'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:''",
+                              "TYPE_REF:'class pcl::recognition::RotationSpaceCell'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~RotationSpaceCellCreator'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "CLASS_DECL:'RotationSpaceCreator'": {
+                      "children": [
+                        {
+                          "CONSTRUCTOR:'RotationSpaceCreator'": {
+                            "children": [
+                              "COMPOUND_STMT:''",
+                              "INTEGER_LITERAL:''",
+                              "MEMBER_REF:'counter_'"
+                            ]
+                          }
+                        },
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        "CXX_ACCESS_SPEC_DECL:''",
+                        {
+                          "CXX_METHOD:'create'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "UNARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'counter_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getNumberOfRotationSpaces'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "RETURN_STMT:''": {
+                                        "children": [
+                                          {
+                                            "UNEXPOSED_EXPR:''": {
+                                              "children": [
+                                                {
+                                                  "PAREN_EXPR:''": {
+                                                    "children": [
+                                                      "MEMBER_REF_EXPR:'counter_'"
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRotationSpaces'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'getRotationSpaces'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'reset'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "INTEGER_LITERAL:''",
+                                          "MEMBER_REF_EXPR:'counter_'"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "CXX_METHOD:'setDiscretization'": {
+                            "children": [
+                              {
+                                "COMPOUND_STMT:''": {
+                                  "children": [
+                                    {
+                                      "BINARY_OPERATOR:''": {
+                                        "children": [
+                                          "MEMBER_REF_EXPR:'discretization_'",
+                                          {
+                                            "UNEXPOSED_EXPR:'value'": {
+                                              "children": [
+                                                "DECL_REF_EXPR:'value'"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "PARM_DECL:'value'"
+                            ]
+                          }
+                        },
+                        {
+                          "DESTRUCTOR:'~RotationSpaceCreator'": {
+                            "children": [
+                              "COMPOUND_STMT:''"
+                            ]
+                          }
+                        },
+                        "FIELD_DECL:'counter_'",
+                        "FIELD_DECL:'discretization_'",
+                        "FIELD_DECL:'rotation_spaces_'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'RigidTransformSpace'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::recognition::PCL_EXPORTS'"
+                      ]
+                    }
+                  },
+                  {
+                    "VAR_DECL:'RotationSpace'": {
+                      "children": [
+                        "TYPE_REF:'class pcl::recognition::PCL_EXPORTS'"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
