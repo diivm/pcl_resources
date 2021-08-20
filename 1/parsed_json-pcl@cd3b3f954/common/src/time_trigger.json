@@ -1,0 +1,1310 @@
+{
+    "TRANSLATION_UNIT:'/home/divyanshu/proj/pcl/common/src/time_trigger.cpp'": {
+        "children": [
+            {
+                "CONSTRUCTOR:'TimeTrigger'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "CALL_EXPR:'registerCallback'": {
+                                            "children": [
+                                                "DECL_REF_EXPR:'callback'",
+                                                "MEMBER_REF_EXPR:'registerCallback'"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "MEMBER_REF:'interval_'",
+                        "MEMBER_REF:'quit_'",
+                        "MEMBER_REF:'running_'",
+                        "NAMESPACE_REF:'pcl'",
+                        {
+                            "PARM_DECL:'callback'": {
+                                "children": [
+                                    "TYPE_REF:'pcl::TimeTrigger::callback_type'"
+                                ]
+                            }
+                        },
+                        "PARM_DECL:'interval'",
+                        "TYPE_REF:'class pcl::TimeTrigger'",
+                        {
+                            "UNEXPOSED_EXPR:'interval'": {
+                                "children": [
+                                    "DECL_REF_EXPR:'interval'"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "CONSTRUCTOR:'TimeTrigger'": {
+                    "children": [
+                        "COMPOUND_STMT:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                        "MEMBER_REF:'interval_'",
+                        "MEMBER_REF:'quit_'",
+                        "MEMBER_REF:'running_'",
+                        "NAMESPACE_REF:'pcl'",
+                        {
+                            "PARM_DECL:'interval'": {
+                                "children": [
+                                    "FLOATING_LITERAL:''"
+                                ]
+                            }
+                        },
+                        "TYPE_REF:'class pcl::TimeTrigger'",
+                        {
+                            "UNEXPOSED_EXPR:'interval'": {
+                                "children": [
+                                    "DECL_REF_EXPR:'interval'"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "CXX_METHOD:'registerCallback'": {
+                    "children": [
+                        "COMPOUND_STMT:''",
+                        "NAMESPACE_REF:'boost'",
+                        "NAMESPACE_REF:'pcl'",
+                        "NAMESPACE_REF:'signals2'",
+                        {
+                            "PARM_DECL:'callback'": {
+                                "children": [
+                                    "TYPE_REF:'pcl::TimeTrigger::callback_type'"
+                                ]
+                            }
+                        },
+                        "TYPE_REF:'class boost::signals2::connection'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "CXX_METHOD:'setInterval'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "BINARY_OPERATOR:''": {
+                                            "children": [
+                                                "MEMBER_REF_EXPR:'interval_'",
+                                                {
+                                                    "UNEXPOSED_EXPR:'interval_seconds'": {
+                                                        "children": [
+                                                            "DECL_REF_EXPR:'interval_seconds'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CALL_EXPR:'notify_all'": {
+                                            "children": [
+                                                {
+                                                    "MEMBER_REF_EXPR:'notify_all'": {
+                                                        "children": [
+                                                            "MEMBER_REF_EXPR:'condition_'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "DECL_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "VAR_DECL:'lock'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TEMPLATE_REF:'unique_lock'",
+                                                            "TYPE_REF:'class std::mutex'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "NAMESPACE_REF:'pcl'",
+                        "PARM_DECL:'interval_seconds'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "CXX_METHOD:'start'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "DECL_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "VAR_DECL:'lock'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TEMPLATE_REF:'unique_lock'",
+                                                            "TYPE_REF:'class std::mutex'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "IF_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "BINARY_OPERATOR:''": {
+                                                                    "children": [
+                                                                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                                        "MEMBER_REF_EXPR:'running_'"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "CALL_EXPR:'notify_all'": {
+                                                                    "children": [
+                                                                        {
+                                                                            "MEMBER_REF_EXPR:'notify_all'": {
+                                                                                "children": [
+                                                                                    "MEMBER_REF_EXPR:'condition_'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "UNARY_OPERATOR:''": {
+                                                        "children": [
+                                                            {
+                                                                "UNEXPOSED_EXPR:'running_'": {
+                                                                    "children": [
+                                                                        "MEMBER_REF_EXPR:'running_'"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "CXX_METHOD:'stop'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "DECL_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "VAR_DECL:'lock'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TEMPLATE_REF:'unique_lock'",
+                                                            "TYPE_REF:'class std::mutex'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "IF_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "BINARY_OPERATOR:''": {
+                                                                    "children": [
+                                                                        "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                                        "MEMBER_REF_EXPR:'running_'"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "CALL_EXPR:'notify_all'": {
+                                                                    "children": [
+                                                                        {
+                                                                            "MEMBER_REF_EXPR:'notify_all'": {
+                                                                                "children": [
+                                                                                    "MEMBER_REF_EXPR:'condition_'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "UNEXPOSED_EXPR:'running_'": {
+                                                        "children": [
+                                                            "MEMBER_REF_EXPR:'running_'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "CXX_METHOD:'thread_function'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "WHILE_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "DECL_STMT:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "VAR_DECL:'time'": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "CALL_EXPR:'getTime'": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "UNEXPOSED_EXPR:'getTime'": {
+                                                                                                        "children": [
+                                                                                                            "DECL_REF_EXPR:'getTime'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "DECL_STMT:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "VAR_DECL:'lock'": {
+                                                                                "children": [
+                                                                                    "NAMESPACE_REF:'std'",
+                                                                                    "NAMESPACE_REF:'std'",
+                                                                                    "TEMPLATE_REF:'unique_lock'",
+                                                                                    "TYPE_REF:'class std::mutex'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "IF_STMT:''": {
+                                                                    "children": [
+                                                                        "BREAK_STMT:''",
+                                                                        {
+                                                                            "UNEXPOSED_EXPR:'quit_'": {
+                                                                                "children": [
+                                                                                    "MEMBER_REF_EXPR:'quit_'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "IF_STMT:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "COMPOUND_STMT:''": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "DECL_STMT:''": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "USING_DIRECTIVE:''": {
+                                                                                                        "children": [
+                                                                                                            "NAMESPACE_REF:'chrono_literals'",
+                                                                                                            "NAMESPACE_REF:'std'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "DECL_STMT:''": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "VAR_DECL:'rest'": {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "BINARY_OPERATOR:''": {
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "BINARY_OPERATOR:''": {
+                                                                                                                                "children": [
+                                                                                                                                    {
+                                                                                                                                        "UNEXPOSED_EXPR:'interval_'": {
+                                                                                                                                            "children": [
+                                                                                                                                                "MEMBER_REF_EXPR:'interval_'"
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                        "UNEXPOSED_EXPR:'time'": {
+                                                                                                                                            "children": [
+                                                                                                                                                "DECL_REF_EXPR:'time'"
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                ]
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "CALL_EXPR:'getTime'": {
+                                                                                                                                "children": [
+                                                                                                                                    {
+                                                                                                                                        "UNEXPOSED_EXPR:'getTime'": {
+                                                                                                                                            "children": [
+                                                                                                                                                "DECL_REF_EXPR:'getTime'"
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                ]
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "NULL_STMT:''",
+                                                                        {
+                                                                            "UNARY_OPERATOR:''": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'running_'": {
+                                                                                            "children": [
+                                                                                                "MEMBER_REF_EXPR:'running_'"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "DESTRUCTOR:'~TimeTrigger'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "BINARY_OPERATOR:''": {
+                                            "children": [
+                                                "CXX_NULL_PTR_LITERAL_EXPR:''",
+                                                "MEMBER_REF_EXPR:'quit_'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CALL_EXPR:'join'": {
+                                            "children": [
+                                                {
+                                                    "MEMBER_REF_EXPR:'join'": {
+                                                        "children": [
+                                                            "MEMBER_REF_EXPR:'timer_thread_'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CALL_EXPR:'notify_all'": {
+                                            "children": [
+                                                {
+                                                    "MEMBER_REF_EXPR:'notify_all'": {
+                                                        "children": [
+                                                            "MEMBER_REF_EXPR:'condition_'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "DECL_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "VAR_DECL:'lock'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TEMPLATE_REF:'unique_lock'",
+                                                            "TYPE_REF:'class std::mutex'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "NAMESPACE_REF:'pcl'",
+                        "TYPE_REF:'class pcl::TimeTrigger'"
+                    ]
+                }
+            },
+            {
+                "FUNCTION_DECL:'pcl_round'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "RETURN_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "PAREN_EXPR:''": {
+                                                        "children": [
+                                                            {
+                                                                "CONDITIONAL_OPERATOR:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "BINARY_OPERATOR:''": {
+                                                                                "children": [
+                                                                                    "FLOATING_LITERAL:''",
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'number'": {
+                                                                                            "children": [
+                                                                                                "DECL_REF_EXPR:'number'"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "CALL_EXPR:'ceil'": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "BINARY_OPERATOR:''": {
+                                                                                            "children": [
+                                                                                                "FLOATING_LITERAL:''",
+                                                                                                {
+                                                                                                    "UNEXPOSED_EXPR:'number'": {
+                                                                                                        "children": [
+                                                                                                            "DECL_REF_EXPR:'number'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'ceil'": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "DECL_REF_EXPR:'ceil'": {
+                                                                                                        "children": [
+                                                                                                            "NAMESPACE_REF:'std'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "CALL_EXPR:'floor'": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "BINARY_OPERATOR:''": {
+                                                                                            "children": [
+                                                                                                "FLOATING_LITERAL:''",
+                                                                                                {
+                                                                                                    "UNEXPOSED_EXPR:'number'": {
+                                                                                                        "children": [
+                                                                                                            "DECL_REF_EXPR:'number'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'floor'": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "DECL_REF_EXPR:'floor'": {
+                                                                                                        "children": [
+                                                                                                            "NAMESPACE_REF:'std'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "PARM_DECL:'number'"
+                    ]
+                }
+            },
+            {
+                "FUNCTION_DECL:'pcl_round'": {
+                    "children": [
+                        {
+                            "COMPOUND_STMT:''": {
+                                "children": [
+                                    {
+                                        "RETURN_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "PAREN_EXPR:''": {
+                                                        "children": [
+                                                            {
+                                                                "CONDITIONAL_OPERATOR:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "BINARY_OPERATOR:''": {
+                                                                                "children": [
+                                                                                    "FLOATING_LITERAL:''",
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'number'": {
+                                                                                            "children": [
+                                                                                                "DECL_REF_EXPR:'number'"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "CALL_EXPR:'ceil'": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "BINARY_OPERATOR:''": {
+                                                                                            "children": [
+                                                                                                "FLOATING_LITERAL:''",
+                                                                                                {
+                                                                                                    "UNEXPOSED_EXPR:'number'": {
+                                                                                                        "children": [
+                                                                                                            "DECL_REF_EXPR:'number'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'ceil'": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "DECL_REF_EXPR:'ceil'": {
+                                                                                                        "children": [
+                                                                                                            "NAMESPACE_REF:'std'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "CALL_EXPR:'floor'": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "BINARY_OPERATOR:''": {
+                                                                                            "children": [
+                                                                                                "FLOATING_LITERAL:''",
+                                                                                                {
+                                                                                                    "UNEXPOSED_EXPR:'number'": {
+                                                                                                        "children": [
+                                                                                                            "DECL_REF_EXPR:'number'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "UNEXPOSED_EXPR:'floor'": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "DECL_REF_EXPR:'floor'": {
+                                                                                                        "children": [
+                                                                                                            "NAMESPACE_REF:'std'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "PARM_DECL:'number'"
+                    ]
+                }
+            },
+            "INCLUSION_DIRECTIVE:'boost/preprocessor/arithmetic/add.hpp'",
+            "INCLUSION_DIRECTIVE:'boost/preprocessor/comparison/equal.hpp'",
+            "INCLUSION_DIRECTIVE:'boost/preprocessor/comparison/less.hpp'",
+            "INCLUSION_DIRECTIVE:'boost/preprocessor/control/if.hpp'",
+            "INCLUSION_DIRECTIVE:'boost/preprocessor/stringize.hpp'",
+            "INCLUSION_DIRECTIVE:'boost/signals2.hpp'",
+            "INCLUSION_DIRECTIVE:'chrono'",
+            "INCLUSION_DIRECTIVE:'cmath'",
+            "INCLUSION_DIRECTIVE:'condition_variable'",
+            "INCLUSION_DIRECTIVE:'cstdlib'",
+            "INCLUSION_DIRECTIVE:'functional'",
+            "INCLUSION_DIRECTIVE:'iostream'",
+            "INCLUSION_DIRECTIVE:'iostream'",
+            "INCLUSION_DIRECTIVE:'mm_malloc.h'",
+            "INCLUSION_DIRECTIVE:'mutex'",
+            "INCLUSION_DIRECTIVE:'pcl/common/time.h'",
+            "INCLUSION_DIRECTIVE:'pcl/common/time_trigger.h'",
+            "INCLUSION_DIRECTIVE:'pcl/pcl_config.h'",
+            "INCLUSION_DIRECTIVE:'pcl/pcl_macros.h'",
+            "INCLUSION_DIRECTIVE:'queue'",
+            "INCLUSION_DIRECTIVE:'string'",
+            "INCLUSION_DIRECTIVE:'thread'",
+            "MACRO_DEFINITION:'DEG2RAD'",
+            "MACRO_DEFINITION:'DO_EVERY'",
+            "MACRO_DEFINITION:'DO_EVERY_TS'",
+            "MACRO_DEFINITION:'ERASE_ARRAY'",
+            "MACRO_DEFINITION:'ERASE_STRUCT'",
+            "MACRO_DEFINITION:'FIXED'",
+            "MACRO_DEFINITION:'FREEBSD_MALLOC_ALIGNED'",
+            "MACRO_DEFINITION:'GLIBC_MALLOC_ALIGNED'",
+            "MACRO_DEFINITION:'MALLOC_ALIGNED'",
+            "MACRO_DEFINITION:'MEASURE_FUNCTION_TIME'",
+            "MACRO_DEFINITION:'OPENMP_LEGACY_CONST_DATA_SHARING_RULE'",
+            "MACRO_DEFINITION:'PCLAPI'",
+            "MACRO_DEFINITION:'PCL_ALIGN'",
+            "MACRO_DEFINITION:'PCL_CDECL'",
+            "MACRO_DEFINITION:'PCL_DEPRECATED'",
+            "MACRO_DEFINITION:'PCL_DEPRECATED_HEADER'",
+            "MACRO_DEFINITION:'PCL_EXPORTS'",
+            "MACRO_DEFINITION:'PCL_EXTERN_C'",
+            "MACRO_DEFINITION:'PCL_FALLTHROUGH'",
+            "MACRO_DEFINITION:'PCL_IF_CONSTEXPR'",
+            "MACRO_DEFINITION:'PCL_LINEAR_VERSION'",
+            "MACRO_DEFINITION:'PCL_NODISCARD'",
+            "MACRO_DEFINITION:'PCL_PRAGMA'",
+            "MACRO_DEFINITION:'PCL_STDCALL'",
+            "MACRO_DEFINITION:'PVAR'",
+            "MACRO_DEFINITION:'PVARA'",
+            "MACRO_DEFINITION:'PVARAC'",
+            "MACRO_DEFINITION:'PVARAN'",
+            "MACRO_DEFINITION:'PVARAS'",
+            "MACRO_DEFINITION:'PVARC'",
+            "MACRO_DEFINITION:'PVARN'",
+            "MACRO_DEFINITION:'PVARS'",
+            "MACRO_DEFINITION:'RAD2DEG'",
+            "MACRO_DEFINITION:'SET_ARRAY'",
+            "MACRO_DEFINITION:'_PCL_COMPAT_MAJOR_VERSION'",
+            "MACRO_DEFINITION:'_PCL_COMPAT_MINOR_VERSION'",
+            "MACRO_DEFINITION:'_PCL_DEPRECATED_HEADER_IMPL'",
+            "MACRO_DEFINITION:'_PCL_DEPRECATED_IMPL'",
+            "MACRO_DEFINITION:'_PCL_PREPARE_REMOVAL_MESSAGE'",
+            "MACRO_DEFINITION:'_USE_MATH_DEFINES'",
+            "MACRO_DEFINITION:'pcl_lrint'",
+            "MACRO_DEFINITION:'pcl_lrintf'",
+            "MACRO_DEFINITION:'pcl_sleep'",
+            "MACRO_INSTANTIATION:'FREEBSD_MALLOC_ALIGNED'",
+            "MACRO_INSTANTIATION:'GLIBC_MALLOC_ALIGNED'",
+            "MACRO_INSTANTIATION:'HAVE_MM_MALLOC'",
+            "MACRO_INSTANTIATION:'HAVE_POSIX_MEMALIGN'",
+            "MACRO_INSTANTIATION:'MALLOC_ALIGNED'",
+            "MACRO_INSTANTIATION:'MALLOC_ALIGNED'",
+            "MACRO_INSTANTIATION:'PCL_EXPORTS'",
+            "MACRO_INSTANTIATION:'PCL_LINEAR_VERSION'",
+            "MACRO_INSTANTIATION:'PCL_LINEAR_VERSION'",
+            "MACRO_INSTANTIATION:'PCL_LINEAR_VERSION'",
+            "MACRO_INSTANTIATION:'PCL_LINEAR_VERSION'",
+            "MACRO_INSTANTIATION:'_OPENMP'",
+            "MACRO_INSTANTIATION:'_OPENMP'",
+            "MACRO_INSTANTIATION:'__GLIBC_MINOR__'",
+            "MACRO_INSTANTIATION:'__GLIBC__'",
+            "MACRO_INSTANTIATION:'__GLIBC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__GNUC__'",
+            "MACRO_INSTANTIATION:'__clang__'",
+            "MACRO_INSTANTIATION:'__clang__'",
+            "MACRO_INSTANTIATION:'__clang__'",
+            "MACRO_INSTANTIATION:'__clang__'",
+            "MACRO_INSTANTIATION:'__clang_major__'",
+            "MACRO_INSTANTIATION:'__clang_minor__'",
+            "MACRO_INSTANTIATION:'__cplusplus'",
+            "MACRO_INSTANTIATION:'__cplusplus'",
+            "MACRO_INSTANTIATION:'__cplusplus'",
+            "MACRO_INSTANTIATION:'__has_cpp_attribute'",
+            "MACRO_INSTANTIATION:'__has_extension'",
+            {
+                "NAMESPACE:'pcl'": {
+                    "children": [
+                        {
+                            "FUNCTION_DECL:'aligned_free'": {
+                                "children": [
+                                    {
+                                        "COMPOUND_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "CALL_EXPR:'free'": {
+                                                        "children": [
+                                                            {
+                                                                "UNEXPOSED_EXPR:'free'": {
+                                                                    "children": [
+                                                                        {
+                                                                            "DECL_REF_EXPR:'free'": {
+                                                                                "children": [
+                                                                                    "NAMESPACE_REF:'std'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "UNEXPOSED_EXPR:'ptr'": {
+                                                                    "children": [
+                                                                        "DECL_REF_EXPR:'ptr'"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "PARM_DECL:'ptr'"
+                                ]
+                            }
+                        },
+                        {
+                            "FUNCTION_DECL:'aligned_malloc'": {
+                                "children": [
+                                    {
+                                        "COMPOUND_STMT:''": {
+                                            "children": [
+                                                {
+                                                    "DECL_STMT:''": {
+                                                        "children": [
+                                                            "VAR_DECL:'ptr'"
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "RETURN_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "UNEXPOSED_EXPR:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "PAREN_EXPR:''": {
+                                                                                "children": [
+                                                                                    "DECL_REF_EXPR:'ptr'"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "PARM_DECL:'size'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'std::size_t'"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "NAMESPACE:'pcl'": {
+                    "children": [
+                        {
+                            "CLASS_DECL:'TimeTrigger'": {
+                                "children": [
+                                    {
+                                        "CONSTRUCTOR:'TimeTrigger'": {
+                                            "children": [
+                                                {
+                                                    "PARM_DECL:'callback'": {
+                                                        "children": [
+                                                            "TYPE_REF:'pcl::TimeTrigger::callback_type'"
+                                                        ]
+                                                    }
+                                                },
+                                                "PARM_DECL:'interval_seconds'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CONSTRUCTOR:'TimeTrigger'": {
+                                            "children": [
+                                                {
+                                                    "PARM_DECL:'interval_seconds'": {
+                                                        "children": [
+                                                            "FLOATING_LITERAL:''"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    {
+                                        "CXX_METHOD:'registerCallback'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'boost'",
+                                                "NAMESPACE_REF:'signals2'",
+                                                {
+                                                    "PARM_DECL:'callback'": {
+                                                        "children": [
+                                                            "TYPE_REF:'pcl::TimeTrigger::callback_type'"
+                                                        ]
+                                                    }
+                                                },
+                                                "TYPE_REF:'class boost::signals2::connection'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CXX_METHOD:'setInterval'": {
+                                            "children": [
+                                                "PARM_DECL:'interval_seconds'"
+                                            ]
+                                        }
+                                    },
+                                    "CXX_METHOD:'start'",
+                                    "CXX_METHOD:'stop'",
+                                    "CXX_METHOD:'thread_function'",
+                                    "DESTRUCTOR:'~TimeTrigger'",
+                                    "FIELD_DECL:'callbacks_'",
+                                    {
+                                        "FIELD_DECL:'condition_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'class std::condition_variable'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "FIELD_DECL:'condition_mutex_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'class std::mutex'"
+                                            ]
+                                        }
+                                    },
+                                    "FIELD_DECL:'interval_'",
+                                    "FIELD_DECL:'quit_'",
+                                    "FIELD_DECL:'running_'",
+                                    {
+                                        "FIELD_DECL:'timer_thread_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'class std::thread'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "TYPE_ALIAS_DECL:'callback_type'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TEMPLATE_REF:'function'"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "NAMESPACE:'pcl'": {
+                    "children": [
+                        {
+                            "CLASS_DECL:'EventFrequency'": {
+                                "children": [
+                                    {
+                                        "CONSTRUCTOR:'EventFrequency'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''",
+                                                "MEMBER_REF:'window_size_'",
+                                                {
+                                                    "PARM_DECL:'window_size'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TYPE_REF:'std::size_t'",
+                                                            {
+                                                                "UNEXPOSED_EXPR:''": {
+                                                                    "children": [
+                                                                        "INTEGER_LITERAL:''"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "UNEXPOSED_EXPR:'window_size'": {
+                                                        "children": [
+                                                            "DECL_REF_EXPR:'window_size'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    {
+                                        "CXX_METHOD:'event'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CXX_METHOD:'getFrequency'": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "IF_STMT:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "RETURN_STMT:''": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "PAREN_EXPR:''": {
+                                                                                            "children": [
+                                                                                                "FLOATING_LITERAL:''"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CXX_METHOD:'reset'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''"
+                                            ]
+                                        }
+                                    },
+                                    "FIELD_DECL:'event_time_queue_'",
+                                    {
+                                        "FIELD_DECL:'stop_watch_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'pcl'",
+                                                "TYPE_REF:'class pcl::StopWatch'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "FIELD_DECL:'window_size_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'std::size_t'"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "CLASS_DECL:'ScopeTime'": {
+                                "children": [
+                                    {
+                                        "CONSTRUCTOR:'ScopeTime'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''",
+                                                "MEMBER_REF:'title_'",
+                                                {
+                                                    "PARM_DECL:'title'": {
+                                                        "children": [
+                                                            "NAMESPACE_REF:'std'",
+                                                            "TYPE_REF:'std::string'"
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "UNEXPOSED_EXPR:'title'": {
+                                                        "children": [
+                                                            "DECL_REF_EXPR:'title'"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    {
+                                        "CXX_BASE_SPECIFIER:'class pcl::StopWatch'": {
+                                            "children": [
+                                                "TYPE_REF:'class pcl::StopWatch'"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "DESTRUCTOR:'~ScopeTime'": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "DECL_STMT:''": {
+                                                                    "children": [
+                                                                        "VAR_DECL:'val'"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "FIELD_DECL:'title_'": {
+                                            "children": [
+                                                "NAMESPACE_REF:'std'",
+                                                "TYPE_REF:'std::string'"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "CLASS_DECL:'StopWatch'": {
+                                "children": [
+                                    {
+                                        "CONSTRUCTOR:'StopWatch'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''"
+                                            ]
+                                        }
+                                    },
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    "CXX_ACCESS_SPEC_DECL:''",
+                                    {
+                                        "CXX_METHOD:'getTime'": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "DECL_STMT:''": {
+                                                                    "children": [
+                                                                        "VAR_DECL:'end_time'"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CXX_METHOD:'getTimeSeconds'": {
+                                            "children": [
+                                                {
+                                                    "COMPOUND_STMT:''": {
+                                                        "children": [
+                                                            {
+                                                                "RETURN_STMT:''": {
+                                                                    "children": [
+                                                                        {
+                                                                            "PAREN_EXPR:''": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "BINARY_OPERATOR:''": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "CALL_EXPR:'getTime'": {
+                                                                                                        "children": [
+                                                                                                            "MEMBER_REF_EXPR:'getTime'"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                "FLOATING_LITERAL:''"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "CXX_METHOD:'reset'": {
+                                            "children": [
+                                                "COMPOUND_STMT:''"
+                                            ]
+                                        }
+                                    },
+                                    "FIELD_DECL:'start_time_'"
+                                ]
+                            }
+                        },
+                        {
+                            "FUNCTION_DECL:'getTime'": {
+                                "children": [
+                                    "COMPOUND_STMT:''"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
